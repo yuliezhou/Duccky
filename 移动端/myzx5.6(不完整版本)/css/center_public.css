@@ -1,0 +1,272 @@
+body{
+	background: #f0f1f2;
+}
+/*头部*/
+.header{
+	height: 2.8rem;
+	display: flex;
+	align-items: center;
+	background: #2f84d1;
+	width: 100%;
+}
+.header .left_a{
+	height: 1.1rem;
+	width: 1.1rem;
+	margin: 0 0.25rem;
+}
+.header a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.header .info{
+	height: 1.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.header .info h4{
+	font-size: 0.34rem;
+	color: #fff;
+}
+.header .info a{
+	color: #fff;
+	font-size: 0.24rem;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+.header .info a img{
+	width: 0.23rem;
+	height: 0.2rem;
+}
+.par{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+/*头部end*/
+/*个人中心灰色盒子*/
+.gray_center{
+	height: 0.4rem;
+	width: 100%;
+	background: #f0f1f2;
+}
+/*个人中心灰色盒子 end*/
+/*功能盒子*/
+.function{
+	background: #f0f1f2;
+	height: 100%;
+}
+.function_box{
+	height: 0.9rem;
+	padding: 0 0.3rem;
+	background: #fff;
+}
+.function_box .func_a{
+	width: 100%;
+	height: 100%;
+}
+.function_box .box_left{
+	height: 100%;
+	color: #464646;
+	font-size: 0.32rem;
+	display: flex;
+	align-items: center;
+}
+.function_box .box_left .func_img{
+	width: 0.38rem;
+	height: 0.38rem;
+	margin-right: 0.22rem;
+}
+.function_box .box_left span{
+	height: 0.38rem;
+	line-height: 0.38rem;
+}
+.function_box .func_img1{
+	width: 0.1rem;
+	height: 0.2rem;
+}
+/*功能盒子 end*/
+/*下边框线*/
+.bor_bot{
+	border-bottom: 1px solid #f0f1f2;
+	box-sizing: border-box;
+}
+/*上下边框线 end*/
+/*观看历史列表*/
+#history_list{
+	width: 100%;
+	background: #fff;
+}
+#history_list .swiper-wrapper{
+	padding: 0.2rem 0 0.2rem 0.3rem;
+}
+#history_list .hislist_box{
+	width: 100%;
+}
+#history_list .hislist_box .hislist_img{
+	 height: 1.2rem;
+	 margin-bottom: 0.05rem;
+ }
+ #history_list .hislist_box .hislist_img img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ #history_list .hislist_box p{
+ 	font-size: 0.28rem;
+ 	color: #464646;
+ 	
+ }
+  #history_list .swiper-slide{
+  	padding-right: 0.3rem;
+  }
+/*观看历史列表 end*/
+/*未登录状态*/
+.header .header_info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 0.28rem;
+}
+.header .header_info a{
+	border: 1px solid #fff;
+	height: 0.55rem;
+	width: 2.55rem;
+	color: #fff;
+	border-radius: 15px;
+	margin-top: 0.35rem;
+}
+.header .header_info i{
+	height: 100%;
+	width: 100%;
+}
+/*未登录状态 end*/
+/*个人中心-二级选项*/
+.header_child{
+	height: 0.9rem;
+	width: 100%;
+	background: #2f84d1;
+	font-weight: bolder;
+	position: relative;
+	font-size: 0.34rem;	
+	color: #fff;
+}
+.header_child .back{
+	position: absolute;
+	left: 0.28rem;
+	top: 0;
+	width: 0.32rem;
+	height: 100%;
+}
+.header_child .back i{
+	width: 0.32rem;
+	height: 100%;
+}
+.header_child .gz{
+	height: 100%;
+	display: block;
+	width: 1.3rem;
+	font-size: 0.32rem;
+	position: absolute;
+	right: 0.28rem;
+	top: 0;
+	font-weight: normal;
+}
+.header_child .gz a{
+	display: block;
+	color: #fff;
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+}
+.header_child a img{
+	width: 0.32rem;
+	height: 0.32rem;
+}
+.quit{
+	font-size: 0.34rem;	
+	color: #464646;
+	text-align: center;
+	line-height: 0.9rem;
+}
+.header_child span{
+	height: 100%;
+	padding-right: 0.28rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.32rem;
+	color: #fff;
+	font-weight: normal;
+}
+.search_box1{
+	height: 0.7rem;
+	padding: 0.2rem 0.65rem 0.2rem;
+	background: #2f84d1;
+}
+.search_box1 a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 0.28rem;
+	background: #4491d6;
+	border-radius: 4px;
+	position: relative;
+	display: block;
+
+}
+.search_box1 img{
+	height: 0.3rem;
+	width: 0.3rem;
+	position: absolute;
+	left: 0.3rem;
+	top:0.2rem;
+}
+.search_box1 span{
+	width: 100%;
+	text-align: center;
+	display: block;
+	height: 0.7rem;
+	line-height: 0.7rem;
+}
+.no_content{
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	display: none;
+}
+.no_content p{
+	font-size: 0.26rem;
+	color: #cfd0d1;
+	text-align: center;
+	padding-bottom: 0.1rem;
+}
+/*个人中心-二级选项  end*/
+.search_box2{
+	height: 0.7rem;
+	padding: 0 0.28rem;
+	margin-top: 0.4rem;
+	margin-bottom: 0.6rem;
+}
+.search_box2 a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #cfd0d1;
+	font-size: 0.28rem;
+	background: #f0f1f2;
+	border-radius: 20px;
+
+}
+.search_box2 img{
+	height: 0.3rem;
+	width: 0.3rem;
+	margin: 0 0.5rem 0 0.3rem;
+}

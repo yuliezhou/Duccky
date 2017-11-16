@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的关注</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/attention-f.css">		
+	<link rel="stylesheet" href="css/my_attention.css">
+	<link rel="stylesheet" href="http://img1.myzx.cn/css/mobile/css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()" style="display: block;" class="back pull-left"><img src="images/back.png" alt=""></a>
+		<p>我的关注</p>
+		<div class="empty_gray"></div>
+	</header>
+	<div class="empty"></div>
+	<div class="attention_list">
+		<div class="attention_title">
+			<span>名医</span>
+			<a href="##" style="display: block;"><em>+&nbsp;关注更多</em></a>
+		</div>
+		<div class="attebox">
+			<a href="attention-detail-f.html" style="display: block;">
+				<div class="box1_left">
+					<div class="img_box1">
+						<img src="images/doctor.png" alt="">
+					</div>
+					<div class="info">
+						<h4>李易峰</h4>
+						<p>口腔科&nbsp;&nbsp;<em>副主任医师</em></p>
+					</div>
+				</div>	
+			</a>
+			<div class="box1_right">
+				<img src="images/gz.png" alt="">
+				<img src="images/gz1.png" alt="" style="display: none;">
+				<span>加关注</span>
+			</div>
+		</div>
+		<div class="attebox">
+			<a href="attention-detail-f.html" style="display: block;">
+				<div class="box1_left">
+					<div class="img_box1">
+						<img src="images/doctor.png" alt="">
+					</div>
+					<div class="info">
+						<h4>李易峰</h4>
+						<p>口腔科&nbsp;&nbsp;<em>副主任医师</em></p>
+					</div>
+				</div>	
+			</a>
+			<div class="box1_right">
+				<img src="images/gz.png" alt="">
+				<img src="images/gz1.png" alt="" style="display: none;">
+				<span>加关注</span>
+			</div>
+		</div>
+		<div class="attebox">
+			<a href="attention-detail-f.html" style="display: block;">
+				<div class="box1_left">
+					<div class="img_box1">
+						<img src="images/doctor.png" alt="">
+					</div>
+					<div class="info">
+						<h4>李易峰</h4>
+						<p>口腔科&nbsp;&nbsp;<em>副主任医师</em></p>
+					</div>
+				</div>	
+			</a>
+			<div class="box1_right">
+				<img src="images/gz.png" alt="">
+				<img src="images/gz1.png" alt="" style="display: none;">
+				<span>加关注</span>
+			</div>
+		</div>
+	</div>
+	<script src="http://img1.myzx.cn/js/mobile/js/font.js"></script>
+	<script src="http://img1.myzx.cn/js/mobile/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="layer.mobile-v2.0/layer.mobile-v2.0/layer_mobile/layer.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="http://img1.myzx.cn/js/mobile/js/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            $('.change span').on('click',function () {
+                $(this).addClass('span_active').siblings().removeClass('span_active')
+            })
+        })
+        // 关注图标切换
+       	$(".box1_right").on("click",function(){
+       		//字体颜色切换
+       		$(this).children("span").toggleClass("ac_span");
+       		// 图片切换
+       		$(this).children("img").toggle();
+       	})
+	</script>
+</body>
+</html>

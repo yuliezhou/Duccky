@@ -1,0 +1,461 @@
+/*header*/
+header{
+	background: #fff;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 999;
+ 	}
+header .header_box{
+	padding: 0.2rem ;
+	 display: flex;
+	 justify-content: space-between;
+
+ }
+header .hear_left{
+	 width: 3.6rem;
+}
+.header .hear_left img{
+	width: 100%;
+}
+header .hear_right{
+	 width: 1.5rem;
+	 text-align: right;
+ }
+header .hear_right a{
+	 display: inline-block;
+	 width: 0.4rem;
+	 height: 0.4rem;
+ }
+header .hear_right a img{
+	width: 100%
+}
+header .header_input{
+	 margin: 0 0.2rem;
+	 background: #f0f1f2;
+	 border-radius: 0.1rem;
+	 padding: 0.1rem 0.2rem;
+	 display: flex;
+	 align-items: center;
+ }
+header .header_input span{
+	 line-height: 0.45rem;
+	 font-size: 0.24rem;
+	 margin-left: 0.18rem;
+	 color: #cfd0d1;
+ }
+ /*header-end*/
+ /*推荐名医*/
+ #recommend{
+ 	background: #fff;
+ }
+.recommend .recommend_top{
+	 display: flex;
+	 justify-content: space-between;
+	 align-items:stretch;
+	 border-bottom: 1px solid #f0f1f2;
+	 padding: 0.2rem 0;
+  }
+.recommend .recommend_top i{
+	 padding-left: 0.3rem;
+	 font-size: 0.28rem;
+	 color: #333;
+ }
+.recommend .recommend_top a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 0.2rem;
+}
+.recommend .recommend_top a img{
+	width: 0.1rem;
+	height: 0.2rem;
+}
+.recommend  a{
+	display: block;
+}
+.recommend .recommend_top span{
+	 padding-right: 0.16rem;
+	 font-size: 0.24rem;
+	 color: #999;
+ }
+.recommend .recommend_top span em{
+	 font-family:consolas;
+	 padding-left: 0.16rem;
+	 font-size: 0.28rem;
+ }
+ .doctor{
+	 padding: 0.12rem 0 0;
+	 text-align: center;
+	 background: #fcfcfc;
+ }
+.doctor .doctor_box{
+	 background: #fff;
+	 padding-top: 0.2rem;
+	 padding-bottom: 0.1rem;
+
+ }
+.doctor .doctor_box h4{
+	 font-size: 0.28rem;
+	 color: #333333;
+	 margin: 0;
+	 margin-top: 0.15rem;
+ }
+.doctor .doctor_box p{
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 0;
+}
+
+.doctor .doctor_box .doctor_img{
+	 height: 0.9rem;
+	 width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #f0f1f2;
+ }
+ .doctor .doctor_box .doctor_img img{
+	 height: 0.9rem;
+	 width: 0.9rem;
+	 border-radius: 50%;
+	 border: 1px solid #458bc6;
+ }
+/*推荐名医-end*/
+/*热门科室*/
+.hot{
+	text-align: center;
+	padding-bottom: 0.2rem;
+}
+.hot .hot_top a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 0.2rem;
+}
+
+.hot .hot_top{
+	 display: flex;
+	 justify-content: space-between;
+	 align-items:stretch;
+	 border-bottom: 1px solid #f0f1f2;
+	 background: #fff;
+	 padding: 0.2rem 0;
+  }
+.hot .hot_top i{
+	 padding-left: 0.3rem;
+	 font-size: 0.28rem;
+	 color: #333;
+ }
+ .hot .hot_top a img{
+	width: 0.1rem;
+	height: 0.2rem;
+}
+.hot  a{
+	display: block;
+}
+.hot .hot_top span{
+	 padding-right: 0.16rem;
+	 font-size: 0.24rem;
+	 color: #999;
+ }
+.hot .hot_top span em{
+	 font-family:consolas;
+	 padding-left: 0.16rem;
+	 font-size: 0.28rem;
+}
+.hot_show{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background: #fff;
+}
+.hot .hot_icon{
+	 padding-top: 0.2rem;
+ }
+.hot .hot_icon img{
+	 width: 0.5rem;
+	 height: 0.5rem;
+	 display: inline-block;
+ }
+.hot .hot_icon p{
+	color: #323232;
+	 font-size: 0.24rem;
+	 margin-top: 0.2rem;
+ }
+/*热门科室-end*/
+.swiper-container{
+	width: 100%;
+}  
+.swiper-container img{
+	width: 100%;
+	height: 100%;
+}
+.shows{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	z-index: 99;
+	background: #fff;
+	width: 100%;
+}
+.shows section{
+	margin-top: 0.2rem;
+	width: 100%;
+	position: relative;
+	margin-bottom: 0.2rem;
+}
+.shows section #add{
+	width: 10%;
+	height: 100%;
+	border-left: 1px solid #f0f1f2;
+	box-shadow:-0.1rem 0rem 0.1rem rgba(153, 153, 153, 0.27);
+	background: #fff;
+	z-index: 1;
+	margin: 0;
+	float: left;
+}
+.shows section  .opcity_add{
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.shows section .opcity_add img{
+	height:0.3rem;
+	width: .3rem;
+}
+#topNav {
+	width: 100%;
+	overflow: hidden;
+	font: 16px/32px hiragino sans gb, microsoft yahei, simsun;
+}
+#topNav .swiper-slide {
+	padding: 0 .2rem;
+    display: inline-block;
+	/*letter-spacing:2px;*/
+	text-align:center;
+    width: auto!important;
+}
+#topNav .swiper-slide span{
+
+	transition:all .3s ease;
+	display:block;
+	font-size: 0.28rem;
+}
+#topNav .active span{
+	transform:scale(1.1);
+	color:#3a6b9a;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.shows a{
+	display: block;
+	width: 45%;
+	margin: 0 0.1rem 0.2rem;
+}
+.dis_ul{
+	text-align: left;
+	font-size:0;
+}
+.showbox{
+	position: relative;
+	width: 46%;
+	margin: 0.1rem 2%;
+	display: inline-block;
+}
+.showbox .showbox_img{
+	position: relative;
+	width: 100%;
+	height: 2rem;
+
+}
+.showbox .showbox_img img{
+	height: 100%;
+	width: 100%;
+}
+.showbox .shows_num{
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0 0.1rem;
+	background: #3581c2;
+	color: #fff;
+}
+.showbox .img_model{
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.showbox .showbox_img .img_model img{
+	width: 0.6rem;
+	height: .6rem;
+}
+.showbox .show_text{
+	margin-top: 0.15rem;
+}
+.showbox .show_text p{
+	 font-size: 0.28rem;
+ 	color: #333;
+	margin-bottom: 0;
+}
+.showbox .show_text span{
+	font-size: 12px;
+	color: #c9c9c9;
+}
+.showbox_time{
+	position: absolute;
+	bottom: 0.1rem;
+	left: 0.1rem;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+}
+.showbox .showbox_time img{
+	 width: 0.13rem;
+	 height: 0.2rem;
+ }
+.showbox_time span{
+	color: #fff;
+}
+.empty{
+	height: 0.96rem;
+	padding-top: 0.1rem;
+ }
+ /*弹出频道*/
+#none1 .delete .list_box .none_ac{
+	color: #2778be;
+}
+#none1{
+	width: 100%;
+	height: 100%;
+}
+#none1 .none1_title{
+	 position: relative;
+	 padding: 0.3rem 0;
+ }
+#none1 .none1_title h4{
+	 color: #7d7d7d;
+	 font-size: 0.32rem;
+	 margin: 0;
+ }
+#none1 p{
+	 color: #2f2f2f;
+	 font-size: 0.28rem;
+ }
+#none1 .none1_title img{
+	 width:0.2rem;
+	 height: 0.2rem;
+	 position: absolute;
+	 right: 0.3rem;
+	 top: 0.3rem;
+ }
+#none1 .delete{
+	 padding: 0 0.1rem 0.5rem;
+	 text-align: right;
+ }
+#none1 .delete .delete_header{
+	 padding-bottom: 0.2rem;
+	 padding-right:0.1rem;
+ }
+#none1 .delete .delete_header span{
+	 font-size: 0.24rem;
+	 color: #2778be;
+	 padding: 0.1rem 0.4rem;
+	 border: 1px solid #2778be;
+	 border-radius: 0.3rem;
+ }
+#none1 .delete .list_box{
+	 padding:0;
+	 margin: 0.1rem 0;
+ }
+#none1 .delete .list_box p{
+	position: relative;
+	padding: 0.1rem;
+	 margin: 0 0.1rem;
+	 border-radius: 0.08rem;
+	 border: 1px solid #edeff0;
+ }
+ #none1 .delete p img{
+ 	height: 0.2rem;
+ 	width: 0.2rem;
+ 	position: absolute;
+ 	top: 5px;
+ 	right: 5px;
+ }
+#none1 .none1_recommend{
+	padding: 0 0.1rem;
+}
+#none1 .none1_recommend a{
+	display: block;
+}
+#none1 .none1_recommend h4{
+	 color: #7d7d7d;
+	 font-size: 0.32rem;
+	 margin: 0;
+	 padding: 0 0 0.2rem 0.1rem;
+ }
+#none1 .none1_recommend .list_box{
+	 padding:0;
+	 margin: 0.1rem 0;
+ }
+#none1 .none1_recommend .list_box img{
+	height: .2rem;
+	width: .2rem;
+}
+#none1 .none1_recommend .list_box p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	 padding: 0.1rem;
+	 margin: 0 0.1rem;
+	 border-radius: 0.08rem;
+	 border: 1px solid #edeff0;
+  }
+#none1 .none1_recommed a{
+	display: block;
+}
+#none1 .recommend_input{
+	 background: #f0f1f2;
+	 border-radius: 0.1rem;
+	 margin-top: 0.16rem;
+	 margin-bottom: 0.26rem;
+	 padding: 0.1rem 0.2rem;
+	 display: flex;
+	 align-items: center;
+	 margin: 0 0.1rem 0.2rem;
+}
+#none1 .recommend_input span{
+	 line-height: 0.45rem;
+	 font-size: 0.24rem;
+	 margin-left: 0.18rem;
+	 color: #cfd0d1;
+ }
+ /*弹出频道-end*/
+.box_fixed{
+	height: 0.15rem;
+	background: #f0f1f2;
+	width: 100%;
+}
+#dro_box{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	color: #333;
+	font-size: 0.28rem;
+	height: 0.7rem;
+}

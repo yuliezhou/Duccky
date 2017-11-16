@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登陆页</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+	<link href="../../css/publicSty.css" rel="stylesheet"></link>
+    <link href="../../plugin/layer/need/layer.css" rel="stylesheet"></link>
+    <link href="../../css/center_public.css" rel="stylesheet">
+    <link href="../../css/login.css" rel="stylesheet"></link>
+    <script src="../../plugin/layer/layer.js"></script>
+    <script src="../../plugin/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="head_topbar active">
+            <a href="javascript:history.back()" class="head_left">
+                <img src="../../images/pullToLeft.png" alt="" class="back">
+            </a>
+            <div class="head_title">
+                <font>登录</font>
+            </div>
+            <div class="head_right"></div>
+        </div>
+
+	</header>
+	<div class="logo">
+		<img src="../../images/myzxlogo.png" alt="">
+	</div>
+	<div id="loginForm">
+		<!-- 验证码登录 -->
+			<div class="phone">
+				<img src="../../images/login_tel.png">
+				<input type="text" placeholder="手机号" id="phone">
+			</div>
+			<div class="yz">
+				<img src="../../images/login_yz.png">
+				<input type="text" placeholder="验证码" id="yz">
+				<div class="yz_box">
+					<div class="yz_send" id="yz_send">发送验证码</div>
+				</div>
+			</div>
+			<a href="##" style="display:block;"><p class="xieyi">点击“登录”即表示同意《名医在线用户服务协议》</p></a>
+			<div class="box">
+				<input type="button" value="登录" class="queding" id="LoginSubmit" data-status = "yz">
+			</div>
+		<div class="otherLoginMeth">
+			<a class="loginMethLeft" id="registerLogin">注册新用户</a>
+			<a class="loginMethRight" id="pwdLogin">密码登录</a>
+		</div>
+	</div>
+</body>
+</html>
+<script src="../../src/js/login.js"></script>
+<script type="text/javascript">
+	
+</script>

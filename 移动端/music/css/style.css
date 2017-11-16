@@ -1,0 +1,44 @@
+*{margin:0;padding: 0;}
+ul li {list-style: none;}
+html{font-size: 100px;}
+body{font-size: 20px;}
+#global{position: fixed;left: 0;bottom: 0;font-size: 0.3rem;height:0.5rem;line-height: 0.5rem;text-align: center;width: 100%;background-color: #fff;}
+.banner img{width: 100%}
+.table{font-size: 0.16rem;}
+.header{position: fixed;top:0;left:0;width:100%}
+.header h3{font-size: 0.2rem;line-height:0.5rem;height: 0.5rem;background: #cd3c3d;color:#fff;text-align: center;}
+.ullist{display: flex;flex-direction:row;background: #fff;}
+.ullist li{flex-grow:1;line-height: 0.5rem;height: 0.5rem;text-align: center;color: #70706f;font-size: 0.14rem}
+.auto{width: 100%;}
+#tabcontainer{padding-top:1rem;}
+.texttop{display: flex; justify-content:space-between;height: 0.4rem;line-height: 0.4rem;font-size: 0.14rem;padding:0 0.1rem;}
+.texttop p {display: flex;align-items:center;}
+.texttop span {font-size: 0.12rem}
+.texttop img{width: 0.2rem;height: 0.2rem;margin-right: 0.1rem}
+.songlist{display: flex;font-size: 0.12rem;flex-wrap:wrap;}
+.songlist .item{width: 30%;margin:0 1.5%;position:relative;}
+.songlist .item h5{background:rgba(206, 206, 204, 0.8);height: 0.25rem;line-height: 0.25rem;text-align: right;font-weight: normal;position: absolute;top:0;left: 0;width: 92%;color: #fff;padding-right: 8%;font-size: 0.13rem}
+.songlist .item a{text-decoration: none;color: #666}
+#musicList{padding: 0 0.15rem 0 0.3rem;}
+#musicList li{border-bottom: 1px solid #eee;padding:0.1rem 0;font-size: 0.14rem;position: relative;}
+#musicList li span{height: 20px;width: 20px;position: absolute;top:15px;right: 10px;background-size: cover;}
+#musicList li .yes{background: url(../images/gz_gray.png) 0 0 no-repeat;}
+#musicList li .no{background: url(../images/gz_red.png) 0 0 no-repeat;}
+#music_state{width: 1rem;height: 0.4rem;line-height: 0.4rem;font-size: 0.14rem}
+#btn{height: 40px;width: 40px;background-size: cover;position: absolute;top:0.1rem;right: 0.5rem;}
+.btnle{height: 40px;width: 40px;position: absolute;top:0.1rem;right: 0.9rem;background-image:url(../images/playbar_btn_playlist.png);background-size: cover;}
+.btnri{height: 40px;width: 40px;background-size: cover;position: absolute;top:0.1rem;right: 0.1rem;background-image:url(../images/playbar_btn_next.png);}
+.play{background-image: url("../images/playbar_btn_pause.png");}
+.pause{background-image: url("../images/playbar_btn_play.png");}
+#prev{height: 1.7rem;font-size: 14px;position: relative;}
+.prev{background:rgba(251, 246, 246, 0.3);height: 1.7rem;position: absolute;top: 0;left: 0;width: 100%}
+.prevtop{height: 0.3rem;line-height: 0.3rem;display: flex;align-items:center;margin-bottom: 0.2rem;padding-top:0.1rem;}
+.prevtop p{text-align:center;flex-grow:0.9;color: #fff;font-size: 0.14rem}
+.prevtop img{height: 0.2rem;width: 0.2rem;margin-left: 10px;}
+.previcon{display: flex;align-items:center;}
+.previcon img{width: 0.3rem;height: 0.3rem;border-radius: 50% }
+#listItem p{font-size: 0.14rem}
+.imgbox{display:flex;}
+.songimg{height: 0.9rem;width: 0.9rem;margin-left:0.1rem;margin-right: 0.2rem;}
+.imgbox h4{color: #fff;font-weight: normal;line-height: 0.2rem;height: 0.2rem;margin-bottom: 0.4rem}
+.imgbox span{color:rgb(43, 39, 39);line-height: 0.3rem;height: 0.3rem;margin-left: 0.15rem}

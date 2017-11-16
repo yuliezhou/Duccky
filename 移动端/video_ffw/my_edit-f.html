@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>编辑</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">		
+	<link rel="stylesheet" href="css/my_edit.css">
+	<link rel="stylesheet" href="http://img1.myzx.cn/css/mobile/css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/LCalendar.css" />
+</head>
+<body>
+	<header>
+		<div class="header_title">
+			<a href="javascript:history.back()" style="display: block;"><img src="images/back.png" alt="" class="back"></a>
+			<span>编辑</span>
+			<button type="submit">提交</button>
+		</div>
+	</header>
+	<form action="1.php" method="post">
+		<div class="imgbox">
+			<a href="##" style="display: block;">
+				<div class="change_img">
+					<img src="images/img.png" alt="">
+					<span>换头像</span>
+					<input type="file" id="file1"> 
+				</div>
+			</a>
+		</div>
+		<div class="info_box">
+			<span>昵称</span>
+			<input type="text" placeholder="请输入昵称">
+		</div>
+		<div class="info_box">
+			<span>昵称</span>
+			<div class="xingbie">
+				<div class="xingbie_box">
+					<span class="back_ac"></span>男
+				</div>
+				<div class="xingbie_box">
+					<span></span>女
+				</div>
+			</div>
+		</div>
+		<div class="info_box">
+			<span>生日</span>
+			<input type="text" placeholder="未填写" id="start_date">
+			<img src="images/right.png">
+		</div>
+
+		<div class="info_box">
+			<span>个性签名</span>
+		</div>
+		<div class="qianming" id="qianming">
+			<textarea placeholder="鹅鹅鹅，曲项向天歌"></textarea>
+			<p class="text-right">140</p>
+		</div>
+	</form>
+	<script src="http://img1.myzx.cn/js/mobile/js/font.js"></script>
+	<script src="http://img1.myzx.cn/js/mobile/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="layer.mobile-v2.0/layer.mobile-v2.0/layer_mobile/layer.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="http://img1.myzx.cn/js/mobile/js/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript" src="js/LCalendar.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		// 性别切换
+		$('.info_box').find(".xingbie_box").on("click",function(){
+			$(".xingbie_box").children("span").removeClass("back_ac")
+			$(this).children("span").addClass("back_ac")
+		})
+		// 性别切换-end
+		// 签名字数控制
+		function isChinese(str){  //判断是不是中文
+		    var reCh=/[u00-uff]/;//所有的单字节字符
+		    return !reCh.test(str);
+		};
+		$('#qianming').find("textarea").keyup(function(){
+		    var txt=this.value;//获取文本
+		    var txt_length=0; //字节长度
+		    var txt_num=0;
+		    for(var i=0; i<txt.length; i++){
+		        if(   isChinese(  txt.charAt(i)  )   ){
+		            txt_length+=2;//如果是中文,字符+2
+		        }else{
+		            txt_length++;//否则,字符+1
+		        }
+		    }	
+
+		    var count=140-txt_length;
+		    if(count>0){
+		        $('#qianming').children("p").html(count);
+
+		    }else{
+		    	$('#qianming').children("p").html('0');		    	
+		    }
+		    if(count=0){
+		    	var leg=txt_num;
+		    	console.log(leg)
+		    }
+		    $('#qianming').find("textarea").html(txt)
+		});
+		// if(txt_length>140){
+
+
+		// }
+		//时间选择器插件
+		var calendar = new LCalendar();
+		calendar.init({
+			'trigger': '#start_date', //标签id
+			'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+			'minDate': (new Date().getFullYear()-100) + '-' + 1 + '-' + 1, //最小日期
+			'maxDate': (new Date().getFullYear()) + '-' + 12 + '-' + 31 //最大日期
+		});		
+	})
+</script>
