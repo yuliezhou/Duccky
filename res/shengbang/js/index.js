@@ -8,7 +8,14 @@ $('.language').on('click',function(){
     var _this = $(this);
     _this.children('.langbox').eq(1).slideToggle();
     _this.children('.langbox').eq(0).children('.top_img').toggleClass('rotare_img');
-    _this.children('.langbox').eq(1).children('.top_img').hide()
+    _this.children('.langbox').eq(1).children('.top_img').hide();
+    setTimeout(function(){
+          if(_this.children('.langbox').eq(1).show()){
+            $(".langbox_china").attr('href','##1');
+            $(".langbox_usa").attr('href','##2');
+        }      
+    },0)
+
 })
 //控制banner的高度
 //获取当前屏幕的宽度
@@ -55,6 +62,5 @@ $('#idx_intro').on('click','.idx_introbox',function(){
             $('#idx_intro .idx_introbox').eq(2).addClass('animated fadeInLeft');
 
         },0)
-
     }
 })

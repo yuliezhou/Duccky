@@ -13,7 +13,7 @@ a, a:hover {
 }
 a:focus{text-decoration: none}
 body, html {
-    font-family: STHeiti, Microsoft YaHei, Arial!important;
+    font-family:Arial!important;
     color: #636363;
 }
 
@@ -243,4 +243,53 @@ textarea {
 .empty1{
     height: 50px;
     width: 100%;
+}
+/*悬浮窗*/
+.fixed_icon{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 63px;
+    margin-left: -31px;
+    z-index: 999;
+}
+.fixed_img{
+    position: relative;
+    width: 100%;
+}
+.fixed_img img{
+    width: 100%;
+}
+.fixed_des{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    color: #fff;
+    line-height: 25px;
+    padding-top:5px; 
+    padding-bottom:5px; 
+    padding-left:20px;
+    background: #0033ff;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0;
+    transition: all 0.8s;
+    min-width:150px;
+}
+.fixed_des p{
+    padding-right: 15px;
+    margin: 0;
+}
+@media (max-width: 768px){
+    .fixed_icon{
+        display: none;
+    }
+}
+@media (min-width: 767px){
+    .fixed_icon:hover .fixed_des{
+        left: -250%;
+        opacity: 1;
+    }
 }

@@ -38,14 +38,14 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right" id="header-menu">
 	        <li>
-		        <a href="index.html" class="btn btn-large top_a top_active">首页</a>
+		        <a href="index.html" class="btn btn-large top_a">首页</a>
 	        </li>
 	        <li class="open_li">
 	        	<a href="##" class="btn btn-large top_a" data-toggle="dropdown">走进盛邦</a>
 				<ul class="son-menu dropdown-menu">
 		           <li><a href="introduction.html">走进盛邦</a></li>
 		           <li><a href="belong.html">所属行业</a></li>
-		           <li><a href="brand.html">代理品牌</a></li>
+		           <li><a href="brand.html" class="top_active">代理品牌</a></li>
 		           <li><a href="##">业绩贡献</a></li>
 		           <li><a href="join.html">加入盛邦</a></li>
 		        </ul>
@@ -212,6 +212,12 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
-
+<script type="text/javascript">
+	$(".son-menu a").each(function(){
+		if($(this).hasClass('top_active')){
+			$(this).parents('li').parents('.son-menu').siblings('a').eq(0).addClass('top_active');
+		}
+	})
+</script>
 </body>
 </html>

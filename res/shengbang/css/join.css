@@ -327,14 +327,17 @@ p{
 .brand .belong_boxc img{
 	width: 100%;
     transition: 0.8s all;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: .4;
 }
 .brand .belong_boxc h4{
     font-size: 18px;
     color: #434343;
     margin: 20px 0;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .brand .belong_boxc p{
     font-size: 14px;
@@ -551,6 +554,7 @@ p{
 	padding: 0;
 	padding-left: 0;
 	margin-bottom: 70px;
+	min-height: 90px;
 }
 .down_boxc a{
 	width: 100%;
@@ -568,7 +572,7 @@ p{
     opacity: .4;
 }
 .down_boxc .down_boxcr{
-	width: 83%;
+	width:70%;
 	padding-left: 25px;
 	float: left;
 }
@@ -583,6 +587,13 @@ p{
 	margin-bottom: 0;
 	font-size: 14px;
 	color: #838383;
+	padding-right: 30px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .down_boxp{
 	margin-top: 50px;
@@ -600,10 +611,11 @@ p{
 .model_box .model_boxc{
 	padding: 60px 140px;
 	background: #fff;
+	max-width: 525px;
 }
 .model_box .model_boxc img{
-	width: 80px;
-	margin-right: 20px;
+	width: 30%;
+	margin-right: 10%;
 	float: left;
 }
 .model_box .model_boxc .model_topri h4{
@@ -613,14 +625,25 @@ p{
 	margin:0;
 	margin-bottom: 5px; 
 }
+.model_boxctop{
+	min-height: 90px;
+	min-width: 245px;
+}
 .model_box .model_boxc .model_topri{
 	float: left;
+	width: 60%;
 }
 .model_box .model_boxc .model_topri p{
 	font-size: 12px;
 	color: #838383;
 	line-height: 20px;
 	margin: 0;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .down_botbox{
 	width: 100%;
@@ -1041,6 +1064,9 @@ p{
 /*媒体查询-end*/
 /*媒体查询-手机端适配*/
 @media (max-width: 768px){
+	.model_boxctop{
+		width: 245px;
+	}
 	#header .container{
 		width: 100%!important;
 	}
@@ -1255,6 +1281,19 @@ p{
 		width: 100%;
 		margin: 20px 0;
 	}
+	.table_phone{
+		overflow-x:scroll; 
+	}
+	.table_phone th,.table_phone td{
+		white-space: nowrap;
+
+	}
+	/*代理品牌*/
+	.brand .belong_boxc img{
+		filter:grayscale(0);
+		opacity: 1;
+	}
+
 }
 @media screen and (min-width:992px) and (max-width:1500px) {
 	.down .title{

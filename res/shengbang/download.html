@@ -117,10 +117,11 @@
 						</div>
 						<div class="down_boxcr">
 			            	<h4>文献名称1</h4>
-							<p>文献简单介绍文献简单介绍<br>文献简单介绍</p>
+							<p>文献简单介绍文献简单介绍文献文献简单介绍文献文献简单介绍文献文献简单介绍文献文献简单介绍文献简单介绍文献简单介绍文献简单介绍文献简单介绍文献简单介绍</p>
 						</div>
 						<div class="clear"></div>
 					</a>
+					<a href="##1" class="down_a none"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 down_boxc">
 					<a href="##">
@@ -133,6 +134,7 @@
 						</div>
 						<div class="clear"></div>
 					</a>
+					<a href="##2" class="down_a none"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 down_boxc">
 					<a href="##">
@@ -145,6 +147,7 @@
 						</div>
 						<div class="clear"></div>
 					</a>
+					<a href="##3" class="down_a none"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 down_boxc">
 					<a href="##">
@@ -157,6 +160,7 @@
 						</div>
 						<div class="clear"></div>
 					</a>
+					<a href="##4" class="down_a none"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 down_boxc">
 					<a href="##">
@@ -169,6 +173,7 @@
 						</div>
 						<div class="clear"></div>
 					</a>
+					<a href="##" class="down_a none"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 down_boxc">
 					<a href="##">
@@ -181,6 +186,7 @@
 						</div>
 						<div class="clear"></div>
 					</a>
+					<a href="##" class="down_a none"></a>
 				</div>
 			</div>
 			<div class="num_a col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -229,11 +235,19 @@
 <script type="text/javascript">
 	//弹出下载框
 	$('.down_boxc').on('click',function(){
+		//图片的路径
 		var img_src = $(this).find('img').eq(0).attr('src');
+		//a标签的路径
+		var a_href = $(this).children('.down_a').attr('href');
+		//标题
 		var down_h = $(this).find('h4').html();
+		//描述
 		var down_p = $(this).find('p').html();
 		$('#model_box img').attr({
 			src: img_src
+		});	
+		$('#down_botbox a').attr({
+			href: a_href
 		});	
 		$('#model_box .model_topri').children('h4').html(down_h);
 		$('#model_box .model_topri').children('p').html(down_p);
