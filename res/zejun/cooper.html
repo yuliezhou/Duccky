@@ -91,9 +91,9 @@
 <div class="down_boxphone" id="down_boxphone">
 	<div class="down_titphone">
 		<span class="all_p" id="top_span">ALL <i class="fa fa-angle-up"></i></span>
-		<span class="ml_span ac_span"><a href="##">服务项目</a></span>
-		<span class="ml_span"><a href="##">合作项目</a></span>
-		<span class="ml_span"><a href="##">技术研发</a></span>
+		<span class="ml_span ac_span"><a href="technology.html">服务项目</a></span>
+		<span class="ml_span"><a href="cooper.html">合作项目</a></span>
+		<span class="ml_span"><a href="rd.html">技术研发</a></span>
 	</div>
 </div>
 <!-- 手机显示，PC隐藏的分类切换 end-->
@@ -110,9 +110,9 @@
 					<div class="down_titright">
 						<a href="index.html">首页</a>
 						<i class="fa fa-angle-right"></i>
-						<a href="##">技术与服务</a>
+						<a href="technology.html">技术与服务</a>
 						<i class="fa fa-angle-right"></i>
-						<a href="##" class="ac_a1">合作项目</a>
+						<a href="rd.html" class="ac_a1">合作项目</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -121,20 +121,20 @@
 				<!-- 左侧选项 PC显示 手机隐藏-->
 				<div class="pro_details_left col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<div class="pro_choose">
-						<a href="##">
+						<a href="technology.html">
 							<span>服务项目</span>
 							<i class="fa fa-caret-right"></i>
 						</a>
-						<a href="##" class="ac_green_a">
+						<a href="cooper.html" class="ac_green_a">
 							<span>合作项目</span>
 							<i class="fa fa-caret-right"></i>
 						</a>
-						<a href="##">
+						<a href="rd.html">
 							<span>技术研发</span>
 							<i class="fa fa-caret-right"></i>
 						</a>
 					</div>
-					<a href="##" class="data_download">
+					<a href="news.html" class="data_download">
 						<img src="images/bl_05.jpg" alt="">
 					</a>
 				</div>
@@ -204,6 +204,21 @@
 <div class="fotter_gz">
 	COPYRIGHT (©) 2017 宁波赜军医药科技有限公司
 </div>
+<!-- 弹窗 -->
+<div class="modal_cooper flex_mid none" id="modal_cooper">
+	<div class="modal_cbox">
+		<div class="modal_icon">
+			<img src="images/clogo_03.jpg" alt="">
+		</div>
+		<div class="modal_des">
+			<p>联华科技集团采用本公司所开发的单膦配体 AntPhos，通过高效的Suzuki 偶联
+			反应合成关键中间体，偶联效率可达 40000 TON，仅使用10g的催化剂，可实现一锅偶联的产物200公斤。</p>
+			<img src="images/moda_07.jpg" alt="">
+			<span>1吨/80万元 ； <i>300</i>吨/年 ； 减少废弃物 ； 9000-10000吨！</span>
+		</div>
+		<div class="clear"></div>	
+	</div>
+</div>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
@@ -227,6 +242,19 @@
     })
     $('#down_boxphone .ml_span').on('click',function(){
         $(this).addClass('ac_span').siblings().removeClass('ac_span');
+    })
+	//弹出框
+	$('.cooper_boxc').on('click',function(){
+
+		$('#modal_cooper').removeClass('none');
+	})
+	//点击透明色区域，关闭弹出框
+	$('#modal_cooper').on('click',function(e){
+		$('#modal_cooper').addClass('none');
+	})
+    //点击弹出框，阻止事件冒泡
+    $(".modal_cbox").on('click',function(e){
+		e.stopPropagation();
     })
 </script>
 
