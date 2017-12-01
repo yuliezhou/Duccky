@@ -72,6 +72,7 @@
 	float: none;
 	display: inline-block;
 	padding: 0 45px;
+    height: 100%;
 }
 .navbar-nav > li > a{
 	padding: 0;
@@ -80,6 +81,7 @@
 	font-size: 16px;
 	padding-bottom: 3px;
 	transition: all 0.5s;
+    display: inline-block;
 }
 .language{
 	height: 80px;
@@ -104,6 +106,33 @@
 }
 .language_li{
     display: none;
+}
+.navbar-nav > li > .dropdown-menu{
+    border-radius: 0;
+    padding: 0;
+}
+.navbar-right .dropdown-menu {
+    right: -50%;
+}
+.son-menu {
+    position: absolute;
+    top: 100%;
+    left: -29%;
+    background-color: #eee;
+    display: none;
+    border: none;
+}
+.navbar-nav>li>.dropdown-menu li a {
+    color: #000;
+    padding: 15px 95px;
+    text-align: center;
+}
+.son-menu li a {
+    list-style: none;
+}
+.top_active a{
+     background: #e5e5e5!important;
+     color: #4cbd76!important; 
 }
 /*fotter*/
 
@@ -207,9 +236,34 @@
 	    color: #23ac6a;
 	    transition: all 0.8s ease;
 	}
+    .navbar-nav li:hover .top_a{
+        color: #238552!important;
+        border-bottom: 1px solid #238552;
+        border-radius: 0;
+    }
+    .center_right ol li:hover i{
+        color: #2d52e3;
+    }
+    .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+        text-decoration: none;
+        border: 1px solid transparent !important;
+    }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+        background: #0033ff!important;
+    }
+    #header-menu li:hover .son-menu{
+        display: block;
+    }
+    .son-menu li a:hover{
+      background: #e5e5e5!important;
+      color: #4cbd76!important;
+    }
 }
 /*手机端适配*/
 @media (max-width:767px) {
+    .top_active a{
+        background: #fff!important;
+    }
     .top_logoimg{
         display: inline-block;
     }
@@ -349,6 +403,13 @@
     .empty{
         display: block!important;
     }
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+        background: #fff!important;
+        border: none!important;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a{
+        color: #2d931c!important;
+    }
 }
 @media screen and (min-width:1000px) and (max-width:1600px) {
 	.language{
@@ -362,6 +423,9 @@
 	.navbar-nav > li{
 		padding: 0 30px;
 	}
+    .navbar-nav>li>.dropdown-menu li a{
+        padding: 15px 80px;
+    }
 }
 @media screen and (min-width:800px) and (max-width:1000px) {
 	.navbar-nav > li{
@@ -382,4 +446,7 @@
 	.language{
 		right: 3%;
 	}
+    .navbar-nav>li>.dropdown-menu li a{
+        padding: 15px 53px;
+    }
 }
