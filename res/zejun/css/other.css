@@ -911,6 +911,8 @@
 	max-width: 860px;
 	padding: 50px 50px 60px;
 	background: #fff;
+	height: 370px;
+	overflow-y: scroll;
 }
 .modal_icon{
 	width: 25%;
@@ -945,6 +947,9 @@
 }
 .modal_des span i{
 	color: #ff0000;
+}
+.modal_none_des{
+	display: none;
 }
 /*合作项目-end*/
 /*技术研发*/
@@ -1156,6 +1161,7 @@
 		width: 100%;
 		text-align: center;
 		line-height: 40px;
+		display: none;
 	}
 	.down_titright a{
 		line-height: 40px;
@@ -1315,11 +1321,20 @@
 	}
 	.modal_cbox{
 		padding: 10px 20px;
+		height: 200px;
 	}
 	.modal_des p{
 		line-height: 20px;
 		margin-bottom: 10px;
 	}
+	/*公用*/
+	.phone_detalis{
+		padding-top: 0;
+	}
+	.phone_detalis .pro_center_tit{
+		display: none;
+	}
+	/*公用-end*/
 }
 /*媒体查询-手机端适配-end*/
 @media (max-width: 992px){

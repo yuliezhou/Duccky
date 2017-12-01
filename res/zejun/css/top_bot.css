@@ -60,6 +60,7 @@
 	height: 80px;
 	line-height: 80px;
 	margin-bottom: 0;
+    z-index: 900!important;
 }
 #header .navbar-nav{
 	width: 100%;
