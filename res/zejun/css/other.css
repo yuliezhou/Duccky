@@ -755,7 +755,9 @@
 }
 .honor_box{
 	width: 31%;
+	margin: 0 1.16%;
 	margin-bottom: 60px;
+	float: left;
 }
 .honor_box .bg_honor_img{
 	width: 100%;
@@ -913,7 +915,9 @@
 	background: #fff;
 	height: 370px;
 	overflow-y: scroll;
+	position: relative;
 }
+
 .modal_icon{
 	width: 25%;
 	float: left;

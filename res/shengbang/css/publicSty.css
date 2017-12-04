@@ -13,7 +13,7 @@ a, a:hover {
 }
 a:focus{text-decoration: none}
 body, html {
-    font-family:Arial!important;
+    font-family: Microsoft YaHei,Arial!important;
     color: #636363;
 }
 
