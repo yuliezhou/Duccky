@@ -754,8 +754,8 @@
 	padding: 0;
 }
 .honor_box{
-	width: 31%;
-	margin: 0 1.16%;
+	width: 29%;
+	margin: 0 2.16%;
 	margin-bottom: 60px;
 	float: left;
 }
@@ -860,7 +860,9 @@
 }
 .cooper_boxc{
 	width: 29%;
+	margin: 0 2.16%;
 	margin-top: 45px;
+	float: left;
 }
 .cooper_boxc p{
 	font-size: 16px;
@@ -1282,6 +1284,7 @@
 	.honor_box{
 		width: 48%;
 		margin-bottom: 30px;
+		margin: 1%;
 	}
 	.pro_ff{
 		padding: 0 5px;
@@ -1306,10 +1309,12 @@
 	/*服务详情-end*/
 	/*合作项目*/
 	.cooper{
-		padding: 0 15px;
+		padding: 0;
 	}
 	.cooper_boxc{
 		width: 48%;
+		margin: 0 1%;
+		margin-top: 20px;
 	}
 	/*合作项目-end*/
 	/*技术研发详情*/
