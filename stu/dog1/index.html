@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dog</title>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_a">
+			<a href="##" class="ac_topa">Home</a>
+			<a href="##">About us</a>
+			<a href="##">Services</a>
+			<a href="##">Gallery</a>
+			<a href="##">Contact</a>
+		</div>
+		<div class="input_box">
+			<input type="text">
+			<button>搜索</button>
+		</div>
+		<h2>Smarty</h2>
+	</div>
+	<div class="banner">
+		<img src="images/banner1.jpg" alt="">
+		<img src="images/banner2.jpg" alt="">
+		<img src="images/banner3.jpg" alt="">
+		<img src="images/banner4.jpg" alt="">
+		<div class="choose_li">
+			<span class="ac_span"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="dog">
+		<div class="dog_box">
+			<h4>Lorem ipsum dolor sit</h4>
+			<img src="images/pic.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<a href="#" class="btn-default btn1">Read more</a>
+		</div>
+		<div class="dog_box">
+			<h4>Lorem ipsum dolor sit</h4>
+			<img src="images/pic1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<a href="#" class="btn-default btn1">Read more</a>
+		</div>
+		<div class="dog_box">
+			<h4>Lorem ipsum dolor sit</h4>
+			<img src="images/pic2.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<a href="#" class="btn-default btn1">Read more</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="detalis">
+		<div class="deta_left">
+			<img src="images/pic4.jpg" alt=""/>
+			<h4>Lorem Ipsum is simply dummy text </h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua velit .</p>
+			<a href="##">Read more</a>
+		</div>
+		<div class="deta_right">
+			<div class="deta_right_box">
+				<img src="images/pic5.jpg" alt="">
+				<div class="img_des">
+					<h3>Consectetur adipisicing elit</h3>
+					<h4>Sed ut perspiciatis undeaccusantium .</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="deta_right_box">
+				<img src="images/pic6.jpg" alt="">
+				<div class="img_des">
+					<h3>Consectetur adipisicing elit</h3>
+					<h4>Sed ut perspiciatis undeaccusantium .</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="deta_right_box">
+				<img src="images/pic7.jpg" alt="">
+				<div class="img_des">
+					<h3>Consectetur adipisicing elit</h3>
+					<h4>Sed ut perspiciatis undeaccusantium .</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="deta_right_box">
+				<img src="images/pic8.jpg" alt="">
+				<div class="img_des">
+					<h3>Consectetur adipisicing elit</h3>
+					<h4>Sed ut perspiciatis undeaccusantium .</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="footer">
+		<div class="footer_box">
+			<div class="footer_boxc">
+				<h4>INFORMATION</h4>
+				<p>Contact</p>
+				<p>Terms and conditions</p>
+				<p>Legal Notice</p>
+			</div>
+			<div class="footer_boxc">
+				<h4>CATEGORIES</h4>
+				<p>New products</p>
+				<p>New products</p>
+				<p>Specials</p>
+			</div>
+			<div class="footer_boxc">
+				<h4>My ACCOUNT</h4>
+				<p>Your Account</p>
+				<p>Personal info</p>
+				<p>Prices</p>
+			</div>
+			<div class="footer_boxc">
+				<h4>CONTACT US</h4>
+				<div class="fot_imgbox">
+					<img src="images/fb.png" alt="">
+					<img src="images/rss.png" alt="">
+					<img src="images/tw.png" alt="">
+					<img src="images/g+.png" alt="">
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$('.banner img').eq(0).show()
+	var n=0;
+	function run(){
+	    n++;
+	    n=(n==4)?0:n;
+	    $('.banner img').eq(n).fadeIn(1000).siblings('img').fadeOut();
+	    $('.choose_li span').eq(n).addClass('ac_span').siblings().removeClass('ac_span')
+	}
+	var timer=setInterval(run,1000);
+	$('.choose_li span').mouseenter(function(){
+	    clearInterval(timer);
+	    n=$(this).index();
+	    $('.banner img').eq(n).fadeIn(1000).siblings('img').fadeOut();
+	    $(this).addClass('ac_span').siblings().removeClass('ac_span')
+	});
+	$('.choose_li span').mouseleave(function(){
+	    timer=setInterval(run,1500);
+	});
+	$('.banner').mouseenter(function(){
+	    clearInterval(timer);
+	});
+	$('.banner').mouseleave(function(){
+	    timer=setInterval(run,1500);
+	});
+</script>
