@@ -1,6 +1,22 @@
 body{
 	background:#F1F1F1;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+body, html {
+    font-family: Microsoft YaHei,Arial;
+}
+img {
+    border: none;
+}
 .top{
 	width: 100%;
 	background: #FFCD34;
@@ -105,8 +121,8 @@ body{
 .brand_boxc a{
 	background: #f43434;
 	width: 100%;
-	line-height: 40px;
-	height: 40px;
+	line-height: 60px;
+	height: 60px;
 	text-align: center;
 	color: #fff;
 	font-size: 14px;
@@ -114,6 +130,8 @@ body{
 .brand_faq{
 	width: 100%;
 	padding-top: 30px;
+	background: #fff;
+	padding-bottom: 30px;
 }
 .brand_faq .brand_faq_box{
 	width: 30%;
@@ -133,6 +151,7 @@ body{
 .faq_des img{
 	display: inline-block;
 	width: 30%;
+	max-height: 78px;
 }
 .faq_des .faq_destxt{
 	width: 65%;
