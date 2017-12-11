@@ -23,23 +23,31 @@ img {
 	text-align: center;
 	font-size: 0;
 	border-top: 3px solid red;
+	position: relative;
+}
+.logo{
+	width: 100px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .top_a{
 	width: 80%;
 	margin: 0 auto;
+	height: 70px;
+	line-height: 70px;
+	position: relative;
 }
 .top_a .ac_topa{
 	background: #fff;
 	color: #000;
 }
 .top_a a{
-	width: 20%;
-	height: 70x;
-	line-height: 70px;
+	padding: 0 5%;
 	font-size: 16px;
 	color: #474E56;
 	display: inline-block;
-	text-transform: uppercase;
 }
 .top_a a:hover{
 	background: #fff;
