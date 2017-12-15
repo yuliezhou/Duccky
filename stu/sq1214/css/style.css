@@ -293,3 +293,7 @@ form input{
 	padding: 10px;
 	margin-bottom: 20px;
 }
+form button{
+	height: 40px;
+	width: 100px;
+}

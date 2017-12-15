@@ -162,6 +162,11 @@ a{
 .conform textarea{
 	margin: 20px 0;
 }
+.conform button{
+	height: 40px;
+	width: 100px;
+	margin-bottom: 40px;
+}
 .jsbox h3{
 	margin: 30px 0;
 	text-align: center;
