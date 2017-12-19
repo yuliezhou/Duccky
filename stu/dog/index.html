@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>dog</title>
-	<link rel="stylesheet" href="css/publicSty.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,15 +21,13 @@
 		<h2>宠乐汇</h2>
 	</div>
 	<div class="banner">
-		<img src="images/banner1.jpg" alt="">
-		<img src="images/banner2.jpg" alt="">
-		<img src="images/banner3.jpg" alt="">
-		<img src="images/banner4.jpg" alt="">
+		<img src="images/banner1.jpg" alt="" class="bannerimg acbanimg">
+		<img src="images/banner2.jpg" alt="" class="bannerimg">
+		<img src="images/banner3.jpg" alt="" class="bannerimg">
 		<div class="choose_li">
-			<span class="ac_span"></span>
-			<span></span>
-			<span></span>
-			<span></span>
+			<span class="numspan ac_span"></span>
+			<span class="numspan"></span>
+			<span class="numspan"></span>
 		</div>
 	</div>
 	<div class="dog">
@@ -49,7 +46,7 @@
 		<div class="dog_box">
 			<h4>挪威森林猫</h4>
 			<img src="images/pic2.jpg" alt="">
-			<p>挪威森林猫（Norwegian Forest Cat），以白话直译的说法，就是在挪威森林里面栖息的，生存的猫，这是斯堪地半岛特有的品种，其起源不明，常常以像妖精的猫出现在北欧的神话之中。挪威森林猫外观与缅因猫相似，与西伯利亚森林猫同列。</p>
+			<p>挪威森林猫（Norwegian Forest Cat），以白话直译的说法，就是在挪威森林里面栖息的，生存的猫，这是斯堪地半岛特有的品种，其起源不明，常常以像妖精的猫出现在北欧的神话之中。挪威森林猫外观与缅因猫相似，与西伯利亚森林猫同列。但是，生长在挪威森林内地的猫，数目已逐年减少。</p>
 			<a href="#" class="btn-default btn1">Read more</a>
 		</div>
 		<div class="clear"></div>
@@ -70,7 +67,6 @@
 				<img src="images/a629ed09b3de9c8284cf2f2b6c81800a18d84359.jpg" alt="">
 			</div>
 		</div>
-		<div class="clear"></div>
 	</div>
 	<div class="faq">
 		<h4>宠物小贴士</h4>
@@ -83,59 +79,71 @@
 		<div class="footer_box">
 			<div class="footer_boxc">
 				<h4>信息</h4>
-				<p>联系我们</p>
-				<p>条款和条件</p>
-				<p>法律声明</p>
+				<a href="#">联系我们</a>
+				<a href="#">条款和条件</a>
+				<a href="#">法律声明</a>
 			</div>
 			<div class="footer_boxc">
 				<h4>类别</h4>
-				<p>新产品</p>
-				<p>特价</p>
+				<a href="#">新产品</a>
+				<a href="#">特价</a>
 			</div>
 			<div class="footer_boxc">
 				<h4>我的帐户</h4>
-				<p>你的帐户</p>
-				<p>个人信息</p>
-				<p>价格</p>
+				<a href="#">你的帐户</a>
+				<a href="#">个人信息</a>
 			</div>
 			<div class="footer_boxc">
 				<h4>联系我们</h4>
-				<div class="fot_imgbox">
-					<img src="images/fb.png" alt="">
-					<img src="images/rss.png" alt="">
-					<img src="images/tw.png" alt="">
-					<img src="images/g+.png" alt="">
-				</div>
+				<a href="#">地址：四川省成都市xxx</a>
+				<a href="#">电话：15765548xxx</a>
 			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
 </body>
 </html>
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
-	$('.banner img').eq(0).show()
-	var n=0;
-	function run(){
-	    n++;
-	    n=(n==4)?0:n;
-	    $('.banner img').eq(n).fadeIn(1000).siblings('img').fadeOut();
-	    $('.choose_li span').eq(n).addClass('ac_span').siblings().removeClass('ac_span')
-	}
-	var timer=setInterval(run,1000);
-	$('.choose_li span').mouseenter(function(){
-	    clearInterval(timer);
-	    n=$(this).index();
-	    $('.banner img').eq(n).fadeIn(1000).siblings('img').fadeOut();
-	    $(this).addClass('ac_span').siblings().removeClass('ac_span')
-	});
-	$('.choose_li span').mouseleave(function(){
-	    timer=setInterval(run,1500);
-	});
-	$('.banner').mouseenter(function(){
-	    clearInterval(timer);
-	});
-	$('.banner').mouseleave(function(){
-	    timer=setInterval(run,1500);
-	});
+//获取装图片盒子的对象
+var news_imgl=document.getElementsByClassName("bannerimg");
+//声明一个变量
+var num=0;
+//开启一个定时器函数
+var ab_spanbox=document.getElementsByClassName("numspan");
+ab_spanbox[0].style.backgroundColor="red";
+var  time=setInterval(function(){
+    //过2秒num加1
+    num++;
+    // 如果num等于3 就让num继续等于0
+    if(num>2){
+        num=0;
+    }
+    //将所有的图片都隐藏
+    for(var i=0;i<news_imgl.length;i++){
+        news_imgl[i].style.display="none";
+        ab_spanbox[i].style.backgroundColor="white";
+    }
+    ab_spanbox[num].style.backgroundColor="red";
+    //再让第几个图片显示
+    news_imgl[num].style.display="block";
+},2000);
+//获取num_img对象
+for(var j=0;j<ab_spanbox.length;j++){
+    //存储数字编号的索引
+    ab_spanbox[j].index =j;
+    //数字的点击事件
+    ab_spanbox[j].onmouseenter=function(){
+        //执行循环，吧所有的盒子都先隐藏
+        for(var i=0;i<ab_spanbox.length;i++){
+            news_imgl[i].style.display="none";
+
+            ab_spanbox[i].style.backgroundColor="white";
+        }
+        num=this.index;
+        //点击的那个数字对应的那张图片显示
+        news_imgl[this.index].style.display="block";
+        ab_spanbox[this.index].style.backgroundColor="red";
+
+    }
+}
 </script>

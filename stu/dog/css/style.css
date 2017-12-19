@@ -1,6 +1,14 @@
 body{
 	background: #ECF0F1;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
 .top{
 	width: 100%;
 	background: url(../images/pattern.gif);
@@ -11,7 +19,7 @@ body{
 }
 .top_a{
 	padding-bottom: 50px;
-	width: 80%;
+	width: 1280px;
 	margin: 0 auto;
 }
 .top_a .ac_topa{
@@ -65,18 +73,19 @@ body{
 }
 .banner{
 	width: 100%;
-	height: 600px;
 	position: relative;
 }
 .banner img{
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
 	display: none;
 }
-
+.banner .acbanimg{
+	display: block;
+}
+input, button {
+    background: none;
+    border: 0px;
+}
 .banner .choose_li{
 	position: absolute;
 	left: 10px;
@@ -92,13 +101,14 @@ body{
 	margin: 0 5px;
 }
 .banner .choose_li .ac_span{
-	background: #C0392B;
+	background: red;
 }
 .dog{
-	width: 80%;
+	width: 1280px;
 	margin: 0 auto;
 	padding: 50px 0;
 	margin-bottom: 50px;
+	height: 470px;
 }
 .dog .dog_box{
 	width: 31.333%;
@@ -210,7 +220,9 @@ body{
 }
 .footer{
 	background: url(../images/pattern.gif);
-	padding: 80px 0 100px;
+	width: 100%;
+	height: 200px;
+	padding-top: 30px;
 }
 .footer_box{
 	width: 80%;
@@ -227,10 +239,13 @@ body{
 	text-transform: uppercase;
 	font-weight: normal;
 }
-.footer_boxc p{
+.footer_boxc a{
 	background: url(../images/marker.png) no-repeat 0 8px;
 	padding: 0 0 15px 18px;
 	color: #A0A0A0;
+}
+.footer_boxc a:hover{
+	color: red;
 }
 .fot_imgbox{
 	text-align: left;
