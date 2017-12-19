@@ -103,47 +103,31 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
-//获取装图片盒子的对象
-var news_imgl=document.getElementsByClassName("bannerimg");
-//声明一个变量
-var num=0;
-//开启一个定时器函数
-var ab_spanbox=document.getElementsByClassName("numspan");
-ab_spanbox[0].style.backgroundColor="red";
-var  time=setInterval(function(){
-    //过2秒num加1
-    num++;
-    // 如果num等于3 就让num继续等于0
-    if(num>2){
-        num=0;
-    }
-    //将所有的图片都隐藏
-    for(var i=0;i<news_imgl.length;i++){
-        news_imgl[i].style.display="none";
-        ab_spanbox[i].style.backgroundColor="white";
-    }
-    ab_spanbox[num].style.backgroundColor="red";
-    //再让第几个图片显示
-    news_imgl[num].style.display="block";
-},2000);
-//获取num_img对象
-for(var j=0;j<ab_spanbox.length;j++){
-    //存储数字编号的索引
-    ab_spanbox[j].index =j;
-    //数字的点击事件
-    ab_spanbox[j].onmouseenter=function(){
-        //执行循环，吧所有的盒子都先隐藏
-        for(var i=0;i<ab_spanbox.length;i++){
-            news_imgl[i].style.display="none";
+	$('.banner img').eq(0).show()
+	var n=0;
+	function run(){
+	    n++;
+	    if(n>2){
+	    	n=0
+	    }
+	    $('.banner img').eq(n).show().siblings('img').hide();
+	    $('.choose_li span').eq(n).addClass('ac_span').siblings().removeClass('ac_span')
+	}
+	var timer=setInterval(run,1500);
+	$('.choose_li span').mouseenter(function(){
+	    clearInterval(timer);
+	    n=$(this).index();
+	    $('.banner img').eq(n).show().siblings('img').hide();
+	    $(this).addClass('ac_span').siblings().removeClass('ac_span')
+	});
 
-            ab_spanbox[i].style.backgroundColor="white";
-        }
-        num=this.index;
-        //点击的那个数字对应的那张图片显示
-        news_imgl[this.index].style.display="block";
-        ab_spanbox[this.index].style.backgroundColor="red";
+	$('.banner').mouseenter(function(){
+	    clearInterval(timer);
+	});
 
-    }
-}
+	$('.banner').mouseleave(function(){
+	    timer=setInterval(run,1500);
+	});
 </script>
