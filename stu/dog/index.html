@@ -8,7 +8,7 @@
 <body>
 	<div class="top">
 		<div class="top_a">
-			<a href="##" class="ac_topa">首页</a>
+			<a href="##">首页</a>
 			<a href="##">关于我们</a>
 			<a href="##">产品中心</a>
 			<a href="##">加盟合作</a>
@@ -21,14 +21,7 @@
 		<h2>宠乐汇</h2>
 	</div>
 	<div class="banner">
-		<img src="images/banner1.jpg" alt="" class="bannerimg acbanimg">
-		<img src="images/banner2.jpg" alt="" class="bannerimg">
-		<img src="images/banner3.jpg" alt="" class="bannerimg">
-		<div class="choose_li">
-			<span class="numspan ac_span"></span>
-			<span class="numspan"></span>
-			<span class="numspan"></span>
-		</div>
+	<marquee scrollamount="30"><img src="images/banner1.jpg" alt="" class="bannerimg"><img src="images/banner2.jpg" alt="" class="bannerimg"><img src="images/banner3.jpg" alt="" class="bannerimg"></marquee>
 	</div>
 	<div class="dog">
 		<div class="dog_box">
@@ -98,36 +91,7 @@
 				<a href="#">地址：四川省成都市xxx</a>
 				<a href="#">电话：15765548xxx</a>
 			</div>
-			<div class="clear"></div>
 		</div>
 	</div>
 </body>
 </html>
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-	$('.banner img').eq(0).show()
-	var n=0;
-	function run(){
-	    n++;
-	    if(n>2){
-	    	n=0
-	    }
-	    $('.banner img').eq(n).show().siblings('img').hide();
-	    $('.choose_li span').eq(n).addClass('ac_span').siblings().removeClass('ac_span')
-	}
-	var timer=setInterval(run,1500);
-	$('.choose_li span').mouseenter(function(){
-	    clearInterval(timer);
-	    n=$(this).index();
-	    $('.banner img').eq(n).show().siblings('img').hide();
-	    $(this).addClass('ac_span').siblings().removeClass('ac_span')
-	});
-
-	$('.banner').mouseenter(function(){
-	    clearInterval(timer);
-	});
-
-	$('.banner').mouseleave(function(){
-	    timer=setInterval(run,1500);
-	});
-</script>

@@ -1,12 +1,7 @@
 body{
 	background: #ECF0F1;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
 a{
-	text-decoration: none;
 	display: block;
 }
 .top{
@@ -21,10 +16,6 @@ a{
 	padding-bottom: 50px;
 	width: 1280px;
 	margin: 0 auto;
-}
-.top_a .ac_topa{
-	background: #fff;
-	color: #000;
 }
 .top_a a{
 	width: 20%;
@@ -77,32 +68,13 @@ a{
 }
 .banner img{
 	width: 100%;
-	display: none;
 }
-.banner .acbanimg{
-	display: block;
-}
+
 input, button {
     background: none;
     border: 0px;
 }
-.banner .choose_li{
-	position: absolute;
-	left: 10px;
-	bottom: 30px;
-	z-index: 999;
-}
-.banner .choose_li span{
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	background: #fff;
-	display: inline-block;
-	margin: 0 5px;
-}
-.banner .choose_li .ac_span{
-	background: red;
-}
+
 .dog{
 	width: 1280px;
 	margin: 0 auto;
