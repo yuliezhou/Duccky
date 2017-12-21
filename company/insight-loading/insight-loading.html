@@ -25,14 +25,10 @@
 			width: 100%;
 			position: fixed;
 			left: 0;
-			bottom: 0.6rem;
+			top: 50%;
 			text-align: center;
 			font-size: 0;
-		}
-		.logo{
-			width: 25%;
-			margin: 0 auto;
-			margin-top: 4rem;
+			margin-top: -0.7rem;
 		}
 		.load .icon{
 			width: 0.8rem;
@@ -40,14 +36,13 @@
 			display: inline-block;
 			margin-bottom: 0.2rem;
 			animation: rota 0.8s linear infinite;
-			
 		}
 		.load span{
 			font-size: 18px;
 			display: inline-block;
 			width: 100%;
 			font-family: Arial;
-		}
+			}
 			@-webkit-keyframes rota{
 			0%{
 				transform: rotate(0deg);
@@ -59,10 +54,9 @@
 	</style>
 </head>
 <body>
-	<img src="images/ins-logo.png" alt="" class="logo">
 	<div class="load">
 		<img src="images/icon.png" alt="" class="icon">
-		<span>Loading</span>
+		<span>Loading...</span>
 	</div>
 </body>
 </html>
