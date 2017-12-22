@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>黄钻</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/publicSty.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<div class="header_left">
+			<a href="javascript:history.back()" class="img_a">
+				<img src="images/back_icon.png" alt="">
+			</a>
+		</div>
+		<img src="images/star.png" alt="" class="tit1">
+	</header>
+	<!-- 头部 end-->
+	<!-- 充值类型选择 -->
+	<div class="vip_choose">
+		<div class="choose1">
+			<img src="images/ye.png" alt="">
+		</div>
+		<div class="des">
+			<img src="images/ye_back.png" alt="">
+		</div>
+	</div>
+	<!-- 充值类型选择 end-->
+	<!-- 输入QQ号,input框 -->
+	<input type="number" pattern="[0-9]*" placeholder="请输入要开通服务的QQ号" class="btn"> 
+	<!-- 输入QQ号,input框 end-->
+	<!-- 支付选项 -->
+	<div class="pay_month">
+		<div class="month">
+			<div class="month_choose month_ac">
+				<span>3</span>个月
+				<img src="images/border.png" alt="">
+			</div>
+			<div class="month_choose">
+				<span>6</span>个月
+			</div>
+			<div class="month_choose">
+				<span>12</span>个月
+			</div>
+			<div class="month_choose">
+				<span>1</span>个月
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="prompt_month">
+			温馨提醒：下单之后预计2小时内到账。已在QQ上绑定过微信、银行卡到期自动续费的请勿下单。
+		</div>
+	</div>
+	<!-- 支付选项 end-->
+	<!-- 支付接口 -->
+	<div class="pay_bot">
+		<div class="pay_price1">
+			<div class="price1_txt">支付金额 :</div>
+			<div class="price1_num">
+				<span>￥<em>57</em>.00</span>
+				<i>￥<em>60</em>.00</i>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div>
+			<div class="wx_box">
+
+				<div class="pay_img1">
+					<img src="images/g0.png" alt="" style="display: none;">
+					<img src="images/g1.png" alt="">
+				</div>
+				<span>微信支付</span>
+			</div>
+			<div class="wx_box">
+				<div class="pay_img1">
+					<img src="images/b0.png" alt="">
+					<img src="images/b1.png" alt="" style="display: none;">
+				</div>
+				<span>支付宝支付</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<button id="btn_ok" class="btn_ok">确认提交</button>
+	</div>
+	<!-- 支付接口 end-->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/font.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
+</body>
+</html>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var arr3 = [
+			{newPrice:9,oldPrice:10},
+		]	
+		//月份套餐类型的选择
+		$('.pay_month').on('click','.month_choose',function(){
+			//如果点击一个选项.this会加上classname 另外的移除,
+			$('.month_choose').removeClass('month_ac');
+			$(this).addClass('month_ac');
+			//获取点击时候月份的数字
+			var nummber = parseInt($(this).children('span').html());
+			//获取当前选择的类型价格
+			var newPrice = parseInt(arr3[0].newPrice);
+			var oldPrice = parseInt(arr3[0].oldPrice);
+			$('.price1_num span em').html(newPrice*nummber);
+			$('.price1_num i em').html(oldPrice*nummber);
+		})
+	})
+</script>
