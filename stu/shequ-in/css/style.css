@@ -134,4 +134,13 @@
     text-align: center;
     margin: 0;
 }
-
+.tith{
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.titp{
+	line-height: 30px;
+	font-size: 16px;
+	margin-bottom: 100px;
+}
