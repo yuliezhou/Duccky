@@ -24,8 +24,8 @@ a{
 	font-size: 20px;
 	color: #fff;
 	display: inline-block;
-	text-transform: uppercase;
 	font-weight: bold;
+	text-decoration: none;
 }
 .top_a a:hover{
 	background: #fff;
@@ -112,6 +112,7 @@ input, button {
 	text-align: center;
 	width: 175px;
 	line-height: 50px;
+	text-decoration: none;
 }
 .detalis{
 	padding: 40px 0 80px;
@@ -212,8 +213,7 @@ input, button {
 	font-weight: normal;
 }
 .footer_boxc a{
-	background: url(../images/marker.png) no-repeat 0 8px;
-	padding: 0 0 15px 18px;
+	padding: 0 0 15px 0;
 	color: #A0A0A0;
 }
 .footer_boxc a:hover{
@@ -247,4 +247,13 @@ input, button {
 }
 .faq a:hover{
 	color: red;
+}
+.faq1{
+	text-align: center;
+}
+.lybtn input{
+	border: 1px solid #000;
+}
+.lybtn textarea{
+	border: 1px solid #000;
 }
