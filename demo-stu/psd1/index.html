@@ -48,6 +48,10 @@ a{
 	text-align: center;
 	margin-top: 20px;
 	font-weight: normal;
+	display: inline-block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #a2a29c;
+
 }
 .titp{
 	font-size: 14px;
@@ -56,9 +60,16 @@ a{
 }
 .tith2{
 	margin-top: 130px;
+	margin-bottom: 20px;	
+	border-bottom: 1px solid #a2a29c;
+	display: inline-block;
+	padding: 5px 10px;
 }
 .des .more{
 	color: #c04e22;
+	text-align: center;
+	display: inline-block;
+	padding-top: 50px;
 }
 .tit3 {
 	margin-top: 184px;
@@ -74,13 +85,16 @@ a{
 	text-align: center;
 	line-height: 60px;
 	margin: 0 auto;
-	font-size: 18;
+	font-size: 18px;
 	font-weight: normal;
 	margin-top: 120px;
 	margin-bottom: 20px;
 }
 .box3{
 	height: 440px;
+}
+.box3 a{
+	color: #000;
 }
 .box3 img{
 	float: left;
@@ -100,7 +114,41 @@ a{
 	text-align: left;
 	margin-top: 150px;
 }
-	</style>
+.imgbox{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.imgbox img{
+	width: 310px;
+	height: 168px;
+	margin: 0 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.imgbox2{
+	background: url(images/5_03.jpg) 0 0 no-repeat;
+	width: 471px;
+	height: 196px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.imgbox3{
+	width: 790px;
+	height: 485px;
+	background: url(images/11_18.jpg) 0 0 no-repeat;
+	margin: 0 auto;
+	position: relative;
+}
+.imgbox3 a{
+	position: absolute;
+	top:380px;
+	left: 280px;
+	color: #000;
+	font-size: 18px;
+}
+</style>
+
 </head>
 <body>
 	<div class="bodyer">
@@ -109,28 +157,39 @@ a{
 		 </div>
 		 <div class="des">
 			 <div class="nav">
-			 	<a href="#">剧照</a><a href="#">简介</a><a href="#">预告</a><a href="#">角色</a>
-			 	<a href="#">配音</a><a href="#">制作</a><a href="#">影人</a>
+			 	<a href="https://movie.douban.com/photos/photo/2503495163/">剧照</a><a href="#jj">简介</a><a href="#yg">预告</a><a href="#py">角色</a>
+			 	<a href="#py">配音</a><a href="#dy">制作</a><a href="http://acg.178.com/201701/279407176542.html?_t_t_t=0.5311373670119792">影人</a>
 			 </div>
-			 <h3 class="tith">故事简介</h3>
+			 <h3 class="tith" id="jj">故事简介</h3>
 			 <p class="titp">古色古香的京都，奇妙的恋爱之旅正在展开。春天，黑发少女踏上寻找伪电气白兰地的夜之旅，<br/>
 	学长却被从天而降的锦鲤砸晕；夏天，少女在旧书市寻找心爱的童年绘本，学长则面临残酷的火锅地狱；<br/>
 	秋天，身背红鲤鱼的少女化身不倒翁公主，与拼死出演顽固王的学长相遇在学园祭的舞台；<br/>
 	冬天，手持梦幻感冒药的少女打倒感冒之神，与学长一起向京都的天空飞去……</p>
-			<h3 class="tith tith2">影片角色与配音</h3>
-			<img src="images/4_03.jpg" alt="">
-			<p class="more">更多...</p>
-			<h3 class="tit3">预告预片花</h3>
-			<img src="images/5_03.jpg" alt="">
+			<h3 class="tith tith2" id="py">影片角色与配音</h3>
+			<div class="imgbox">
+				<a href="https://movie.douban.com/celebrity/1034028/"><img src="images/re_03.jpg" alt=""></a>
+				<a href="https://movie.douban.com/celebrity/1376120/"><img src="images/re_05.jpg" alt=""></a>
+				<a href="https://movie.douban.com/celebrity/1037337/"><img src="images/re_10.jpg" alt=""></a>
+				<a href="https://movie.douban.com/celebrity/1025850/"><img src="images/re_13.jpg" alt=""></a>
+			</div>
+			<a href="https://movie.douban.com/subject/26935251/celebrities" class="more">更多...</a>
+			<h3 class="tit3" id="yg">预告预片花</h3>
+			<div class="imgbox2">
+				<img src="images/page.gif" alt="">
+			</div>
 			<img src="images/6_07.jpg" alt="">
-			<h4 class="titih4">导演简介</h4>
-			<img src="images/5_11.jpg" alt="">
+			<h4 class="titih4" id="dy">导演简介</h4>
+			<div class="imgbox3">
+				<a href="https://movie.douban.com/celebrity/1274339/movies?sortby=time&format=pic&">导演其他作品</a>
+			</div>	
 			<div class="box3">
 				<img src="images/7_15.jpg" alt="">
-				<div class="box3p"><p>播放地址:</p><p>中国大陆于2017年11月1日起 <br/>在哔哩哔哩弹幕网独家正版播放</p></div>
+				<div class="box3p"><p>播放地址:</p><a href="http://bangumi.bilibili.com/anime/6518/play#115846">中国大陆于2017年11月1日起 <br/>在哔哩哔哩弹幕网独家正版播放</a></div>
 			</div>
 		 </div>
 	</div>
 	<img src="images/9_18.jpg" alt="">
+	<audio src="a.mp3" autoplay="autoplay" loop="loop">
+	</audio>
 </body>
 </html>
