@@ -11,6 +11,13 @@ a{
 	font-size: 0;
 	padding-bottom: 40px;
 	border-top: 3px solid red;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100px;
 }
 .top_a{
 	padding-bottom: 50px;
@@ -37,6 +44,7 @@ a{
 	text-transform: uppercase;
 	margin-top: 50px;
 }
+
 .input_box{
 	display: inline-block;
 	position: relative;
@@ -251,8 +259,15 @@ input, button {
 .faq1{
 	text-align: center;
 }
+.lybtn select{
+	height: 30px;
+	width: 200px;
+}
 .lybtn input{
 	border: 1px solid #000;
+	height: 30px;
+	width: 200px;
+
 }
 .lybtn textarea{
 	border: 1px solid #000;
