@@ -273,6 +273,15 @@
     	var bet;
     	//起始位置是哪个图片
     	var idx ;
+    	var num1 = $('#pro_box').find('.swiper-slide').length;
+    	console.log(num1);
+
+    	var bool = false;
+    	if( num1>1){
+    		bool = true;
+    	}else{
+    		bool = false;
+    	}
     	if(width>767){
 			num = 3;
 			bet = 20;
@@ -292,6 +301,7 @@
         initialSlide: idx,
         paginationClickable: true,
         spaceBetween: bet,
+        autoplay:bool
     });
 </script>
 
