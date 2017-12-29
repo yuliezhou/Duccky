@@ -1,0 +1,81 @@
+
+.box1{
+	padding: 30px 0;
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+}
+.box1 .imgbox1{
+	float: left;
+	width: 600px;
+}
+.imgbox1 p{
+	font-size: 15px;
+	line-height: 25px;
+	margin-top: 20px;
+}
+.imgbox1 img{
+	width: 100%;
+}
+
+.box1 .desbox{
+	float: right;
+	width: 300px;
+} 
+.desbox p{
+	font-size: 15px;
+}
+.box1 .desbox span{
+	padding: 2px 5px;
+	font-size: 14px;
+	border: 1px solid #fece72;
+	color: #ff8a00;
+	margin: 0 10px 10px 0;
+	display: inline-block;
+}
+.desbox h3{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 20px 0;
+	text-align: left;
+	color: #434343;
+}
+.box2 h3{
+	padding: 20px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+}
+.imgbox2{
+	width: 300px;
+	margin: 20px 10px;
+	display: inline-block;
+	border: 1px solid #ff9d00;
+}
+.imgbox2 img{
+	width: 100%;
+}
+.imgbox2 p{
+	font-size: 15px;
+	padding: 15px 0;
+	text-align: center;
+	color: #ff9d00;
+}
+.imgbox2 a{
+	display: inline-block;
+	line-height: 40px;
+	background: #ff9d00;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	width: 100%;
+}
+.fot{
+	background: #fece72;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	width: 1000px;
+	margin: 0 auto;
+}
