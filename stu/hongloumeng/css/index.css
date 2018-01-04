@@ -1,0 +1,154 @@
+
+.box1{
+	padding: 30px 0;
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+}
+.box1 .imgbox1{
+	float: left;
+	width: 600px;
+}
+.imgbox1 p{
+	line-height: 25px;
+	margin-top: 20px;
+}
+.imgbox1 img{
+	width: 100%;
+}
+
+.box1 .desbox{
+	float: right;
+	width: 300px;
+} 
+.box1 .desbox span{
+	padding: 2px 5px;
+	border: 1px solid #fece72;
+	color: #ff8a00;
+	margin: 0 10px 10px 0;
+	display: inline-block;
+}
+.desbox h3{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 20px 0;
+	text-align: left;
+	color: #434343;
+}
+.box2 h3{
+	padding: 20px;
+	text-align: center;
+	font-size: 28px;
+	color: #434343;
+	font-weight: bold;
+}
+.imgbox2{
+	width: 222px;
+	margin: 20px 10px;
+	display: inline-block;
+	border: 1px solid #fff;
+}
+.imgbox2 img{
+	width: 100%;
+}
+.imgbox2 p{
+	font-size: 15px;
+	padding: 15px 0;
+	text-align: center;
+	color: #ff9d00;
+}
+.imgbox2 a{
+	display: inline-block;
+	line-height: 40px;
+	background: #a87864;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	width: 100%;
+}
+
+.box3 h3{
+	padding: 20px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	color: #434343;
+}
+.box3 h4{
+	padding: 10px 0;
+	color: #434343;
+}
+.box3 p{
+	padding: 10px 0;
+}
+.msboxp h3{
+	text-align: center;
+	color: #434343;
+	padding: 20px;
+}
+.msboxp p{
+	line-height: 25px;
+	padding: 10px 0;
+}
+.zz h3{
+	text-align: center;
+	color: #434343;
+	padding: 20px;
+}
+.zz{
+	text-align: center;
+}
+.zz img{
+	margin: 10px 0;
+}
+.zz p{
+	text-align: left;
+	padding: 10px 0;
+	line-height: 25px;	
+}
+.rw h3{
+	text-align: center;
+	color: #434343;
+	padding: 20px;
+}
+.rwbox{
+	height: 400px;
+	width: 100%;
+}
+.rwbox embed{
+	width: 450px;
+	margin-right: 50px;
+	height: 300px;
+	float: left;
+}
+.rwbox .rwp{
+	width: 500px;
+	line-height: 25px;
+	float: left;
+}
+.qj h3{
+	text-align: center;
+	color: #434343;
+	padding: 20px;
+}
+.qj h4{
+	padding: 10px;
+}
+.qj h5{
+	padding: 5px;
+}
+.qj p{
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.lx h3{
+	text-align: center;
+	color: #434343;
+	padding: 20px;
+}
+.lx form{
+	padding: 10px 0;
+	text-align: center;
+}
+.lx input{
+	margin: 10px 0;
+}
