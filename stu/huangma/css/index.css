@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	font-family: '宋体';
+}
+.box{
+	margin: 0 auto;
+	width: 960px;
+}
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner .logo1{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100px;
+}
+.banner img{
+	width: 100%;
+}
+.daohang{
+	background: #1A4963;
+	line-height: 34px;
+	color: #fff;
+}
+.daohang a{
+	width: 150px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+}
+.daohang a:hover{
+	background: #fff;
+	color: #295B72;
+}
+.daohang a:active{
+	color: yellow;
+}
+.news{
+	padding: 10px 0;
+	border: 1px solid #eee;
+	margin-top: 10px;
+}
+.newsimg{
+	height: 150px;
+	padding: 10px 0;
+}
+.news h3{
+	background:#1e516e;
+	line-height: 40px;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+}
+.imgc{
+	float: left;
+	width: 200px;
+	margin: 0 19px;
+}
+.imgc img{
+	width: 100%;
+	height: 140px;
+}
+.imgc p{
+	text-align: center;
+}
+.dongtai{
+	padding: 10px 0;
+	border: 1px solid #eee;
+	background: #eee;
+}
+.dongtai ul{
+	text-align: center;
+	padding: 20px 0;
+	padding-left: 20px;
+}
+.dongtai li{
+}
+.dongtai li a{
+	line-height: 25px;
+	margin: 10px 0;
+	color: #434343;
+}
+.jj{
+	padding:10px 0;
+}
+.jj h3{
+	background:#1e516e;
+	line-height: 40px;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+}
+.jj p{
+	line-height: 25px;
+}
+.footer{
+	background:#1e516e;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+}
+.jjbox{
+	padding: 10px 0;
+}
+.jjbox h3{
+	line-height: 40px;
+}
+.jjbox p{
+	color: #434343;
+	margin-bottom: 20px;
+	text-indent: 2em;
+}
+.jjimg{
+	padding: 10px 0;
+	text-align: center;
+}
+.jjimg img{
+	width: 100%;
+}
+.qx{
+	height: 550px;
+}
+.qx h3{
+	line-height: 40px;
+}
+.qiuxingimg{
+	width: 300px;
+	margin:10px;
+	float: left;
+	text-align: center;
+}
+.qiuxingimg img{
+	width: 100%;
+	height: 198px;
+}
+.qiuxingimg embed{
+	height: 198px;
+	width: 100%;
+}

@@ -1,192 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body, html {
-    font-family:"宋体";
-    font-size: 12px;
-}
-.bodyer{
-    width: 1000px;
-    margin: 0 auto;
-}
-.logo{
-    width: 40px;
-    float: left;
-}
-a{
-    display: block;
-    text-decoration: none;
-}
-
-.nav1{
-    height: 60px;
-    line-height: 60px;
-}
-.nav2 {
-    background: #fafafa;
-    line-height: 60px;
-    text-align: center;
-    float: right;
-}
-.nav2 a{
-    display: inline-block;
-    width: 150px;
-    color: #333;
-}
-.nav2 a:hover{
-    color:red; 
-}
-.nav2 a:active{
-    color: blue;
-}
-.banner img{
-    width: 100%;
-}
-.fot{
-    background: #eb907d;
-    line-height: 50px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    width: 1000px;
-    margin: 0 auto;
-}
-.box1{
-	padding: 30px 0;
-	border-bottom:1px solid #e4e4e4;
-	border-top:1px solid #e4e4e4;
-}
-.box1 h3{
-	text-align: center;
-}
-.box1 p{
-	line-height: 25px;
-	margin-top: 20px;
-}
-.box2{
-	padding: 30px 0;
-	border-bottom:1px solid #e4e4e4;
-	border-top:1px solid #e4e4e4;
-}
-.box2 h3{
-	text-align: center;
-}
-.box2img{
-	height: 300px;
-	padding: 20px 0;
-}
-.box2img img{
-	width: 400px;
-	height: 300px;
-	float: left;
-}
-.bo2p{
-	float: right;
-	width: 500px;
-}
-.zz img{
-	margin: 10px 0;
-}
-.zz p{
-	text-align: left;
-	padding: 10px 0;
-	line-height: 25px;	
-}
-.wh{
-	height: 800px;
-	margin-top: 20px;
-}
-.wh h3{
-	text-align: center;
-	color: #434343;
-	padding: 20px;
-}
-.whbox{
-	width: 450px;
-	margin: 0 25px;
-	float: left;
-}
-.whbox p{
-	line-height: 25px;
-}
-.fj h3{
-	text-align: center;
-	color: #434343;
-	padding: 20px;
-}
-.fj p{
-	line-height: 20px;
-	margin-bottom: 10px;
-}
-.fjbox{
-	margin: 20px 0;
-	height: 300px;
-}
-.fjbox img{
-	height: 300px;
-	width: 400px;
-	float: left;
-}
-.fjbox p{
-	width: 550px;
-	float: right;
-}
-.zc h3{
-	text-align: center;
-	color: #434343;
-	padding: 20px;
-}
-
-.zc form{
-	padding: 10px 0;
-}
-.zc input{
-	margin: 10px 0;
-}
-.js{
-	height: 900px;
-	padding: 20px 0;
-}
-.js h3{
-	text-align: center;
-	color: #434343;
-	padding: 20px;
-}
-.js p{
-	line-height: 25px;
-}
-.jsbox{
-	width: 450px;
-	margin: 20px 25px;
-	float: left;
-}
-.jsbox p{
-	text-align: center;
-}
-.jsbox img{
-	width: 100%;
-	height: 300px;
-}
-.kj{
-	padding: 20px 0;
-}
-.kjbox{
-	padding: 20px 0;
-}
-.kjbox h3{
-	text-align: center;
-	color: #434343;
-	padding: 20px;	
-}
-.kjbox h4{
-	text-align: left;
-	color: #434343;
-	padding: 20px;	
-}
-.kjbox p{
-	line-height: 25px;
-}
-.kjimg{
-	text-align: center;
-}
+* {margin:0;padding:0;}
+body,html {font-family:"宋体";font-size:12px;}
+.bodyer {width:1000px;margin:0 auto;}
+.logo {width:40px;float:left;}
+a {display:block;text-decoration:none;}
+.nav1 {height:60px;line-height:60px;}
+.nav2 {background:#fafafa;line-height:60px;text-align:center;float:right;}
+.nav2 a {display:inline-block;width:150px;color:#333;}
+.nav2 a:hover {color:red;}
+.nav2 a:active {color:blue;}
+.banner img {width:100%;}
+.fot {background:#eb907d;line-height:50px;width:100%;text-align:center;color:#fff;width:1000px;margin:0 auto;}
+.box1 {padding:30px 0;border-bottom:1px solid #e4e4e4;border-top:1px solid #e4e4e4;}
+.box1 h3 {text-align:center;}
+.box1 p {line-height:25px;margin-top:20px;}
+.box2 {padding:30px 0;border-bottom:1px solid #e4e4e4;border-top:1px solid #e4e4e4;}
+.box2 h3 {text-align:center;}
+.box2img {height:300px;padding:20px 0;}
+.box2img img {width:400px;height:300px;float:left;}
+.bo2p {float:right;width:500px;}
+.zz img {margin:10px 0;}
+.zz p {text-align:left;padding:10px 0;line-height:25px;}
+.wh {height:800px;margin-top:20px;}
+.wh h3 {text-align:center;color:#434343;padding:20px;}
+.whbox {width:450px;margin:0 25px;float:left;}
+.whbox p {line-height:25px;}
+.fj h3 {text-align:center;color:#434343;padding:20px;}
+.fj p {line-height:20px;margin-bottom:10px;}
+.fjbox {margin:20px 0;height:300px;}
+.fjbox img {height:300px;width:400px;float:left;}
+.fjbox p {width:550px;float:right;}
+.zc h3 {text-align:center;color:#434343;padding:20px;}
+.zc form {padding:10px 0;}
+.zc input {margin:10px 0;}
+.js {height:900px;padding:20px 0;}
+.js h3 {text-align:center;color:#434343;padding:20px;}
+.js p {line-height:25px;}
+.jsbox {width:450px;margin:20px 25px;float:left;}
+.jsbox p {text-align:center;}
+.jsbox img {width:100%;height:300px;}
+.kj {padding:20px 0;}
+.kjbox {padding:20px 0;}
+.kjbox h3 {text-align:center;color:#434343;padding:20px;}
+.kjbox h4 {text-align:left;color:#434343;padding:20px;}
+.kjbox p {line-height:25px;}
+.kjimg {text-align:center;}

@@ -3,15 +3,9 @@
     padding: 0;
 }
 
-a{
-    display: block;
-    text-decoration: none;
-}
-img {
-    border: none;
-}
+
 body, html {
-    font-family:Microsoft YaHei, Arial;
+    font-family:"宋体", Arial;
     background: url(../images/bg_all.gif);
     font-size: 12px;
 }
@@ -46,6 +40,10 @@ body, html {
     display: inline-block;
     width: 150px;
     color: #333;
+}
+a{
+    display: block;
+    text-decoration: none;
 }
 .nav2 a:hover{
     color:#b48470; 
