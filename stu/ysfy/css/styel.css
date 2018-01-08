@@ -1,0 +1,312 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+input, button {
+    background: none;
+    outline: none;
+    border: 0px;
+}
+.bodyer{
+	width: 980px;
+	margin:0 auto;
+}
+.top1l{
+	float: left;
+}
+.top1r{
+	float: right;
+	line-height: 35px;
+}
+.top1{
+	height: 35px;
+}
+.top1r a{
+	color: #666666;
+	font-size: 14px;
+	padding: 0 5px;
+}
+.top2{
+	height: 75px;
+}
+.ipt{
+	width: 320px;
+	height: 36px;
+	line-height: 36px;
+	background: url(../images/BG_search_170717.png) 0 0 no-repeat;
+	float: left;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.logo{
+	margin-left: 40px;
+	float: left;
+	margin-top: 5px;
+}
+.ipt input{
+	width: 320px;
+	height: 36px;
+}
+.search{
+	background: url(../images/btn_search.png) 0 0 no-repeat;
+	width: 87px;
+	height: 37px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+.logo2{
+	float: right;
+}
+.nav{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background: #045321;
+}
+.nava {
+	position: relative;
+	display: inline-block;
+}
+.nav a{
+	padding: 0 15px;
+	line-height: 40px;
+	color: #fff;
+	display: inline-block;
+}
+.nava:hover,.nav a:hover{
+	background: #fff;
+	color: #000;
+}
+.nava:hover .poab{
+	display: block;
+}
+.poab{
+	position: absolute;
+	top:40px;
+	left: 0;
+	width: 200px;
+	background: #fff;
+	border: 1px solid #000;
+	background: #fff;
+	background-position: bottom;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	display: none;
+}
+.poab a{
+	display: block;
+	color: #ccc;
+	line-height: 25px;
+	font-size: 14px;
+}
+.nav input{
+	width: 130px;
+	height: 20px;
+	margin-top: 10px;
+	background: #fff;
+	display: inline-block;
+	padding-left: 5px;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.nav button{
+	width: 45px;
+	height: 30px;
+	margin-top: 5px;
+	background:#fff;
+	font-size: 13px;
+	text-align: center; 
+	margin-left: 10px;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.lunbo{
+	width: 80%;
+	margin:0 auto; 
+}
+.banimg{
+	width: 100%;
+	display: none;
+}
+.imgbox1{
+	margin: 10px 0; 
+}
+.imgbox1 img{
+	width: 470px;
+	margin:0 8px; 
+}
+.imgbox4{
+	margin-top: 30px;
+}
+.imgbox4 h3{
+	margin-bottom: 20px;
+}
+.imgboxc{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #000;
+}
+.imgboxcc{
+	display: inline-block;
+	width: 158px;
+	margin: 0 15px;
+
+}
+.imgboxcc img{
+	width: 100%;
+	height: 158px;
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+.imgboxcc p{
+	font-size: 13px;
+	color: #494949;
+	margin: 5px 0;
+	line-height: 20px;
+}
+.imgboxcc span{
+	font-size: 15px;
+	font-weight: bold;
+}
+.imgbox5 img{
+	width: 100%;
+}
+.footer{
+	background: url(../images/BG_footer_171129.jpg) no-repeat 50% 0;
+	height: 596px;
+}
+.fot{
+	margin-right: 20px;
+	float: left;
+	width: 100px;
+	padding-left: 50px;
+}
+.fot a{
+	color: #434343;
+	font-size: 12px;
+	line-height: 25px;
+	display: inline-block;
+	width: 100%;
+}
+.fotbox{
+	height: 536px;
+	padding-top: 60px; 
+}
+.fot .fottit{
+	color: #000;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 400;
+}
+.tit{
+	color: #666;
+	font-size: 12px;
+	padding: 15px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.cont{
+	padding: 20px 0;
+	width: 780px;
+	margin: 0 auto;
+}
+.cont h3{
+	margin: 10px 0;
+}
+.cont h4{
+	margin-bottom: 10px;
+}
+.cont p{
+	font-size: 14px;
+	color: #434343;
+	line-height: 25px;
+}
+.contbox{
+	padding: 15px;
+	height: 180px;
+	border-bottom: 1px dashed #ccc;
+}
+.contbox .conimgl{
+	width: 350px;
+	height: 180px;
+	margin-right: 20px;
+	float: left;
+}
+.contdes{
+	float: left;
+}
+.contbox h3{
+	color: #333;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.contdes img{
+	margin-bottom: 25px;
+}
+.contbox p{
+	font-size: 12px;
+	color: #777777;
+}
+.cont1{
+	width: 980px;
+}
+.choose p{
+	display: inline-block;
+	width: 150px;
+	color: #434343;
+	font-size: 13px;
+}
+.choose input{
+	margin-right: 10px;
+}
+.choose{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+.choose2{
+	background: #f6f6f6;
+	line-height: 23px;
+	height: 23px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.choose2 a{
+	display: inline-block;
+	width: 155px;
+	line-height: 23px;
+	text-align: center;
+	color: #434343;
+	font-size: 12px;
+}
+.buybox{
+	padding: 20px 0;
+}
+.buyboxc{
+	display: inline-block;
+	text-align: center;
+	width: 190px;
+	margin: 10px 0;
+}
+.buyboxc img{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+.buyboxc p{
+	font-size: 12px;
+	padding: 8px 0;
+	text-align: left;
+}
+.buyboxc span{
+	color: #c5361a;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+}
