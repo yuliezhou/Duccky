@@ -10,6 +10,9 @@ input, button {
     outline: none;
     border: 0px;
 }
+body{
+	background: #eee;
+}
 .bodyer{
 	width: 980px;
 	margin:0 auto;
