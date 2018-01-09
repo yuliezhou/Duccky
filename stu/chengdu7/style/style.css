@@ -23,15 +23,16 @@ a{
 .navbox a{
 	height: 100%;
 	display: inline-block;
-	padding: 0 20px;
+	width: 100px;
 	color: #fff;
 	background: #2196F3;
 }
 .navbox a:hover{
-	background: white;
 	color: black;
 }
-
+.navbox a:active{
+	color: red;
+}
 .desbox h3{
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -45,16 +46,14 @@ a{
 	height: 105px;
 }
 .imgbox img{
-	float: left;
-	width: 31.333%;
+	width: 30.333%;
 	margin:10px 1%; 
 }
 .imgbox2{
 	height: 500px;
 }
 .imgbox2 img{
-	float: left;
-	width: 31.333%;
+	width: 30%;
 	margin:10px 1%; 
 	height: 200px;
 }
