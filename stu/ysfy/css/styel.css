@@ -142,6 +142,12 @@ body{
 }
 .imgbox1{
 	margin: 10px 0; 
+	position: relative;
+}
+.imgbox1 video{
+	position: absolute;
+	right: 65px;
+	top: 30px;
 }
 .imgbox1 img{
 	width: 470px;
@@ -219,6 +225,12 @@ body{
 	padding: 20px 0;
 	width: 780px;
 	margin: 0 auto;
+	position: relative;
+}
+.cont object{
+	position: absolute;
+	top: 500px;
+	left: 200px;
 }
 .cont h3{
 	margin: 10px 0;
