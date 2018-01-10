@@ -170,4 +170,25 @@ a{
 	#hb{
 		display: block;
 	}
+	.top{
+		display: none;
+	}
+	.nav{
+		height: 370px;
+		display: none;
+	}
+	.nav a{
+		width: 100%;
+	}
+	.con1box{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.con4box{
+		height: 500px;
+	}
+	.imgbox{
+		margin: 10px 20px;
+	}
 }
