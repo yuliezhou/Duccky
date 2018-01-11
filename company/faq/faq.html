@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>faq</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		body{
+			background: url(images/back.png) 0  0 no-repeat;
+			font-size: 0.28rem;
+		}
+		.conent{
+			width: 90%;
+			margin: 0 auto;
+			background: #fff;
+			border-radius: 5px;
+			margin-top: 0.2rem;
+		}
+		.textbox{
+			padding: 0 0.3rem 0.3rem;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 0.3rem;
+		}
+		.title{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-top: 0.3rem;
+		}
+		.title span{
+			width: 90%;
+		}
+		.title img{
+			float: right;
+			transition: all 0.5s;
+			width: 0.25rem;
+		}
+		.desp{
+			padding: 0.2rem 0.1rem;
+			background: #fcf7ff;
+			color: #666;
+			margin: 0.3rem 0;
+			display: none;
+		}
+		.ac{
+			transform: rotate(180deg);
+		}
+		.ac1{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="conent">
+
+		<div class="textbox">
+			<div class="title">
+				<span>1.Why the followers I bought lost automatically after a period of time?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				We offer real followers, not ghost followers; after followed you in a time, they have their own right to decide if they will follow you continuously. Thanks for your support.
+			</div>
+		</div>
+
+		<div class="textbox">
+			<div class="title">
+				<span>2.Why can't I get followers and likes immediately after purchased?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				Because the time you place order is busy hours, delay will happen sometimes. please wait patiently. Generally, you'll get your followers or likes within 24 hours, if it's still don't work, please contact us and we'll solve your problem ASAP.
+			</div>
+		</div>
+
+		<div class="textbox">
+			<div class="title">
+				<span>3.I placed several orders, but they are still not finished, why?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				We process orders in proper sequence, please wait patiently. We suggest a large order next time, in this way, you can easily avoid queueing problem. 
+			</div>
+		</div>
+
+		<div class="textbox">
+			<div class="title">
+				<span>4.Why didn't I get coins promptly after I finished task in "offers"?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				Some of the tasks are checked by third-party vendors, so you'll get the coins as long as you finished the task as required. Please wait patiently.
+			</div>
+		</div>
+		<div class="textbox">
+			<div class="title">
+				<span>5.Why didn't I get my followers and likes?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				Please check if you have set your account as private or changed username and deleted photos. Any problem, please feel free to contact with us.
+			</div>
+		</div>
+		<div class="textbox">
+			<div class="title">
+				<span>6.What is ER?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				The engagement rate abbreviation is ER.The engagement rate is based on the number of likes and comments received, divided by the number of followers at the time of the post.
+			</div>
+		</div>
+		<div class="textbox">
+			<div class="title">
+				<span>7.There are several photos in my posts, but only the first one photo is visible in APP, can I buy likes for this kind of photo?</span>
+				<img src="images/icon.png" alt="">
+			</div>
+			<div class="desp">
+				Yes, you can click several photos in your post and enter into likes buying page to place your order.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$('.title').click(function(){
+		$(this).children('img').toggleClass("ac");
+		$(this).siblings('.desp').toggleClass("ac1");
+	})
+</script>
