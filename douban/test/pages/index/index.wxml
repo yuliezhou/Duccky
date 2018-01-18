@@ -1,0 +1,59 @@
+<view class="top">
+	<text class="top_txt">Duccky(豆瓣电影) ©数据来源：豆瓣Api V2（测试版）</text>
+</view>
+<!-- 豆瓣电影Top250 -->
+<view class='title_box'>
+    <text class='title_h title_top250'>豆瓣电影Top250</text>
+    <navigator url='../movie/movie' class='more'>更多</navigator>
+</view>
+<view class='movie_list'>
+    <scroll-view scroll-x class='scroll_view_x'>
+        <navigator url='../movie/movie?id={{item.id}}' wx:for="{{movies}}" class='movie_box'>
+            <image class='movie_img' src='{{item.images.small}}'></image>
+            <view class='moviebox_tit'>{{item.title}}</view>
+            <view class='average'>{{item.rating.average}}</view>
+        </navigator>
+    </scroll-view>
+</view>
+<!-- 正在上映 -->
+<view class='title_box'>
+    <text class='title_h ing_title'>正在上映</text>
+    <navigator url='../movie/movie' class='more'>更多</navigator>
+</view>
+<view class='movie_list'>
+    <scroll-view scroll-x class='scroll_view_x'>
+        <navigator url='../movie/movie?id={{item.id}}' wx:for="{{movies_ing}}" class='movie_box'>
+            <image class='movie_img' src='{{item.images.small}}'></image>
+            <view class='moviebox_tit'>{{item.title}}</view>
+            <view class='average'>{{item.rating.average}}</view>
+        </navigator>
+    </scroll-view>
+</view>
+<!-- 即将上映 -->
+<view class='title_box'>
+    <text class='title_h soon_title'>即将上映</text>
+    <navigator url='../movie/movie' class='more'>更多</navigator>
+</view>
+<view class='movie_list'>
+    <scroll-view scroll-x class='scroll_view_x'>
+        <navigator url='../movie/movie?id={{item.id}}' wx:for="{{movies_soon}}" class='movie_box'>
+            <image class='movie_img' src='{{item.images.small}}'></image>
+            <view class='moviebox_tit'>{{item.title}}</view>
+            <view class='average'>{{item.rating.average}}</view>
+        </navigator>
+    </scroll-view>
+</view>
+<!-- 北美票房榜 -->
+<view class='title_box'>
+    <text class='title_h usa_title'>北美票房榜</text>
+    <navigator url='../movie/movie' class='more'>更多</navigator>
+</view>
+<view class='movie_list'>
+    <scroll-view scroll-x class='scroll_view_x'>
+        <navigator url='../movie/movie?id={{item.id}}' wx:for="{{movies_usa}}" class='movie_box'>
+            <image class='movie_img' src='{{item.subject.images.small}}'></image>
+            <view class='moviebox_tit'>{{item.subject.title}}</view>
+            <view class='average'>{{item.subject.rating.average}}</view>
+        </navigator>
+    </scroll-view>
+</view>

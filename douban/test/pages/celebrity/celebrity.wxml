@@ -1,0 +1,23 @@
+<view class='movie_des'>
+    <view class='movie_desl'>
+        <text class='movie_desh'>{{celebrity.title+" - "+celebrity.name_en}}</text>
+        <text class='rating_count'>{{celebrity.ratings_count+"人收藏"}}</text>
+        <view class='des_txt'>{{"性别："+celebrity.gender}}  {{"出生地："+celebrity.genres}}</view>
+    </view>
+    <image class='actor_img' src='{{celebrity.avatars.large}}'></image>
+</view>
+<!-- 个人作品 -->
+<view class='movie_list'>
+    <scroll-view scroll-x class='scroll_view_x'>
+        <navigator url='../movie/movie?id={{item.id}}' wx:for="{{celebrity}}" class='movie_box'>
+            <image class='movie_img' src='{{item.images.small}}'></image>
+            <view class='moviebox_tit'>{{item.title}}</view>
+            <view class='average'>{{item.rating.average}}</view>
+        </navigator>
+    </scroll-view>
+</view>
+<!-- 摘要 -->
+<!-- <view class='movie_intro'>
+    <text class='movie_introh'>影人介绍</text>
+    <text class='movie_content'>{{celebrity.summary}}</text>
+</view> -->

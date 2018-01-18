@@ -1,0 +1,7 @@
+.text{
+    border: 1px solid red;
+    height: 30px;
+}
+.slide-image{
+    width: 100%;
+}

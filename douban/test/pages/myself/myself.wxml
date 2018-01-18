@@ -1,0 +1,34 @@
+<view>选择城市：</view>
+<picker value="" range='{{citys}}'>
+    <view>当前选择：{{}}</view>
+</picker>
+<view class=''>选择时间 ：</view>
+<picker start="09:01" end="21:01" value="{{time}}" mode="time" bindchange='bindtime'>
+    <view>当前选择：{{time}}</view>
+</picker>
+<view>选择日期：</view>
+<!-- year 表示年份  month表示可以选择年份月份 -->
+<picker value='{{date}}' mode="date" bindchange='binddate' fields="day">
+    <view>当前选择:{{date}}</view>
+</picker>
+<!-- 单选框 -->
+<radio-group>
+
+</radio-group>
+<!-- 滑动选择器 -->
+<slider show-value></slider>
+<!-- 开关选择器 -->
+<switch checked type='checkbox'></switch>
+
+<textarea auto-height class='text'></textarea>
+<button bindtap='showAction'>显示操作菜单</button>
+<button bindtap='showModal'>显示模态弹窗</button>
+<button bindtap='showToast'>显示操作反馈</button>
+<swiper indicator-dots="true" indicator-active-color="yellow">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls></audio>
