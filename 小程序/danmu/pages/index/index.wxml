@@ -1,0 +1,45 @@
+<view class='color_box'>
+    <navigator url='../shadow/shadow' class='change'><text>ABC</text></navigator>
+    <input bindblur="input" class='input_btn' confirm-type="done" placeholder='请输入' value="{{input_value}}"/>
+    <view class="set" bindtap="set">设</view>
+    <!-- 隐藏的功能盒子 -->
+    <view class="choose_box" style="bottom:{{bottom+'rpx'}}">
+        <!-- speed -->
+        <view class="choose_boxc">
+            <view class="choose_text">速度</view>
+            <view class="choose_func">
+                <view class="func_btn">慢</view>    
+            </view>    
+            <view class="clear"></view>
+        </view>   
+        <!-- size -->
+        <view class="choose_boxc">
+            <view class="choose_text">字号</view>
+            <view class="choose_func">
+                <block wx:for="{{sizeArr}}">
+                    <view class='size' bindtap='size' data-id="{{index}}">{{item.name}}</view>
+                </block>    
+            </view>    
+            <view class="clear"></view>
+        </view>   
+        <!-- color -->
+        <view class="choose_boxc">
+            <view class="choose_text">颜色</view>
+            <view class="choose_func">
+                <block wx:for="{{colorArray}}">
+                    <view class='color_btn' bindtap='color' style="background:{{item}};" data-id="{{index}}"></view>
+                </block>
+            </view>    
+            <view class="clear"></view>
+        </view>   
+    </view>
+    <!-- 隐藏的功能盒子-end -->
+</view>
+<!-- 展示位置 -->
+<scroll-view class='text_box' scroll-x scroll-left="{{scrollTop}}">
+    <view class='none'></view>
+    <view class='text_show' style="color:{{color}};font-size:{{size}};">{{input}}</view>
+    <view class='text_show' style="color:{{color}};font-size:{{size}};">{{input}}</view>
+</scroll-view>
+<!-- 展示位置 end-->
+<button class='button' bindtap='change'>点击</button>

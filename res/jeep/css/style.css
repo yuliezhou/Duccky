@@ -1,0 +1,618 @@
+/*去除轮播的左右阴影*/
+/*首页-banner*/
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+
+.banner .swiper-pagination-bullet{
+    background: #fff!important;
+    opacity: 1!important;
+    width: 15px!important;
+    height: 15px!important;
+    margin: 0 15px!important;
+    position: relative!important;
+}
+
+.banner .swiper-pagination-bullet-active{
+    box-sizing: border-box;
+}
+.banner .swiper-pagination-bullet-active:before{
+    content:'';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #028546;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+/*首页-banner-end*/
+/*首页-配体*/
+.pt{
+    width: 100%;
+}
+.pt_box{
+    float: left;
+    width: 33.3333%;
+    overflow: hidden;
+    position: relative;
+}
+.pt_box img{
+    width: 100%;
+    transition: all 1s;
+}
+.pt_box span{
+    font-size: 24px;
+    position: absolute;
+    left: 6%;
+    top: 9%;
+}
+.pt_span1{
+    color: #194880;
+}
+.pt_span2{
+    color: #46114c;
+}
+.pt_span3{
+    color: #1d5e4f;
+}
+/*首页-配体-end*/
+
+/*首页-关于公司*/
+.intro {
+    padding:60px 0;
+    text-align: center;
+    background: url(../images/back1_02.jpg) 0 0 no-repeat;
+    background-size:cover;
+}
+.intro .intro_tit{
+    color: #434343;
+    font-size: 30px;
+    font-family: 'rale_bold';
+    margin-bottom: 10px;
+}
+.intro h4{
+    color: #434343;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.intro .about_content{
+    font-size: 14px;
+    color: #838383;
+    line-height: 30px;
+}
+.more{
+    display: inline-block;
+    width: 245px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 35px;
+    background: #eee;
+    transition: all 1s;
+    border-radius: 50px;
+}
+.more span,.more i{
+    display: inline-block;
+    font-size: 18px;
+    color: #434343;
+    font-weight: bold;
+}
+.more span{
+    font-family: 'rale_light';
+}
+.more i{
+    margin-left: 15px;
+}
+.bdshare-button-style2-24 a, .bdshare-button-style2-24 .bds_more {
+    background-image: none !important;
+}
+
+#bdshare_weixin_qrcode_dialog {
+    height: 340px !important;
+}
+
+/*首页-关于公司-end*/
+/*首页-新闻点击*/
+.idx_news{
+
+    background: #eee;
+}
+.idx_news .idx_newsa{
+    height: 90px;
+    line-height: 90px;
+    width: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #636363;
+    display: inline-block;
+}
+.idx_news .idx_newsa1{
+    float: left;
+} 
+.idx_news .idx_newsa2{
+    float: right;
+} 
+.idx_news .timer{
+    font-family: 'he_md';
+    font-size: 18px;
+    color: #434343;
+    margin-right: 15px;
+}
+/*首页-新闻点击-end*/
+/*首页—产品中心*/
+.product_idx{
+    padding: 100px 0;
+    background: url(../images/back2_02.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.product_idx .row{
+    padding: 0 1%;
+    position: relative;
+}
+.product_idx .pro_box{
+    overflow: hidden;
+    position: relative;
+    height: 320px;
+    padding: 0;
+    transition: all 0.8s;
+    border-bottom:1px solid #79b7ac;
+    border-right:1px solid #79b7ac;
+    background: #fff;
+}
+.product_idx .pro_box1{
+    text-align: center;
+    padding:0 40px;
+}
+.product_idx .pro_box .pro_no1img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+}
+.product_idx .pro_txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pro_txt h3{
+    font-size: 28px;
+    color: #000;
+    padding-left: 9%;
+    margin: 0;
+}
+.pro_txt .pro_no1tit{
+    margin: 0;
+    margin-top: 5%;
+    padding-left: 9%;
+    font-family: 'rale_bold';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #434343;
+    margin-bottom: 5px;
+}
+.more_txt{
+    margin-top: 25%;
+    padding-left: 9%;
+    font-size: 18px;
+    color: #000;
+    font-family: 'rale_light';
+    font-weight: bold;
+}
+.more_txt i{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px;
+    transition: all 0.8s;
+}
+.pro_box1 .pro_imgbox{
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0 30px;
+    text-align: center;
+}
+.pro_box1 .pro_imgbox img{
+    display: inline-block;
+    transition: all 0.8s;
+}
+.pro_box1 h4{
+    font-size: 22px;
+    color: #434343;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+.pro_box1 p{
+    color: #838383;
+    font-size: 16px;
+}
+
+.product_idx .swiper-button-nextpro{
+    position: absolute;
+    display: block;
+    right: -120px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.product_idx .swiper-button-prevpro{
+    position: absolute;
+    display: block;
+    left: -120px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.product_idx .swiper-button-nextpro i ,.product_idx .swiper-button-prevpro i{
+    font-size: 24px;
+    margin-top: 10px;
+    color: #a3ddb9;
+    display: inline-block;
+    transition: all 0.8s;
+}
+#product_idx_phone{
+    display: none;
+}
+.swiper-button-nextpro_phone,.swiper-button-prevpro_phone{
+    display: none!important;
+}
+/*首页—产品中心-end*/
+#swi_scroll{
+    padding-bottom: 90px;
+}
+#swi_scroll .swiper-scrollbar{
+    width: 60%!important;
+    left: 20%!important;
+    background: #eee;
+    bottom:20px;
+    height: 3px;
+}
+#swi_scroll .swiper-scrollbar-drag{
+    background: #eee;
+    position: relative;
+    cursor: all-scroll;
+}
+#swi_scroll .swiper-scrollbar-drag:after{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background: url(../images/sco.png) 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+.swi_scrollimg{
+    width: 100%;
+    position: relative;
+}
+.swi_scrollimg img{
+    width: 100%;
+}
+.model_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 241, 114, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.8s;
+    top: 0;
+    left: 0;
+}
+.model_img .plus{
+    height: 55px;
+    width: 55px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+}
+.model_img .plus img{
+    width: 50%;
+    display: inline-block;
+}
+.model_img span{
+    margin-top: 20px;
+    color: #fff;
+    font-family:'rale_light';
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+}
+.model_img span i{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 15px;
+}
+.swi_scrollbox h4{
+    margin-top: 25px;
+    text-align: center;
+    color: #434343;
+    font-size: 18px;
+}
+.swi_scrollbox p{
+    color: #838383;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 27%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*合作*/
+.cooper{
+    padding: 90px 0; 
+}
+.cooper .cooper_box{
+    padding: 0;
+    text-align: center;
+    position: relative;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    height: 290px;
+}
+.cooper .cooper_box img{
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+.cooper .cooper_box .cooper_model{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #4cbd76;
+    padding: 30px;
+    opacity: 0;
+    transition: all 0.8s;
+    text-align: left;
+}
+.cooper_model p{
+    color: #fff;
+    font-size: 16px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    text-align: left;
+}
+.cooper_model span{
+    color: #fff;
+    padding-top: 20px;
+    font-family: 'rale_light';
+    font-weight: bold;
+    display: inline-block;
+}
+.cooper .cooper_boxmid{
+    padding: 0 5%;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.cooper .cooper_boxmid h2{
+    font-size: 30px;
+    margin: 0;
+    color: #434343;
+    font-family: 'rale_bold';
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cooper .cooper_boxmid h4{
+    margin: 0;
+    font-size: 28px;
+    color: #434343;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cooper .cooper_boxmid p{
+    font-size: 12px;
+    color: #838383;
+    text-align: center;
+    line-height: 25px;
+}
+/*合作-end*/
+/*媒体查询*/
+@media (min-width:767px){
+    #header-menu li:hover .son-menu{
+        display: block;
+    }
+    
+    .pt_box:hover img{
+        transform: scale(1.2);
+    }
+    .more:hover{
+        background: #4cbd76;
+        color: #fff;
+    }
+    .more:hover span, .more:hover i{
+        color: #fff;
+    }
+    .pro_box:hover img{
+        transform: scale(1.2);
+    }
+    .pro_box:hover .more_txt i{
+        margin-left: 10px;
+    }
+    .pro_box1:hover h4{
+        color: #2f8b5b;
+    }
+    .product_idx .swiper-button-prevpro:hover,.product_idx .swiper-button-nextpro:hover{
+        background: #a3ddb9;
+    }
+    .product_idx .swiper-button-prevpro:hover i,.product_idx .swiper-button-nextpro:hover i{
+        color: #fff;
+    }
+    .swi_scrollimg:hover .model_img{
+        opacity: 1;
+    }
+    .cooper .cooper_box:hover .cooper_model{
+        opacity: 1;
+    }
+}
+@media (max-width:767px) {
+
+    .banner .swiper-pagination-bullet{
+        width: 10px!important;
+        height: 10px!important;
+    }
+    .cooper .row{
+        margin: 0;
+    }
+    .banner .swiper-pagination-bullet-active:before{
+        width: 4px!important;
+        height: 4px!important;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+    .pt_box{
+        width: 100%;
+    }
+    .idx_news .idx_newsa{
+        height: 45px;
+        width: 100%;
+        line-height: 45px;
+        border-bottom:1px solid #ccc; 
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .idx_news .timer{
+        font-size: 14px;
+    }
+    .product_idx{
+        background:#a4e188;
+        padding: 50px 0;
+    }
+    .product_idx .pro_box{
+        height: auto;
+    }
+    .more_txt{
+        margin-top: 20px;
+    }
+    #product_idx{
+        display: none;
+    }
+    #swi_scroll .swiper-scrollbar-drag:after{
+        width: 25px;
+        height: 25px;
+        top:-12.5px;
+        margin-left: -12.5px;
+    }
+    .cooper .cooper_boxmid h2{
+        font-size: 24px;
+    }
+    .cooper .cooper_box{
+        margin: 10px 0;
+        height: auto;
+    }
+    .cooper .cooper_boxmid{
+        border: 1px solid #eee;
+        padding: 5%;
+    }
+    #product_idx_phone{
+        display: block;
+    }
+    .pro_idx_phonebox{
+        padding: 0 45px;
+    }
+    .product_idx .pro_box1{
+        padding: 20px;
+        border: none;
+    }
+    .swiper-button-nextpro,.swiper-button-prevpro{
+        display: none!important;
+    }
+    .swiper-button-nextpro_phone,.swiper-button-prevpro_phone{
+        display: block!important;
+        position: absolute;
+        top: 50%;
+        z-index: 999!important;
+    }
+    .swiper-button-nextpro_phone i,.swiper-button-prevpro_phone i{
+        font-size: 30px;
+        color: #fff;
+    }
+    .swiper-button-nextpro_phone {
+        right: 10px;
+    }
+    .swiper-button-prevpro_phone{
+        left: 10px;
+    }
+    .cooper .container{
+        padding: 0 30px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1120px) {
+    .product_idx .pro_box1{
+        padding: 0 15px;
+    }
+    .cooper .cooper_boxmid{
+        padding: 0 2%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1500px) {
+    .product_idx .container{
+        width: 90%;
+    }
+    .product_idx .swiper-button-nextpro{
+        right: -5%;
+    }
+    .product_idx .swiper-button-prevpro{
+         left: -5%;
+    }
+}
+@media screen and (min-width:767px) and (max-width:992px) {
+    .product_idx .container{
+        width: 80%;
+    }
+    .product_idx .swiper-button-nextpro{
+        right: -9%;
+    }
+    .product_idx .swiper-button-prevpro{
+         left: -9%;
+    }
+    .cooper .container{
+        width: 90%;
+    }
+    .cooper .cooper_box{
+        height: 390px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cooper .cooper_box img{
+        height: auto;
+    }
+    .cooper .cooper_boxmid{
+        display: block;
+    }
+}
