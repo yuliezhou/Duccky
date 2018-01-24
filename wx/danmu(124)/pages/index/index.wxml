@@ -1,0 +1,50 @@
+<!-- 输入盒子 -->
+<view class='color_box' wx:if="{{bool}}">
+    <navigator url='../shadow/shadow' class='change' open-type="redirect" hover-class="none"><text>ABC</text></navigator>
+    <input bindblur="input" class='input_btn' confirm-type="done" placeholder='请输入' value="{{input_value}}" cursor-spacing='5'/>
+    <view class="set" bindtap="set_btn">设</view>
+</view>
+<!-- 隐藏的功能盒子 -->
+<view class="choose_box" style="bottom:{{bottom+'rpx'}}">
+    <view class="pos_re">
+        <!-- speed -->
+        <view class="choose_boxc">
+            <view class="choose_text">速度</view>
+            <view class="choose_func">
+                <block wx:for="{{speedArr}}" wx:key="index">
+                    <view class="speed {{speedTab==index?'isfo':''}}" bindtap='speed' data-id="{{index}}">{{item.name}}</view>
+                </block>     
+            </view>    
+            <view class="clear"></view>
+        </view>   
+        <!-- size -->
+        <view class="choose_boxc">
+            <view class="choose_text">字号</view>
+            <view class="choose_func">
+                <block wx:for="{{sizeArr}}" wx:key="index">
+                    <view class="size {{sizeTab==index?'isfo':''}}" bindtap='size' data-id="{{index}}">{{item.name}}</view>
+                </block>    
+            </view>    
+            <view class="clear"></view>
+        </view>   
+        <!-- color -->
+        <view class="choose_boxc">
+            <view class="choose_text">颜色</view>
+            <view class="choose_func">
+                <block wx:for="{{colorArray}}" wx:key="index">
+                    <view class="color_btn {{colorTab==index?'isfo':''}}" bindtap='color' style="background:{{item}};" data-id="{{index}}"></view>
+                </block>
+            </view>    
+            <view class="clear"></view>
+        </view>  
+        <!-- complete  -->
+        <view class="complete" bindtap="complete">完成</view>
+    </view>    
+</view>
+<!-- 隐藏的功能盒子-end -->
+<view class="show_boxp" bindtap="barout">
+    <view class='text_box' style="color:{{color}};font-size:{{size}};animation: botto{{animate_top}} {{speed}}s infinite linear;">{{input}}</view>
+        <!-- <view class='text_show' style=""></view> -->
+</view>
+<!-- 展示位置 end-->
+
