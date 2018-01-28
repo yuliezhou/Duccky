@@ -69,11 +69,10 @@
     position: relative;
     white-space:nowrap; 
     transform-style: preserve-3d;
+    transform: rotate(90deg);
 }
 .text_box{
     justify-content: center;
-    height: 90vh;
-    line-height: 90vh;
     webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -84,16 +83,17 @@
     -ms-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    transform: rotate(90deg);
     -webkit-perspective:1000; 
     perspective:1000;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-overflow-scrolling : touch;
     position: absolute;
+    white-space:nowrap; 
+    /*transform: translateY(0);*/
     letter-spacing: 10rpx;
     display: inline-block;
-    max-width: 2500px;
+    max-width: 2000px;
     overflow: hidden;
 
 }
@@ -201,81 +201,81 @@
 }
 @-webkit-keyframes botto {
     0%{
-        top: 2000%;
+        transform: translateX(2320px);
     }
     100%{
-        top: 2000%;
+        transform: translateX(2320px);
     }
 }
 @-webkit-keyframes botto0 {
     0%{
-        top: 80%;
+        transform: translateX(320px);
     }
     100%{
-        top: -80%;
+        transform: translateX(-320px);
     }
 }
 @-webkit-keyframes botto1 {
     0%{
-        top: 100%;
+        transform: translateX(520px);
     }
     100%{
-        top: -100%;
+        transform: translateX(-520px);
     }
 }
 @-webkit-keyframes botto2 {
     0%{
-        top: 120%;
+        transform: translateX(610px);
     }
     100%{
-        top: -120%;
+        transform: translateX(-610px);
     }
 }
 @-webkit-keyframes botto3 {
     0%{
-        top: 140%;
+        transform: translateX(810px);
     }
     100%{
-        top: -140%;
+        transform: translateX(-810px);
     }
 }
 @-webkit-keyframes botto4 {
     0%{
-        top: 180%;
+        transform: translateX(1010px);
     }
     100%{
-        top: -180%;
+        transform: translateX(-1010px);
     }
 }
 @-webkit-keyframes botto5 {
     0%{
-        top: 200%;
+        transform: translateX(1210px);
     }
     100%{
-        top: -200%;
+        transform: translateX(-1210px);
     }
 }
 @-webkit-keyframes botto6 {
     0%{
-        top: 220%;
+        transform: translateX(1410px);
     }
     100%{
-        top: -220%;
+        transform: translateX(-1410px);
     }
 }
 @-webkit-keyframes botto7 {
     0%{
-        top: 240%;
+        transform: translateX(1610px);
     }
     100%{
-        top: -240%;
+        transform: translateX(-1610px);
     }
 }
 @-webkit-keyframes botto8{
     0%{
-        top: 260%;
+        transform: translateX(1810px);
     }
     100%{
-        top: -260%;
+        transform: translateX(-21810px);
     }
 }

@@ -17,14 +17,16 @@ Page({
         name:'小',size:'200rpx'
       },
       {
-        name:'中',size:'220rpx'
+        name:'中',size:'240rpx'
       },
       {
-        name:'大',size:'240rpx'
+        name:'大',size:'280rpx'
       }
     ],
+    number:5,
     //切换圆圈加ac
     currentTab:2,
+    currentTab1:0,
     len:0,
     vheight:0,
     isonet:false,
@@ -36,7 +38,8 @@ Page({
     iscolorout:false, 
     // 弹出字体选择框组的判断条件
     issizeout:false,
-    tindex:1// 选中的文字的索引
+    tindex:1,// 选中的文字的索引
+    sizename:'小'
   },
   onLoad: function () {
     var leng = this.data.texts.length;
@@ -44,21 +47,19 @@ Page({
     var fonsize = "";
     if (this.data.ttype ==1){
       vh= "18vh";
-      fonsize="5.4rem"
+      fonsize="200rpx"
     } else if (this.data.ttype == 2){
       vh = "22.5vh";
-      fonsize = "120px"
+      fonsize = "240rpx"
     }else{
       vh = "30vh";
-      fonsize = "100px"
+      fonsize = "280rpx"
     }
     this.setData({
       len: leng,        //根据子的个数设置宽高
       vheight: vh,
-      isonet: leng == 1 ?true : false,
       fonsize: fonsize
     })
-    
   },
   //设置 字的高宽
   setHeight:function(){
@@ -121,9 +122,32 @@ Page({
   //改变字体
   changesize:function(e){
     var id = e.currentTarget.dataset.id;
+    var vh = "";
+    // this.setData({
+    //   len: leng,        //根据子的个数设置宽高
+    //   isonet: leng == 1 ? true : false,
+    //   fonsize: 150 - leng * 10 + 'px'
+    // })
+    if(id == 0){
+        this.setData({
+          vheight: "18vh",
+          number:5
+        })
+    }else if( id ==1 ){
+        this.setData({
+          vheight: "22.5vh",
+          number:4
+        })
+    }else if(id == 2){
+        this.setData({
+          vheight: "30vh",
+          number:3
+        })
+    }
     this.setData({
-      fonsize: this.data.sizeArr[id].size
+      currentTab1:id,
+      fonsize: this.data.sizeArr[id].size,
+      sizename:this.data.sizeArr[id].name
     })
   }
-  
 })

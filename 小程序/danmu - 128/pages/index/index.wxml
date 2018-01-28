@@ -43,7 +43,7 @@
 </view>
 <!-- 隐藏的功能盒子-end -->
 <view class="show_boxp" bindtap="barout">
-    <view class='text_box' style="color:{{color}};font-size:{{size}};animation: botto{{animate_top}} {{speed}}s infinite linear;">{{input}}</view>
+    <view class='text_box' style="color:{{color}};font-size:{{size}};animation: botto{{animate_top}} {{speed}}s infinite;animation-timing-function:linear;">{{input}}</view>
         <!-- <view class='text_show' style=""></view> -->
 </view>
 <!-- 展示位置 end-->
