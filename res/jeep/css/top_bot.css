@@ -190,6 +190,7 @@
     padding: 10px 0;
     text-transform: uppercase;
     font-family: 'robo';
+    transition: all 0.5s;
 }
 .fot_desr{
     padding: 0;
@@ -307,6 +308,9 @@
     }
     .share_box:hover a{
         color: #000!important;
+    }
+    .fot_choose a:hover{
+        color: #fed400;
     }
 }
 /*手机端适配*/
