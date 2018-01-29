@@ -20,7 +20,7 @@ body, html {
     font-family: Microsoft YaHei,Arial!important;
 }
 
-input, button {
+input, button{
     background: none;
     outline: none;
     border: 0px;
@@ -29,7 +29,10 @@ input, button {
 em, i {
     font-style: normal;
 }
-
+h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
 ul, ol, li {
     list-style: none;
 }
@@ -180,6 +183,24 @@ p{
 @font-face {
     font-family: 'robo';
     src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robo_me';
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dinpro';
+    src: url('../fonts/dinpro-bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dinpro_re';
+    src: url('../fonts/DINPro-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
