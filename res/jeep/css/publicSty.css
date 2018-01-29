@@ -187,6 +187,12 @@ p{
     font-style: normal;
 }
 @font-face {
+    font-family: 'robo_bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'robo_me';
     src: url('../fonts/Roboto-Medium.ttf');
     font-weight: normal;
