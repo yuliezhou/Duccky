@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jeep-新闻详情页</title>
+	<title>jeep-线下</title>
    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -100,28 +100,57 @@
 		</nav>
 		</div>
 <!-- 导航栏 end -->
-<!-- 售后详情 -->
-<div class="ser_details">
+<!-- 线上渠道 -->
+<div class="online">
 	<div class="container">
 		<div class="row">
-			<h3>售后服务<span>Maintenance service</span></h3>	
-			<div class="ser_imgbox">
-				<img src="images/ser1_03.jpg" alt="">
-				<p>Jeep品牌诞生于1941年，这个最初定位于越野四轮驱动车的品牌，如今已成为美国精神的文化名片。多年来，它的形态一直在变，但它一贯所坚持和崇尚的核心价值观:“自由、探享、激
-				情、纯粹”早已深入人心。现在Jeep已不仅是一个品牌，更是一种精英生活方式的标志。<br/>
-				而Jeep®腕表，则是时间见证精神的最好诠释，秉承Jeep®品牌的核心价值观，充分体现了Jeep品牌所倡导的生活方式。
-				</p>
-			</div>	
-			<div class="ser_imgbox2">
-				<img src="images/ser2_07.jpg" alt="">
-				<p>Jeep品牌诞生于1941年，这个最初定位于越野四轮驱动车的品牌，如今已成为美国精神的文化名片。多年来，它的形态一直在变，但它一贯所坚持和崇尚的核心价值观:“自由、探享、激
-				情、纯粹”早已深入人心。现在Jeep已不仅是一个品牌，更是一种精英生活方式的标志。<br/>
-				而Jeep®腕表，则是时间见证精神的最好诠释，秉承Jeep®品牌的核心价值观，充分体现了Jeep品牌所倡导的生活方式。</p>
+			<div class="online_box offline">
+				<h3>Check offline store</h3>	
+				<h4>查询线下门店</h4>
+				<div class="offlinebox">
+					<form action="">
+						<select>
+						    <option value ="volvo">省级/直辖市选择</option>
+						    <option value ="saab">重庆市</option>
+						    <option value="opel">北京市</option>
+						    <option value="audi">天津市</option>
+						</select>
+						<select>
+						    <option value ="volvo">地级市/区选择</option>
+						    <option value ="saab">大渡口区</option>
+						    <option value="opel">江北区</option>
+						    <option value="audi">渝北区</option>
+						</select>
+						<div class="tel_box">
+							<img src="images/tel.png" alt="">
+							维修热线 : <span>400-6666-8888</span>
+						</div>
+						<div class="clear"></div>
+					</form>
+				</div>
+				<div class="ditu">
+					<div style="width:100%;height: 100%;" id="dituContent"></div>
+				</div>
+				<div class="choose_ditu">
+					<a href="##" class="ditu_box">
+						<h4>博观表行太原贵都百货店</h4>
+						<p>山西省太原市迎泽区柳巷南路19号贵都百货一楼飞亚达专柜</p>
+					</a>
+					<a href="##" class="ditu_box ditu_boxac">
+						<h4>太原百盛长风店街购物中心</h4>
+						<p>山西省太原市小店区长风街长风百盛一层飞亚达专柜</p>
+					</a>
+					<a href="##" class="ditu_box">
+						<h4>博观表行太原贵都百货店</h4>
+						<p>山西省太原市迎泽区柳巷南路19号贵都百货一楼飞亚达专柜</p>
+					</a>
+					<div class="clear"></div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- 售后详情 end-->
+<!-- 线上渠道 end-->
 <!-- 底部 -->
 <div class="footer">
 	<div class="container">
@@ -197,5 +226,94 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </body>
 </html>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(112.574473,37.870135);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+                        }
+    
+    //标注点数组
+    var markerArr = [{title:"博观表行太原贵都百货店",content:"山西省太原市迎泽区柳巷南路19号贵都百货一楼飞亚达专柜",point:"112.573974|37.869771",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+     ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+      var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+      var iw = createInfoWindow(i);
+      var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+      marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+      
+      (function(){
+        var index = i;
+        var _iw = createInfoWindow(i);
+        var _marker = marker;
+        _marker.addEventListener("click",function(){
+            this.openInfoWindow(_iw);
+          });
+          _iw.addEventListener("open",function(){
+            _marker.getLabel().hide();
+          })
+          _iw.addEventListener("close",function(){
+            _marker.getLabel().show();
+          })
+        label.addEventListener("click",function(){
+            _marker.openInfoWindow(_iw);
+          })
+        if(!!json.isOpen){
+          label.hide();
+          _marker.openInfoWindow(_iw);
+        }
+      })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
