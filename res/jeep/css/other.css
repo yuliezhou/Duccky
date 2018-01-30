@@ -51,22 +51,22 @@
 	transition: all 0.8s;
 }
 .newsboxc_ab h4{
-	text-transform: uppercase;
 	color: #1b1b1b;
 	font-size: 18px;
 	padding-bottom: 10px;
-	font-family: 'robo_me';
+	font-weight: bold;
+	font-family: 'Microsoft YaHei';
 }
 .newsboxc_ab p{
 	font-size: 14px;
 	color: #1b1b1b;
 	line-height: 30px;
+	padding-bottom: 15px;
 }
 .newsboxc_ab a{
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #1b1b1b;
-	padding-top: 15px;
 	font-family: 'robo';
 }
 .newsboxc_ab a i{
@@ -79,7 +79,7 @@
 	text-align: center;
 }
 .page .page_btn{
-	padding: 5px 15px 3px;	
+	padding: 5px 25px 3px;	
 	text-align: center;
 	background: #f7f6f6;
 	font-size: 14px;
@@ -163,7 +163,6 @@
 	line-height: 35px;
 	display: flex;
 	align-items: center;
-    font-family: 'dinpro';
 }
 .choose_pro i{
 	padding-left: 15px;
@@ -193,9 +192,6 @@
 	margin-top: 20px;
 	transition: all 0.5s;
 }
-.pro_ff{
-	margin-bottom: 90px;
-}
 .pro_box{
 	transition: all 0.5s;
 }
@@ -212,12 +208,14 @@
 	line-height: 25px;
 	padding: 5px 25px;
 	transition: all 0.5s;
+	font-weight: bold;
 }
 .pro_box h3 span{
 	font-size: 14px;
 	float: right;
 	display: inline-block;
 	line-height: 25px;
+    font-family: 'dinpro_re';
 }
 .pro_box p{
 	padding: 10px 25px 25px;
@@ -651,8 +649,8 @@
 	.pro_box:hover h3{
 		background: #fed400;
 	}
-	.pro_box_p:hover{
-		box-shadow: 0 0 15px #ccc;
+	.pro_box:hover{
+		box-shadow: 0 0 20px #ccc;
 	}
 	/*产品详情*/
 	.buyr:hover{

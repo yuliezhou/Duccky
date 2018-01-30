@@ -33,11 +33,12 @@
 .down i{
     color: #c9c9c9;
     font-size: 16px;
+    margin-left: 10px;
 }
 .shop_img{
     width: 13px;
     height: 13px;
-    margin-right: 10px;
+    margin-bottom: 5px;
 }
 .nav1_innerr{
     float: right;
@@ -123,11 +124,9 @@
     transition: all 0.8s;
     font-family: 'robo';
 }
-.nav2_inner a i{
-    color: #fff;
-    font-size: 16px;
-    display: inline-block;
-    padding-left: 15px;
+
+#header-menu i{
+    margin-left: 10px;
     transition: all 0.8s;
 }
 .navbar-nav{
@@ -293,12 +292,13 @@
     .bdsharebuttonbox a:hover{
         color: #fed400!important;
     }
-    #header a:hover{
+    #header-menu a:hover{
         color: #000;
         background: #fed400!important;
     }
-    #header a:hover i{
+    #header-menu a:hover i{
         color: #000!important;
+        transform: rotate(180deg);
     }
     .dropdown-menu li a:hover{
         color: #000!important;
