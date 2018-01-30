@@ -224,6 +224,9 @@
 	font-size: 16px;
 	font-weight: bold;
 }
+.pro_phone{
+	display: none;
+}
 /*产品列表-end*/
 /*产品详情*/
 .pro_show{
@@ -438,14 +441,6 @@
 }
 
 /*售后详情-end*/
-/*品牌故事*/
-.story{
-	padding: 60px 0;
-}
-.story_box h3{
-
-}
-/*品牌故事-end*/
 /*线上渠道*/
 .online{
 	padding: 50px 0 110px;
@@ -629,7 +624,25 @@
 	width: 1px;
 	background: #d2d2d2;
 }
+.empty{
+	display: none;
+}
 /*线下渠道-end*/
+/*故事jeep*/
+.story{
+	padding: 80px 0;
+}
+.story_box p{
+	line-height: 35px;
+	font-size: 14px;
+	color: #434343;
+	margin-bottom: 15px;
+}
+.story img{
+	width: 100%;
+	margin: 45px 0;
+}
+/*故事jeep-end*/
 @media (min-width: 768px){
 	/*新闻列表*/
 	.change_news a:hover{
@@ -663,3 +676,64 @@
 		color: #fff;
 	}
 }
+@media (max-width: 768px){
+	.pro_details{
+		padding: 30px 0;
+	}
+	.pro_center{
+		padding: 30px 0;
+	}
+	.pro_ff{
+		padding: 0;
+	}
+	.pro_box_p{
+		padding: 0 8px;
+	}
+	.pro_box h4{
+		padding: 10px 0;
+	}
+	.pro_box p{
+		padding: 5px 0;
+	}
+	.pro_box h3{
+		padding: 0;
+		font-size: 14px;
+	}
+	.pro_details_left{
+		display: none;
+	}
+	.pro_phone{
+		display: block;
+	}
+	.pro_phone span{
+		line-height: 35px;
+		height: 35px;
+		background: #000;
+		color: #fff;
+		padding: 0 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.other_box{
+		display: none;
+	}
+	.pro_phone i{
+		transition: all 0.5s;
+	}
+	.ac_span i{
+		transform: rotate(180deg);
+	}
+	.pro_phone span a{
+		color: #fff;
+	}
+	.other_boxc .ac_span{
+		background: #222;
+	}
+	.empty{
+		display: block;
+	}
+	.span_box{
+		display: none;
+	}
+}	
