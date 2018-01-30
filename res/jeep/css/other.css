@@ -34,9 +34,9 @@
 	width: 100%;
 }
 .newsboxc{
-	width: 45%;
+	width: 48%;
 	float: left;
-	margin: 0 15px;
+	margin: 0 1%;
 	position: relative;
 	display: block;
 	margin-bottom: 160px;
@@ -416,11 +416,16 @@
 }
 .ser_imgbox{
 	padding-bottom: 30px;
-	border-bottom: 1px dashed #e9e9e9;
 }
 .ser_imgbox img{
 	width: 100%;
 	margin-bottom: 20px;
+}
+.ser_imgbox h4{
+	font-size: 18px;
+	color: #1b1b1b;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 .ser_imgbox p{
 	color: #1b1b1b;
@@ -428,18 +433,18 @@
 	line-height: 35px;
 }
 .ser_imgbox2{
-	padding: 45px 0;
+	padding: 50px 0 10px;
+	text-align: center;
 }
 .ser_imgbox2 img{
-	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 .ser_imgbox2 p{
+	text-align: left;	
 	color: #1b1b1b;
 	font-size: 14px;
 	line-height: 35px;
 }
-
 /*售后详情-end*/
 /*线上渠道*/
 .online{
@@ -538,6 +543,8 @@
 	font-size: 16px;
 	height: 50px;
 	line-height: 50px;
+	width: 29%;
+	margin-left: 4%;
 }
 .tel_box img{
 	width: 40px;
@@ -642,7 +649,17 @@
 	width: 100%;
 	margin: 45px 0;
 }
+.storys_box p{
+	line-height: 35px;
+	font-size: 14px;
+	color: #434343;
+	margin-bottom: 15px;
+}
+.storys .storys_box{
+	margin-bottom: 25px;
+}
 /*故事jeep-end*/
+
 @media (min-width: 768px){
 	/*新闻列表*/
 	.change_news a:hover{
