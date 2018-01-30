@@ -135,6 +135,7 @@
 		</div>
 <!-- 导航栏 end -->
 <div class="empty"></div>
+<!-- 手机端显示分类 -->
 <div class="pro_phone">
 	<span class="all_p" id="all_btn">ALL <i class="fa fa-angle-up"></i></span>
 	<div class="other_box">
@@ -156,6 +157,7 @@
 		</div>
 	</div>
 </div>
+<!-- 手机端显示分类 end-->
 <!-- 产品中心 -->
 <div class="pro_center">
 	<div class="container">
@@ -375,7 +377,7 @@
  	//分类切换
  	$('#all_btn').on('click',function(){
  		$('.other_box').slideToggle();
- 		$(this).children('i').toggleClass('ac_span');
+ 		$(this).toggleClass('ac_span');
  	})
  	$('.other_boxc').on('click',function(){
  		$(this).children('.span_box').slideToggle();

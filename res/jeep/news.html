@@ -135,6 +135,19 @@
 		</div>
 <!-- 导航栏 end -->
 <div class="empty"></div>
+<!-- 手机端显示分类 -->
+<div class="pro_phone">
+	<span class="all_p" id="all_btn">ALL <i class="fa fa-angle-up"></i></span>
+	<div class="other_box">
+		<div class="other_boxc">
+			<span class="ml_span"><a href="##">行业新闻</a></span>
+		</div>
+		<div class="other_boxc">
+			<span class="ml_span"><a href="##">品牌资讯</a></span>
+		</div>
+	</div>
+</div>
+<!-- 手机端显示分类 end-->
 <div class="news_list">
 	<div class="container">
 		<div class="row">
@@ -312,3 +325,14 @@
 <script type="text/javascript" src="js/swiper.min.js"></script>
 </body>
 </html>
+<script type="text/javascript">
+	 	//分类切换
+ 	$('#all_btn').on('click',function(){
+ 		$('.other_box').slideToggle();
+ 		$(this).toggleClass('ac_span');
+ 	})
+ 	$('.ml_span').on('click',function(){
+ 		$('.ml_span').removeClass('ac_span');
+ 		$(this).addClass('ac_span');
+ 	})
+</script>

@@ -131,6 +131,7 @@
 }
 .news_details img{
 	margin: 38px 0 55px;
+	width: 85%;
 }
 .other_page{
 	width: 100%;
@@ -476,6 +477,7 @@
 }
 .online_box .online_img{
 	margin: 25px 0 50px;
+	width: 85%;
 }
 .onaddressl img {
 	margin-bottom: 25px;
@@ -738,11 +740,13 @@
 	.pro_phone i{
 		transition: all 0.5s;
 	}
-	.ac_span i{
+	.pro_phone .ac_span i{
 		transform: rotate(180deg);
 	}
 	.pro_phone span a{
 		color: #fff;
+		width: 100%;
+		display: inline-block;
 	}
 	.other_boxc .ac_span{
 		background: #222;
@@ -753,4 +757,66 @@
 	.span_box{
 		display: none;
 	}
+	.change_news{
+		display: none;
+	}
+	.newsboxc{
+		width: 100%;
+	}
+	.news_list{
+		padding: 30px 0;
+	}
+	.newsboxp{
+		padding: 0 10px;
+		margin: 20px 0;
+	}
+	.newsboxc_ab{
+		padding: 15px;
+		bottom: -90%;
+	}
+	.newsboxc_ab p{
+		line-height: 25px;
+	}
+	.news_details h3{
+		line-height: 35px;
+	}
+	.news_details{
+		padding: 50px 15px;
+	}
+	.onaddressl,.onaddressr{
+		width: 100%;
+		text-align: center;
+	}
+	.onadd .title_on{
+		width: 100%;
+		text-align: left;	
+	}
+	.onaddressl img{
+		width: 80%;
+	}
+	.onaddressl{
+		margin-bottom: 30px;
+	}
+	.online{
+		padding: 50px 0;
+	}
+	.ser_details{
+		padding: 50px 15px;
+	}
+	.ser_imgbox2 img{
+		width: 70%;
+	}
+	.story{
+		padding: 50px 15px;
+	}
 }	
+@media screen and (min-width:950px) and (max-width:1200px) {
+	.onaddressl,.onaddressr{
+		width: 100%;
+		text-align: center;
+	}
+	.onadd .title_on{
+		width: 100%;
+		text-align: left;	
+	}
+}
