@@ -55,11 +55,13 @@ Page({
       vh = "30vh";
       fonsize = "280rpx"
     }
-    this.setData({
-      len: leng,        //根据子的个数设置宽高
-      vheight: vh,
-      fonsize: fonsize
-    })
+    setTimeout(function () {
+        _this.setData({
+            len: leng,        //根据子的个数设置宽高
+            vheight: vh,
+            fonsize: fonsize
+        })
+    }, 200)
   },
   //设置 字的高宽
   setHeight:function(){

@@ -1,4 +1,4 @@
-
+/*home*/
 .home {
     height: 100vh;
     width: 100%;
@@ -195,10 +195,16 @@
 
 .gobar {
     float: left;
-    line-height: 2rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.gobar image{
+    width: 66rpx;
+    height: 66rpx;
+    border-radius: 50%;  
+}
 .mainbar {
     float: left;
     height: 90rpx;
