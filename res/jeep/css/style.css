@@ -1,0 +1,144 @@
+/*首页*/
+#banner_sw1{
+	width: 100%;
+} 
+#banner_sw1 .swiper-slide{
+	width: 100%;
+	position: relative;
+}
+#banner_sw1 img{
+	width: 100%;
+}
+.banner_ab{
+	position: absolute;
+	top: 30%;
+	left: 15%;
+}
+.xl_choose{
+	padding-top: 70px;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.xl_chooseboxl{
+	width: 50%;
+	padding-left: 10%;
+	float: left;
+	padding-top: 5%;
+}
+.xl_chooseboxl h3{
+	color: #1b1b1b;
+	font-size: 36px;
+    font-family: 'dinpro';
+    margin-bottom: 10px;
+}
+.xl_chooseboxl h2{
+	color: #1b1b1b;
+	font-size: 60px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.xl_chooseboxl p{
+	font-size: 14px;
+	color: #1b1b1b;
+	padding-bottom: 10px;
+}
+.xl_chooseboxr{
+	text-align: center;
+	width: 50%;
+	float: left;
+	padding-right: 3%;
+}
+.xl_chooseboxr img{
+	width: 70%;
+}
+.xl_more{
+    font-family: 'dinpro';
+    text-transform: uppercase;
+    color: #313131;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #313131;
+    transition: all 0.5s;
+    margin-top: 30px;
+}
+.xl_more i{
+	color: #313131;
+	font-size: 14px;
+	padding-left: 20px;
+	transition: all 0.5s;
+}
+.empty{
+	display: none;
+}
+.change_xl{
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	width: 200px;
+}
+
+.xl_choosebox{
+	display: none;
+}
+.xl_choose .re_choose{
+	display: block;
+	animation: 3s opc linear;
+}
+.change_xl .change_btn{
+	color: #7d7d7d;
+	font-size: 12px;
+	line-height: 30px;
+	height: 30px;
+	width: 100%;
+	transition: all 0.5s;
+}
+.change_xl img{
+	opacity: 0;
+	transition: all 0.5s;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.change_xl .ac_chanxl{
+	font-size: 18px;
+	color: #1b1b1b;
+}
+.change_xl .ac_chanxl img{
+	opacity: 1;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+/*首页-end*/
+@media (min-width: 768px){
+	.xl_more:hover{
+		background: #fed400;
+		color: #fff;
+	}
+	.xl_more:hover i{
+		color: #fff;
+		padding-left: 25px;
+	}
+	.change_xl .change_btn:hover{
+		font-size: 18px;
+		color: #1b1b1b;
+	}
+	.change_xl .change_btn:hover img{
+		opacity: 1;
+	}
+}
+/*手机端*/
+@media (max-width: 768px){
+	.empty{
+		display: block;
+	}
+}
+@-webkit-keyframes opc {
+    0% {
+        opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
