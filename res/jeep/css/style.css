@@ -329,6 +329,10 @@
 	padding-top: 30px;
 	padding-bottom: 10px;
 }
+.jeep_boxp{
+	padding-top: 40px;
+	position: relative;
+}
 #jeep_pro3 h3{
 	color: #1b1b1b;
 	font-size: 24px;
@@ -337,7 +341,7 @@
 }
 #jeep_pro3 span{
 	height: 2px;
-	width: 50%;
+	width: 40%;
 	background: #000;
 	display: inline-block;
 	margin-bottom: 10px;
@@ -345,15 +349,38 @@
 #jeep_pro3 p{
 	color: #1b1b1b;
 	font-size: 14px;
-	line-height: 35px;
+	line-height: 30px;
 	text-align: center;
 }
 .jeep_pro3box{
 	text-align: center;
 	display: block;
+	background: #fff;
 }
-.jeep_pro3_img{
+.jpro3_img{
 	text-align: center;
+	width: 100%;
+}
+.jpro3_img img{
+	width: 100%;
+}
+.swiper-button-nextjeep,.swiper-button-prevjeep{
+	height: 100%;
+	width: 150px;
+	background: #fff;
+	opacity: 0.6;
+	z-index: 999;
+	cursor: pointer;
+}
+.swiper-button-nextjeep{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.swiper-button-prevjeep{
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 /*首页-end*/
 @media (min-width: 768px){
