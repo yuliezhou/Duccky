@@ -231,29 +231,43 @@
 .pro_phone{
 	display: none;
 }
-/*产品列表-end*/
+	/*产品列表-end*/
 /*产品详情*/
+.gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.6;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
 .pro_show{
-	padding-right: 10%;
+	padding: 7%;
 }
 .pro_showimg{
 	width: 100%;
 }
 .pro_showimg img{
 	width: 100%;
-	display: none;
 }
 .choose_pro{
 	width: 100%;
 }
-.choose_pro .choose_probox{
-	float: left;
+.choose_pro .swiper-slide{
 	width: 32.333%;
 	background: #f5f5f5;
 	margin: 0 0.5%;
 }
+.choose_pro .swiper-slide img{
+	width: 100%;
+}
 .pro_details{
 	padding: 130px 0;
+}
+.parameter{
+	padding: 0 5%;
 }
 .parameter h4{
 	padding-top: 50px;
@@ -264,17 +278,24 @@
 }
 .parameter h2{
 	padding-bottom: 20px;
-    font-family: 'robo_bold';
 	color: #1b1b1b;
 	font-size: 48px;
+    font-family: 'dinpro';
+
 }
 .parameter .par_span{
-	font-size: 16px;
+	font-size: 18px;
 	color: #1b1b1b;
 	padding-right: 20px;
-	border-right: 4px solid #000;
-	font-family: 'robo';
 	text-transform: uppercase;
+	font-weight: bold;
+}
+.parameter .par_span i{
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 15px;
+	font-family: 'Arial';
+	border-right: 4px solid #000;
 }
 .tabel_parc{
 	margin-top: 20px;
@@ -369,6 +390,44 @@
 .pro_desp img{
 	margin: 50px 0 30px;
 }
+
+#choose_pro{
+	position: relative;
+	z-index: 1;
+}
+#choose_pro .swiper-button-next,#choose_pro .swiper-button-prev{
+	background-image: none!important;
+	width: 10%;
+	height: 100%;
+	background: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	margin: 0;
+	z-index: 9999!important;
+	transition: all 0.5s;
+}
+#choose_pro .swiper-button-next{
+	right: -12%!important;
+}
+#choose_pro .swiper-button-next i{
+	font-size: 24px;
+	color: #000;
+	transition: all 0.5s;
+	padding: 0!important;
+
+}
+#choose_pro .swiper-button-prev{
+	left: -12%!important;
+}
+#choose_pro .swiper-button-prev i{
+	font-size: 24px;
+	color: #000;
+	transition: all 0.5s;
+	padding: 0!important;
+}
+
 /*产品详情-end*/
 /*查询详情*/
 .inquire_details{
@@ -609,11 +668,14 @@
 	color: #1b1b1b;
 	font-size: 18px;
 	padding-bottom: 5px;
+	transition: all 0.5s;
+
 }
 .ditu_box p{
 	font-size: 14px;
 	color: #535353;
 	line-height: 25px;
+	transition: all 0.5s;
 }
 .ditu_boxac{
 	position: relative;
@@ -696,6 +758,15 @@
 	}
 	.share_pro .share_box:hover a{
 		color: #fff;
+	}
+	.choose_ditu .ditu_box:hover h4,.choose_ditu .ditu_box:hover p{
+		color: #fed400;
+	}
+	#choose_pro .swiper-button-next:hover,#choose_pro .swiper-button-prev:hover{
+		background: #000;
+	}
+	#choose_pro .swiper-button-next:hover i,#choose_pro .swiper-button-prev:hover i{
+		color: #fed400;
 	}
 }
 @media (max-width: 768px){
@@ -814,6 +885,31 @@
 	}
 	.story{
 		padding: 50px 15px;
+	}
+	.offlinebox select{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.tel_box{
+		width: 100%;
+	}
+	.choose_ditu{
+		padding-top: 0;
+	}
+	.offlinebox{
+		padding: 20px 15px;
+	}
+	.ditu{
+		height: 300px;
+		width: 95%;
+	}
+	.choose_ditu .ditu_box{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.pro_desp img{
+		width: 80%;
 	}
 }	
 @media screen and (min-width:950px) and (max-width:1200px) {

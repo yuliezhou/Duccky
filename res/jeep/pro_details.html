@@ -141,28 +141,48 @@
 		<div class="row">
 			<div class="pro_showtop col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="pro_show col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="pro_showimg">
-						<img src="images/pros_03.jpg" alt="">
-						<img src="images/pros_03.jpg" alt="">
-						<img src="images/pros_03.jpg" alt="">
+					<div class="pro_showimg" id="pro_showimg">
+						  <div class="swiper-container gallery-top">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide">
+								<img src="images/pros_03.jpg" alt="">
+						      </div>
+						      <div class="swiper-slide">
+								<img src="images/pros_03.jpg" alt="">
+						      </div>
+						      <div class="swiper-slide">
+								<img src="images/pros_03.jpg" alt="">
+						      </div>
+						    </div>
+						    <!-- Add Arrows -->
+						  </div>
 					</div>
-					<div class="choose_pro">
-						<div class="choose_probox">
-							<img src="images/prosm_06.jpg" alt="">
-						</div>
-						<div class="choose_probox">
-							<img src="images/prosm_06.jpg" alt="">
-						</div>
-						<div class="choose_probox">
-							<img src="images/prosm_06.jpg" alt="">
-						</div>
-						<div class="clear"></div>
+					<div class="choose_pro" id="choose_pro">
+					  <div class="swiper-container gallery-thumbs" >
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide">
+				      		<img src="images/prosm_06.jpg" alt="">	
+					      </div>
+					      <div class="swiper-slide">
+				      		<img src="images/prosm_06.jpg" alt="">	
+					      </div>
+					      <div class="swiper-slide">
+				      		<img src="images/prosm_06.jpg" alt="">	
+					      </div>
+					    </div>	
+					  </div>	
+					    <div class="swiper-button-next swiper-button-white">
+					    	<i class="fa fa-angle-right"></i>
+					    </div>
+					    <div class="swiper-button-prev swiper-button-white">
+					    	<i class="fa fa-angle-left"></i>
+					    </div>			
 					</div>
 				</div>	
 				<div class="parameter col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<h4>Wrangler series</h4>
-					<h2>JPW67602  model</h2>
-					<span class="par_span">Product parameters</span>
+					<h4>牧马人系列</h4>
+					<h2>JPW67602</h2>
+					<span class="par_span">商品参数<i>Product parameters</i></span>
 					<div class="tabel_par">
 						<div class="tabel_parc">
 							表壳厚度<span>7mm</span>
@@ -297,12 +317,25 @@
 </body>
 </html>
 <script type="text/javascript">
-	$('.pro_showimg img').eq(0).show();
-	$('.choose_pro .choose_probox').hover(function() {
-		var index = $(this).index();
-		$('.pro_showimg img').hide();
-		$('.pro_showimg img').eq(index).show();
-	}, function() {
-		/* Stuff to do when the mouse leaves the element */
-	});
+    var galleryTop = new Swiper('.gallery-top', {
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+        initialSlide: 1,
+        loop:true,
+        loopedSlides:3,
+
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      centeredSlides: true,
+      slidesPerView: '3',
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+        initialSlide: 1,
+        loop:true,
+        loopedSlides:3,
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
 </script>

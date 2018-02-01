@@ -339,7 +339,7 @@
 		        <div class="swiper-slide">
 					<a href="##" class="jeep_pro3box">
 						<div class="jpro3_img">
-							<img src="images/jeep_03.jpg" alt="">
+							<img src="images/jeep_06.jpg" alt="">
 						</div>
 						<div class="jeep_pro3des">
 							<h4>牧马人系列</h4>
@@ -354,7 +354,7 @@
 		        <div class="swiper-slide">
 					<a href="##" class="jeep_pro3box">
 						<div class="jpro3_img">
-							<img src="images/jeep_03.jpg" alt="">
+							<img src="images/jeep_08.jpg" alt="">
 						</div>
 						<div class="jeep_pro3des">
 							<h4>牧马人系列</h4>
@@ -369,37 +369,7 @@
 		        <div class="swiper-slide">
 					<a href="##" class="jeep_pro3box">
 						<div class="jpro3_img">
-							<img src="images/jeep_03.jpg" alt="">
-						</div>
-						<div class="jeep_pro3des">
-							<h4>牧马人系列</h4>
-							<h3>JPW67602</h3>
-							<span></span>
-							<p>牧马人系列专注于技术性能，以多功能
-							石英机芯为主，配合机械机芯推出产品，为
-							用户提供专业的选择。</p>
-						</div>
-					</a>
-		        </div>
-		        <div class="swiper-slide">
-					<a href="##" class="jeep_pro3box">
-						<div class="jpro3_img">
-							<img src="images/jeep_03.jpg" alt="">
-						</div>
-						<div class="jeep_pro3des">
-							<h4>牧马人系列</h4>
-							<h3>JPW67602</h3>
-							<span></span>
-							<p>牧马人系列专注于技术性能，以多功能
-							石英机芯为主，配合机械机芯推出产品，为
-							用户提供专业的选择。</p>
-						</div>
-					</a>
-		        </div>
-		        <div class="swiper-slide">
-					<a href="##" class="jeep_pro3box">
-						<div class="jpro3_img">
-							<img src="images/jeep_03.jpg" alt="">
+							<img src="images/jeep_10.jpg" alt="">
 						</div>
 						<div class="jeep_pro3des">
 							<h4>牧马人系列</h4>
@@ -412,7 +382,6 @@
 					</a>
 		        </div>
 		    </div>
-
 		</div>
 	    <div class="swiper-button-nextjeep">
 	    </div>
@@ -421,6 +390,58 @@
 	</div>
 </div>	
 <!-- 轮播3 end-->
+<!-- 轮播3 phone-->
+<div class="swiper-container product_idx_phone3" id="product_idx_phone3">
+	<h1>JEEP 系列</h1>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+			<a href="##" class="phone_jeep">
+				<div class="phone_jeepbxo">
+					<img src="images/jeep_03.jpg" alt="">
+				</div>
+				<h4>牧马人系列</h4>
+				<h3>JPW67602</h3>
+				<span></span>
+				<p>牧马人系列专注于技术性能，以多功能
+				石英机芯为主，配合机械机芯推出产品，为
+				用户提供专业的选择。</p>
+			</a>
+        </div>
+    </div>
+    <div class="swiper-button-nextpro_phone">
+    	<i class="fa fa-angle-right"></i>
+    </div>
+    <div class="swiper-button-prevpro_phone">
+    	<i class="fa fa-angle-left"></i>
+    </div>
+</div>
+<!-- 轮播3 phone-end-->
+<!-- 轮播3 phone-->
+<div class="swiper-container product_idx_phone3" id="product_idx_phone4">
+	<h1>Jeep spirit 系列</h1>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+			<a href="##" class="phone_jeep">
+				<div class="phone_jeepbxo">
+					<img src="images/jeep_03.jpg" alt="">
+				</div>
+				<h4>牧马人系列</h4>
+				<h3>JPW67602</h3>
+				<span></span>
+				<p>牧马人系列专注于技术性能，以多功能
+				石英机芯为主，配合机械机芯推出产品，为
+				用户提供专业的选择。</p>
+			</a>
+        </div>
+    </div>
+    <div class="swiper-button-nextpro_phone">
+    	<i class="fa fa-angle-right"></i>
+    </div>
+    <div class="swiper-button-prevpro_phone">
+    	<i class="fa fa-angle-left"></i>
+    </div>
+</div>
+<!-- 轮播3 phone-end-->
 <!-- 底部 -->
 <div class="footer">
 	<div class="container">
@@ -502,6 +523,21 @@
 </body>
 </html>
 <script type="text/javascript">
+	//屏幕宽度
+    	var width = document.body.clientWidth;
+    	//轮播图排列的个数
+    	var num;
+    	var bt;
+    	//轮播图之间的距离
+    	if(width>900&&width<1320){
+			num = 4;
+			bt=150
+    	}else if(width<767){
+    		num = 1;
+    	}else{
+    		num= 5
+    		bt=190
+    	}
 	//banner1
 	var swiper1 = new Swiper('#banner_sw1', {
 	    slidesPerView: 1,
@@ -545,17 +581,35 @@
 	    loop:true,
         nextButton: '.swiper-button-nextpro_phone',
    	    prevButton: '.swiper-button-prevpro_phone'
+	});	
+	//产品滚动3(手机端)
+	var swiper6 = new Swiper('#product_idx_phone3', {
+	    slidesPerView: 1,
+	    speed:1500,
+	    paginationClickable: true,
+	    loop:true,
+        nextButton: '.swiper-button-nextpro_phone',
+   	    prevButton: '.swiper-button-prevpro_phone'
+	});	
+	//产品滚动4(手机端)
+	var swiper7 = new Swiper('#product_idx_phone4', {
+	    slidesPerView: 1,
+	    speed:1500,
+	    paginationClickable: true,
+	    loop:true,
+        nextButton: '.swiper-button-nextpro_phone',
+   	    prevButton: '.swiper-button-prevpro_phone'
 	});
 	// banner3
 	var swiper5 = new Swiper('#jeep_pro3', {
 		pagination: '.swiper-pagination',
-	    slidesPerView: '6',
+	    slidesPerView: num,
 	    paginationClickable: true,
 	    initialSlide: 1,
 	    loop:true,
 	    speed:1500,
 	    spaceBetween: 25,
-	    slidesOffsetBefore :150,
+	    slidesOffsetBefore :bt,
 	    autoplayDisableOnInteraction: false,
 	    nextButton: '.swiper-button-nextjeep',
 	    prevButton: '.swiper-button-prevjeep'
