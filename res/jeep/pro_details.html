@@ -236,6 +236,15 @@
 	</div>
 </div>
 <!-- 产品详情 end-->
+<!-- 弹窗 -->
+<div class="model_box flex_mid  none" id="model_box">
+	<div class="model_boxc flex_mid">
+		<img src="" alt="">
+		<div class="close_btn flex_mid">
+			<i class="fa fa-close"></i>
+		</div>
+	</div>
+</div>
 <!-- 底部 -->
 <div class="footer">
 	<div class="container">
@@ -338,4 +347,22 @@
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
+    	//弹出下载框
+	$('#pro_showimg .swiper-slide').on('click',function(){
+		//图片的路径
+		var img_src = $(this).children('img').attr('src');
+
+		$('#model_box img').attr({
+			src: img_src
+		});	
+		$('#model_box').removeClass('none');
+	})
+	//点击透明色区域，关闭弹出框
+	$('#model_box').on('click',function(e){
+		$('#model_box').addClass('none');
+	})
+    //点击弹出框，阻止事件冒泡
+    $(".model_boxc img").on('click',function(e){
+		e.stopPropagation();
+    })
 </script>

@@ -1,4 +1,7 @@
 /*新闻列表*/
+.none{
+	display: none;
+}
 .news_list{
 	width: 100%;
 	padding: 80px 0 130px;
@@ -726,7 +729,38 @@
 	margin-bottom: 25px;
 }
 /*故事jeep-end*/
-
+.model_box{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 9999;
+}
+.model_boxc{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.model_boxc img{
+	width: 28%;
+}
+.close_btn{
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	border:1px solid #fff; 
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition: all 0.5s;
+}
+.close_btn i{
+	color: #fff;
+	font-size: 18px;
+	transition: all 0.5s;
+}
 @media (min-width: 768px){
 	/*新闻列表*/
 	.change_news a:hover{
@@ -767,6 +801,12 @@
 	}
 	#choose_pro .swiper-button-next:hover i,#choose_pro .swiper-button-prev:hover i{
 		color: #fed400;
+	}
+	.close_btn:hover{
+		background: #fed400;
+	}
+	.close_btn:hover i{
+		transform: rotate(-90deg);
 	}
 }
 @media (max-width: 768px){
@@ -911,6 +951,9 @@
 	.pro_desp img{
 		width: 80%;
 	}
+	.model_boxc img{
+		width: 80%;
+	}
 }	
 @media screen and (min-width:950px) and (max-width:1200px) {
 	.onaddressl,.onaddressr{
@@ -920,5 +963,13 @@
 	.onadd .title_on{
 		width: 100%;
 		text-align: left;	
+	}
+	.model_boxc img{
+		width: 40%;
+	}
+}
+@media screen and (min-width:1200px) and (max-width:1500px) {
+	.model_boxc img{
+		width: 35%;
 	}
 }
