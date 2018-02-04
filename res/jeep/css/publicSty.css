@@ -139,24 +139,27 @@ p{
 
  ::-webkit-input-placeholder {
     /* WebKit browsers */
-    color: #bab9b9;
+    color: #707070;
 }
 
  :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #bab9b9;
+    color: #707070;
     opacity: 1;
 }
 
  ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #bab9b9;
+    color: #707070;
     opacity: 1;
 }
 
  :-ms-input-placeholder {
     /* Internet Explorer 10+ */
-    color: #bab9b9;
+    color: #707070;
+}
+#bdshare_weixin_qrcode_dialog_bg,.bd_weixin_popup{
+    height: 310px!important;
 }
 /*清除浮动*/
 .clear{
@@ -171,12 +174,6 @@ p{
 @font-face {
     font-family: 'rale_light';
     src: url('../fonts/Raleway-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'he_md';
-    src: url('../fonts/HelveticaNeueLTPro-Md.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -201,6 +198,12 @@ p{
 @font-face {
     font-family: 'dinpro';
     src: url('../fonts/dinpro-bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dinpro_m';
+    src: url('../fonts/DINPro-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }

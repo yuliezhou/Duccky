@@ -97,8 +97,28 @@
 }
 .banner_img{
     width: 100%;
+    position: relative;
 }
-
+.banner_img img{
+    width: 100%;
+}
+.banner_txtab{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.banner_txtab h3{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.banner_txtab h4{
+    font-family: 'dinpro_m';
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
 #header{
     position: absolute;
     top: 0;
@@ -148,7 +168,6 @@
     text-align: center;
     padding: 0 36px!important;
     transition: all 0.8s;
-    font-family: 'robo';
 }
 
 #header-menu i{
@@ -179,7 +198,7 @@
 }
 /*fotter*/
 .footer{
-    padding: 65px 0 50px;
+    padding: 55px 0 60px;
     background: url(../images/fot_02.jpg) 0 0 no-repeat;
     background-size: cover;
 }
@@ -191,7 +210,7 @@
     margin-bottom: 35px;
 }
 .fot_logo img{
-    width: 385px;
+    width: 358px;
 }
 .fot_des{
     width: 100%;
@@ -200,21 +219,19 @@
     float: left;
 }*/
 .fot_desl .fot_choose{
-    margin-right: 95px;
+    margin-right: 13%;
     float: left;
 }
 .fot_choose h4{
     font-size: 16px;
     color: #fff;
     margin-bottom: 25px;
-    font-family: 'robo_me';
 }
 .fot_choose a{
     display: inline-block;
     color: #fff;
     padding: 10px 0;
     text-transform: uppercase;
-    font-family: 'robo';
     transition: all 0.5s;
 }
 .fot_desr{
@@ -225,7 +242,7 @@
     width: 45%;
 }
 .contact_box h3{
-    color: #707070;
+    color: #fff;
     font-size: 36px;
     margin-bottom: 15px;
     font-family: 'robo';
@@ -234,6 +251,7 @@
     color: #fff;
     font-size: 16px;
     line-height: 35px;
+    font-family: 'robo';
 }
 .share{
     margin-top: 35px;
@@ -391,9 +409,7 @@
     #header .about_brand{
         display: inline-block!important;
     }
-    .banner_img{
-        display: none;
-    }
+
     #header{
         background: #000;
     }
@@ -445,13 +461,26 @@
         padding: 20px 0;
         background: #000;
     }
+    .banner_txtab{
+        top: 20%;
+        left: 10%;
+    }
+    .banner_txtab h3{
+        font-size: 18px;
+    }
+    .banner_txtab h4{
+        font-size: 12px;
+    }
 }
 @media screen and (min-width:1030px) and (max-width:1330px) {
     .fot_logo img{
         width: 300px;
     }
+
+}
+@media screen and (min-width:1030px) and (max-width:1700px) {
     .fot_desl .fot_choose{
-        margin-right: 50px;
+        margin-right: 10%;
     }
 }
 @media screen and (min-width:992px)and (max-width:1030px) {
