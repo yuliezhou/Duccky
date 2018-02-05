@@ -406,6 +406,19 @@
 	position: relative;
 	z-index: 1;
 }
+.choose_pro .choose_ac1{
+	display: block;
+}
+#choose_pro .swiper-slide{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#choose_pro .swiper-slide img{
+	width: 50%;
+	display: inline-block;
+}
 #choose_pro .swiper-button-next,#choose_pro .swiper-button-prev{
 	background-image: none!important;
 	width: 10%;
