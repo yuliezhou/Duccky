@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="idx_top flex_between">
+		<h3>我的订单</h3>
+		<a href="##">
+			<img src="images/tx.png" alt="">
+		</a>
+	</div>
+	<div class="list" id="list">
+		<!-- 订单列表盒子 -->
+		<div class="list_box">
+			<div class="list_tit">
+				<div class="list_title">
+					<img src="images/f1.png" alt="">
+					<span>通讯录还原</span>
+				</div>
+				<div class="list_titri">￥150</div>
+			</div>
+			<div class="list_des flex_between">
+				<div class="lise_desl">
+					<p class="status">类型：需排队</p>
+					<p class="number">QQ号：1113513701</p>
+					<p class="time">预约时间：2018/01/28 17:26</p>
+				</div>
+				<div class="lise_desr">
+					排队中
+				</div>
+			</div>	
+		</div>
+		<div class="list_box">
+			<div class="list_tit">
+				<div class="list_title">
+					<img src="images/f2.png" alt="">
+					<span>通讯录还原</span>
+				</div>
+				<div class="list_titri">￥150</div>
+			</div>
+			<div class="list_des flex_between">
+				<div class="lise_desl">
+					<p class="status">类型：需排队</p>
+					<p class="number">QQ号：1113513701</p>
+					<p class="time">预约时间：2018/01/28 17:26</p>
+				</div>
+				<div class="lise_desr">
+					排队中
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="none_list flex_mid">
+		<div class="none_box">
+			<h3>无订单</h3>
+			<p>你还没有下单，快去下单吧</p>
+		</div>
+	</div>
+	<!-- 占位盒子 -->
+	<div class="empty"></div>
+	<div class="tabber">
+		<div class="tabber_box  flex_around">
+			<a href="index.html" class="tab_box">
+				<img src="images/t1.png" alt="">
+				<img src="images/tb1.png" alt="" style="display:none">
+				<p>恢复</p>
+			</a>
+			<a href="order_list.html" class="tab_box">
+				<img src="images/t2.png" alt="" style="display:none">
+				<img src="images/tb2.png" alt="">
+				<p>订单</p>
+			</a>
+			<a href="help.html" class="tab_box">
+				<img src="images/t3.png" alt="">
+				<img src="images/tb3.png" alt=""style="display:none">
+				<p>客服</p>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript">
+	var list_len = $('#list').children('.list_box').length;
+		
+	if(list_len == 0){
+		$('.none_list').show();
+	}else{
+		$('.none_list').hide();
+	}
+	 //  layer.open({
+		// type: 2
+		// ,content: '加载中'
+	 //  });
+</script>
+

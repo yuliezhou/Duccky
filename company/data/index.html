@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="idx_top flex_between">
+		<h3>还原精灵</h3>
+		<a href="##">
+			<img src="images/tx.png" alt="">
+		</a>
+	</div>
+	<!-- banner -->
+	<div class="banner">
+		<div class="swiper-container" id="banner">
+		    <div class="swiper-wrapper">
+
+		    </div>		
+		    <div class="swiper-pagination"></div>
+		</div>	
+	</div>
+	<!-- 功能区块 -->
+	<div class="fun_box" id="fun_box">
+		<div class="fun_boxbg flex_between">
+			<a href="##" class="fun_boxsm" data-id='1'>
+				<img src="images/f1.png" alt="">
+				<p>通讯录</p>
+			</a>
+			<a href="##" class="fun_boxsm" data-id='2'>
+				<img src="images/f2.png" alt="">
+				<p>通话记录</p>
+			</a>
+			<a href="##" class="fun_boxsm" data-id='3'>
+				<img src="images/f3.png" alt="">
+				<p>照片</p>
+			</a>
+			<a href="##" class="fun_boxsm" data-id='4'>
+				<img src="images/f4.png" alt="">
+				<p>备忘录</p>
+			</a>
+		</div>
+		<div class="fun_boxbg flex_between">
+			<a href="##" class="fun_boxsm" data-id='5'>
+				<img src="images/f5.png" alt="">
+				<p>日历</p>
+			</a>
+			<a href="##" class="fun_boxsm" data-id='6'>
+				<img src="images/f6.png" alt="">
+				<p>微信</p>
+			</a>
+			<a href="##" class="fun_boxsm" data-id='7'>
+				<img src="images/f7.png" alt="">
+				<p>QQ</p>
+			</a>
+			<a href="##" class="fun_boxsm" data-id='8'>
+				<img src="images/f8.png" alt="">
+				<p>短信</p>
+			</a>
+		</div>
+	</div>
+	<!-- 还原说明 -->
+	<div class="des">
+		<h3>还原说明</h3>
+		<div class="des_txt">
+			帮你恢复还原iPhone中被误删的通讯录、照片、微信聊天记录、QQ聊天记录、短信、通话记录等多项数据还原，成功率极高！如果数据已被覆盖，将无法还原。根据以下步骤操作：
+		</div>
+		<div class="des_imgbox">
+			<div class="step_box">
+				<img src="images/st1.png"  alt="">
+				<p>下单预约</p>
+			</div>
+			<img src="images/jt.png" alt="" class="jt_img">
+			<div class="step_box">
+				<img src="images/st2.png"  alt="">
+				<p>工程师还原</p>
+			</div>
+			<img src="images/jt.png" alt="" class="jt_img">
+			<div class="step_box">
+				<img src="images/st3.png"  alt="">
+				<p>还原成功</p>
+			</div>
+		</div>	
+	</div>
+	<!-- 占位盒子 -->
+	<div class="empty"></div>
+	<div class="tabber">
+		<div class="tabber_box  flex_around">
+			<a href="index.html" class="tab_box">
+				<img src="images/t1.png" alt=""style="display:none">
+				<img src="images/tb1.png" alt="">
+				<p>恢复</p>
+			</a>
+			<a href="order_list.html" class="tab_box">
+				<img src="images/t2.png" alt="">
+				<img src="images/tb2.png" alt="" style="display:none">
+				<p>订单</p>
+			</a>
+			<a href="help.html" class="tab_box">
+				<img src="images/t3.png" alt="">
+				<img src="images/tb3.png" alt=""style="display:none">
+				<p>客服</p>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript">
+	backSwi();
+	function backSwi(){
+    	//加密对象
+    	var rdata = {
+            appkey: '593624b55898c6b524e516771afb8701'
+        }    	
+    	//加密以后的数据
+    	var sign = hexMD5(mySort(rdata));
+		$.ajax({
+			url: 'http://192.168.10.39:8080/v1/Publics/appImg',
+			type: 'POST',
+			dataType: 'json',
+			data: {sign: sign},
+			success:function(data){
+				var bannerImg = '';
+				for(i in data.data){
+					bannerImg+='<div class="swiper-slide"><a href="##">'+'<img src="'+data.data[i].img+'" alt=""></a></div>'
+				}
+	    		 $('#banner .swiper-wrapper').append(bannerImg);
+				var swiper1 = new Swiper('#banner', {
+				    pagination: '.swiper-pagination',
+				    slidesPerView: 1,
+				    speed:1500,
+				    paginationClickable: true,
+				    autoplay : 1500,
+				    loop:true,
+				    autoplayDisableOnInteraction : false
+				});		    		 
+			}
+		})		
+	}
+
+	
+
+	$("#fun_box").on('click', '.fun_boxsm', function() {
+		var dataId = $(this).attr("data-id");
+		window.location.href = './order.html?id='+dataId;
+	});
+
+	
+	
+</script>

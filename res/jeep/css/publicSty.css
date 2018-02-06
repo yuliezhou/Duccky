@@ -217,3 +217,14 @@ p{
     height: 50px;
     width: 100%;
 }
+#bdshare_weixin_qrcode_dialog_qr{
+    min-height: 218px!important;
+    background: url(../images/erwm.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+#bdshare_weixin_qrcode_dialog_qr table{
+    display: none!important;
+}
+.bd_weixin_popup .bd_weixin_popup_main{
+    min-height: 
+}
