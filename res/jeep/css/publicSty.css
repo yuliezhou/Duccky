@@ -53,6 +53,10 @@ p{
 .active_color {
     color: #3581c2;
 }
+.bd_weixin_popup_foot{
+    text-align: center!important;
+    font-size: 14px!important;
+}
 
 /*水平垂直居中-弹性盒子模型*/
 
