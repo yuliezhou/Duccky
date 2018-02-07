@@ -132,7 +132,28 @@ $("#get_code").on('click', function() {
                     var code = data.code;
                     var msg = data.msg;
                 	if( code== 200){
-                		window.location.href = './index.html';
+                        //获取token
+                        var local_token = data.data.token;
+                        var local_appid = data.data.appid;
+                        localStor = local_token+'|'+local_appid
+                        //设置本地缓存
+                        localStorage.localStor =localStor;
+                        
+                        //获取字符串local
+                        var newLocal = localStorage.localStor;
+                        // 本地缓存转数组
+                        newLocalArr = newLocal.split("|");
+                        //拿出数据
+                        var local_tokens = newLocalArr[0];
+                        var local_appids = newLocalArr[1];
+                        layer.open({
+                            content: '登录成功',
+                            skin: 'msg',
+                            time: 0.8
+                        });                        
+                        setTimeout(function(){
+                            window.location.href = './index.html';
+                        },1000)
                 	}else{
                         layerCommon('验证码输入错误，请重新输入')
                 	}

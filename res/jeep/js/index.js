@@ -45,13 +45,10 @@ window._bd_share_config = {
 };
 with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~ ( - new Date() / 36e5)];
 // 首页-end------------------------------
-$(".bds_weixin").on('click',function(){
-    setTimeout(function(){
-      var html = $('#bdshare_weixin_qrcode_dialog .bd_weixin_popup_foot').html('关注公众微信号')
-        console.log(html)      
-    },200)
+setInterval(function(){
+  var html = $('#bdshare_weixin_qrcode_dialog .bd_weixin_popup_foot').html('关注公众微信号')    
+},10)
 
 
-})
 
  
