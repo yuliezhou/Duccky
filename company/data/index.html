@@ -120,18 +120,20 @@
 <script type="text/javascript">
     //获取字符串local
     var newLocal = localStorage.localStor;
-    // 本地缓存转数组
-    newLocalArr = newLocal.split("|");
-    //拿出数据
-    var local_tokens = newLocalArr[0];
-    var local_appids = newLocalArr[1];
-	if(local_tokens !=undefined){
-		$('#tx_img img').eq(0).hide();
-		$('#tx_img img').eq(1).show();
-	}else{
-		$('#tx_img img').eq(0).show();
-		$('#tx_img img').eq(1).hide();
-	}
+    if(newLocal){
+	    // 本地缓存转数组
+	    newLocalArr = newLocal.split("|");
+	    //拿出数据
+	    var local_tokens = newLocalArr[0];
+	    var local_appids = newLocalArr[1];
+		if(local_tokens !=undefined){
+			$('#tx_img img').eq(0).hide();
+			$('#tx_img img').eq(1).show();
+		}else{
+			$('#tx_img img').eq(0).show();
+			$('#tx_img img').eq(1).hide();
+		}    	
+    }
 	backSwi();
 	function backSwi(){
     	//加密对象
