@@ -25,37 +25,4 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-	//新闻轮播滚动
-	function AutoScroll(obj) {
-	    $(obj).find("ul:first").animate({
-	        marginTop: "-1rem"
-	    }, 1000, function() {
-	        $(this).css({
-	            marginTop: "0px"
-	        }).find("li:first").appendTo(this);
-	    });
-	}
-	$(document).ready(function() {
-	    setInterval('AutoScroll("#top")', 2000)
-	});
-	//新闻轮播滚动-------------------------------end
-	//业务选择
-	$("#choose_boxp").on('click','.choose_boxc',function(){
-		$(this).addClass('ac_choose').siblings('.choose_boxc').removeClass('ac_choose name')
-	})
-	//业务选择-------------------end
-	//下单弹出支付方式
-	$('#pay_btn').on('click',function(){
-		$('.pay_choose').addClass('ac_paychoose');
-	})
-	$('.pay_choose').on('click', function(e) {
-		$('.pay_choose').removeClass('ac_paychoose');
-	});
-	$('#close').on('click', function(e) {
-		$('.pay_choose').removeClass('ac_paychoose');
-	});
-	$('.pay_choosebox').on('click',function(e){
-		e.stopPropagation();
-    })
-</script>
+

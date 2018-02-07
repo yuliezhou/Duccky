@@ -48,7 +48,7 @@
 		</div>
 		<div class="conta_ri">
 			<form action="">
-				<input type="number" placeholder="输入联系QQ号码" pattern="[0-9]*">
+				<input type="number" placeholder="输入联系QQ号码" pattern="[0-9]*" id="qq_ipt">
 				<img src="images/more.png" alt="">
 			</form>
 		</div>
@@ -107,11 +107,11 @@
 	<div class="empty"></div>
 	<div class="pay_box">
 		<div class="pay_boxleft" id="pay_boxleft">
-		合计金额: <span>￥<i></i></span>
+		合计金额: <span>￥<i id="total_price"></i></span>
 		</div>
-		<a href='##' class="pay_boxright" id="pay_btn">
+		<div class="pay_boxright" id="pay_btn">
 			预定下单
-		</a>
+		</div>
 	</div>	
 	<!-- 支付方式 -->
 	<div class="pay_choose">
@@ -121,19 +121,8 @@
 					选择支付方式
 					<img src="images/close.png" alt="" id="close">
 				</div>
-				<div class="pay_choos3 flex_around">
-					<a href="##" class="pay_icon">
-						<img src="images/ali.png" alt="">
-						<p>支付宝</p>
-					</a>
-					<a href="##" class="pay_icon">
-						<img src="images/wx.png" alt="">
-						<p>微信支付</p>
-					</a>
-					<a href="##" class="pay_icon">
-						<img src="images/qq.png" alt="">
-						<p>QQ钱包</p>
-					</a>
+				<div class="pay_choos3 flex_around" id="pay_choos3">
+
 				</div>
 			</div>
 		</div>
