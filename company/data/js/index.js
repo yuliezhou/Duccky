@@ -1,3 +1,4 @@
+	var idxUrl = 'http://192.168.10.39:8080'
 	//判断是否登录
 	var img_bool = false;
 	//获取字符串local
@@ -29,7 +30,7 @@
 	        //加密以后的数据
 	    var sign = hexMD5(mySort(rdata));
 	    $.ajax({
-	        url: 'http://192.168.10.39:8080/v1/Publics/appImg',
+	        url: idxUrl+'/v1/Publics/appImg',
 	        type: 'POST',
 	        dataType: 'json',
 	        data: {
@@ -95,7 +96,7 @@
 	        //加密以后的数据
 	    var sign1 = hexMD5(mySort(rdata1));
 	    $.ajax({
-	        url: 'http://192.168.10.39:8080/v1/Login/loginOut',
+	        url: idxUrl+'/v1/Login/loginOut',
 	        type: 'POST',
 	        dataType: 'json',
 	        data: {

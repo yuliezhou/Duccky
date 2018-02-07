@@ -1,9 +1,9 @@
  var qqLocal = localStorage.qq;
-if(qqLocal){
-    $('#qq_ipt').val(qqLocal)
-}else{
-    $('#qq_ipt').val('')
-}
+ if (qqLocal) {
+     $('#qq_ipt').val(qqLocal)
+ } else {
+     $('#qq_ipt').val('')
+ }
  var orderUrl = 'http://192.168.10.39:8080';
  //判断是否登录
  var img_bool = false;
@@ -73,6 +73,7 @@ if(qqLocal){
      var title_ser = objeckType(projectId);
      //设置标题
      $('#show_pril span').html(title_ser)
+     $('#show_pril img').attr({'src':'images/f'+projectId+'.png'})
      var url = orderUrl + '/v1/Publics/price'
          //加密对象
      var rdata = {
@@ -143,23 +144,23 @@ if(qqLocal){
      //下单弹出支付方式
  $('#pay_btn').on('click', function() {
      var qq_num = $('#qq_ipt').val();
-    if(qq_num != ''){
-        if(! /^[1-9][0-9]{4,14}$/.test(qq_num)){
-            layer.open({
-                content: '请输入正确的QQ号码',
-                skin: 'msg',
-                time: 1
-            });              
-        }else{
+     if (qq_num != '') {
+         if (!/^[1-9][0-9]{4,14}$/.test(qq_num)) {
+             layer.open({
+                 content: '请输入正确的QQ号码',
+                 skin: 'msg',
+                 time: 1
+             });
+         } else {
              $('.pay_choose').addClass('ac_paychoose');
-        }
-    }else{
-        layer.open({
-            content: '请输入QQ号码',
-            skin: 'msg',
-            time: 1
-        });          
-    }
+         }
+     } else {
+         layer.open({
+             content: '请输入QQ号码',
+             skin: 'msg',
+             time: 1
+         });
+     }
  })
  $('.pay_choose').on('click', function(e) {
      $('.pay_choose').removeClass('ac_paychoose');
@@ -169,7 +170,7 @@ if(qqLocal){
  });
  $('.pay_choosebox').on('click', function(e) {
          e.stopPropagation();
-})
+     })
      //支付
      //加密对象
  var rdata2 = {
@@ -202,7 +203,7 @@ if(qqLocal){
              //paykeywords
              var paykeywords = $(this).attr('paykeywords');
              //设置本地缓存
-            localStorage.qq =qq;
+             localStorage.qq = qq;
              //加密对象
              var rdata_pay = {
                      appkey: '593624b55898c6b524e516771afb8701',
