@@ -1,7 +1,6 @@
 /*
     初始化 通用css，
  */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,7 @@
 a{
     text-decoration: none;
     display: block;
+    -webkit-tap-highlight-color: transparent;
 }
 body, html {
     font-family: Microsoft YaHei,Arial;
