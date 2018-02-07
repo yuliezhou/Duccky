@@ -40,13 +40,13 @@
 			</div>	
 		</div> -->
 	</div>
-	<div class="none_list flex_mid" id="no_list">
+	<div class="none_list" id="no_list">
 		<div class="none_box">
 			<h3>无订单</h3>
 			<p>你还没有下单，快去下单吧</p>
 		</div>
 	</div>
-	<div class="none_list flex_mid" id="no_login">
+	<div class="none_list" id="no_login">
 		<div class="none_box">
 			<a href="login.html" class="now_login">立即登录</a>
 			<p>你还没有登录，登录后才能查看</p>
@@ -143,14 +143,14 @@
 				$('#list').append(list_box);
 				var list_len = $('#list').children('.list_box').length;
 				if(list_len == 0&&local_tokens !=undefined){
-					$('#no_list').css({'display':'flex'});
+					$('#no_list').show();
 				}else{
 					$('#no_list').hide();
 				}
 			}
 		})			    
     }else if(!newLocal){
-			$('#no_login').css({'display':'flex'});
+			$('#no_login').show();
     }
 </script>
 
