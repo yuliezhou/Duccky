@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-
+html{-webkit-tap-highlight-color:none}
 a{
     text-decoration: none;
     display: block;
