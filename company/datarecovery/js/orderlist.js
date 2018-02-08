@@ -114,8 +114,10 @@ var is_run = true;
 		  });       
   	
     	if(pageno1 >= maxpage1){
+            is_run = true;
 
     	}else{
+    		console.log(is_run)
     		pageno1++;
 		    //加密对象
 		    var rdata_fy = {
@@ -140,7 +142,7 @@ var is_run = true;
 		            page:pageno1
 		        },
 		        success: function(data) {
-		        	is_run = true;
+            		is_run = true;
 		        	layer.closeAll();
 					$('#list').attr({
 						pageno: pageno1
