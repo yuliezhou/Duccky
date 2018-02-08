@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="back">
+		<a href="javascript:history.back(-1)">
+			<img src="images/back.png" alt="">
+		</a>
+	</div>
+	<div class="show_txt">
+		使用手机号登录
+	</div>
+	<div class="form_box">
+		<input type="number" placeholder="输入手机号码" class="num_btn" pattern="[0-9]*">
+		<button class="get_code" id="get_code">获取验证码</button>
+	</div>
+	<div class="djs" id="djs">
+		60秒后重新发送
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+

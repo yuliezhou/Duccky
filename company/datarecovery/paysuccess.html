@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="back_or back_orsu">
+		<a href="order_list.html">
+			<img src="images/back.png" alt="">
+		</a>
+		<h5>支付成功</h5>
+	</div>
+	<div class="pay_status">
+		<img src="images/suc_bg.png" alt="">
+		<span>下单成功</span>
+		<p>订单预定成功，等待工程师联系您...</p>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript">
+	var orderUrl = 'https://xcx.nineton.cn'
+
+	 function getValue(key) { //  在地址栏中 通过key 获取value  ...html?key=3&lab=8  可以获取 key 和lab 的值
+     var str = window.location.search;
+     str = str.replace('?', '');
+     var params = str.split('&');
+     var requests = {},
+         channel = '';
+     for (var i = 0; i < params.length; i++) {
+         if (params[i].indexOf("=")) {
+             var tmp = params[i].split("=");
+             requests[tmp[0]] = tmp[1];
+         }
+     }
+     // 返回 undefinde 说明没有对应的key
+     // 返回 '' 说明对应的值为空 但是有 key
+     return requests[key]
+ }
+  //获取页面id
+var orderId = getValue('orderId');
+ //判断是否登录
+ var img_bool = false;
+ //获取字符串local
+ var newLocal = localStorage.localStor;
+ if (newLocal) {
+     // 本地缓存转数组
+     newLocalArr = newLocal.split("|");
+     //拿出数据
+     var local_tokens = newLocalArr[0];
+     var local_appids = newLocalArr[1];
+ }
+//加密对象
+var rdata1 = {
+        appkey: '593624b55898c6b524e516771afb8701',
+        token: local_tokens,
+        appid: local_appids,
+        device: "web",
+        orderId:orderId
+    }
+    //加密以后的数据
+var sign1 = hexMD5(mySort(rdata1));
+   layer.open({
+    type: 2,
+    shadeClose: false,
+    content: '支付结果检测中，请稍后'
+  });  
+   setTimeout(function(){
+	$.ajax({
+	    url: orderUrl + '/v1/Order/checkOrder',
+	    type: 'POST',
+	    dataType: 'json',
+	    data: {
+	        sign: sign1,
+	        token: local_tokens,
+	        appid: local_appids,
+	        device: "web",
+	        orderId:orderId
+	    },
+	    success: function(data) {
+	    	layer.closeAll('loading');
+	    	console.log(data)
+	        if (data.data.isPay == 1) {
+	        	$('.pay_status').css({'display':'flex'})
+	        }else if(data.data.isPay == 0){
+	        	$('.pay_status').hide();
+			  	layer.open({
+			    content: '支付失败，请重新支付'
+			    ,skin: 'msg'
+			    ,time: 2 //2秒后自动关闭
+			  });     
+			  setTimeout(function(){
+                     window.location.href = './order_list.html';
+			  },2000)      	
+	        }
+	    }
+	})   	
+   },1000)
+
+</script>
