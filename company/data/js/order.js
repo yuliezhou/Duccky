@@ -97,14 +97,13 @@
  }
 
  function pushHtml(data) {
-     console.log(data)
          //滚动新闻
      var news_html = "";
      //价格区间
      var priceNote = data.data.priceNote;
-     $('#show_prir span').html(priceNote)
+     $('#show_prir span').html(priceNote);
      for (i in data.data.advertList) {
-         news_html += '<li>' + data.advertList[i].content + '</li>'
+         news_html += '<li>' + data.data.advertList[i].content + '</li>'
      }
      for (j in data.data.priceList) {
          $('#choose_boxp .choose_boxc').eq(j).attr({
@@ -115,8 +114,17 @@
          $('#pay_boxleft i').html(data.data.priceList[0].price);
          $('#del p').html(data.data.priceList[0].note);
      }
-     $('#top .news_ul').html();
+     $('#top .news_ul').html('');
      $('#top .news_ul').append(news_html);
+     var newsUl = $.trim($('#news_ul').html());
+     var newsUl_copy = newsUl;
+     console.log(newsUl)
+     if(newsUl == ''){
+        $('.news_gd').hide();
+     }else{
+        $('.news_gd').show();
+         $('#top .news_ul').append(newsUl_copy);
+     }
  }
  //新闻轮播滚动
  function AutoScroll(obj) {
