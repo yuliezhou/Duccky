@@ -150,10 +150,34 @@
  //业务选择
  $("#choose_boxp").on('click', '.choose_boxc', function() {
          $(this).addClass('ac_choose').siblings('.choose_boxc').removeClass('ac_choose name');
+         var idx = $(this).index();
          var price = $(this).attr('price');
          var note = $(this).attr('note');
+         var choose_i = '';
+         var choose_span = '';
+         if(idx == 0){
+            choose_i = '预约此项服务即可同时获得'
+            choose_span = '"数据恢复PC版软件授权"'
+            $("#del2").show();          
+         }else if(idx == 1){
+            choose_i = '预约紧急恢复不仅可以获得单项加急，并且还可以获得'
+            choose_span = '"数据恢复PC版软件授权"'
+            $("#del2").show();          
+         }else{
+            choose_i = ''
+            choose_span = ''  
+            $("#del2").hide();          
+         }
+        $('.reduction_des').show();
+        $('.redu_title').show();
          $('#pay_boxleft i').html(price);
          $('#del p').html(note);
+         $('.reduction_des i').html(choose_i);
+         $('.reduction_des span').html(choose_span);
+         if(choose_i == ''||choose_span == ''){
+            $('.reduction_des').hide()
+            $('.redu_title').hide()
+         }
      })
      //业务选择-------------------end
      //下单弹出支付方式
@@ -201,7 +225,6 @@
          sign: sign2
      },
      success: function(data) {
-         console.log(data)
          var pay_box = '';
          for (i in data.data) {
              pay_box += '<div class="pay_icon" data-id="' + data.data[i].id + '" paykeywords="' + data.data[i].paykeywords + '">' + '<img src="images/a' + data.data[i].id + '.png" alt="">' + '<p>' + data.data[i].name + '</p>' + '</div>'
@@ -239,28 +262,62 @@
                          qq: qq
                      }
                      //加密以后的数据
-                 var sign_pay = hexMD5(mySort(rdata_pay));
-                 $.ajax({
-                     url: orderUrl + '/v1/Order/orderAdd',
-                     type: 'POST',
-                     dataType: 'json',
-                     data: {
-                         sign: sign_pay,
-                         appid: local_appids,
-                         device: 'web',
-                         token: local_tokens,
-                         payType: id,
-                         projectType: projectId,
-                         priceId: price_id,
-                         channel: paykeywords,
-                         qq: qq
-                     },
-                     success: function(data) {
-                         var payUrl = data.data.paystr.url + '?' + data.data.paystr.body;
-                         console.log(payUrl)
-                         window.location.href = payUrl;
-                     }
-                 })               
+                 var sign_pay = hexMD5(mySort(rdata_pay));                
+                var ua = navigator.userAgent.toLowerCase();
+                //判断是否在微信
+                var isWeixin = ua.indexOf('micromessenger') != -1;
+                if(id == 2){
+                    if (isWeixin) {
+                        $('.wx_prompt').addClass('ac_paychoose');
+                        $(".wx_prompt").on('click',function(){
+                            $(this).removeClass('ac_paychoose');
+                        })
+                    }else{
+                     $.ajax({
+                         url: orderUrl + '/v1/Order/orderAdd',
+                         type: 'POST',
+                         dataType: 'json',
+                         data: {
+                             sign: sign_pay,
+                             appid: local_appids,
+                             device: 'web',
+                             token: local_tokens,
+                             payType: id,
+                             projectType: projectId,
+                             priceId: price_id,
+                             channel: paykeywords,
+                             qq: qq
+                         },
+                         success: function(data) {
+                             var payUrl = data.data.paystr.url + '?' + data.data.paystr.body;
+                             window.location.href = payUrl;
+                         }
+                    })                         
+                    }                   
+                }else{
+                     $.ajax({
+                         url: orderUrl + '/v1/Order/orderAdd',
+                         type: 'POST',
+                         dataType: 'json',
+                         data: {
+                             sign: sign_pay,
+                             appid: local_appids,
+                             device: 'web',
+                             token: local_tokens,
+                             payType: id,
+                             projectType: projectId,
+                             priceId: price_id,
+                             channel: paykeywords,
+                             qq: qq
+                         },
+                         success: function(data) {
+                             var payUrl = data.data.paystr.url + '?' + data.data.paystr.body;
+                             window.location.href = payUrl;
+                         }
+                    }) 
+                }
+
+              
              }
 
          })

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>订单</title>
+	<title>数据还原</title>
+	<meta content="telephone=no" name="format-detection">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script type="text/javascript" src="js/font.js"></script>
@@ -12,7 +13,7 @@
 <body>
 	<!-- 顶部 -->
 	<div class="back_or">
-		<a href="javascript:history.back(-1)">
+		<a href="index.html">
 			<img src="images/back.png" alt="">
 		</a>
 		<h5>数据还原</h5>
@@ -45,10 +46,8 @@
 			<p>(方便工程师联系您)</p>
 		</div>
 		<div class="conta_ri">
-			<form action="">
-				<input type="number" placeholder="输入联系QQ号码" pattern="[0-9]*" id="qq_ipt">
-				<img src="images/more.png" alt="">
-			</form>
+			<input type="number" placeholder="输入联系QQ号码"  id="qq_ipt">
+			<img src="images/more.png" alt="">
 		</div>
 	</div>
 	<!-- 选择类型 -->
@@ -71,7 +70,7 @@
 	<div class="reduction">
 		<div class="redu_title">还原详情</div>
 		<div class="reduction_des">
-			预约此项服务即可同时获得
+			<i>预约此项服务即可同时获得</i>
 			<span>“数据还原PC版软件授权”</span>
 			<img src="images/wembg_1.png" alt="" class="top_icon">
 			<img src="images/wembg_2.png" alt="" class="bot_icon">
@@ -80,7 +79,7 @@
 			<div class="title_h4">服务说明：</div>
 			<p>数据还原工程师根据用户下单时间依次提供还原服务。</p>
 		</div>
-		<div class="del">
+		<div class="del" id="del2">
 			<div class="title_h4">还原步骤：</div>
 			<div class="des_imgbox des_imgbox_order">
 				<div class="step_box">
@@ -126,6 +125,18 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="wx_prompt">
+		<div class="wx_inner">
+			<div class="wx_jt">
+				<img src="images/timg.png" alt="">
+				<div class="clear"></div>
+			</div>
+			<div class="wx_pbox">
+				<p><span>1</span>点击右上角的按钮</p>
+				<p><span>2</span>选择在"浏览器"中打开,并支付</p>
+			</div>
+		</div>	
 	</div>
 </body>
 </html>

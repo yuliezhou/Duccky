@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>登录页</title>
+	<title>登录</title>
+	<meta content="telephone=no" name="format-detection">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script type="text/javascript" src="js/font.js"></script>
@@ -19,7 +20,7 @@
 		使用手机号登录
 	</div>
 	<div class="form_box">
-		<input type="number" placeholder="输入手机号码" class="num_btn" pattern="[0-9]*">
+		<input type="number" placeholder="输入手机号码" class="num_btn" id="num_btn" autofocus="autofocus">
 		<button class="get_code" id="get_code">获取验证码</button>
 	</div>
 	<div class="djs" id="djs">

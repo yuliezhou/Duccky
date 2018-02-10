@@ -40,9 +40,27 @@ var helpUrl = 'https://xcx.nineton.cn'
 	            }
 	            $('#phone').append(phoneBox);
 	            var a_number = $('.phone_box').eq(0).find('a').html();
+	            var qq_number = $('.phone_box').eq(1).find('a').html();
 	            $('.phone_box').eq(0).find('a').attr({
 	                'href': 'tel:' + a_number
-	            });
+	            });	  
+	            //以下是调用上面的函数
+				var mb = myBrowser();
+
+				if ("Safari" == mb) {
+					$('.phone_box').eq(1).find('a').on('click',function(){
+							layer.open({
+						    content: '请手动输入客服QQ，并添加..',
+						    skin: 'msg',
+						    time: 2
+						});   					
+					})
+				}else{
+	              $('.phone_box').eq(1).find('a').attr({
+		                'href': 'http://wpa.qq.com/msgrd?v=3&uin=' +qq_number+'&site=qq&menu=yes'
+		            });					
+				}       
+
 	        }
 	    })
 	    //点击头像（如果登录就退出登录，如果未登录，跳转登录）
@@ -100,3 +118,22 @@ var helpUrl = 'https://xcx.nineton.cn'
 	        }
 	    })
 	})
+function myBrowser(){
+    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+    var isOpera = userAgent.indexOf("Opera") > -1;
+    if (isOpera) {
+        return "Opera"
+    }; //判断是否Opera浏览器
+    if (userAgent.indexOf("Firefox") > -1) {
+        return "FF";
+    } //判断是否Firefox浏览器
+    if (userAgent.indexOf("Chrome") > -1){
+  return "Chrome";
+ }
+    if (userAgent.indexOf("Safari") > -1) {
+        return "Safari";
+    } //判断是否Safari浏览器
+    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+        return "IE";
+    }; //判断是否IE浏览器
+}

@@ -34,6 +34,7 @@ $("#get_code").on('click', function() {
     //获取验证码的状态
     if (get_html == '获取验证码') {
         phone = $('.num_btn').val();
+        
         var get_url = loginUrl+'/v1/Publics/getCode';
         //加密对象
         var rdata = {
@@ -60,7 +61,6 @@ $("#get_code").on('click', function() {
                     sign: sign
                 },
                 success: function(data) {
-                    console.log(data)
                         //返回状态
                     var code = data.code;
                     // code_number = data.data.code;
@@ -75,9 +75,9 @@ $("#get_code").on('click', function() {
                         //显示登录按钮
                         $('#get_code').html('登录');
                         //验证码发送至
-                        $('.show_txt').html('验证已发送至  ' + phone);
+                        $('.show_txt').html('验证码已发送至  ' + phone);
                         //改变placeholder
-                        $('.num_btn').val('')
+                        $('.num_btn').val('');
                         $('.num_btn').attr({
                             placeholder: '请输入验证码'
                         });
@@ -93,7 +93,7 @@ $("#get_code").on('click', function() {
                                 $("#djs").addClass('back_ac');
                             }
                         }, 1000);
-                    } else {
+                    } else if(code == 300){
                         layerCommon("发送失败，请稍后再试")
                     }
                 }
@@ -115,7 +115,6 @@ $("#get_code").on('click', function() {
                 }
                 //加密以后的数据
             var sign1 = hexMD5(mySort(rdata1));
-            console.log(sign1)
                 //验证码格式正确
             $.ajax({
                 url: get_url1,
@@ -128,7 +127,6 @@ $("#get_code").on('click', function() {
                     device: "web"
                 },
                 success: function(data) {
-                    console.log(data)
                     var code = data.code;
                     var msg = data.msg;
                     if (code == 200) {
@@ -153,8 +151,10 @@ $("#get_code").on('click', function() {
                         setTimeout(function() {
                             window.location.href = './index.html';
                         }, 1000)
-                    } else {
-                        layerCommon('验证码输入错误，请重新输入')
+                    } else if(code == 109){
+                        layerCommon('验证码输入错误，请重新输入');
+                    }else if(code ==108){
+                        layerCommon('验证码已过期，请重新获取验证码');
                     }
                 }
             })
@@ -180,7 +180,6 @@ $('#djs').on('click', function() {
                 sign: sign
             },
             success: function(data) {
-                console.log(data)
                     //返回状态
                 var code = data.code;
                 // code_number = data.data.code;
@@ -213,7 +212,7 @@ $('#djs').on('click', function() {
                             $("#djs").addClass('back_ac');
                         }
                     }, 1000);
-                } else {
+                } else if(code == 300){
                     layerCommon("发送失败，请稍后再试")
                 }
             }

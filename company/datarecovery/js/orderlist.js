@@ -42,7 +42,6 @@
 	            device: "web"
 	        },
 	        success: function(data) {
-	        	console.log(data)
 	            var list_box = ''
 	            var data = data.data;
 	            var maxpage = data.page.total;
@@ -95,7 +94,7 @@ var is_run = true;
 
 	var pageno1 = $('#list').attr('pageno');
 	var maxpage1 = $('#list').attr('maxpage');
-    	if(long < 1&&pageno1 >= maxpage1){	
+    	if(long < 5&&pageno1 >= maxpage1){	
 		  layer.open({
 		    content: '别扯了，扯到底了...'
 		    ,skin: 'msg'
@@ -117,7 +116,6 @@ var is_run = true;
             is_run = true;
 
     	}else{
-    		console.log(is_run)
     		pageno1++;
 		    //加密对象
 		    var rdata_fy = {
@@ -142,12 +140,10 @@ var is_run = true;
 		            page:pageno1
 		        },
 		        success: function(data) {
-            		is_run = true;
 		        	layer.closeAll();
 					$('#list').attr({
 						pageno: pageno1
 					});		
-					console.log(data)	        	
 		            var data = data.data;
 		            var list_box='';
 		            for (var i = 0; i < data.list.length; i++) {
@@ -171,6 +167,7 @@ var is_run = true;
 		                 '</div>'
 		            }
 		            $('#list').append(list_box);
+            		is_run = true;
 		            var list_len = $('#list').children('.list_box').length;
 		            if (list_len == 0 && local_tokens != undefined) {
 		                $('#no_list').show();
@@ -313,7 +310,6 @@ var is_run = true;
 //             is_run = true;
 
 //     	}else{
-//     		console.log(is_run)
 //     		pageno1++;
 // 		    //加密对象
 // 		    var rdata_fy = {
@@ -342,7 +338,6 @@ var is_run = true;
 // 					$('#list').attr({
 // 						pageno: pageno1
 // 					});		
-// 					console.log(data)	        	
 // 		            var data = data.data;
 // 		            var list_box='';
 // 		            for (var i = 0; i < data.list.length; i++) {
