@@ -118,7 +118,6 @@
      $('#top .news_ul').append(news_html);
      var newsUl = $.trim($('#news_ul').html());
      var newsUl_copy = newsUl;
-     console.log(newsUl)
      if(newsUl == ''){
         $('.news_gd').hide();
      }else{

@@ -109,14 +109,12 @@
 .banner_txtab h3{
     color: #fff;
     font-size: 24px;
-    text-transform: uppercase;
     padding-bottom: 5px;
 }
 .banner_txtab h4{
     font-family: 'dinpro_m';
     color: #fff;
     font-size: 16px;
-    text-transform: uppercase;
 }
 #header{
     position: absolute;

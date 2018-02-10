@@ -48,8 +48,25 @@
 	            var maxpage = data.page.total;
 	            var pageno = data.page.now;
 	            for (var i = 0; i < data.list.length; i++) {
-		            	var imgSrcxx = imgSrc(data.list[i].order_project_type)==undefined?1:imgSrc(data.list[i].order_project_type);
-	                list_box += '<div class="list_box">' + '<div class="list_tit">' + '<div class="list_title">' + '<img src="images/f'+imgSrcxx+'.png" alt="">' + '<span>' + data.list[i].order_project_type + '</span>' + '</div>' + '<div class="list_titri">￥' + data.list[i].total_fee + '</div>' + '</div>' + '<div class="list_des flex_between">' + '<div class="lise_desl">' + '<p class="status">类型：' + data.list[i].order_recovery_type + '</p>' + '<p class="number">QQ号：' + data.list[i].qq + '</p>' + '<p class="time">预约时间：' + data.list[i].creates_time + '</p>' + '</div>' + '<div class="lise_desr">' + data.list[i].order_type + '</div>' + '</div>	' + '</div>'
+
+		                list_box += '<div class="list_box">' + 
+		                '<div class="list_tit">' + 
+		                '<div class="list_title">' + 
+		                '<img src="images/f'+data.list[i].order_project_type+'.png" alt="">' + 
+		                '<span>' + imgDes(data.list[i].order_project_type) + '</span>' + 
+		                '</div>' + 
+		                '<div class="list_titri">￥' +
+		                 data.list[i].total_fee + 
+		                 '</div>' + 
+		                 '</div>' + 
+		                 '<div class="list_des flex_between">' + 
+		                 '<div class="lise_desl">' + 
+		                 '<p class="status">类型：' + data.list[i].order_recovery_type + '</p>' + 
+		                 '<p class="number">QQ号：' + data.list[i].qq + '</p>' + 
+		                 '<p class="time">预约时间：' + data.list[i].creates_time + '</p>' + 
+		                 '</div>' + '<div class="lise_desr">' + data.list[i].order_type + '</div>' + 
+		                 '</div>' + 
+		                 '</div>'
 	            }
 	            $('#list').append(list_box);
 				$('#list').attr({
@@ -123,35 +140,35 @@
 	    })
 	})
 	//通过文字判断图片
-	 function imgSrc(des) {
-     var x;
-     switch (des) {
-         case '通讯录恢复':
-             x = 1;
+	 function imgDes(id) {
+     var x='';
+     switch (id) {
+         case 1:
+             x = "通讯录";
              break;
-         case "通话记录恢复":
-             x = 2;
+         case 2:
+             x = "通话记录";
              break;
-         case "照片恢复":
-             x = 3;
+         case 3:
+             x = "照片";
              break;
-         case "备忘录恢复":
-             x = 4;
+         case 4:
+             x = "备忘录";
              break;
-         case "日历恢复":
-             x = 5;
+         case 5:
+             x = "日历";
              break;
-         case "微信恢复":
-             x = 6;
+         case 6:
+             x = "微信";
              break;
-         case "QQ恢复":
-             x = 7;
+         case 7:
+             x = "QQ";
              break;
-         case "短信恢复":
-             x = 8;
+         case 8:
+             x = "短信";
              break;
      }
-     return x
+    return x + "恢复"
  }
 
 
@@ -222,8 +239,24 @@ var is_run = true;
 		            var data = data.data;
 		            var list_box='';
 		            for (var i = 0; i < data.list.length; i++) {
-		            	var imgSrcxx = imgSrc(data.list[i].order_project_type)==undefined?1:imgSrc(data.list[i].order_project_type);
-		                list_box += '<div class="list_box">' + '<div class="list_tit">' + '<div class="list_title">' + '<img src="images/f'+imgSrcxx+'.png" alt="">' + '<span>' + data.list[i].order_project_type + '</span>' + '</div>' + '<div class="list_titri">￥' + data.list[i].total_fee + '</div>' + '</div>' + '<div class="list_des flex_between">' + '<div class="lise_desl">' + '<p class="status">类型：' + data.list[i].order_recovery_type + '</p>' + '<p class="number">QQ号：' + data.list[i].qq + '</p>' + '<p class="time">预约时间：' + data.list[i].creates_time + '</p>' + '</div>' + '<div class="lise_desr">' + data.list[i].order_type + '</div>' + '</div>	' + '</div>'
+		                list_box += '<div class="list_box">' + 
+		                '<div class="list_tit">' + 
+		                '<div class="list_title">' + 
+		                '<img src="images/f'+data.list[i].order_project_type+'.png" alt="">' + 
+		                '<span>' + imgDes(data.list[i].order_project_type) + '</span>' + 
+		                '</div>' + 
+		                '<div class="list_titri">￥' +
+		                 data.list[i].total_fee + 
+		                 '</div>' + 
+		                 '</div>' + 
+		                 '<div class="list_des flex_between">' + 
+		                 '<div class="lise_desl">' + 
+		                 '<p class="status">类型：' + data.list[i].order_recovery_type + '</p>' + 
+		                 '<p class="number">QQ号：' + data.list[i].qq + '</p>' + 
+		                 '<p class="time">预约时间：' + data.list[i].creates_time + '</p>' + 
+		                 '</div>' + '<div class="lise_desr">' + data.list[i].order_type + '</div>' + 
+		                 '</div>' + 
+		                 '</div>'
 		            }
 		            $('#list').append(list_box);
 		            var list_len = $('#list').children('.list_box').length;
