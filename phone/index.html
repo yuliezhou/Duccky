@@ -505,6 +505,23 @@
 		$('.modal_box').on('click',function(e){
 			e.stopPropagation();
 	    })
+	    $.ajax({
+		    url: '47.92.119.85/clbPro/client/user/login',
+		    type: 'post',
+		    dataType:'json',
+		    data: {
+				account:"11",
+				password:"11",
+				cid:"11",
+		    },
+		    success:function(data){
+		        console.log(data)
+		    },
+		    error:function(data){
+		        $('#mstr_ck').html("获取验证码失败，请重试！");
+		        $("#error_ck").show();
+		    }
+		});
 	</script>
 </body>
 </html>
