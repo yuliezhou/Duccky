@@ -616,4 +616,14 @@
 	    nextButton: '.swiper-button-nextjeep',
 	    prevButton: '.swiper-button-prevjeep'
 	});
+	$.ajax({
+		url: 'http://lab.myzx.cn:85/Portal/Index/getVideosByTagid&pageNo=1&tagid=1',
+		type: 'get',
+		dataType: 'json',
+		success:res => {
+			console.log(res)
+		}
+	})
+	
+	
 </script>
