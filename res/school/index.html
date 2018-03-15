@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>学校-首页</title>
    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,6 +57,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
+	      <!-- add 2018年3月15日11:45:12-->
 	      <img src="images/logo.png" alt="" class="top_logoimg">
 	    </div>
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,14 +65,15 @@
 	      <ul class="nav navbar-nav" id="header-menu">
 	      <span>|</span>
 	        <li><a href="index.html" class="btn btn-large top_a">首页</a></li><span>|</span>
-	        <li><a href="product.html" class="btn btn-large top_a">学校概况</a>
+	     	 <!-- add 2018年3月15日11:45:12-->
+	        <li><a href="product.html" class="btn btn-large top_a" data-toggle="dropdown">学校概况</a>
 				<ul class="son-menu dropdown-menu">
-		           <li class="top_active"><a href="about.html">学校介绍</a></li>
+		           <li><a href="about.html">学校介绍</a></li>
 		           <li><a href="ab-honor.html">组织架构</a></li>
 		           <li><a href="ab-team.html">学校荣誉</a></li>
 		        </ul>	        
 	        </li><span>|</span>
-	        <li><a href="##" class="btn btn-large top_a" data-toggle="dropdown">学校新闻</a>
+	        <li><a href="##" class="btn btn-large top_a">学校新闻</a>
 	        </li><span>|</span>
 	        <li><a href="##" class="btn btn-large top_a">机构设置</a>
 	        </li><span>|</span>
@@ -352,6 +354,7 @@
 						<div class="clear"></div>
 					</div>						
 				</div>
+				<div class="clear"></div>
 			</div>
 			<!-- 功能选择2 -->
 			<div class="fun2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -370,10 +373,14 @@
 				<a href="##" class="fun2box">
 					<img src="images/funbot_28.png" alt="">
 				</a>
+				<div class="clear"></div>
 			</div>
 			<!-- 友情链接 -->
 			<div class="link col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="images/link.png" alt="">
+				<!-- add 2018年3月15日11:44:51-->
+				<div class="link_img">
+					<img src="images/link.png" alt="">
+				</div>
 				<a href="##">中华人民共和国教育部</a>
 				<a href="##">中国大学生在线</a>
 				<a href="##">中国学位与研究生教育信息网</a>
@@ -460,7 +467,7 @@
 	var galleryTop = new Swiper('.gallery-top', {
 	    nextButton: '.swiper-button-next',
 	    prevButton: '.swiper-button-prev',
-        spaceBetween: 10,
+        spaceBetween:20,
         initialSlide: 1,
         loop:true,
         loopedSlides:3,

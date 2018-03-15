@@ -1,0 +1,140 @@
+<!--index.wxml-->
+<view class="container">
+  <loading wx:if="{{!loadingHidden}}" duration="100">
+    数据加载中...
+  </loading>
+  <view class="top">
+    <view class='area'>
+      <view class='area_set'  bindtap="openSet">
+        <image src='../images/temp_icon/set.png'></image>
+        <text>设置</text>
+      </view>
+      <view class="area_text" bindtap="openArea">
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/dingwei28.png" mode="aspectFit"></image>    
+        <text>{{currentArea}}</text>
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/%E6%B7%BB%E5%8A%A028.png" mode="aspectFit" class="add"></image>
+      </view>
+    </view>
+
+    <view class="temp">
+      <view class="temp_top">
+        <text >{{temp.temp}}</text>         
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/%E6%91%84%E6%B0%8F%E5%BA%A6-01.png" class="sheshidu"  mode="aspectFit"></image>
+      </view>
+      <view class="temp_main">
+        <image src="{{temp.src}}" mode="aspectFit"></image>
+        <text>{{temp.text}}</text>
+      </view>     
+      <view class="animals">{{animals}}| {{nongli}}</view> 
+    </view>
+  </view>
+
+  <view class="weather_day">
+    <view class="bg_left"></view>
+    <view class="bg_right"></view>
+    <scroll-view scroll-x="true" class="w96">
+      <block wx:for="{{day}}" wx:key="time">
+        <view class="day">
+          <text class="time">{{item.time}}</text>
+          <image src="{{item.src}}" mode="aspectFit"></image>
+          <text class="day_temp">{{item.temperature}}°</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view class="weather_week">
+    <view class="bg_left"></view>
+    <view class="bg_right"></view>
+    <scroll-view scroll-x="true" class="w96">
+      <block wx:for="{{week}}" wx:key="week">
+        <view class="week">
+          <text>{{item.week}}</text> 
+          <image src="{{item.src}}" mode="aspectFit"></image>
+          <text class="week_temp high">{{item.low}} ~ {{item.high}}°</text>                                
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view class="hl">
+    <view class="bg_left"></view>
+    <view class="bg_right"></view>
+    <view class="hl_box">
+      <view class="weather_should">
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/yi-icon.png"></image>
+        <scroll-view scroll-x="true">    
+          <block wx:for="{{should}}" wx:key="*this">
+            <view class="should">
+              <text>{{item}}</text> 
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+
+      <view class="weather_not">
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/ji-icon.png"></image>
+        <scroll-view scroll-x="true" style=" white-space: nowrap; display: inline-block " >
+          <block wx:for="{{not}}" wx:key="*this">
+            <view class="not">        
+              <text>{{item}}</text> 
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+      
+  <view class="else1 else">
+    <view class="air">
+      <view class="text_box">        
+        <text>{{detail.air}}</text>
+        <text>空气质量</text>
+      </view>        
+    </view>
+    <view class="uv">
+      <view class="text_box">      
+        <text>{{detail.uv}}</text>
+        <text>紫外线强度</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="else2 else">
+    <view class="car">
+      <view class="text_box">
+        <text>{{detail.car_washing}}</text>
+        <text>洗车建议</text>
+      </view>
+    </view>
+    <view class="influenza">
+      <view class="text_box">
+        <text>{{detail.flu}}</text>
+        <text>感冒指数</text>          
+      </view>  
+    </view>
+  </view>
+
+  <view class="else3 else">
+    <view class="travel">
+      <view class="text_box">
+        <text>{{detail.travel}}</text>
+        <text>旅游建议</text>          
+      </view>
+    </view>
+    <view class="sport">
+      <view class="text_box">
+        <text>{{detail.sport}}</text> 
+        <text>运动建议</text>          
+      </view> 
+    </view>
+  </view>
+</view>
+
+<!-- <modal confirm-text="确定" cancel-text="放弃" hidden="{{locationSuccessHidden}}" mask bindconfirm="locationSubmit" bindcancel="locationCannel">
+<view>成功自动定位到 : {{currentArea}}</view>
+</modal>
+
+<modal class="modal" hidden="{{locationFailHidden}}" no-cancel bindconfirm="locationFail">
+<view>自动定位失败： 通过右上角 ··· 按钮 进入 关于精准天气预报 -> 设置 -> 允许使用地理位置 即可开启自动定位</view>
+</modal> -->

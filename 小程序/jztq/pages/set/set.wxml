@@ -1,0 +1,5 @@
+<view class='notice_tit'>允许"精准天气预报"发送天气信息</view>
+<view class='set_notice'>
+	<text>消息推送</text>
+	<switch checked bindchange="switchChange"/>	
+</view>

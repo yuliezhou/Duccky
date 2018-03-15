@@ -1,0 +1,5 @@
+<!--pages/notfound/notfound.wxml-->
+<view class="notfound">
+<image class="notice" src="../images/notfound/notfound_words.png"></image>
+<image class="reload_button" src="../images/notfound/btn.png" bindtap="goBack"></image>
+</view>
