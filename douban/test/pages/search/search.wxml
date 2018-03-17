@@ -1,0 +1,20 @@
+<view class='top'>
+    <input class='search_ipt top_txt' placeholder='输入搜索关键字' focus="true" confirm-type="搜索" bindblur="search"></input>
+</view>
+<scroll-view class="scroll" scroll-y='true' >
+	<navigator url='../movie/movie?id={{item.id}}' wx:for="{{movies}}">
+		<view class="item">
+			<image src='{{item.images.small}}' class='item_img'></image>
+		    <view class='des'>
+		      	<text class="des_title">{{item.title}}</text>
+		      	<text class="des_titlesmall">{{item.original_title}}({{item.year}})</text>
+		      	<text class="director">
+		      		<text class="directorbox" wx:for="{{item.directors}}">{{item.name}}</text>
+		      	</text>
+		    </view>
+		    <view class="rating">
+		    	<text>{{item.rating.average}}</text>
+		    </view>
+		</view>	
+	</navigator>
+</scroll-view>

@@ -1,0 +1,40 @@
+<view class="home">
+
+    <view class="mytext1 " catchtap="barout">
+      <view class="box centype{{ttype}}">
+        <view wx:for="{{texts}}" wx:key="q" wx:if="{{index<number}}"><text style="height:{{vheight}}; width:{{vheight}};line-height: {{vheight}};color:#ec4498; font-size: {{fonsize}};" class="{{shadowColor[index]}}">{{item.name}}</text></view>
+      </view>
+    </view>
+      <!-- 输入框选择 -->
+      <!-- layour用作隐藏和显示底部输入框 -->
+     <view class="tabbbox {{isbarout?'layour':''}}" >
+      <!-- 颜色选择框 -->
+      <view class="tabcolor" wx:if="{{iscolorout}}" >
+        <block wx:for='{{colors}}' wx:key="index">
+           <text style="background:{{item}}" bindtap="chanecolor"  data-id='{{index}}'></text>
+        </block>
+      </view>
+      <!-- 颜色选择框 end-->    
+      <!-- 字体选择框 -->
+      <view class="tabsize" wx:if="{{issizeout}}" >
+        <block wx:for='{{sizeArr}}' wx:key="index">
+           <text bindtap="changesize"  data-id='{{index}}' class=" {{currentTab1==index?'isfo':''}}">{{item.name}}</text>
+        </block>
+      </view>
+      <!-- 字体选择框 end-->
+      <!-- 文字输入按钮 -->
+      <view class="tabb">
+          <navigator class="gobar circle" url='../index/index' open-type="redirect" hover-class="none"><image src='../../images/2.png'></image></navigator>
+          <view class="mainbar">
+            <block  wx:key="index" wx:for="{{texts}}">
+            <!--  ifocus用来判断当前的点击状态，有焦点就加className isfo-->
+             <input  bindinput="bindKeyInput" class="{{currentTab==index?'isfo':''}}" bindfocus="inputfocus" maxlength="1" placeholder="" value="{{item.name}}" style="color:{{item.color}}" data-id="{{index}}" wx:if="{{index<number}}"/>
+            </block>
+          </view>
+          <view class="setbar circle" bindtap="sizechoose">{{sizename}}</view>
+      </view>
+      <!-- 文字输入按钮 end-->
+    </view>  
+    <!-- 输入框选择 end-->
+</view>
+ 

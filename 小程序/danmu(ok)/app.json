@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shadow/shadow"
+  ],
+  "window":{
+    "backgroundTextStyle":"block",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "弹幕助手",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,109 @@
+/* pages/area/area.wxss */
+.area{
+   padding: 20rpx 0 20rpx 10rpx;
+   box-sizing: broder-box;
+   margin: 0;
+   height: 100%;
+   justify-content:center;
+   align-items:center;
+}
+.area_list{
+    display: inline-block;
+    background:url("http://oi2f6lsr3.bkt.clouddn.com/%E6%96%B0%E7%BC%96%E8%BE%91bg1.png") no-repeat;
+    background-size: 100% 100%;
+    width:236rpx;
+    height:260rpx; 
+    text-align: center;
+    color: #353535;
+    font-size: 28rpx;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+    justify-content:center;
+    vertical-align: middle;
+    position: relative;
+}
+.default{
+    font-size: 30rpx;
+    color: #bf9f6e;
+    position: absolute;
+    bottom: 10rpx;
+    left: 50%;
+    margin-left: -50rpx;
+}
+.area_main{
+    width: 140rpx;
+    height: 140rpx;
+    margin: 60rpx auto;
+}
+image.temp_icon{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 10rpx auto;
+}
+image.default_icon{
+    width: 70rpx;
+    height: 73rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.add_area{
+    font-size: 79rpx;
+    line-height: 234rpx;
+    background: url("http://oi2f6lsr3.bkt.clouddn.com/%E6%96%B0%E7%BC%96%E8%BE%91bg2.png") no-repeat;
+    background-size: 100% 100%;
+    color: transparent;
+    
+}
+.last{
+    margin-right: 0;
+}
+.area_list .close{
+    position: absolute;
+    right: -3rpx;
+    top: -5rpx;
+    width: 36rpx;
+    height: 38rpx;
+    border-radius: 50%;
+    color: #D85444;
+    text-align: center;
+    font-weight: 600;
+}
+.default_box{
+    position: absolute;
+    width: 160rpx;
+    margin: 0 auto;
+    font-size: 24rpx;
+    color: #bf9f6e;
+    bottom: 15rpx;
+    left: 50%;
+    margin-left:-80rpx; 
+}
+.default_box icon{
+    vertical-align: middle;
+    margin-right: 20rpx;
+    
+}
+.bot_btn{
+    position: fixed; 
+    left: 0;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: url("http://oi2f6lsr3.bkt.clouddn.com/bg2.png");
+
+}
+.edit_button,.edit_back{
+    color:#ffffff;
+    background-color:#be3e2c;
+    width:730rpx;
+    height:88rpx;
+    margin-left: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.empty2{
+  height: 196rpx;
+  width: 100%;
+}

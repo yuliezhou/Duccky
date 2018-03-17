@@ -1,0 +1,40 @@
+<!--pages/area/area.wxml-->
+<view  class="area">
+  <loading wx:if="{{!loadingHidden}}"  duration="100">
+    数据加载中...
+  </loading>  
+  <block wx:for="{{favoriteAreaList}}" wx:key="cityName">
+    <view class="area_list" bindtap="tapArea" id="{{item.cityName}}">
+      <block wx:if="{{isLongTap}}">
+        <image src="../images/temp_icon/guanbi-icon@2x.png" mode="aspectFit" class="close" wx:if="{{!item.isDefault}}" bindtap="close" data-close="{{item.cityName}}"></image>
+      </block>
+      <view class="area_main"  >
+          <text>{{item.cityName}}</text>
+          <image src="{{item.src}}" mode="aspectFit" class="temp_icon"></image>       
+          <text class="day_temp">{{item.low}}~{{item.high}}°</text>
+          <image src="{{default_img}}" class="default_icon" wx:if="{{item.isDefault}}"></image>           
+      </view>
+      <block wx:if="{{isLongTap}}">
+        <view class="default_box" wx:if="{{item.isDefault}}">
+            <icon type="success" size="14" color="#bf9f6e"></icon>
+            <text>默认地区</text>
+        </view> 
+        <view class="default_box" wx:if="{{!item.isDefault}}">
+            <icon type="circle" size="14" color="#bf9f6e"></icon>
+            <text>设为默认</text>
+        </view>
+      </block> 
+    </view>
+  </block>
+       
+  <view class="area_list add_area" wx:if="{{!isLongTap}}">
+     <navigator url="../add_area/add_area" redirect="{{true}}">+</navigator>
+  </view>
+</view>
+<view class='empty2'></view>
+<view class='bot_btn'>
+  <button class="edit_button" bindtap="longtap" wx:if="{{!isLongTap}}">编辑地区</button>
+  <button class="edit_button" bindtap="longtap" wx:if="{{isLongTap}}">完成</button>
+  <button class="edit_back" bindtap="back_index">返回</button>
+</view>
+

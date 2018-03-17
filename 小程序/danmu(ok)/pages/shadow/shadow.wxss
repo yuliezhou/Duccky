@@ -1,0 +1,343 @@
+/*home*/
+.home {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    transform-style: preserve-3d;
+}
+
+
+/* 弹幕选择按钮的操作*/
+
+.barrage-Switch {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+/* 弹幕输入框的操作*/
+
+.barrage-inputText {
+    position: absolute;
+    display: flex;
+    background-color: #BFBFBF;
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    nav-index: 2;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%;
+}
+
+.barrage-input {
+    background-color: greenyellow;
+    width: 60%;
+    height: 30px;
+}
+
+.barrage-shoot {
+    margin-left: 10px;
+    width: 25%;
+    height: 30px;
+}
+
+.shoot {
+    width: 100%;
+    color: black;
+}
+
+/* 高光设置 */
+
+.mytext1 {
+    height: 100vh;
+    text-align: center;
+    background: #000;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    height: 90vh;
+    justify-content: center
+}
+
+.centype1 {
+    width: 30vh;
+    margin: 0 auto;
+}
+
+/*.centype1 view {
+    width: 18vh;
+    height: 18vh;
+}*/
+
+.box view text {
+    display: block;
+    margin: 0 auto;
+    webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+/* .box view text {transform: rotate(90deg) } */
+
+.box view.isone {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box view.isone text {
+    flex: 1;
+}
+
+
+/* 底部按钮 */
+
+.tabbbox {
+    width: 100%;
+    height: 90rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: #000;
+    transition: all 1s;
+    z-index: 999;
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-perspective:1000; 
+    perspective:1000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+
+.tabcolor {
+    height: 90rpx;
+    position: fixed;
+    bottom: 90rpx;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #000;
+    z-index: 5;
+    justify-content: space-around;
+    opacity: 1;
+    animation: opc 1s;
+}
+.tabsize{
+   height: 90rpx;
+    position: fixed;
+    bottom: 90rpx;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #000;
+    z-index: 5;
+    opacity: 1;
+    animation: opc 1s; 
+    flex-direction: row-reverse;
+}
+.tabsize text{
+    border-radius: 50%;
+    background: #434343;
+    line-height: 50rpx;
+    height: 50rpx;
+    width: 50rpx;
+    text-align: center;
+    font-size: 28rpx;   
+    margin: 0 20rpx; 
+}
+.tabcolor text {
+    border-radius: 50%;
+    background: #434343;
+    line-height: 50rpx;
+    height: 50rpx;
+    width: 50rpx;
+    display: inline-block;
+    text-align: center;
+    font-size: 28rpx;  
+}
+
+.tabbbox.layour {
+    bottom: -100rpx;
+}
+
+.tabb {
+    background: #000;
+    height: 90rpx;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gobar {
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gobar image{
+    width: 66rpx;
+    height: 66rpx;
+    border-radius: 50%;  
+}
+.mainbar {
+    float: left;
+    height: 90rpx;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainbar input {
+    border-radius: 50%;
+    background: #434343;
+    line-height: 70rpx;
+    height: 70rpx;
+    width: 70rpx;
+    display: inline-block;
+    text-align: center;
+    font-size: 28rpx;  
+}
+
+.mainbar input+input {
+    margin-left: 0.6rem;
+}
+
+.setbar {
+    float: right;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.circle {
+    border-radius: 50%;
+    background: #434343;
+    line-height: 70rpx;
+    height: 70rpx;
+    width: 70rpx;
+    display: inline-block;
+    text-align: center;
+    font-size: 28rpx;  
+}
+
+.isfo {
+    border: 1px solid #fff;
+}
+
+.box .shadow0 {
+    color: #fff!important;
+    -webkit-animation: shadow0 1.5s ease-in-out infinite alternate;
+    -moz-animation: shadow0 1.5s ease-in-out infinite alternate;
+    animation: shadow0 1.5s ease-in-out infinite alternate;
+    transition: all 0.8s;
+}
+.box .shadow1 {
+    color: #fff!important;
+    -webkit-animation: shadow1 1.5s ease-in-out infinite alternate;
+    -moz-animation: shadow1 1.5s ease-in-out infinite alternate;
+    animation: shadow1 1.5s ease-in-out infinite alternate;
+    transition: all 0.8s;
+}
+.box .shadow2 {
+    color: #fff!important;
+    -webkit-animation: shadow2 1.5s ease-in-out infinite alternate;
+    -moz-animation: shadow2 1.5s ease-in-out infinite alternate;
+    animation: shadow2 1.5s ease-in-out infinite alternate;
+    transition: all 0.8s;
+}
+.box .shadow3 {
+    color: #fff!important;
+    -webkit-animation: shadow3 1.5s ease-in-out infinite alternate;
+    -moz-animation: shadow3 1.5s ease-in-out infinite alternate;
+    animation: shadow3 1.5s ease-in-out infinite alternate;
+    transition: all 0.8s;
+}
+.box .shadow4 {
+    color: #fff!important;
+    -webkit-animation: shadow4 1.5s ease-in-out infinite alternate;
+    -moz-animation: shadow4 1.5s ease-in-out infinite alternate;
+    animation: shadow4 1.5s ease-in-out infinite alternate;
+    transition: all 0.8s;
+}
+@-webkit-keyframes into{
+    0%{
+        bottom: -100rpx;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@-webkit-keyframes opc{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes shadow0 {
+    from {
+        text-shadow: 0 0 6px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ec4498, 0 0 60px #ec4498, 0 0 80px #ec4498, 0 0 100px #ec4498, 0 0 140px #ec4498;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #ec4498, 0 0 20px #ec4498, 0 0 30px #ec4498, 0 0 40px #ec4498, 0 0 50px #ec4498;
+    }
+}
+@-webkit-keyframes shadow1 {
+    from {
+        text-shadow: 0 0 6px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2196f3, 0 0 60px #2196f3, 0 0 80px #2196f3, 0 0 100px #2196f3, 0 0 140px #2196f3;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #2196f3, 0 0 20px #2196f3, 0 0 30px #2196f3, 0 0 40px #2196f3, 0 0 50px #2196f3;
+    }
+}
+@-webkit-keyframes shadow2 {
+    from {
+        text-shadow: 0 0 6px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8ddc39, 0 0 60px #8ddc39, 0 0 80px #8ddc39, 0 0 100px #8ddc39, 0 0 140px #8ddc39;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #8ddc39, 0 0 20px #8ddc39, 0 0 30px #8ddc39, 0 0 40px #8ddc39, 0 0 50px #8ddc39;
+    }
+}
+@-webkit-keyframes shadow3 {
+    from {
+        text-shadow: 0 0 6px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9800, 0 0 60px #ff9800, 0 0 80px #ff9800, 0 0 100px #ff9800, 0 0 140px #ff9800;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #ff9800, 0 0 20px #ff9800, 0 0 30px #ff9800, 0 0 40px #ff9800, 0 0 50px #ff9800;
+    }
+}
+@-webkit-keyframes shadow4 {
+    from {
+        text-shadow: 0 0 6px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #673ab7, 0 0 60px #673ab7, 0 0 80px #673ab7, 0 0 100px #673ab7, 0 0 140px #673ab7;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #673ab7, 0 0 20px #673ab7, 0 0 30px #673ab7, 0 0 40px #673ab7, 0 0 50px #673ab7;
+    }
+}

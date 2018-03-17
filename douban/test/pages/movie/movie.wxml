@@ -1,0 +1,28 @@
+<view class='movie_des'>
+    <view class='movie_desl'>
+        <text class='movie_desh'>{{movie.title}}</text>
+        <view class='average'>{{"评分："+movie.rating.average}}  <text class='rating_count'>{{movie.ratings_count+"人评论"}}</text></view>
+        <view class='des_txt'>{{movie.countries}} / {{movie.genres}} / <block wx:for="{{movie.directors}}">{{item.name}} / </block><block wx:for="{{movie.casts}}">{{item.name}} / </block>{{movie.year+"年上映"}}</view>
+    </view>
+    <image class='actor_img' src='{{movie.images.large}}'></image>
+</view>
+<!-- 影人 -->
+<view class='actor'>
+    <scroll-view scroll-x class='scroll_view_x'>
+        <navigator url='celebrity/celebrity?id={{item.id}}' wx:for="{{movie.directors}}" class='actor_box'>
+            <image class='actor_img' src='{{item.avatars.small}}'></image>
+            <view class='actor_name'>{{item.name}}</view>
+            <view class='actor_position'>导演</view>
+        </navigator>          
+        <navigator url='celebrity/celebrity?id={{item.id}}' wx:for="{{movie.casts}}" class='actor_box'>
+            <image class='actor_img' src='{{item.avatars.small}}'></image>
+            <view class='actor_name'>{{item.name}}</view>
+            <view class='actor_position'>演员</view>
+        </navigator>      
+    </scroll-view>
+</view>
+<!-- 摘要 -->
+<view class='movie_intro'>
+    <text class='movie_introh'>{{movie.title+"的剧情简介"}}</text>
+    <text class='movie_content'>{{movie.summary}}</text>
+</view>

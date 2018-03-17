@@ -1,0 +1,94 @@
+<view class='bodyer' hidden="{{bool_bodyer}}" >
+    <view class='bodyer_inner'catchtap="barout">
+      <!-- 展示位置 -->
+        <view class="show_boxp" style=''>
+            <view class='text_box' style="color:{{color}};font-size:{{size}};animation: botto{{animate_top}} {{speed}}s infinite linear;-webkit-animation: botto{{animate_top}} {{speed}}s infinite linear;max-width:{{maxwidth+'px'}}">{{input}}</view>
+        </view>
+         <!-- 展示位置 end-->
+    </view>
+  <!-- 输入盒子 -->
+  <view class='color_box' wx:if="{{bool}}">
+      <view class='change' hover-class="none" bindtap="changehome"><image src='../../images/1.png'></image></view>
+      <input bindblur="input" class='input_btn' confirm-type="done" placeholder='请输入' value="{{input_value}}" cursor-spacing='5'/>
+      <view class="set" bindtap="set_btn"><image src='../../images/3.png'></image></view>
+  </view>
+  <!-- 隐藏的功能盒子 -->
+  <view class="choose_box" style="bottom:{{bottom+'rpx'}}">
+      <view class="pos_re">
+          <!-- speed -->
+          <view class="choose_boxc">
+              <view class="choose_text">速度</view>
+              <view class="choose_func">
+                  <block wx:for="{{speedArr}}" wx:key="index">
+                      <view class="speed {{speedTab==index?'isfo':''}}" bindtap='speed' data-id="{{index}}">{{item.name}}</view>
+                  </block>     
+              </view>    
+              <view class="clear"></view>
+          </view>   
+          <!-- size -->
+          <view class="choose_boxc">
+              <view class="choose_text">字号</view>
+              <view class="choose_func">
+                  <block wx:for="{{sizeArr}}" wx:key="index">
+                      <view class="size {{sizeTab==index?'isfo':''}}" bindtap='size' data-id="{{index}}">{{item.name}}</view>
+                  </block>    
+              </view>    
+              <view class="clear"></view>
+          </view>   
+          <!-- color -->
+          <view class="choose_boxc">
+              <view class="choose_text">颜色</view>
+              <view class="choose_func">
+                  <block wx:for="{{colorArray}}" wx:key="index">
+                      <view class="color_btn {{colorTab==index?'isfo':''}}" bindtap='color' style="background:{{item}};" data-id="{{index}}"></view>
+                  </block>
+              </view>    
+              <view class="clear"></view>
+          </view>  
+          <!-- complete  -->
+          <view class="complete" bindtap="complete">完成</view>
+      </view>    
+  </view>
+  <!-- 隐藏的功能盒子-end -->
+
+</view>
+<!-- home -->
+<view class="home" hidden="{{bool_home}}">
+    <view class="mytext1 " catchtap="barout1">
+      <view class="box centype{{ttype}}">
+        <view wx:for="{{texts}}" wx:key="q" wx:if="{{index<number}}"><text style="height:{{vheight}}; width:{{vheight}};line-height: {{vheight}};color:#ec4498; font-size: {{fonsize}};" class="{{shadowColor[index]}}">{{item.name}}</text></view>
+      </view>
+    </view>
+      <!-- 输入框选择 -->
+      <!-- layour用作隐藏和显示底部输入框 -->
+     <view class="tabbbox {{isbarout?'layour':''}}" >
+      <!-- 颜色选择框 -->
+      <view class="tabcolor" wx:if="{{iscolorout}}" >
+        <block wx:for='{{colors}}' wx:key="index">
+           <text style="background:{{item}}" bindtap="chanecolor"  data-id='{{index}}'></text>
+        </block>
+      </view>
+      <!-- 颜色选择框 end-->    
+      <!-- 字体选择框 -->
+      <view class="tabsize" wx:if="{{issizeout}}" >
+        <block wx:for='{{sizeArr}}' wx:key="index">
+           <text bindtap="changesize"  data-id='{{index}}' class=" {{currentTab1==index?'isfo':''}}">{{item.name}}</text>
+        </block>
+      </view>
+      <!-- 字体选择框 end-->
+      <!-- 文字输入按钮 -->
+      <view class="tabb">
+          <view class="gobar circle" url='../index/index' open-type="redirect" hover-class="none" bindtap="changebodyer"><image src='../../images/2.png'></image></view>
+          <view class="mainbar">
+            <block  wx:key="index" wx:for="{{texts}}">
+            <!--  ifocus用来判断当前的点击状态，有焦点就加className isfo-->
+             <input  bindinput="bindKeyInput" class="{{currentTab==index?'isfo':''}}" bindfocus="inputfocus" maxlength="1" placeholder="" value="{{item.name}}" style="color:{{item.color}}" data-id="{{index}}" wx:if="{{index<number}}"/>
+            </block>
+          </view>
+          <view class="setbar circle" bindtap="sizechoose">{{sizename}}</view>
+      </view>
+      <!-- 文字输入按钮 end-->
+    </view>  
+    <!-- 输入框选择 end-->
+</view>
+

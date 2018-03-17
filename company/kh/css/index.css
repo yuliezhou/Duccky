@@ -1,0 +1,155 @@
+body,div,ul,li,p,h1,h2,h3,h4,span,a,img,form {           /*所以标签，外边距内边距为0*/
+	margin: 0;
+	padding: 0;
+}
+ul {                              /*ul中取消样式*/
+	list-style: none;
+}
+body {                             /*body中字体格式*/
+	font-family: "微软雅黑";
+}
+img {                               /*图片中去边框*/
+	border: none;
+	display: block;
+}
+a {                                 /*a标签中去下划线*/
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+/*********cssR*********/
+.img_top{
+	width: 100%;
+}
+.img_top img{
+	width: 100%;
+}
+.bodyer{
+	padding: 0.2rem 0.1rem;
+}
+.show_gif{
+	width: 100%;
+	position: relative;
+	margin-bottom: 0.2rem;
+}
+.show_gif .border_img{
+	width: 100%;
+}
+.g1_img{
+	position: absolute;
+	bottom: 0;
+	left: 6%;
+	width: 31.333%;
+}
+.g2_img{
+	position: absolute;
+	bottom: 0;
+	left: 36%;
+	width: 31.333%;
+}
+.g3_img{
+	position: absolute;
+	bottom: 0;
+	left: 66%;
+	width: 31.333%;
+}
+.style_choose{
+	padding-left: 7%;
+	margin-bottom: 0.1rem;
+}
+.style_choose img{
+	float: left;
+}
+.sty_img{
+	width: 64%;
+	margin-top: 0.3rem;
+}
+.ri_img{
+	width: 36%;
+}
+.show_img9{
+	width: 100%;
+	margin-bottom: 0.3rem;
+}
+.show_img9 img{
+	width: 100%;
+}
+.sec1{
+	width: 100%;
+}
+section{
+	padding: 0 0.2rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.3rem;
+}
+
+section .star{
+	display: inline-block;
+	width: 20%;
+	padding: 0;
+	float: left;
+	margin-top: 0.4rem;
+	margin-left: 0.2rem;
+}
+#slide{
+	box-sizing:border-box;
+	display: block;
+	width: 90%;
+	height: 7.3rem;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #fff;
+	margin:0 auto;
+	margin-top: 0.2rem;
+}
+section ul {
+	width: 100%;
+}
+section ul li{
+	box-sizing:border-box;
+	width: 100%;
+	padding: 0 5%;
+}
+section ul li p{
+	box-sizing:border-box;
+	color: #666;
+	font-size: 0.15rem;
+	letter-spacing:4px ;
+	line-height: 0.4rem;
+	margin-top: 0.2rem;
+	border-bottom: 1px dashed #f452aa;
+	padding-bottom: 0.4rem;
+}
+section ul li span{
+	font-size: 0.2rem;
+	color: #000;
+	letter-spacing:2px ;
+	margin-top: 0.3rem;
+	float: left;
+}
+.empty{
+	height: 1.1rem;
+}
+.fotter_p{
+	font-size: 12px;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+}
+.down{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+.down img{
+	width: 100%;
+}
+.clear{
+    clear: both;
+}

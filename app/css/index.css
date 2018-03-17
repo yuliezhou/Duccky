@@ -1,0 +1,93 @@
+body{
+	background: url(../images/back.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.top_box{
+	height: 0.6rem;
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	background: #fff;
+	color: #666;
+	font-size: 0.28rem;
+	line-height: 0.6rem;
+	margin-top: 2.56rem;
+	border-radius: 0.44rem;
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */ 
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.top_box img{
+	width: 0.442rem;
+	height: 0.338rem;
+	margin-left: 0.138rem;
+	margin-right: 0.14rem;
+	float:left;
+}
+.top{
+	font-size: 0.28rem;
+	width: 85%;
+    overflow: hidden;
+	float: left;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.top ul{
+	font-size: 0.28rem;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+.top ul li{
+	line-height: 0.6rem;
+	height: 0.6rem;
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */ 
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.top ul li .name{
+	margin:0 0.2rem;
+}
+.content{
+	padding: 0.4rem 0.15rem 0;
+}
+.content .content_box{
+	width: 3.5rem;
+	height: 2rem;
+	float: left;
+	margin: 0 0.05rem;
+}
+.content .content_box a{
+	height: 100%;
+	width: 100%;
+}
+.content .content_box a img{
+	height: 100%;
+	width: 100%;
+}
+.online{
+	margin-top: 0.4rem;
+	height: 1.02rem;
+	width: 100%;
+}
+.online .function_box{
+	width: 3.26rem;
+	height: 1.12rem;
+	float: left;
+	margin: 0 0.24rem;
+}
+.online .function_box a,img{
+	width: 100%;
+	height: 100%;
+}

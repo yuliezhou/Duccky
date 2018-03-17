@@ -1,0 +1,274 @@
+body{
+	background: #ECF0F1;
+}
+a{
+	display: block;
+}
+.top{
+	width: 100%;
+	background: url(../images/pattern.gif);
+	text-align: center;
+	font-size: 0;
+	padding-bottom: 40px;
+	border-top: 3px solid red;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100px;
+}
+.top_a{
+	padding-bottom: 50px;
+	width: 1280px;
+	margin: 0 auto;
+}
+.top_a a{
+	width: 20%;
+	height: 70x;
+	line-height: 70px;
+	font-size: 20px;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+}
+.top_a a:hover{
+	background: #fff;
+	color: #000;
+}
+.top h2{
+	font-size: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+.input_box{
+	display: inline-block;
+	position: relative;
+}
+.input_box input{
+	width: 300px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	padding-left: 15px;
+	background: #fff;
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+.input_box button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 35px;
+	width: 60px;
+	background: #000;
+	font-size: 14px;
+	text-align: center;
+	color:#fff;
+}
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+
+input, button {
+    background: none;
+    border: 0px;
+}
+
+.dog{
+	width: 1280px;
+	margin: 0 auto;
+	padding: 50px 0;
+	margin-bottom: 50px;
+	height: 470px;
+}
+.dog .dog_box{
+	width: 31.333%;
+	float: left;
+	margin: 0 1%;
+}
+.dog .dog_box h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.dog .dog_box img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.dog .dog_box p{
+    font-size: 14px;
+    color: #777;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.dog .dog_box a{
+	background: #C0392B;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	width: 175px;
+	line-height: 50px;
+	text-decoration: none;
+}
+.detalis{
+	padding: 40px 0 80px;
+	width: 80%;
+	margin: 0 auto;
+}
+.detalis .deta_left{
+	width: 100%;
+}
+.detalis .deta_left img{
+	margin-bottom: 30px;	
+}
+.detalis .deta_left h4{
+	color: #000;
+    font-size: 24px;
+    padding-bottom:40px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: center;
+}
+.detalis .deta_left p{
+	line-height: 25px;
+	color: #777;
+	font-size: 14px;
+
+}
+.detalis .deta_left a{
+	background: #C0392B;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	width: 175px;
+	line-height: 50px;
+	margin-top: 50px;
+}
+.de_imgbox{
+	width: 100%;
+}
+.de_imgbox img{
+	width: 24%;
+	display: inline-block;
+}
+.deta_right{
+	width: 45%;
+	float: right;
+}
+.deta_right_box{
+	padding-bottom: 30px;
+}
+.deta_right_box img{
+	display: inline-block;
+	width: 110px;
+	height: 100px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 8px #AAA;
+}
+.deta_right_box .img_des{
+	width: 100%;
+}
+.deta_right_box .img_des h3{
+	color: #000;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+.deta_right_box .img_des h4{
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.deta_right_box .img_des p{
+	color: #777;
+	font-size: 16px;
+}
+.footer{
+	background: url(../images/pattern.gif);
+	width: 100%;
+	height: 200px;
+	padding-top: 30px;
+}
+.footer_box{
+	width: 80%;
+	margin: 0 auto;
+}
+.footer_boxc{
+	width: 25%;
+	float: left;
+}
+.footer_boxc h4{
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.footer_boxc a{
+	padding: 0 0 15px 0;
+	color: #A0A0A0;
+}
+.footer_boxc a:hover{
+	color: red;
+}
+.fot_imgbox{
+	text-align: left;
+}
+.fot_imgbox img{
+	width: 48px;
+	margin: 0 8px;
+
+}
+.faq{
+	margin: 0 auto;
+	width: 80%;
+	padding: 50px 0;
+}
+.faq h4{
+	color: #000;
+    font-size: 24px;
+    padding-bottom:40px;
+    font-weight: bold;
+	text-align: center;
+}
+.faq a{
+	font-size: 16px;
+	color: #434343;
+	text-align: center;
+	line-height: 35px;
+}
+.faq a:hover{
+	color: red;
+}
+.faq1{
+	text-align: center;
+}
+.lybtn select{
+	height: 30px;
+	width: 200px;
+}
+.lybtn input{
+	border: 1px solid #000;
+	height: 30px;
+	width: 200px;
+
+}
+.lybtn textarea{
+	border: 1px solid #000;
+}

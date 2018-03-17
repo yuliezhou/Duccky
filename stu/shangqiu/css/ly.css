@@ -1,0 +1,38 @@
+.lyboxp h3{
+	padding: 50px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+.lyboxp h4{
+	font-size: 24px;
+	padding: 15px 0;
+	text-align: left;
+	color: #000;
+	font-weight: normal;
+}
+.lyboxp h5{
+	color: #ff9d00;
+	padding: 15px 0;
+	text-align: left;
+	font-size: 16px;
+	font-weight: normal;
+}
+.lyboxc img{
+	width: 300px;
+	margin: 0 10px;
+	box-shadow: 0 0 20px #ff9d00; 
+}
+.desp{
+	color: #000;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 15px 0;
+}
+.lyboxc{
+	text-align: center;
+}
+.lyboxc img{
+	width: 300px;
+	margin:20px 10px;
+}

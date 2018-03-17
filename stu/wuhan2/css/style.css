@@ -1,0 +1,92 @@
+.bodyer{
+		width: 980px;
+		margin: 0 auto;
+	}
+	.topimg{
+		width: 100%;
+		height: 315px;
+		border: none;
+		background: url(../images/banner.jpg) 0 0 no-repeat;
+	}
+	.navbox{
+		background: #2196f3;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+	a{
+		text-decoration: none;
+	}
+	.navbox a{
+		height: 100%;
+		display: inline-block;
+		padding: 0 100px;
+		color: #fff;
+		background: #2196f3;
+	}
+	.navbox a:hover{
+		background: white;
+		color: black;
+	}
+	.fot{
+		height: 80px;
+		text-align: center;
+		background: #2196f3;
+		color: #fff;
+	}
+	.fot p{
+		padding-top:15px;
+		color: #fff;
+		font-size: 14px; 
+		margin: 0;
+	}
+	.desbox h3{
+		margin-top: 50px;
+		margin-bottom: 20px;
+		text-align: center;
+		color: #2196f3;
+	}
+	.desbox p{
+		color: #434343;
+	}
+	.desbox{
+		line-height: 25px;
+		font-size: 16px;
+	}
+	.imgbox {
+		height: 550px;
+	}
+	.imgbox .imgboxc{
+		float: left;
+		width: 31.333%;
+		margin:10px 1%; 
+	}
+	.imgboxc img{
+		height: 200px;
+		width: 100%;
+	}
+	.imgboxc p{
+		text-align: center;
+		padding: 10 0;
+		font-size: 14px;
+	}
+	.conform p{
+		margin: 30px 0;
+	}
+	.conform input{
+		height: 40px;
+		width: 300px;
+	}
+	.conform textarea{
+		margin: 20px 0;
+	}
+	.conform button{
+		height: 40px;
+		width: 100px;
+		margin-bottom: 40px;
+	}
+	.yijian{
+	    margin: 30px 0 50px;
+	    text-align: center;
+	    color: #2196f3
+	}

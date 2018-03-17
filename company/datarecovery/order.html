@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据还原</title>
+	<meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="back_or">
+		<a href="index.html">
+			<img src="images/back.png" alt="">
+		</a>
+		<h5>数据还原</h5>
+	</div>
+	<!-- 新闻滚动 -->
+	<div class="news_gd">
+		<div class="news_gdimg">
+			<img src="images/notice_bg.png" alt="">
+		</div>
+		<div id="top">
+			<ul class="news_ul" id="news_ul">
+		
+			</ul>
+		</div>
+	</div>
+	<!-- 价格显示 -->
+	<div class="show_price flex_between">
+		<div class="show_pril" id="show_pril">
+			<img src="images/f1.png" alt="">
+			<span></span>
+		</div>
+		<div class="show_prir" id="show_prir">
+			￥ <span></span>
+		</div>
+	</div>
+	<!-- 号码输入 -->
+	<div class="contact flex_between">
+		<div class="conta_le">
+			<p>联系QQ号</p>
+			<p>(方便工程师联系您)</p>
+		</div>
+		<div class="conta_ri">
+			<input type="number" placeholder="输入联系QQ号码"  id="qq_ipt">
+			<img src="images/more.png" alt="">
+		</div>
+	</div>
+	<!-- 选择类型 -->
+	<div class="choose_or">
+		<div class="choose_title">选择类型</div>
+		<div class="choose_boxp flex_between" id="choose_boxp">
+			<div class="choose_boxc ac_choose">
+				需排队
+				<div class="red_icon"><span>推荐</span></div>
+			</div>
+			<div class="choose_boxc">
+				紧急处理
+			</div>
+			<div class="choose_boxc">
+				咨询服务
+			</div>
+		</div>
+	</div>
+	<!-- 还原详情 -->
+	<div class="reduction">
+		<div class="redu_title">还原详情</div>
+		<div class="reduction_des">
+			<i>预约此项服务即可同时获得</i>
+			<span>“数据还原PC版软件授权”</span>
+			<img src="images/wembg_1.png" alt="" class="top_icon">
+			<img src="images/wembg_2.png" alt="" class="bot_icon">
+		</div>	
+		<div class="del" id="del">
+			<div class="title_h4">服务说明：</div>
+			<p>数据还原工程师根据用户下单时间依次提供还原服务。</p>
+		</div>
+		<div class="del" id="del2">
+			<div class="title_h4">还原步骤：</div>
+			<div class="des_imgbox des_imgbox_order">
+				<div class="step_box">
+					<img src="images/st1.png"  alt="">
+					<p>下单预约</p>
+				</div>
+				<img src="images/jt.png" alt="" class="jt_img">
+				<div class="step_box">
+					<img src="images/st2.png"  alt="">
+					<p>工程师还原</p>
+				</div>
+				<img src="images/jt.png" alt="" class="jt_img">
+				<div class="step_box">
+					<img src="images/st3.png"  alt="">
+					<p>还原成功</p>
+				</div>
+				<div class="clear"></div>
+			</div>				
+		</div>
+	</div>
+	<!-- 占位盒子 -->
+	<div class="empty"></div>
+	<div class="pay_box">
+		<div class="pay_boxleft" id="pay_boxleft">
+		合计金额: <span>￥<i id="total_price"></i></span>
+		</div>
+		<div class="pay_boxright" id="pay_btn">
+			预定下单
+		</div>
+		<div class="clear"></div>
+		
+	</div>	
+	<!-- 支付方式 -->
+	<div class="pay_choose">
+		<div class="pay_inner">
+			<div class="pay_choosebox">
+				<div class="pay_choosetit">
+					选择支付方式
+					<img src="images/close.png" alt="" id="close">
+				</div>
+				<div class="pay_choos3 flex_around" id="pay_choos3">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wx_prompt">
+		<div class="wx_inner">
+			<div class="wx_jt">
+				<img src="images/timg.png" alt="">
+				<div class="clear"></div>
+			</div>
+			<div class="wx_pbox">
+				<p><span>1</span>点击右上角的按钮</p>
+				<p><span>2</span>选择在"浏览器"中打开,并支付</p>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/order.js"></script>
+

@@ -1,0 +1,90 @@
+/* pages/movie/movie.wxss */
+.movie_des{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40rpx 30rpx;
+	border-bottom: 2rpx solid #E8E8E8;
+}
+.movie_desl{
+	width: 65%;
+}
+.movie_desl .movie_desh{
+	font-size: 48rpx;
+	color: #000;
+	width: 100%;
+}
+.movie_desl .average{
+	font-size: 26rpx;
+	color: #ffb712;
+	width: 100%;
+	padding-bottom:25rpx; 
+	padding-top: 20rpx;
+}
+.movie_desl .rating_count{
+	color: #aaa;
+	padding-left: 15rpx;
+}
+.movie_img{
+	width: 200rpx;
+	height: 300rpx;
+}
+.des_txt{
+	color: #494949;
+	font-size: 28rpx;
+}
+.movie_intro{
+	padding-bottom: 30px;
+	border-bottom: 2rpx solid #E8E8E8;
+}
+.movie_introh{
+	margin: 30rpx 0;
+	width: 100%;
+	padding-left:30rpx; 
+	color: #aaa;
+	font-size: 30rpx;
+	display: block;
+}
+.movie_content{
+	padding: 0 30rpx;
+	color: #494949;
+	font-size: 25rpx;
+	line-height: 50rpx;
+	display: block;
+}
+.actor{
+	width: 100%;
+	overflow: hidden;
+	padding: 30rpx 0;
+	white-space: nowrap;
+	border-bottom: 2rpx solid #E8E8E8;
+}
+.actor .scroll_view_x{
+    white-space: nowrap;
+	overflow: hidden;
+	height: 100%;
+}
+.actor_box{
+	width: 200rpx;
+	margin: 0 15rpx;
+	display: inline-block;
+	height: 100%;
+}
+.actor_name{
+	padding: 15rpx 0;
+	text-align: center;
+	color: #494949;
+	font-size: 26rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.actor_position{
+	color: #aaa;
+	font-size: 26rpx;
+	text-align: center;
+}
+.actor_img{
+	width: 200rpx;
+	height: 280rpx;
+}

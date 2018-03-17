@@ -1,0 +1,538 @@
+/*首页*/
+#banner_sw1{
+	width: 100%;
+} 
+#banner_sw1 .swiper-slide{
+	width: 100%;
+	position: relative;
+}
+#banner_sw1 img{
+	width: 100%;
+}
+.banner_ab{
+	position: absolute;
+	top: 30%;
+	left: 15%;
+}
+.xl_choose{
+	padding-top: 70px;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.xl_chooseboxl{
+	width: 50%;
+	padding-left: 10%;
+	float: left;
+	padding-top: 5%;
+}
+.xl_chooseboxl h3{
+	color: #1b1b1b;
+	font-size: 36px;
+    font-family: 'dinpro';
+    margin-bottom: 10px;
+}
+.xl_chooseboxl h2{
+	color: #1b1b1b;
+	font-size: 60px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.xl_chooseboxl p{
+	font-size: 14px;
+	color: #1b1b1b;
+	padding-bottom: 10px;
+}
+.xl_chooseboxr{
+	text-align: center;
+	width: 50%;
+	float: left;
+	padding-right: 3%;
+}
+.xl_chooseboxr img{
+	width: 70%;
+}
+.xl_more{
+    font-family: 'dinpro';
+    text-transform: uppercase;
+    color: #313131;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #313131;
+    transition: all 0.5s;
+    margin-top: 30px;
+}
+.xl_more i{
+	color: #313131;
+	font-size: 14px;
+	padding-left: 20px;
+	transition: all 0.5s;
+}
+.empty{
+	display: none;
+}
+.change_xl{
+	position: absolute;
+	bottom: 10%;
+	left: 3%;
+	width: 200px;
+}
+
+.xl_choosebox{
+	display: none;
+}
+.xl_choose .re_choose{
+	display: block;
+	animation: 2s opc linear;
+}
+.change_xl .change_btn{
+	color: #7d7d7d;
+	font-size: 12px;
+	line-height: 30px;
+	height: 30px;
+	width: 100%;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.change_xl img{
+	opacity: 0;
+	transition: all 0.5s;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.change_xl .ac_chanxl{
+	font-size: 18px;
+	color: #1b1b1b;
+}
+.change_xl .ac_chanxl img{
+	opacity: 1;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.brand_ban{
+	width: 100%;
+}
+.brand_box{
+	width: 100%;
+	position: relative;
+}
+.brand_img{
+	width: 100%;
+}
+.brand_des{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 13%;
+}
+.brand_boxc{
+	width: 90%;
+	margin: 0 auto;
+	padding-left: 10%;
+}
+.brand_des h3{
+	color: #fff;
+	font-size: 60px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.brand_des h4{
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+.brand_des p{
+	color: #dcdcdc;
+	font-size: 14px;
+	line-height: 35px;
+}
+.brand_more{
+	color: #dcdcdc;
+	font-size: 16px;
+	text-transform: uppercase;
+    font-family: 'dinpro';
+    margin-top: 65px;
+    transition: all 0.5s;
+}
+#brand_ban{
+	position: relative;
+}
+.control_btn{
+	position: absolute;
+	left: 15%;
+	bottom: 15%;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+.control_btn i{
+	color: #d2d2d2;
+	font-size: 40px;
+	padding: 0 10px;
+	transition:  all 0.5s;
+}
+.control_btn .swiper-button-nextpc{
+	display: inline-block;
+}
+.control_btn .swiper-button-prevpc{
+	display: inline-block;
+}
+.control_btn .next{
+	font-size: 14px;
+	color: #dcdcdc;
+	padding-left: 40px;
+	display: inline-block;
+	position: relative;
+}
+.control_btn .next:after{
+	position: absolute;
+	top: 8px;
+	left: 20px;
+	height: 5px;
+	width: 5px;
+	background: #fed400;
+	content: '';
+}
+.control_btn .swiper-pagination{
+	display: inline-block;
+	position: initial;
+	padding-left: 15px;
+	color: #dcdcdc;
+	font-size: 14px;
+    font-family: 'robo';
+}
+.control_btn .swiper-pagination-current{
+	font-size: 18px;
+}
+#product_idx_phone{
+	width: 100%;
+	display: none;
+}
+#product_idx_phone .swiper-slide,#product_idx_phone1 .swiper-slide{
+	padding: 20px;
+}
+.phone_jeep{
+	width: 100%;
+	text-align: center;
+}
+.phone_jeep img{
+	width: 70%;
+}
+.phone_jeep .phone_jeepbxo{
+	margin-bottom: 30px;
+}
+.phone_jeep h4{
+	font-size: 22px;
+    color: #434343;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.phone_jeep span{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 16px;
+    padding: 10px 20px;
+    border: 3px solid #313131;
+    font-family: 'dinpro';
+    margin-top: 20px;
+    color: #000;
+}
+.phone_jeep p{
+    color: #838383;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.swiper-button-nextpro_phone, .swiper-button-prevpro_phone {
+    display: block!important;
+    position: absolute;
+    top: 50%;
+    z-index: 999!important;
+}
+.swiper-button-prevpro_phone{
+	left: 20px;
+}
+.swiper-button-nextpro_phone{
+	right: 20px;
+}
+.swiper-button-nextpro_phone i, .swiper-button-prevpro_phone i {
+    font-size: 40px;
+    color: #000;
+}
+#product_idx_phone{
+	padding: 10px 0;
+}
+#product_idx_phone1{
+	padding: 10px 0;
+	display: none;
+}
+#product_idx_phone1 .phone_jeep img{
+	width: 90%;
+}
+#product_idx_phone1 .phone_jeep span{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 16px;
+    padding: 10px 20px;
+    border: 3px solid #000;
+    font-family: 'dinpro';
+    margin-top: 20px;
+    color: #000;
+}
+#product_idx_phone1 .swiper-button-nextpro_phone i, #product_idx_phone1 .swiper-button-prevpro_phone i {
+    font-size: 40px;
+    color: #000;
+}
+.jeep_pro3{
+	background: #f7f8fa;
+	padding: 60px 0; 
+}
+.jeep_pro3_tit{
+	width: 100%;
+	text-align: center;
+}
+.jeep_pro3_tit a{
+	color: #0d0d0d;
+	font-size: 18px;
+	padding: 20px 0;
+	width: 20%;
+	border-bottom: 2px solid transparent;
+	transition: all 0.5s;
+	text-transform: uppercase;
+	font-weight: bold;
+	display:inline-block;
+
+}
+.jeep_pro3_tit .ac_jeeptit{
+	border-bottom: 2px solid #1b1b1b;
+}
+#jeep_pro3{
+	margin-top: 20px;
+}
+.jeep_pro3des{
+	padding: 0 10% 45px;
+}
+#jeep_pro3 h4{
+	color: #1b1b1b;
+	font-size: 14px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+.jeep_boxp{
+	padding-top: 40px;
+	position: relative;
+}
+#jeep_pro3 h3{
+	color: #1b1b1b;
+	font-size: 24px;
+    font-family: 'robo_bold';
+    padding-bottom: 15px;
+}
+#jeep_pro3 span{
+	height: 2px;
+	width: 40%;
+	background: #000;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+#jeep_pro3 p{
+	color: #1b1b1b;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+}
+.jeep_pro3box{
+	text-align: center;
+	display: block;
+	background: #fff;
+}
+.jpro3_img{
+	text-align: center;
+	width: 100%;
+}
+.jpro3_img img{
+	width: 100%;
+}
+.swiper-button-nextjeep,.swiper-button-prevjeep{
+	height: 100%;
+	width: 150px;
+	background: #fff;
+	opacity: 0.6;
+	z-index: 999;
+	cursor: pointer;
+	transition: all 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.swiper-button-nextjeep i,.swiper-button-prevjeep i{
+	font-size: 80px;
+}
+.swiper-button-nextjeep{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.swiper-button-prevjeep{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.product_idx_phone3{
+	display: none;
+}
+.product_idx_phone3 .swiper-slide{
+	padding: 20px;
+}
+.product_idx_phone3 h4{
+	color: #1b1b1b;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.product_idx_phone3 img{
+	width: 90%;
+}
+.product_idx_phone3 h3{
+	color: #1b1b1b;
+    font-size: 24px;
+    font-family: 'robo_bold';
+    padding-bottom: 15px;
+}
+.product_idx_phone3 span{
+	height: 2px;
+    width: 40%;
+    background: #000;
+    display: inline-block;
+    padding: 0;
+    border:none;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.product_idx_phone3 p{
+	color: #1b1b1b;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.product_idx_phone3 h1{
+	color: #1b1b1b;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 70%;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+/*首页-end*/
+@media (min-width: 768px){
+	.xl_more:hover{
+		background: #fed400;
+		color: #fff;
+	}
+	.xl_more:hover i{
+		color: #fff;
+		padding-left: 25px;
+	}
+	.change_xl .change_btn:hover{
+		font-size: 18px;
+		color: #1b1b1b;
+	}
+	.change_xl .change_btn:hover img{
+		opacity: 1;
+	}
+	.brand_more:hover{
+		color: #fed400;
+	}
+	.control_btn i:hover{
+		color: #fed400;
+	}
+	.jeep_pro3_tit a:hover{
+		border-bottom: 2px solid #1b1b1b;
+	}
+	.swiper-button-nextjeep:hover,.swiper-button-prevjeep:hover{
+		opacity: 0.9;
+	}
+}
+
+/*手机端*/
+@media (max-width: 768px){
+	.empty{
+		display: block;
+	}
+	.xl_choose{
+		display: none;
+	}
+	.brand_ban{
+		display: none;
+	}
+	#product_idx_phone{
+		display: block;
+	}
+	#product_idx_phone1{
+		display: block;
+	}
+	.jeep_pro3{
+		display: none;
+	}
+	.product_idx_phone3{
+		display: block;
+	}
+}
+@media screen and (min-width:900px) and (max-width:1600px) {
+	.brand_des{
+		padding-top: 5%;
+	}
+	.xl_chooseboxr{
+		width: 40%;
+		padding-right: 0;
+	}
+	.xl_chooseboxl{
+		padding-top: 0;
+		width: 60%;
+		padding-left: 15%;
+	}
+	.xl_choose{
+		padding-bottom: 10px;
+	}
+}
+@media screen and (min-width:900px) and (max-width:1300px) {
+	.control_btn{
+		bottom: 15%;
+	}
+	.brand_des h3{
+		font-size: 40px;
+	}
+	.brand_des h4{
+		margin-bottom: 20px;
+	}
+}
+@media screen and (min-width:900px)and (max-width:1300px){
+	.control_btn{
+		bottom: 8%;
+	}
+}
+@-webkit-keyframes opc {
+    0% {
+        opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}

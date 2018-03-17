@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广西智中</title>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="res.css">
+	<style type="text/css">
+*{
+	margin: 0;padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.nav{
+	height: 80px;
+	line-height: 80px;
+}
+.innerbox{
+	width: 1200px;
+	margin: 0 auto;
+}
+.logo{
+	float: left;
+}
+.choose{
+	float: right;
+}
+.choose a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #000;
+	font-size: 15px;
+	background: url(http://2.ss.faisys.com/image/template/4001/g_ls.gif?v=201501261926) no-repeat;
+	background-position: right;
+}
+.choose a:hover{
+	background: #0784d9;
+	border-radius: 5px;
+	color: #fff;
+}
+#banner{
+	width: 100%;
+}
+#banner img{
+	width: 100%;
+	display: none;
+}
+.about{
+	background: url(http://7933486.s21i-7.faiusr.com/2/ABUIABACGAAg0_XZrwUo0NeVsQMwgA840QM.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	text-align: center;
+}
+.abtiti{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: url(http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAgtufZrwUo1Ju-uQYwYjhG.png) center no-repeat;
+}
+.abdes{
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+.abdes p{
+	font-size: 14px;
+	color: #ccc;
+	line-height: 25px;
+	text-align: left;
+}
+.more{
+	margin: 0 auto;
+	display: inline-block;
+}
+.news{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;	
+	background: #fafafa;
+}
+.newstit{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: url(http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgr5ucugUo_b-6pwEweDhE.png) center no-repeat;
+}
+.newsboxp{
+	padding-top: 10px;
+	height: 800px;
+}
+.newboxc{
+	width: 242px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 52px;
+    margin-right: 22px;
+    height: 357px;
+}
+.newboxc img{
+	width: 100%;
+	display: inline-block;
+	height: 152px;
+}
+.newboxc h4{
+	line-height: 25px;
+	color: #000;
+	font-size: 16px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: left;
+	display: inline-block;
+	font-weight: normal;
+}
+.newboxc p{
+	line-height: 25px;
+	font-size: 14px;
+	color: #808080;
+	text-align: left;
+}
+.case{
+	padding-top: 20px;	
+	padding-bottom: 30px;
+	background: url(http://2.ss.faisys.com/image/materialLib/background/1000030.jpg?v=201712181555);
+}
+.casetit{
+	padding-bottom: 15px;
+	text-align: center;
+	height: 80px;
+}
+.caseimg{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	height: 180px;
+}
+.caseimg img{
+	width: 210px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	height: 177px;
+}
+.caseimg1{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	height: 120px;
+}
+.caseimgbox{
+	width: 175px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	float: left;
+}
+.caseimgbox img{
+	display: inline-block;
+}
+.caseimgbox span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	color: #999;
+}
+.fot{
+	padding-left: 15px;
+	padding-bottom: 20px;
+	height: 240px;
+	font-size: 12px;
+	background: #f4f4f4;
+}
+.fitbox1{
+	float: left;
+	width: 235px;
+	padding-left: 10px;
+}
+.fitbox1 img{
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+.fitbox1 p{
+	color: #6C6C6C;
+}
+.fitbox2{
+	width: 180px;
+	padding: 0 5px;
+	float: left;
+}
+.fitbox2 h4{
+	height: 42px;
+	line-height: 42px;
+	font-weight: normal;
+	font-size: 18px;
+	color: #000;
+}
+.fitbox2 a{
+	color: #6C6C6C;
+	font-size: 12px;
+	line-height: 32px;
+	display: inline-block;
+	width: 100%;
+}
+#xiala{
+	display: none;
+}
+.titimg{
+	width: 100%;
+}
+/*最多宽度768 ，即手机屏幕*/
+@media  screen  and (max-width:768px){
+	.innerbox{
+		width: 100%;
+	}
+	.choose{
+		display: none;
+	}
+	.choose a{
+		width: 100%;
+		background: none;
+		display: inline-block;
+		line-height: 25px;
+	}
+	.nav{
+
+		line-height: 25px;
+	}
+	#xiala{
+		display: block;
+		padding-left: 15px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.newsboxp{
+		height: 3200px;
+	}
+	.casetit{
+		height: 40px;
+	}
+	.case{
+		height: 1500px;
+	}
+	.caseimg{
+		height: 900px;
+	}
+	.fot{
+		height: 700px;
+	}
+	.caseimgbox{
+		width: 165px;
+	}
+	.fitbox2{
+		width: 170px;
+	}
+}	</style>
+</head>
+<body>
+	<div id="xiala"><i class="fa fa-navicon"></i></div>
+	<div class="nav">
+		<div class="innerbox">
+			<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAg3OySwwUohIz0wQcweThL.png" alt="" class="logo">
+			<div class="choose">
+				<a href="##">首页</a>
+				<a href="##">新闻动态</a>
+				<a href="##">解决方案</a>
+				<a href="##">成功案例</a>
+				<a href="##">产品服务</a>
+				<a href="##">关于我们</a>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAg_a6yuwUov_iAgQQwyQ44wgM.jpg" alt="">
+		<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAguaiyuwUoyICA5gUwyQ44wgM.jpg" alt="">
+	</div>
+	<div class="about">
+		<div class="innerbox">
+			<div class="abtiti"></div>	
+			<div class="abdes">
+				<p>　　广西智中信息技术有限公司，成立于2010年，注册资金500万元，主要服务于教育、政府、军队、电力、水利、金融、公安、电信、铁路等行业。</p>
+				<p>　  目前在南宁、桂林、柳州、玉林等地共设有5个分支机构及办事处，为客户提供更便捷，更高效的技术服务。同时拥有一支精湛的专业技术服务团队，以卓越的服务品质、专业技术实力，及时高效的为客户提供软硬件产品服务及整体解决方案。</p>
+				<p>　 　业务范围包括：智能化系统集成、多媒体电教设备、多功能会议室设备、网络综合布线、网络监控系统、楼宇自控系统、安全防范系统、广播音响系统、远程视频会议系统、拼接投影系统以及智能化中央控制系统等专业的系统集成工程。</p>
+				<p>　 　广西智中信息技术有限公司的使命就是以客户需求为核心，通过不断的组织变革与管理改进，提供让客户满意的产品和服务，保护客户投资，持续为客户创造最大价值。</p>
+			</div>
+			<a href="#" class="more">
+				<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAg6fzZrwUo_IHX6gUwkQE4Kg.png?v=1" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="news">
+		<div class="innerbox">
+			<div class="newstit"></div>	
+			<div class="newsboxp">
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAg6OW80QUojOiE3wQwrAI4xgE.jpg" alt="">
+					<h4>【中标】恭喜我公司中标广西金融职业技术学院普通话学习与模拟测试平台系统开发</h4>
+					<p>【中标】恭喜我公司中标广西金融职业技术学院普通话学习与模拟测试平台系统开发（项目编号：GXZC2017-J3-13...</p>
+				</div>
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgzN6RzwUo1eKQ5QQw9AM48wI.jpg" alt="">
+					<h4>【中标】恭喜我公司中标广西中医药大学实验室设备采购</h4>
+					<p>【中标】恭喜我公司中标广西中医药大学实验室设备采购（项目编号：GXZC2017-G1-13046-GXJL）项目名...</p>
+				</div>
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgwK3rywUo6MaflgUw2wU4sgM!500x500.jpg" alt="">
+					<h4>【中标】祝贺我公司中标广西民族大学电子类创新开放、PCB制作与实训中心设备采购</h4>
+					<p>【中标】祝贺我公司中标广西民族大学电子类创新开放、PCB制作与实训中心设备采购（项目编号：GXZC2017-G1-...</p>
+				</div>
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgxoLqzAUo8Kar7QYw9AM4kAM.jpg" alt="">
+					<h4>【中标】祝贺我公司中标广西大学教学设备采购及安装</h4>
+					<p>【中标】祝贺我公司中标广西大学教学设备采购及安装（项目编号：GXZC2017-J1-13319-JGJD）项目名称...</p>
+				</div>
+
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgg8ykyQUouvHz0wIw7AQ4nQM!500x500.jpg" alt="">
+					<h4>【中标】祝贺我公司中标桂林旅游学院智能化语言综合实训室设备及商务日语综合实训系统采购</h4>
+					<p>【中标】祝贺我公司中标桂林旅游学院智能化语言综合实训室设备及商务日语综合实训系统采购（项目编号：<GXZC-J1-1 class=""></GXZC-J1-1></p>
+				</div>
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgxoLqzAUo8Kar7QYw9AM4kAM.jpg" alt="">
+					<h4>【中标】祝贺我公司中标广西大学教学专用设备采购项目B分标</h4>
+					<p>【中标】祝贺我公司中标广西大学教学专用设备采购（B分标）（项目编号：GXZC2017-G1-12083-KLZB）...</p>
+				</div>
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgysv9zQUo4IHvZTDxBDipAw!500x500.jpg" alt="">
+					<h4>【中标】祝贺我公司中标桂林理工大学土建学院第三批强基项目采购</h4>
+					<p>【中标】祝贺我公司中标桂林理工大学土建学院第三批强基项目采购（项目编号：GXZC2017-G1-11817-CJG...</p>
+				</div>
+				<div class="newboxc">
+					<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgxoLqzAUo8Kar7QYw9AM4kAM.jpg" alt="">
+					<h4>【中标】祝贺我公司中标广西大学教学设备采购及安装</h4>
+					<p>【中标】祝贺我公司中标广西大学教学设备采购及安装（项目编号：GXZC2017-J1-13319-JGJD）项目名称...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="case">
+		<div class="innerbox">
+			<div class="casetit">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgwbKzuwUosPGJ_QUwkgk4UA.png?v=1" alt="" class="titimg">
+			</div>
+			<div class="caseimg">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgmOuuuwUo0ZOA_wMw0gE4rQE.png?v=1" alt="">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgmuuuuwUogIav-wYw0gE4rQE.png?v=1" alt="">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgm_uuuwUouLSF0gEw0gE4rAE.png?v=1" alt="">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgnuuuuwUouuvH3AQw0gE4rAE.png?v=1" alt="">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgn_uuuwUov-7erQUw0gE4sQE.png?v=1" alt="">
+			</div>
+			<div class="casetit">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAgwLqzuwUomOeqtwYwkgk4UA.png" alt="" class="titimg">
+			</div>
+			<div class="caseimg1">
+				<div class="caseimgbox">
+					<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAgotbZrwUopbfVyAUwUThB.png?v=1" alt="">
+					<span>智能融合系统</span>
+				</div>	
+				<div class="caseimgbox">
+					<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAgotbZrwUoq4qtowEwUDhE.png?v=1" alt="">
+					<span>互动录播系统</span>
+				</div>	
+				<div class="caseimgbox">
+					<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAg7NnZrwUo4Lv2_QIwWjhF.png?v=1" alt="">
+					<span>标准化考场</span>
+				</div>	
+				<div class="caseimgbox">
+					<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAg8dnZrwUoksfcywUwKThF.png?v=1" alt="">
+					<span>多媒体电教设备</span>
+				</div>	
+				<div class="caseimgbox">
+					<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAg_tnZrwUoi-jpyAYwXjg6.png?v=1" alt="">
+					<span>虚拟仿真系统</span>
+				</div>	
+				<div class="caseimgbox">
+					<img src="http://7933486.s21i-7.faiusr.com/4/ABUIABAEGAAghdrZrwUohY-MiQcwSjg5.png?v=1" alt="">
+					<span>报告厅</span>
+				</div>	
+			</div>	
+		</div>
+	</div>
+	<div class="fot">
+		<div class="innerbox">
+			<div class="fitbox1">
+				<img src="http://9098131.s21i-9.faiusr.com/4/ABUIABAEGAAg3OySwwUohIz0wQcweThL.png?v=1" alt="">
+				<p>顾客至上、质量第一、诚信服务</p>
+			</div>
+			<div class="fitbox2">
+				<h4>我们</h4>
+				<a href="##">服务项目</a>
+				<a href="##">关于我们</a>
+				<a href="##">新闻动态</a>
+				<a href="##">联系我们</a>
+			</div>
+			<div class="fitbox2">
+				<h4>案例</h4>
+				<a href="##">智能融合系统</a>
+				<a href="##">互动录播系统</a>
+				<a href="##">标准化考场</a>
+				<a href="##">报告厅</a>
+			</div>
+			<div class="fitbox2">
+				<h4>微信公众号</h4>
+				<img src="http://9098131.s21i-9.faiusr.com/2/ABUIABACGAAgyr7YuwUojJOI1QQweDh4.jpg?v=1" alt="">
+			</div>		
+			<div class="fitbox2">
+				<h4>发现</h4>
+				<a href="##">战略伙伴</a>
+				<a href="##">官方博客</a>
+				<a href="##">留言板</a>
+				<a href="##">友情链接</a>
+			</div>			
+			<div class="fitbox2">
+				<h4>联系我们</h4>
+				<a href="##">地址：南宁市高新区科园东四路7号远信大厦312室</a>
+				<a href="##">电话：0771-5825765</a>
+				<a href="##">邮箱：gxzzxx888@163.com</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+<script type="text/javascript">
+	$('#banner img').eq(0).show();
+	var n= 0;
+	setInterval(function(){
+		$('#banner img').hide()
+		n++;
+		if(n>1){
+			n=0;
+		}
+		$('#banner img').eq(n).show();
+	},2000)
+	$('#xiala').click(function() {
+		$('.choose').toggle()
+	});
+</script>

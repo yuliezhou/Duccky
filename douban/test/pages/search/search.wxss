@@ -1,0 +1,39 @@
+.item{
+	padding: 20rpx 40rpx;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30rpx;
+	position: relative;
+}
+.item_img{
+	width: 168rpx;
+	height: 168rpx;
+}
+.des{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin-left: 20rpx;
+}
+.des_titlesmall{
+	font-size: 25rpx;
+	color: #434343;
+	padding: 15rpx 0;
+}
+.director{
+	color: #838383;
+	font-size: 30rpx;
+}
+.rating{
+	position: absolute;
+	color: red;
+	top: 20rpx;
+	right: 20rpx;
+}
+.des_title{
+    width: 90%;
+}
+.search_ipt{
+    font-size: 28rpx;
+}

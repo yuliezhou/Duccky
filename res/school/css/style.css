@@ -1,0 +1,374 @@
+/*去除轮播的左右阴影*/
+/*首页-banner*/
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+
+.banner .swiper-pagination-bullet{
+    background: #fff!important;
+    opacity: 1!important;
+    width: 20px!important;
+    height: 20px!important;
+    margin: 0 5px!important;
+    position: relative!important;
+}
+
+.banner .swiper-pagination-bullet-active{
+    box-sizing: border-box;
+    background: #9d2d19!important;
+    width: 20px!important;
+    height: 20px!important;
+}
+/*.banner .swiper-pagination-bullet-active:before{
+    content:'';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #028546;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}*/
+/*首页-banner-end*/
+.newspa{
+    background: #fcfbef;
+}
+.news{
+    padding: 0;
+    background: #fcfbef;
+}
+.news_box{
+
+
+}
+.news_tit{
+    height: 75px;
+    line-height: 75px;
+    color: #414141;
+    font-size: 26px;
+    width: 100%;
+}
+.news_tit img{
+    margin-right: 10px;
+}
+.news_tit .more{
+    float: right;
+    line-height: 75px;
+    height: 75px;
+    display: inline-block;
+    color: #a22416;
+    font-size: 16px;
+}
+.news_list{
+    padding: 5px 0;
+}
+.news_list span{
+    line-height: 20px;
+    text-align: center;
+    color: #c13432;
+    padding-right: 10px;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+.news_list p{
+    display: inline-block;
+    color: #414141;
+    font-size: 16px;
+    line-height: 20px;
+    float: left;
+    width: 70%;
+}
+.news_list em{
+    color: #818181;
+    font-size: 16px;
+    float: right;
+    line-height: 20px;
+}
+.news_content2{
+    background: #f7f5e4;
+    padding: 0 5px;
+}
+.news_content2 .notice_list{
+    padding: 10px 0;
+    border-bottom: 1px dashed #d3d3d3;
+}
+.news_content2 .notice_noac{
+    border: none;
+}
+.notice_list .timer{
+    border: 1px solid #c13432;
+    width: 48px;
+    margin-right: 10px;
+    float: left;
+}
+.timer span{
+    display: inline-block;
+    width: 100%;
+    line-height: 25px;
+    color: #c13432;
+    font-size: 14px;
+    background: #fff;
+    text-align: center;
+}
+.timer em{
+    line-height: 20px;
+    background:#c13432;
+    color: #ffffff;
+    text-align: center; 
+    width: 100%;
+    display: inline-block;
+}
+.notice_list p{
+    color: #414141;
+    font-size: 16px;
+    line-height: 20px;
+    float: left;
+    width: 80%;
+}
+.fun{
+    padding: 35px 0;
+}
+.funbox{
+    padding: 0 5px;
+    display: inline-block;
+}
+.funbox img{
+    width: 100%;
+}
+.life{
+    padding: 40px 0;
+    background:url(../images/back2_10.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.lifebox_tit{
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.lifebox_tit img{
+    margin-right: 10px;
+}
+.lifebox_content{
+    padding: 10px;
+    background: rgba(255,255,255,0.4);
+}
+.lifebox_content img{
+    width: 100%;
+}
+.lifebox_content p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.lifebox_content2{
+    padding: 25px 10px;
+    border: 1px solid #a0b5c6;
+    width: 100%;
+}
+.lifebox_content2 img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.lifebox_content2box{
+    padding: 0 20px;
+}
+.life_date{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.date{
+    border: 1px solid #3f6585;
+    background: #acbcc9;
+    width: 60px;
+    margin-right: 10px;
+}
+.date span{
+    display: inline-block;
+    width: 100%;
+    font-size: 28px;
+    color: #326c9f;
+    text-align: center;
+}
+.date em{
+    display: inline-block;
+    color: #326c9f;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+.life_date p{
+    line-height: 28px;
+    color: #fff;
+    font-size: 16px;
+    width: 75%;
+}
+.fun2{
+    width: 100%;
+    padding: 35px 0;
+    font-size: 0;
+}
+.fun2 .funtop1{
+    display: inline-block;
+    width: 14%;
+    height: 85px;
+}
+.funtop1 img{
+    width: 100%;
+}
+.fun2box{
+    width: 21.5%;
+    display: inline-block;
+    height: 85px;
+}
+.fun2 .fun2box img{
+    width: 100%;
+}
+.link{
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    padding-bottom: 35px;
+}
+.link_img{
+    width: 15%;
+}
+.link img{
+    width: 100%;
+    display: inline-block;
+}
+.link a{
+    display: inline-block;
+    color: #414141;
+    font-size: 16px;
+    padding-left: 2%;
+}
+#choose_pro .swiper-slide{
+    width: 33.333%;
+    position: relative;
+}
+#choose_pro .swiper-slide img{
+    width: 100%;
+}
+#pro_showimg{
+    margin-bottom: 10px;
+}
+#choose_pro .swiper-slide:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+#choose_pro .swiper-slide-active:before{
+    background: rgba(0,0,0,0);
+
+}
+#pro_showimg img{
+    width: 100%;
+}
+@media (max-width:767px) {
+    .banner .swiper-pagination-bullet{
+        width: 10px!important;
+        height: 10px!important;
+    }
+    #banner .swiper-pagination{
+        bottom: 5px!important;
+    }
+    .news_tit{
+        line-height: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .news_tit img{
+        width: 30px;
+    }
+    .news_tit .more{
+        line-height: 60px;
+        height: 60px;
+    }
+    .news_titl{
+        height: 60px;
+        line-height: 60px;
+    }
+    .news_titl img{
+        width: 20px;
+    }
+    .funbox{
+        padding: 5px;
+    }
+    .fun{
+        padding: 20px 0;
+    }
+    .lifebox_tit{
+        font-size: 20px;
+    }
+    .lifebox_tit img{
+        width: 20px;
+    }
+    .life{
+        padding: 20px 0;
+    }
+    .lifebox2 {
+        margin-top: 20px;
+    }
+    .lifebox_content2box{
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    .fun2 .funtop1,.fun2box{
+        height: auto;
+    }
+    .fun2 .funtop1{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .funtop1 img{
+        width: 150px;
+    }
+    .fun2box{
+        float: left;
+        width: 50%;
+        font-size: 0;
+        height: 63px;
+        margin-bottom: 10px;
+    }
+    .fun2box img{
+        width: 100%;
+    }
+    .link_img{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .link{
+        display: block;
+    }
+    .link_img img{
+        width: 40%;
+    }
+    .link a{
+        padding-right: 15px;
+        margin-bottom: 5px;
+    }
+    .fot_link{
+        display: none;
+    }
+    .fot2{
+        height: auto;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+}
