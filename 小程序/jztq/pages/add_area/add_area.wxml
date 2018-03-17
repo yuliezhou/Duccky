@@ -1,0 +1,32 @@
+<!--pages/add_area/add_area.wxml-->
+<view class="add_area">
+    <view class="input">
+        <icon type="search" size="18" color="#bf9f6e"/>
+        <input placeholder-style="color:#bf9f6e" placeholder="请输入地区关键字" bindinput="feed"/>   
+    </view>
+    <view class="search" wx:if="{{!isInput}}">
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/dingwei2-icon@1x.png"></image>
+        <text>定位位置 : {{currentArea}}</text>
+        <modal confirm-text="确定" cancel-text="放弃" hidden="{{locationSuccessHidden}}" mask bindconfirm="locationSubmit" bindcancel="locationCannel">
+        <view>成功定位到 : {{currentArea}}</view>
+        </modal>
+        <modal class="modal" hidden="{{locationFailHidden}}" no-cancel bindconfirm="locationFail">
+        <view>定位失败</view>
+        </modal>
+        <button class="static" loading="{{autoLocation}}" bindtap="getLocation">自动定位</button>    
+    </view>
+    <view class="body" wx:if="{{!isInput}}">
+        <block wx:for="{{area}}" wx:key="*this">
+            <view class="area_name" bindtap="tapDefaultCity" id="{{index}}">
+                <text>{{item[0]}}</text>
+            </view>          
+        </block>
+    </view>
+    <view wx:if="{{isInput}}" class="search_isInput" wx:for="{{searchAreas}}" bindtap="tapSearchCity" id="{{item.cityid}}"  wx:key="*this">
+        <image src="http://oi2f6lsr3.bkt.clouddn.com/dingwei2-icon@1x.png"></image>
+        <text>{{item.cityname}} {{item.path2}} {{item.path}} {{item.country}}</text>
+    </view>  
+</view>
+<view class='empty'></view>
+<button class="edit_back" bindtap="back_index">返回</button>
+

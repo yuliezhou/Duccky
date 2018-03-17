@@ -323,6 +323,7 @@
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
     	background: #238552!important;
     }
+
     #header .navbar-nav{
     	height: auto;
     	line-height: initial;

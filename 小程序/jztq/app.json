@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/set/set",
+    "pages/add_area/add_area",
+    "pages/area/area",
+    "pages/notfound/notfound"     
+  ],
+  "window":{
+    "navigationBarTextStyle": "#fff", 
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#ffe9c5"
+  }
+}

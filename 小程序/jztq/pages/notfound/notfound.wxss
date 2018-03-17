@@ -1,0 +1,13 @@
+/* pages/notfound/notfound.wxss */
+.notice {
+    width: 525rpx;
+    height: 35rpx;
+    margin-left: 112rpx;
+    margin-top: 50%;
+}
+.reload_button {
+    width: 260rpx;
+    height: 88rpx;
+    margin-left: 245rpx;
+    margin-top: 160rpx;
+}
