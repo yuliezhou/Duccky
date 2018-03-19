@@ -131,7 +131,9 @@ p{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-
+.bd_weixin_popup{
+    height: 320px!important;
+}
 /*input placeholder*/
 
  ::-webkit-input-placeholder {

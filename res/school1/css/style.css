@@ -41,7 +41,8 @@
     background: #fcfbef;
 }
 .news_box{
-
+padding: 0;
+width: 32%;
 
 }
 .news_tit{
@@ -133,8 +134,9 @@
     padding: 35px 0;
 }
 .funbox{
-    padding: 0 5px;
     display: inline-block;
+    width: 16%;
+    padding: 0;
 }
 .funbox img{
     width: 100%;
@@ -158,6 +160,7 @@
 .lifebox_content{
     padding: 10px;
     background: rgba(255,255,255,0.4);
+    height: 325px;
 }
 .lifebox_content img{
     width: 100%;
@@ -166,7 +169,7 @@
     color: #fff;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 .lifebox_content2{
     padding: 25px 10px;
@@ -285,6 +288,12 @@
     #banner .swiper-pagination{
         bottom: 5px!important;
     }
+    .news{
+        display: block;
+    }
+    .news_box{
+        width: 100%;
+    }
     .news_tit{
         line-height: 60px;
         height: 60px;
@@ -370,5 +379,36 @@
         font-size: 12px;
         line-height: 20px;
         padding: 10px 0;
+    }
+}
+@media  screen and (min-width:767px) and (max-width:992px) {
+    .top_f .container{
+        width: 80%;
+    }
+    #header .container{
+        width: 100%;
+    }
+    .navbar-nav>li>a{
+        width: 90px;
+    }
+    .news_box1{
+        width: 100%;
+    }
+    #newspa .container{
+        width: 90%;
+    }
+    .news_box2{
+        width: 48%;
+        padding: 0 1%;
+    }
+    .lifebox_content{
+        height: 270px;
+    }
+    .lifebox_content p{
+        line-height: 25px;
+    }
+    .link a{
+        padding-left: 1%;
+        font-size: 14px;
     }
 }
