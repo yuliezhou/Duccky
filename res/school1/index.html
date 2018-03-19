@@ -143,6 +143,12 @@
 							    </div>
 							    <!-- Add Arrows -->
 							  </div>
+					        <div class="swiper-button-nextpro">
+					        	<i class="fa fa-angle-right"></i>
+					        </div>
+					        <div class="swiper-button-prevpro">
+					        	<i class="fa fa-angle-left"></i>
+					        </div>							  
 						</div>
 						<div class="choose_pro" id="choose_pro">
 						  <div class="swiper-container gallery-thumbs" >
@@ -462,9 +468,12 @@
 	    nextButton: '.swiper-button-next',
 	    prevButton: '.swiper-button-prev',
         spaceBetween:20,
+	    speed:1000,
         initialSlide: 1,
         loop:true,
         loopedSlides:3,
+        nextButton: '.swiper-button-nextpro',
+   	    prevButton: '.swiper-button-prevpro'
 
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
