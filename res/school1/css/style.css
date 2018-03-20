@@ -226,6 +226,7 @@ width: 32%;
 }
 .funtop1 img{
     width: 100%;
+    height: 100%;
 }
 .fun2box{
     width: 21.5%;
@@ -234,6 +235,7 @@ width: 32%;
 }
 .fun2 .fun2box img{
     width: 100%;
+    height: 100%;
 }
 .link{
     display: flex;
@@ -306,106 +308,125 @@ width: 32%;
     font-size: 80px;
     color: #fff;
 }
-@media (max-width:767px) {
-    .banner .swiper-pagination-bullet{
-        width: 10px!important;
-        height: 10px!important;
-    }
-    #banner .swiper-pagination{
-        bottom: 5px!important;
-    }
-    .news{
-        display: block;
-    }
-    .news_box{
-        width: 100%;
-    }
-    .news_tit{
-        line-height: 60px;
-        height: 60px;
-        font-size: 18px;
-    }
-    .news_tit img{
-        width: 30px;
-    }
-    .news_tit .more{
-        line-height: 60px;
-        height: 60px;
-    }
-    .news_titl{
-        height: 60px;
-        line-height: 60px;
-    }
-    .news_titl img{
-        width: 20px;
-    }
-    .funbox{
-        padding: 5px;
-    }
-    .fun{
-        padding: 20px 0;
-    }
-    .lifebox_tit{
-        font-size: 20px;
-    }
-    .lifebox_tit img{
-        width: 20px;
-    }
-    .life{
-        padding: 20px 0;
-    }
-    .lifebox2 {
-        margin-top: 20px;
-    }
-    .lifebox_content2box{
-        margin-bottom: 20px;
-        padding: 0 10px;
-    }
-    .fun2 .funtop1,.fun2box{
-        height: auto;
-    }
-    .fun2 .funtop1{
-        width: 100%;
-        float: left;
-        margin-bottom: 10px;
-    }
-    .funtop1 img{
-        width: 150px;
-    }
-    .fun2box{
-        float: left;
-        width: 50%;
-        font-size: 0;
-        height: 63px;
-        margin-bottom: 10px;
-    }
-    .fun2box img{
-        width: 100%;
-    }
-    .link_img{
-        width: 100%;
-        float: left;
-        margin-bottom: 10px;
-    }
-    .link{
-        display: block;
-    }
-    .link_img img{
-        width: 40%;
-    }
-    .link a{
-        padding-right: 15px;
-        margin-bottom: 5px;
-    }
-    .fot_link{
-        display: none;
-    }
-    .fot2{
-        height: auto;
-        font-size: 12px;
-        line-height: 20px;
-        padding: 10px 0;
-    }
+.content{
+    padding-top: 20px;
+    background: #fcfbef;
+}
+.conleft{
+    width: 19%;
+    margin-right: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    float: left;
+    background: #f7f6e4;
+    height: 950px;
+}
+.conleft .conleft_tit{
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 22px;
+    background: #a42217;
+    color: #fff;
+}
+.leftchoose{
+    background: #f7f6e4;
+
+}
+.left_choosebox{
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #deddc9;
+    position: relative;
+}
+.left_choosebox span{
+    display: inline-block;
+    padding-left: 25px;
+    margin-right: 15px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-family:consolas;
+}
+.left_choosebox a{
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    color: #414141;
+    font-size: 16px;
+}
+.left_choosebox:hover span,.left_choosebox:hover .choose_a{
+    color: #a42217;
+}
+.left_choosebox:hover{
+    background: #fff;
+}
+.left_choosebox:hover .left_child{
+    display: block;
+}
+.left_child{
+    display: none;  
+    border-top: 1px solid #deddc9;
+}
+.left_child a{
+    font-size: 14px;
+}
+.left_child i{
+    font-size: 16px;
+    font-family:consolas;
+    line-height: 30px;
+    height: 30px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.left_childbox :hover i,.left_childbox:hover a{
+    color: #a42217;
+}
+.conright{
+    float: left;
+    width: 74%;
+}
+.conright_top{
+    line-height: 45px;
+    border-bottom: 2px solid #a42217;
+    padding-bottom: 10px;
+}
+.contopl{
+    color: #212121;
+    font-size: 22px;
+    float: left;
+}
+.contopr{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.contopr img{
+    width: 12px;
+    color: #616161;
+    font-size: 14px;
+}
+.contopr a{
+    color: #616161;
+    font-size: 14px;
+}
+.conright_bot{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.conright_bot p{
+    color: #616161;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+.imgbot_box{
+    text-align: center;
+    font-size: 0;
+}
+.imgbot_box img{
+    width: 50%;
+    display: inline-block;
 }
 @media  screen and (min-width:767px) and (max-width:992px) {
     .top_f .container{
