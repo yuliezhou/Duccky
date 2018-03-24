@@ -161,14 +161,25 @@
     background: #f6f6f8;
     overflow: hidden;
     border-radius: 15px;
+    white-space: nowrap;
+    position: relative;
 }
 .newsbox img{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 999;
+}
+.newstxtpa{
+    height: 40px;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .newstxt {
-    width: 100%;
+    height: 40px;
+    display: inline-block;
 }
 .newstxt span{
     width: 290px;
@@ -176,4 +187,86 @@
     font-size: 12px;
     display: inline-block;
     padding-right: 50px;
+}
+.service{
+    background: #fafafa;
+    padding-bottom: 30px;
+}
+.service h2{
+    color: #333333;
+    font-size: 32px;
+    line-height: 80px;
+    height: 80px;
+    width: 100%;
+    font-weight: normal;
+}
+.service .ser_left{
+    width: 900px;
+    margin-right: 15px;
+    display: inline-block;
+    height: 530px;
+    box-shadow: 0 0 15px #e5e5e5;
+    float: left;
+}
+.ser_leftbox{
+    width: 33.333%;
+    float: left;
+    height: 100%;
+}
+.left_smbox{
+    width: 100%;
+    height: 33.333%;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+}
+.left_smbox h4{
+    font-size: 20px;
+    color: #333;
+    padding: 25px;
+}
+.left_smbox span{
+    display: inline-block;
+    width: 120px;
+    border: 1px solid #bfbfbf;
+    box-sizing: border-box;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+.left_smbox i{
+    color: #0b99e0;
+    font-size: 4px;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+.left_smbox:hover span{
+    color: #fff;
+    border: 1px solid transparent;
+    background: linear-gradient(to top right,#0b99e0,#66cffd);
+}
+.left_smbox2{
+    height: 50%;
+}
+.left_smbox2 h4{
+    padding: 40px 0 25px;
+}
+.left_smbox2 span{
+    margin-bottom: 45px;
+}
+.ser_right{
+    width: 280px;
+    float: left;
+}
+.ser_right img{
+    margin-bottom: 15px;
+    width: 100%;
 }

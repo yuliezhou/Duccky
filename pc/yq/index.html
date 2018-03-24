@@ -74,20 +74,100 @@
 			</div>
 		</div>
 	</div>
+	<!-- 滚动新闻 -->
 	<div class="news">
 		<div class="container">
 			<div class="newsbox">
 				<img src="images/news_03.png" alt="">
-				<div class="newstxt">
-					<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
-					<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
-					<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
+				<div class="newstxtpa">
+					<div class="newstxt newstxt1">
+						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
+						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
+						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
+					</div>
+					<div class="newstxt newstxt2"></div>	
+					<div class="clear"></div>				
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- 滚动新闻 end-->
+	<!-- 资质服务 -->
+	<div class="service">
+		<div class="container">
+			<h2>资质服务领域</h2>
+			<a href="##" class="ser_left">
+				<div class="ser_leftbox">
+					<div class="left_smbox">
+						<h4>安全生产许可证</h4>
+						<span>立即申办</span>
+						<i>领证周期2个月</i>
+					</div>
+					<div class="left_smbox">
+						<h4>石油化工</h4>
+						<span>立即申办</span>
+						<i>领证周期1个月</i>
+					</div>
+					<div class="left_smbox">
+						<h4>建筑工程</h4>
+						<span>立即申办</span>
+						<i>领证周期2-3个月</i>
+					</div>
+				</div>
+				<div class="ser_leftbox">
+					<div class="left_smbox left_smbox2">
+						<h4>建筑装饰装修资质</h4>
+						<span>立即申办</span>
+						<i>领证周期2个月</i>
+					</div>
+					<div class="left_smbox left_smbox2">
+						<h4>房地产开发资质</h4>
+						<span>立即申办</span>
+						<i>领证周期2个月</i>
+					</div>
+				</div>
+				<div class="ser_leftbox">
+					<div class="left_smbox">
+						<h4>电力工程资质</h4>
+						<span>立即申办</span>
+						<i>领证周期2个月</i>
+					</div>
+					<div class="left_smbox">
+						<h4>环保工程资质</h4>
+						<span>立即申办</span>
+						<i>领证周期1个月</i>
+					</div>
+					<div class="left_smbox">
+						<h4>市政工程资质</h4>
+						<span>立即申办</span>
+						<i>领证周期2-3个月</i>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</a>		
+			<div class="ser_right">
+				<img src="images/icon_one.png" alt="">
+				<img src="images/icon_tow-.png" alt="">
+				<img src="images/icon_four.png" alt="">
+				<img src="images/icon_there.png" alt="">
+			</div>	
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- 资质服务 end-->
 </body>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
-
+<script type="text/javascript">
+	$('.newstxt2').html($('.newstxt1').html());
+	var newstxtWidth = $('.newstxt').width();
+	var n = 0;
+	var timer = setInterval(function(){
+		n++;
+		if(n>newstxtWidth){
+			$('.newstxt').eq(0).append($('.newstxt').eq(1)) 
+		}
+		$('.newstxtpa').animate({left: -n}, 1)
+	},1)
+</script>
 </html>
