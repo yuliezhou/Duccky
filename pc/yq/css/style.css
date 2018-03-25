@@ -270,3 +270,122 @@
     margin-bottom: 15px;
     width: 100%;
 }
+.project h2{
+    color: #333333;
+    font-size: 32px;
+    width: 100%;
+    padding: 30px 0 20px;
+    font-weight: normal;
+}
+.choose_pro{
+    text-align: center;
+    width: 100%;
+    font-size: 0;
+}
+.choose_pro span{
+    display: inline-block;
+    width: 20%;
+    color: #333333;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.5s;
+}
+.choose_pro span:hover{
+    color: #119de2;
+    border-bottom: 4px solid #119de2;
+}
+.choose_content{
+    width: 100%;
+}
+.choose_box{
+    height: 320px;
+    background: url(../images/back1_03.png) center no-repeat;
+    background-size: cover;
+    padding: 75px;
+}
+.choose_box a{
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    border:1px solid #8f9391;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 55px 45px; 
+    position: relative;
+}
+.choose_box a span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    z-index: 99;
+    color: #fff;
+}
+.choose_box a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, #009ef0 , #00dd9c);
+    background: -o-linear-gradient(to right, #009ef0 , #00dd9c);
+    background: -moz-linear-gradient(to right, #009ef0 , #00dd9c);
+    background: linear-gradient(to right, #009ef0 , #00dd9c);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.choose_box a:hover:before{
+    opacity: 1;
+}
+.step{
+    padding-bottom: 80px;
+    background: #fafafa;
+}
+.step h2{
+    color: #333333;
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+}
+.step p{
+    color: #666666;
+    font-size: 14px;   
+    text-align: center;
+    margin-bottom: 35px;
+}
+.step_box{
+    display: flex;
+    align-items: center;
+}
+.step_img{
+    width: 180px;
+    float: left;
+
+}
+.step_icon{
+    width: 30px;
+    margin: 0 30px;
+    float: left;
+}
+.case h2{
+    font-size: 30px;
+    color: #333333;
+    line-height: 100px;
+    text-align: center;
+}
+.case p{
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
