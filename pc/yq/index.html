@@ -5,17 +5,23 @@
 	<title>渝昆实业</title>
 	<link rel="stylesheet" href="css/publicSty.css">
 	<link rel="stylesheet" href="css/top_bot.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="empty"></div>
 	<div class="banner">
 		<div class="container">
 			<div class="logo">
 				<img src="images/logo.png" alt="">
 				坤渝实业
 			</div>
-			<div class="nav">
+			<div class="nav" id="header">
+				<a class="logo_inner">
+					<img src="images/logo1.png" alt="">
+					<span>坤渝实业</span>						
+				</a>
 				<a href="index.html">首页</a>
 				<a href="##">资质代办</a>
 				<a href="##">转让求购</a>
@@ -48,25 +54,25 @@
 						全重庆仅此一家
 					</a>
 				</div>
-				<div class="content_mid flex_mid">
+<!-- 				<div class="content_mid flex_mid">
 					<img src="images/chang.png" alt="">
 					<div class="mid_txt">
 						<h4>兼职资质</h4>
 						<h4>一站式服务平台 </h4>
 					</div>
-				</div>
+				</div> -->
 				<div class="content_right">
 					<h4>咨询办理</h4>
 					<div class="right_txt">
 						<span>10分钟之内必回应</span>
 						<span>人工查询更高效</span>
 					</div>
-					<form action="##">
-						<input type="text" placeholder="请输入你的资质类型">
-						<input type="text" placeholder="请输入你的资质等级">
-						<input type="text" placeholder="请输入你的姓名">
-						<input type="text" placeholder="请输入你的电话号码">
-						<button type="submit">
+					<form action="##" type='submit'>
+						<input type="text" placeholder="请输入您的资质类型" id="zz1">
+						<input type="text" placeholder="请输入您的资质等级" id="zz2">
+						<input type="text" placeholder="请输入您的姓名" id="name">
+						<input type="text" placeholder="请输入您的电话号码" id="phone">
+						<button  id="submit">
 							立即提交
 						</button>
 					</form>
@@ -81,9 +87,9 @@
 				<img src="images/news_03.png" alt="">
 				<div class="newstxtpa">
 					<div class="newstxt newstxt1">
-						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
-						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
-						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加</span>
+						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加1</span>
+						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加2</span>
+						<span class="elli">山西RY建设工程咨询有限公司成功公告批复增加3</span>
 					</div>
 					<div class="newstxt newstxt2"></div>	
 					<div class="clear"></div>				
@@ -102,16 +108,19 @@
 						<h4>安全生产许可证</h4>
 						<span>立即申办</span>
 						<i>领证周期2个月</i>
+						<img src="images/icon1_06.png" alt="">
 					</div>
 					<div class="left_smbox">
 						<h4>石油化工</h4>
 						<span>立即申办</span>
 						<i>领证周期1个月</i>
+						<img src="images/icon1_16.png" alt="">
 					</div>
 					<div class="left_smbox">
 						<h4>建筑工程</h4>
 						<span>立即申办</span>
 						<i>领证周期2-3个月</i>
+						<img src="images/icon1_20.png" alt="">
 					</div>
 				</div>
 				<div class="ser_leftbox">
@@ -119,11 +128,13 @@
 						<h4>建筑装饰装修资质</h4>
 						<span>立即申办</span>
 						<i>领证周期2个月</i>
+						<img src="images/icon1_09.png" alt="">
 					</div>
 					<div class="left_smbox left_smbox2">
 						<h4>房地产开发资质</h4>
 						<span>立即申办</span>
 						<i>领证周期2个月</i>
+						<img src="images/icon1_22.png" alt="">
 					</div>
 				</div>
 				<div class="ser_leftbox">
@@ -131,16 +142,19 @@
 						<h4>电力工程资质</h4>
 						<span>立即申办</span>
 						<i>领证周期2个月</i>
+						<img src="images/icon1_03.png" alt="">
 					</div>
 					<div class="left_smbox">
 						<h4>环保工程资质</h4>
 						<span>立即申办</span>
 						<i>领证周期1个月</i>
+						<img src="images/icon1_14.png" alt="">
 					</div>
 					<div class="left_smbox">
 						<h4>市政工程资质</h4>
 						<span>立即申办</span>
 						<i>领证周期2-3个月</i>
+						<img src="images/icon1_25.png" alt="">
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -159,16 +173,56 @@
 	<div class="project">
 		<div class="container">
 			<h2>资质服务项目</h2>
-			<div class="choose_pro">
-				<span>证书挂靠</span>
+			<div class="choose_pro" id="choose_pro">
+				<span class="ac_choose">证书挂靠</span>
 				<span>资质增项升级</span>
 				<span>施工总承包资质</span>
 				<span>专业承包资质</span>
 				<span>其他资质</span>
 			</div>
-			<div class=".choose_content">
-				<div class="choose_box">
-					<a href="##"><span>二级建造师</span></a>
+			<div class="choose_content">
+				<div class="choose_box animated">
+					<a href="##"><span>二级建造师1</span></a>
+					<a href="##"><span>一级建造师</span></a>
+					<a href="##"><span>建筑九大员</span></a>
+					<a href="##"><span>注册结构工程师</span></a>
+					<a href="##"><span>注册建筑师</span></a>
+					<a href="##"><span>职称证书</span></a>
+					<a href="##"><span>注册造价工程师</span></a>
+					<a href="##"><span>查看更多</span></a>
+				</div>
+				<div class="choose_box animated">
+					<a href="##"><span>二级建造师2</span></a>
+					<a href="##"><span>一级建造师</span></a>
+					<a href="##"><span>建筑九大员</span></a>
+					<a href="##"><span>注册结构工程师</span></a>
+					<a href="##"><span>注册建筑师</span></a>
+					<a href="##"><span>职称证书</span></a>
+					<a href="##"><span>注册造价工程师</span></a>
+					<a href="##"><span>查看更多</span></a>
+				</div>
+				<div class="choose_box animated">
+					<a href="##"><span>二级建造师3</span></a>
+					<a href="##"><span>一级建造师</span></a>
+					<a href="##"><span>建筑九大员</span></a>
+					<a href="##"><span>注册结构工程师</span></a>
+					<a href="##"><span>注册建筑师</span></a>
+					<a href="##"><span>职称证书</span></a>
+					<a href="##"><span>注册造价工程师</span></a>
+					<a href="##"><span>查看更多</span></a>
+				</div>
+				<div class="choose_box animated">
+					<a href="##"><span>二级建造师4</span></a>
+					<a href="##"><span>一级建造师</span></a>
+					<a href="##"><span>建筑九大员</span></a>
+					<a href="##"><span>注册结构工程师</span></a>
+					<a href="##"><span>注册建筑师</span></a>
+					<a href="##"><span>职称证书</span></a>
+					<a href="##"><span>注册造价工程师</span></a>
+					<a href="##"><span>查看更多</span></a>
+				</div>
+				<div class="choose_box animated">
+					<a href="##"><span>二级建造师5</span></a>
 					<a href="##"><span>一级建造师</span></a>
 					<a href="##"><span>建筑九大员</span></a>
 					<a href="##"><span>注册结构工程师</span></a>
@@ -181,11 +235,137 @@
 		</div>
 	</div>
 	<!-- 资质服务项目end-->
-
+	<!-- 求购专区 -->
+	<div class="transfer">
+		<div class="container">
+			<div class="tran_title">
+				<div class="tran_titleft">
+					<h2>转让求购专区</h2>
+					<span>全国资源</span>
+					<span>海量用户</span>
+					<span>平台保证承担</span>
+					<div class="clear"></div>
+				</div>
+				<a href='##' class="tran_titright">更多</a>
+				<div class="clear"></div>
+			</div>	
+			<div class="transfer_content flex_between">
+				<!-- 加了by_box类名的为 求购 -->
+				<a href="##" class="transfer_box">
+					<em>转让</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box">
+					<em>转让</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box">
+					<em>转让</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box">
+					<em>转让</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box by_box">
+					<em>求购</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box by_box">
+					<em>求购</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box by_box">
+					<em>求购</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+				<a href="##" class="transfer_box by_box">
+					<em>求购</em>
+					<p class='elli'>深圳建筑公司建筑总包一级二级、...</p>
+					<div class="price">
+						价格：
+						<span>面议</span>
+						查看详情
+					</div>
+				</a>
+			</div>		
+		</div>
+	</div>
+	<!-- 求购专区 end-->
+	<!-- 案例展示 -->
 	<div class="case">
+		<div class="container">
 		<h2>案例展示</h2>
 		<p>Case Show</p>
+		<div class="swiper-container" id="case_box">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+	        		<img src="images/case_03.png" alt="">
+	        		<p>市政公用工程施工总承包资质</p>
+		        </div>
+		        <div class="swiper-slide">
+	        		<img src="images/case_03.png" alt="">
+	        		<p>市政公用工程施工总承包资质</p>
+		        </div>
+		        <div class="swiper-slide">
+	        		<img src="images/case_03.png" alt="">
+	        		<p>市政公用工程施工总承包资质</p>
+		        </div>
+		        <div class="swiper-slide">
+	        		<img src="images/case_03.png" alt="">
+	        		<p>市政公用工程施工总承包资质</p>
+		        </div>
+		        <div class="swiper-slide">
+	        		<img src="images/case_03.png" alt="">
+	        		<p>市政公用工程施工总承包资质</p>
+		        </div>
+		    </div>
+			<div class="swiper-pagination"></div>
+	        <div class="swiper-button-next">
+	        	<img src="images/next.png" alt="">
+	        </div>
+	        <div class="swiper-button-prev">
+	        	<img src="images/prec.png" alt="">
+	        </div>
+		</div>			
+		</div>
 	</div>
+	<!-- 案例展示 end-->
 	<!-- 获取证书步骤 -->
 	<div class="step">
 		<div class="container">
@@ -205,20 +385,167 @@
 			</div>
 		</div>
 	</div>
+	<!-- 尾部 -->
+	<div class="fotter">
+		<div class="fot_a flex_around">
+			<a href="##">资质代办</a>
+			<a href="##">转让求购</a>
+			<a href="##">证书挂靠</a>
+			<a href="##">渝坤会员</a>
+			<a href="##">商务合作</a>
+			<a href="##">关于我们</a>
+		</div>
+		<p>地址：重庆市南岸区江南大道7号4栋29-6号 / 邮编：400000 / 总机：023-62949242 / 邮箱：kunyu@cqkysy.cn</p>
+		<p class="fot_p">盛邦坚持“ 稳健一生，永续经营”经营方针，我们通过积极努力来提升和确保自身的价值，同时守望并维护客户及所有合作者的价值，以共赢作为合作的最终目标。</p>
+		<img src="images/er.jpg" alt="">
+	</div>		
+	<div class="fotter2">
+		Coyright ® 2018 重庆坤渝实业有限公司 版权所有 ©
+	</div>
 	<!-- 获取证书步骤 end-->
+	<div class="servie_btn">
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=514255076&site=qq&menu=yes" class="animated">
+			<img src="images/i1.png" alt="">
+			<p>在线咨询</p>
+		</a>
+		<a href="tel:3157653314" class="animated">
+			<img src="images/i2.png" alt="">
+			<p>电话咨询</p>
+		</a>
+		<a href="##" class="animated" id="wxbtn">
+			<img src="images/i3.png" alt="">
+			<p>微信咨询</p>
+		</a>
+		<a href="tel:3157653314" class="serbtn1 animated">
+			<p>客服热线</p>
+			<p>023-62949242</p>
+		</a>
+		<div class="wx">
+			<h4>扫一扫<br/>
+			添加公众号</h4>
+			<img src="images/er.jpg" alt="">
+		</div>
+		<a class="top animated" id="top">
+			<img src="images/top.png" alt="">
+			<p>Top</p>
+		</a>
+	</div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="js/layer.js"></script>
 <script type="text/javascript">
+	//滚动新闻
 	$('.newstxt2').html($('.newstxt1').html());
 	var newstxtWidth = $('.newstxt').width();
 	var n = 0;
 	var timer = setInterval(function(){
 		n++;
 		if(n>newstxtWidth){
-			$('.newstxt').eq(0).append($('.newstxt').eq(1)) 
+			n = 0;
 		}
-		$('.newstxtpa').animate({left: -n}, 1)
-	},1)
+		$('.newstxtpa').animate({left: -n}, 20)
+	},20)
+	var swiper1 = new Swiper('#case_box', {
+		watchSlidesProgress: true,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		loop: true,
+		loopedSlides: 5,
+		autoplay: 3000,
+        nextButton: '.swiper-button-next',
+   	    prevButton: '.swiper-button-prev',
+		pagination: '.swiper-pagination',
+	 	onProgress: function(swiper, progress) {
+			for (i = 0; i < swiper.slides.length; i++) {
+				var slide = swiper.slides.eq(i);
+				var slideProgress = swiper.slides[i].progress;
+				modify = 1;
+				if (Math.abs(slideProgress) > 1) {
+					modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+				}
+				translate = slideProgress * modify * 150 + 'px';
+				scale = 1 - Math.abs(slideProgress) / 5;
+				zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+				slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+				slide.css('zIndex', zIndex);
+				slide.css('opacity', 1);
+				if (Math.abs(slideProgress) > 3) {
+					slide.css('opacity', 0);
+				}
+			}
+		},
+		onSetTransition: function(swiper, transition) {
+			for (var i = 0; i < swiper.slides.length; i++) {
+				var slide = swiper.slides.eq(i)
+				slide.transition(transition);
+			}
+
+		},
+	});	
+	
+	//选项卡切换
+	$('.choose_box').eq(0).show();
+	$('#choose_pro span').on('click', function(event) {
+		var idx = $(this).index();
+		$(this).addClass('ac_choose').siblings().removeClass('ac_choose')
+		$('.choose_box').eq(idx).show().siblings('.choose_box').hide();
+		$('.choose_box').eq(idx).addClass('bounceInLeft').siblings('.choose_box').removeClass('bounceInLeft');
+	});
+	$(".servie_btn a").hover(function() {
+		$(this).addClass('shake')
+	}, function() {
+		$(".servie_btn a").removeClass('shake')
+	});
+	//回到顶部
+	$('#top').on('click',function() {
+		 $('body,html').animate({'scrollTop':0},1000)
+	});
+	//顶部导航栏
+    $(window).scroll(function(e) {
+	    p = $(this).scrollTop();
+	    if (p >0 ) { //下滚  
+	        $('.empty').show();
+	        $('.logo_inner').css({
+	        	display: 'inline-block'
+	        });
+	        $('#header').addClass('pofixed');
+	    } else { //上滚  
+	        $('.empty').hide();
+	        $('.logo_inner').css({
+	        	display: 'none'
+	        });	        
+	        $('#header').removeClass('pofixed');
+	    }
+	});
+	//提交表单验证
+	$('#submit').on('click',function(){
+		var zz1 = $('#zz1').val();
+		var zz2 = $('#zz2').val();
+		var name = $('#name').val();
+		var phone = $('#phone').val();
+		if(zz1 == ''){
+			layer.msg('请输入您的资质类型');
+		}else if(zz2 == ''){
+			layer.msg('请输入您的资质等级');
+		}else if(name == ''){
+			layer.msg('请输入您的姓名');
+		}else if(phone == ''){
+			layer.msg('请输入您的电话号码');
+		}
+	})
+	//微信点击弹出
+	$('#wxbtn').on('click', function() {
+		layer.open({
+		  type: 1,
+		  title: false,
+		  closeBtn: 0,
+		  area: '400px',
+		  skin: 'layui-layer-nobg', //没有背景色
+		  shadeClose: true,
+		  content:'<img src="images/my.png" alt="">'
+		});
+	});
 </script>
 </html>
