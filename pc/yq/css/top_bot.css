@@ -186,11 +186,9 @@
     top: 50%;
     right: 0;
     width: 90px;
-    padding: 0 20px;
     box-shadow: 0 0 15px #ccc;
     z-index: 999;
     text-align: center; 
-    background: #fff;
     margin-top: -340px;
 }
 .servie_btn a{
@@ -201,18 +199,48 @@
     background: linear-gradient(to bottom, #70d6ff , #44baff);
     text-align: center;
     border-radius: 3px;
-    width: 80px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
+    position: relative;
 }
 .servie_btn a img{
     width: 40px;
     margin-top: 10px;
 }
+.phone_ab{
+    position: absolute;
+    top: 9px;
+    left: -170px;
+    display: none;
+    background: url(../images/fixed-bar-hua1.png) no-repeat 0 0;
+    width: 150px;
+    height: 42px;
+    background-size: 100% 100%;
+    padding-left: 15px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    transition: all 1s;
+}
+.servie_btnsm:hover .phone_ab{
+    display: block;
+}
 .servie_btn a p{
     color:#fff;
     font-size: 15px;
     text-align: center;
-    margin-bottom: 10px;
+}
+.servie_btn .servie_btnsm p{
+    display: none;
+    line-height: 60px;
+} 
+.servie_btn .servie_btnsm:hover img{
+    display: none;
+}
+.servie_btn .servie_btnsm:hover p{
+    display: block;
 }
 .wx{
     width: 80px;

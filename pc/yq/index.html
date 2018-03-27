@@ -404,27 +404,31 @@
 	</div>
 	<!-- 获取证书步骤 end-->
 	<div class="servie_btn">
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=514255076&site=qq&menu=yes" class="animated">
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=514255076&site=qq&menu=yes" class="servie_btnsm">
 			<img src="images/i1.png" alt="">
 			<p>在线咨询</p>
 		</a>
-		<a href="tel:3157653314" class="animated">
+		<a href="tel:023-62949242" class="servie_btnsm">
 			<img src="images/i2.png" alt="">
 			<p>电话咨询</p>
+			<div class="phone_ab">
+				023-62949242
+			</div>
 		</a>
-		<a href="##" class="animated" id="wxbtn">
+		<a href="##" id="wxbtn" class="servie_btnsm">
 			<img src="images/i3.png" alt="">
 			<p>微信咨询</p>
 		</a>
+		<a class="top" id="top">
+			<img src="images/top.png" alt="">
+			<p>Top</p>
+		</a>		
 		<div class="wx">
 			<h4>扫一扫<br/>
 			添加公众号</h4>
 			<img src="images/er.jpg" alt="">
 		</div>
-		<a class="top animated" id="top">
-			<img src="images/top.png" alt="">
-			<p>Top</p>
-		</a>
+
 	</div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -489,11 +493,6 @@
 		$(this).addClass('ac_choose').siblings().removeClass('ac_choose')
 		$('.choose_box').eq(idx).show().siblings('.choose_box').hide();
 		$('.choose_box').eq(idx).addClass('bounceInLeft').siblings('.choose_box').removeClass('bounceInLeft');
-	});
-	$(".servie_btn a").hover(function() {
-		$(this).addClass('shake')
-	}, function() {
-		$(".servie_btn a").removeClass('shake')
 	});
 	//回到顶部
 	$('#top').on('click',function() {
