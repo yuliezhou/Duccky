@@ -37,7 +37,7 @@
 .search_top {
     font-size: 15px;
     color: #fff;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .se_topbox {
@@ -45,13 +45,53 @@
     display: flex;
     align-items: center;
     float: left;
+    position: relative;
 }
-
+.se_topab{
+    position: absolute;
+    padding: 10px;
+    background: rgba(255,255,255,0.9);
+    width: 500px;
+    z-index: 999;
+    top: 30px;
+    left: -150px;
+    display: none;
+}
+.se_topbox:hover .se_topab{
+    display: block;
+}
+.se_topab a{
+    width: 49%;
+    float: left;
+    padding: 0;
+    line-height: 24px;
+    font-size: 12px;
+    color: #000;
+    transition: all 0.5s;
+    padding: 3px 0;
+    text-indent: 20px;
+}
+.se_topab a:hover{
+    color: #fff;
+    background: #891c13;
+}
 .se_topbox img {
     width: 13px;
     margin-right: 10px;
 }
-
+.se_topre{
+    position: relative;
+}
+.icon{
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    top: -26px;
+    left: 200px;
+    border-bottom: 8px solid #F2F2F2;
+}
 .ser_ipt {
     width: 265px;
     border-radius: 20px;

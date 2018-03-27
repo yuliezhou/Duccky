@@ -38,7 +38,20 @@
     /*float: left;*/
     display: inline-block;
 }
-
+.phone_icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:2px solid #5dcaff;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+.phone_icon i{
+    font-size: 14px;
+    color: #5dcaff;
+}
 .nav .logo_inner{
     align-items: center;
     height: 60px;
@@ -61,6 +74,12 @@
 .nav a:hover{
     color: #fff;
     background: #5dcaff;
+}
+.nav a:hover .phone_icon{
+    border:2px solid #fff;
+}
+.nav a:hover i{
+    color: #fff;
 }
 .top_content{
     padding-top: 40px;
@@ -189,7 +208,7 @@
     box-shadow: 0 0 15px #ccc;
     z-index: 999;
     text-align: center; 
-    margin-top: -340px;
+    margin-top: -240px;
 }
 .servie_btn a{
     margin: 10px 0; 
