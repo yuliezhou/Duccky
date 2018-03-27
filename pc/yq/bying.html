@@ -504,6 +504,7 @@
 	var headerH = $("#header").offset().top;
     $(window).scroll(function(e) {
 	    p = $(this).scrollTop();
+	    console.log(headerH)
 	    if (p >headerH ) { //下滚  
 	        $('.empty').show();
 	        $('.logo_inner').css({
