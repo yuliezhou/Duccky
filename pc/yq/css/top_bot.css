@@ -26,6 +26,7 @@
     background: #fff;
     width: 100%;
     font-size: 0;
+    text-align: center;
 }
 .nav a{
     color: #333;
@@ -38,19 +39,17 @@
     display: inline-block;
 }
 
-.logo_inner{
-    display: inline-block;
+.nav .logo_inner{
     align-items: center;
     height: 60px;
     padding: 0 40px; 
     display: none;
-
 }
-.logo_inner span{
+.nav .logo_inner span{
      font-weight: bold;
     font-size: 16px;
 }
-.logo_inner img{
+.nav .logo_inner img{
     height: 40px;
     display: inline-block;
     margin-right: 10px;
@@ -90,14 +89,15 @@
     margin-right: 30px;
 }
 .content_mid{
-    width: 550px;
-    height: 240px;
-    background: rgba(0,0,0,0.5);
+    width: 690px;
+    height: 350px;
+    background: url(../images/tc_03.png) 0 0 no-repeat;
+    background-size: cover;
     float: left;
-    margin-left: 90px;
-    margin-top: 30px;
+    margin-left: 25px;
     text-align: center;
     position: relative;
+    border-radius: 5px;
 }
 .content_mid img{
     display: inline-block;
@@ -109,9 +109,10 @@
     width: 100%;
     top: 0;
     left: 0;
+    margin-top: 55px;
 }
 .mid_txt h4{
-    font-size: 52px;
+    font-size: 48px;
     padding-top: 10px;
     width: 100%;
     font-weight: normal;

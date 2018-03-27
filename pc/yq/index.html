@@ -54,13 +54,13 @@
 						全重庆仅此一家
 					</a>
 				</div>
-<!-- 				<div class="content_mid flex_mid">
+				<div class="content_mid flex_mid">
 					<img src="images/chang.png" alt="">
 					<div class="mid_txt">
 						<h4>兼职资质</h4>
 						<h4>一站式服务平台 </h4>
 					</div>
-				</div> -->
+				</div>
 				<div class="content_right">
 					<h4>咨询办理</h4>
 					<div class="right_txt">
@@ -416,10 +416,6 @@
 			<img src="images/i3.png" alt="">
 			<p>微信咨询</p>
 		</a>
-		<a href="tel:3157653314" class="serbtn1 animated">
-			<p>客服热线</p>
-			<p>023-62949242</p>
-		</a>
 		<div class="wx">
 			<h4>扫一扫<br/>
 			添加公众号</h4>
@@ -454,6 +450,7 @@
 		loop: true,
 		loopedSlides: 5,
 		autoplay: 3000,
+		autoplayDisableOnInteraction : false,
         nextButton: '.swiper-button-next',
    	    prevButton: '.swiper-button-prev',
 		pagination: '.swiper-pagination',
@@ -503,9 +500,11 @@
 		 $('body,html').animate({'scrollTop':0},1000)
 	});
 	//顶部导航栏
+	var headerH = $("#header").offset().top;
     $(window).scroll(function(e) {
 	    p = $(this).scrollTop();
-	    if (p >0 ) { //下滚  
+	    console.log(headerH)
+	    if (p >headerH ) { //下滚  
 	        $('.empty').show();
 	        $('.logo_inner').css({
 	        	display: 'inline-block'
