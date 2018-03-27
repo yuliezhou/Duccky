@@ -1,0 +1,80 @@
+/*转让求购*/
+.choose_body{
+	background: #fafafa;
+	padding-top: 40px;
+}
+.choose_box1{
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	color: #333333;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 20px;
+	background: #fff;
+	border-bottom: 2px solid #eeeeee;
+}
+.choose_box1 a{
+	display: inline-block;
+	color: #333333;
+	font-size: 16px;
+	margin: 0 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid transparent;
+	transition: all 0.5s;
+	line-height: 20px;
+}
+.choose_box1 .ac{
+	border-bottom: 2px solid #009bf4;
+	color: #009bf4;
+}
+.choose_box1 .ac1{
+	color: #009bf4;
+}
+.choose_box1 a:hover{
+	border-bottom: 2px solid #009bf4;
+	color: #009bf4;	
+}
+.search{
+	margin-top: 25px;
+	height: 55px;
+	line-height: 55px;
+	background: #fff;
+	border-bottom: 2px solid #eee;
+}
+.search_left{
+	float: left;
+	width: 70%;
+}
+.search_left a{
+	display: inline-block;
+	padding: 0 40px;
+	color: #333333;
+	font-size: 16px;
+	transition: all 0.5s;
+}
+.search_left .ac{
+	background:#2ac7ff;
+	color: #fff; 
+}
+.search_left a:hover{
+	background:#2ac7ff;
+	color: #fff; 
+}
+.search_right{
+	float: right;
+	padding-right: 10px;
+}
+.search_right span{
+	color: #999999;
+	font-size: 16px;
+	margin-right: 15px;
+}
+.search_right input{
+	display: inline-block;
+	padding-left:20px;
+	border:2px solid #e5e5e5;
+	height: 35px;
+	line-height: 35px; 
+	width: 180px;
+}

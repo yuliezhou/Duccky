@@ -2,7 +2,7 @@
     background: url(../images/banner_01.png) center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 585px;
+    padding-bottom: 1px;
 }
 .logo{
     padding: 15px 0;
@@ -48,6 +48,10 @@
     display: inline-block;
     margin-right: 10px;
 }
+#header .active{
+    color: #fff;
+    background: #5dcaff; 
+}
 .phone_icon i{
     font-size: 14px;
     color: #5dcaff;
@@ -83,6 +87,7 @@
 }
 .top_content{
     padding-top: 40px;
+    border-radius: 5px;
 }
 .content_left{
     float: left;
@@ -155,6 +160,58 @@
     margin-bottom: 10px;
     text-align: center;
 }
+.top_content1{
+    background: url(../images/back2_03.png) 0 0 no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin:10px 0; 
+}
+.content_right1{
+    float: right;
+}
+.des_title{
+    width: 500px;
+    height: 125px;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    margin-right: 25px;
+}
+.des_title h2{
+    color: #fff;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.des_title p{
+    font-size: 18px;
+    color: #fff;
+    font-family: Arial;
+    padding-top: 5px;
+}
+.bying_btn{
+    margin-top: 25px;
+}
+.bying_btn1{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    width: 165px;
+    background: #dba52a;
+    border-radius: 5px;
+    float: right;
+    margin-right: 20px;
+}
+.bying_btn2{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    width: 165px;
+    border-radius: 5px;
+    background: #4fc0ff;
+    float: right;
+    margin-right: 60px;
+}
 .right_txt span{
     color: #666666;
     font-size: 12px;
@@ -199,6 +256,7 @@
     border-radius: 0;
     text-align: center;
     z-index: 9999;
+    box-shadow: 0 0 20px #666;
 }
 .servie_btn{
     position: fixed;
