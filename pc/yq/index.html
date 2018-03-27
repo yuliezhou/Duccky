@@ -494,7 +494,7 @@
 		var idx = $(this).index();
 		$(this).addClass('ac_choose').siblings().removeClass('ac_choose')
 		$('.choose_box').eq(idx).show().siblings('.choose_box').hide();
-		$('.choose_box').eq(idx).addClass('bounceInLeft').siblings('.choose_box').removeClass('bounceInLeft');
+		$('.choose_box').eq(idx).addClass('fadeIn').siblings('.choose_box').removeClass('fadeIn');
 	});
 	//回到顶部
 	$('#top').on('click',function() {

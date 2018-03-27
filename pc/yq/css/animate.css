@@ -44,6 +44,10 @@
   animation-duration: 3s;
   animation-fill-mode: both;
 }
+.animated.fadeIn{
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
 /*自定义动画时长-ffw-end*/
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
