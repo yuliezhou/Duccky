@@ -427,19 +427,22 @@
 	<!-- 获取证书步骤 end-->
 	<div class="servie_btn">
 		<a href="http://wpa.qq.com/msgrd?v=3&uin=514255076&site=qq&menu=yes" class="servie_btnsm">
-			<img src="images/i1.png" alt="">
+			<img src="images/i1.png" alt="" class="none_img">
 			<p>在线咨询</p>
 		</a>
 		<a href="tel:023-62949242" class="servie_btnsm">
-			<img src="images/i2.png" alt="">
+			<img src="images/i2.png" alt="" class="none_img">
 			<p>电话咨询</p>
 			<div class="phone_ab">
 				023-62949242
 			</div>
 		</a>
 		<a href="##" id="wxbtn" class="servie_btnsm">
-			<img src="images/i3.png" alt="">
+			<img src="images/i3.png" alt="" class="none_img">
 			<p>微信咨询</p>
+			<div class="phone_ab phone_ab1">
+				<img src="images/my.png" alt="">
+			</div>			
 		</a>
 		<a class="top" id="top">
 			<img src="images/top.png" alt="">
@@ -553,17 +556,6 @@
 			layer.msg('请输入您的电话号码');
 		}
 	})
-	//微信点击弹出
-	$('#wxbtn').on('click', function() {
-		layer.open({
-		  type: 1,
-		  title: false,
-		  closeBtn: 0,
-		  area: '400px',
-		  skin: 'layui-layer-nobg', //没有背景色
-		  shadeClose: true,
-		  content:'<img src="images/my.png" alt="">'
-		});
-	});
+
 </script>
 </html>
