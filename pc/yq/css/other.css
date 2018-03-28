@@ -44,7 +44,7 @@
 }
 .search_left{
 	float: left;
-	width: 70%;
+	width: 60%;
 }
 .search_left a{
 	display: inline-block;
@@ -63,12 +63,12 @@
 }
 .search_right{
 	float: right;
-	padding-right: 10px;
+	padding-right: 120px;
 }
 .search_right button{
 	color: #999999;
 	font-size: 16px;
-	margin-right: 15px;
+	margin-left: 15px;
 	cursor: pointer;
 }
 .search_right input{

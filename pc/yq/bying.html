@@ -75,8 +75,8 @@
 					</div>
 					<div class="search_right">
 						<form action="##">
-							<button>搜索</button>
 							<input type="text" placeholder="输入关键词快速查找">
+							<button>搜索</button>
 						</form>
 					</div>
 					<div class="clear"></div>
@@ -348,7 +348,6 @@
 	var headerH = $("#header").offset().top;
     $(window).scroll(function(e) {
 	    p = $(this).scrollTop();
-	    console.log(headerH)
 	    if (p >headerH ) { //下滚  
 	        $('.empty').show();
 	        $('.logo_inner').css({

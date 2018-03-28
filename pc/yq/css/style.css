@@ -357,6 +357,21 @@
 #case_box  .swiper-slide {
     width: 376px;
 }
+.opcity_box{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+}
+#case_box .swiper-slide-prev .opcity_box ,#case_box .swiper-slide-next .opcity_box{
+    background: rgba(255,255,255,0.3);
+    
+}
+#case_box .swiper-slide-active .opcity_box{
+    background: rgba(255,255,255,0);
+}
 #case_box  .swiper-slide img{
     display:block;
     width: 100%;
