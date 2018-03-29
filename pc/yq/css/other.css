@@ -334,6 +334,8 @@
 	text-align: center;
 	position: relative;
 	padding-bottom: 10px;
+	padding-top: 5px;
+	margin-bottom: 20px;
 }
 .handle_p:after{
 	position: absolute;
@@ -369,4 +371,72 @@
 .consboxch:hover{
 	box-shadow: 0 5px 10px #ccc;
 }
+.serimgbox{
+	width: 1208px;
+	height: 460px;
+	background: url(../images/serback_03.png) 0 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.serimgbox h2{
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	padding: 100px 0 50px;
+	font-size: 32px;
+	font-weight: bold;
+	
+}
+.serimgbox a{
+	background: #4bf097;
+	text-align: center;
+	line-height: 45px;
+	width: 160px;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 18px;
+	display: inline-block;
+}
+.service_handle{
+	padding-bottom: 40px;
+}
+.profession{
+	background: #fafafa;
+}
+#profession_pa{
+	padding-bottom: 40px;
+}
+.profession_ch{
+	width: 280px;
+	text-align: center;
+	background: #fff;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+}
+.profession_ch:hover{
+	box-shadow: 0 5px 10px #ccc;
+}
+.profession_ch p{
+	color: #333;
+	font-size: 18px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.profession_ch img{
+	margin: 25px 0;
+	display: inline-block;
+}
+
+#profession_pa .swiper-pagination{
+	bottom: 20px;
+}
+#profession_pa .swiper-pagination-bullet{
+	border:1px solid #000; 
+	background: #fff;
+}
+#profession_pa .swiper-pagination-bullet-active{
+	background: #ffcc00;
+	border:1px solid transparent;
+}
+
 /*资质代办----end*/

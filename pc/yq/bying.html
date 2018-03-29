@@ -341,31 +341,9 @@
 </body>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/layer.js"></script>
 <script type="text/javascript">
-	//回到顶部
-	$('#top').on('click',function() {
-		 $('body,html').animate({'scrollTop':0},1000)
-	});
-	//顶部导航栏
-	var headerH = $("#header").offset().top;
-    $(window).scroll(function(e) {
-	    p = $(this).scrollTop();
-	    if (p >headerH ) { //下滚  
-	        $('.empty').show();
-	        $('.logo_inner').css({
-	        	display: 'inline-block'
-	        });
-	        $('#header').addClass('pofixed');
-	    } else { //上滚  
-	        $('.empty').hide();
-	        $('.logo_inner').css({
-	        	display: 'none'
-	        });	        
-	        $('#header').removeClass('pofixed');
-	    }
-	});
     $('.seedetails').on('click',function(){
     	$('.modal').removeClass('none');
     	$('.modal').addClass('fadeInDown');
