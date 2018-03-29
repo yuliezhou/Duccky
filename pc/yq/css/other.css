@@ -319,3 +319,54 @@
 	line-height: 35px;
 	text-indent:2em;
 }
+/*转让求购----end*/
+/*资质代办*/
+.handle_h2{
+	color: #333333;
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
+}
+.handle_p{
+	color: #333333;
+	font-size: 18px;
+	text-align: center;
+	position: relative;
+	padding-bottom: 10px;
+}
+.handle_p:after{
+	position: absolute;
+	content: '';
+	left: 50%;
+	width: 60px;
+	height: 4px;
+	background: #0d90cf;
+	bottom: 0px;
+	margin-left: -30px;
+}
+.construction{
+	background: #fafafa;
+	padding-bottom: 30px;
+}
+.consboxch{
+	width: 280px;
+	text-align: center;
+	transition: all 0.5s;
+	background: #fff;
+	margin-top: 20px;
+}
+.consboxch img{
+	margin: 30px 0 20px;
+}
+.consboxch p{
+	text-align: center;
+	color: #333333;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.consboxch:hover{
+	box-shadow: 0 5px 10px #ccc;
+}
+/*资质代办----end*/
