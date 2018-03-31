@@ -745,7 +745,7 @@
 }
 .from_box input{
 	height: 45px;
-	width: 700px;
+	width: 600px;
 	padding-left: 40px;
 	font-size: 20px;
 	border: 1px solid #dcdcdc;
@@ -754,7 +754,7 @@
 .from_box textarea{
 	height: 220px;
 	line-height: 45px;
-	width: 700px;
+	width: 600px;
 	padding-left: 40px;
 	font-size: 20px;
 	border: 1px solid #dcdcdc;
