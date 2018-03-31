@@ -360,6 +360,7 @@
 }
 .consboxch img{
 	margin: 30px 0 20px;
+	transition: all 0.5s;
 }
 .consboxch p{
 	text-align: center;
@@ -370,6 +371,9 @@
 }
 .consboxch:hover{
 	box-shadow: 0 5px 10px #ccc;
+}
+.consboxch:hover img{
+	transform: scale(1.1);
 }
 .serimgbox{
 	width: 1208px;
@@ -416,6 +420,9 @@
 .profession_ch:hover{
 	box-shadow: 0 5px 10px #ccc;
 }
+.profession_ch:hover img{
+	transform: scale(1.1);
+}
 .profession_ch p{
 	color: #333;
 	font-size: 18px;
@@ -423,6 +430,7 @@
 	text-align: center;
 }
 .profession_ch img{
+	transition: all 0.5s;
 	margin: 25px 0;
 	display: inline-block;
 }
@@ -438,5 +446,82 @@
 	background: #ffcc00;
 	border:1px solid transparent;
 }
-
+#handle_swiper{
+	width: 915px;
+	float: left;
+	padding-bottom:30px;
+}
+#handle_swiper .swiper-pagination-bullet{
+	width: 12px;
+	height: 12px;
+	background: transparent;
+	border: 1px solid #fff;
+	opacity: 1;
+	margin: 0 10px;
+}
+#handle_swiper .swiper-pagination-bullet-active{
+	background: #57c6ff;
+}
+#handle_swiper .swiper-pagination{
+	bottom: 4px;
+}
+.handle_ser{
+	background: url(../images/hdback_06.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.handle_ser h2{
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	padding: 35px 0 45px;
+}
+.handle_ser .ser_icon{
+	float: left;
+	margin: 0 17px 50px;
+	background: #fff;
+	width: 365px;
+	text-align: center;
+}
+.ser_icon img{
+	margin: 20px 0 15px;
+}
+.ser_icon h4{
+	font-size: 20px;
+	color: #333333;
+	padding-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+.ser_icon p{
+	font-size: 16px;
+	color: #666;
+	padding-bottom: 20px;
+	line-height: 25px;
+}
+.feedback{
+	padding-bottom: 25px;
+}
+.feedback_inner{
+	border-top: 1px solid #e5e5e5;
+}
+.feedback_box{
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.feedback_box img{
+	width: 102px;
+	height: 102px;
+	border-radius: 50%;
+	margin: 0 80px 0 50px;
+}
+.feedback_box p{
+	display: inline-block;
+	width: 725px;
+	color: #000;
+	font-size: 16px;
+	line-height: 35px;
+}
 /*资质代办----end*/
