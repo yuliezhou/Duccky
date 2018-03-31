@@ -257,6 +257,7 @@
     text-align: center;
     z-index: 9999;
     box-shadow: 0 0 20px #666;
+    font-size: 0;
 }
 .servie_btn{
     position: fixed;

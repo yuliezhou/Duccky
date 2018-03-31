@@ -28,7 +28,7 @@
 				<a href="bying.html">转让求购</a>
 				<a href="anchor.html" class="active">证书挂靠</a>
 				<a href="##">渝坤会员</a>
-				<a href="##">商务合作</a>
+				<a href="cooperation.html">商务合作</a>
 				<a href="##">关于我们</a>
 				<a href="tel:023-62949242">
 					<div class="phone_icon">
@@ -45,7 +45,6 @@
 						我要挂靠<br/>
 					</a>
 				</div>					
-				</div>
 				<div class="content_right">
 					<h4>咨询办理</h4>
 					<div class="right_txt">
@@ -206,11 +205,11 @@
 	<!-- 尾部 -->
 	<div class="fotter">
 		<div class="fot_a flex_around">
-			<a href="##">资质代办</a>
-			<a href="##">转让求购</a>
-			<a href="##">证书挂靠</a>
+			<a href="handle.html">资质代办</a>
+			<a href="bying.html">转让求购</a>
+			<a href="anchor.html">证书挂靠</a>
 			<a href="##">渝坤会员</a>
-			<a href="##">商务合作</a>
+			<a href="cooperation.html">商务合作</a>
 			<a href="##">关于我们</a>
 		</div>
 		<p>地址：重庆市南岸区江南大道7号4栋29-6号 / 邮编：400000 / 总机：023-62949242 / 邮箱：kunyu@cqkysy.cn</p>
@@ -256,34 +255,4 @@
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/layer.js"></script>
-<script type="text/javascript">
-	var swiper1 = new Swiper('#profession_pa', {
-		slidesPerView: 1,
-		speed:1500,
-		loop: true,
-		autoplay: 3000,
-   		pagination: '.swiper-pagination',
-    	paginationClickable: true,
-		autoplayDisableOnInteraction : false,
-	});	
-	var swiper2 = new Swiper('#handle_swiper', {
-		slidesPerView: 1,
-		speed:1500,
-		loop: true,
-		autoplay: 3000,
-   		pagination: '.swiper-pagination',
-    	paginationClickable: true,
-		autoplayDisableOnInteraction : false,
-	});	
-	$("#handle_swiper").mouseenter(function () {//滑过悬停
-	    swiper2.stopAutoplay();//swiper2 为上面你swiper实例化的名称
-	}).mouseleave(function(){//离开开启
-	    swiper2.startAutoplay();
-	});
-	$("#profession_pa").mouseenter(function () {//滑过悬停
-	    swiper1.stopAutoplay();//swiper1 为上面你swiper实例化的名称
-	}).mouseleave(function(){//离开开启
-	    swiper1.startAutoplay();
-	});
-</script>
 </html>
