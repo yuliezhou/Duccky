@@ -716,6 +716,8 @@
 .apply_inner{
 	border: 1px solid #d2d2d2;
 	text-align: center;
+	width: 900px;
+	margin: 0 auto;
 }
 .apply_inner h4{
 	font-size: 32px;
@@ -726,50 +728,235 @@
 .apply_inner p{
 	color: #666666;
 	font-size: 24px;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 .apply_form{
-	padding-left: 140px;
+	padding-left: 100px;
 }
 .from_box{
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 .from_box span{
 	width: 175px;
 	display: inline-block;
 	line-height: 45px;
 	color: #333333;
-	font-size: 24px;
+	font-size: 20px;
 	float: left;
 	text-align: left;
 }
 .from_box input{
 	height: 45px;
-	width: 600px;
+	width: 450px;
 	padding-left: 40px;
-	font-size: 20px;
+	font-size: 18px;
 	border: 1px solid #dcdcdc;
 	float: left;
 }
 .from_box textarea{
-	height: 220px;
+	height: 200px;
 	line-height: 45px;
-	width: 600px;
+	width: 450px;
 	padding-left: 40px;
-	font-size: 20px;
+	font-size: 18px;
 	border: 1px solid #dcdcdc;
 	float: left;
 }
 #submitBtn{
-	margin-top: 90px;
-	line-height: 60px;
+	margin-top: 40px;
+	line-height: 50px;
 	width: 185px;
 	border-radius: 8px;
 	background: #2faeeb;
-	font-size: 24px;
+	font-size: 20px;
 	color: #fff;
 	text-align: center;
 	display: inline-block;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 /*商务合作-end*/
+/*关于我们*/
+.choose_content{
+    width: 100%;
+}
+.choose_box{
+    height: 320px;
+    background: url(../images/back1_03.png) center no-repeat;
+    background-size: cover;
+    padding: 75px;
+}
+.choose_box a{
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 55px 45px; 
+    position: relative;
+}
+.choose_box a span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+.about_tit{
+	padding-left: 10px;
+}
+.about_tit h2{
+	color: #666666;
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+.about_tit span{
+	background: #2984be;
+	height: 3px;
+	width: 90px;
+	display: inline-block;
+}
+.top_content{
+	box-shadow: 0 10px 15px #eee;
+	width: 100%;
+	position: relative;
+	padding-bottom: 10px;
+}
+.top_content:after{
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	left: 0;
+	border-top: 1px dashed #bab6b2;
+}
+.ab_txtleft p{
+	text-indent: 2em;
+	color: #666666;
+	font-size: 14px;
+	line-height: 40px;
+	display: inline-block;
+	float: left;
+	padding: 0 30px;
+	width: 540px;
+}
+.ab_txtleft{
+	padding-bottom: 20px;
+}
+.ab_bannertxt img{
+	margin-left: 50px;
+	width: 495px;
+	float: left;
+	box-shadow: 0 0 15px #ccc;
+}
+.after_h2box{
+	width: 100%;
+	text-align: center;
+}
+.after_h2box span{
+	color: #333333;
+	font-size: 30px;
+	display: inline-block;
+	position: relative;
+	line-height: 40px;
+	margin-top: 50px;
+	margin-bottom: 10px;	
+}
+.after_h2box span:after{
+	content: '';
+	background: #666;
+	height: 2px;
+	width: 80px;
+	position: absolute;
+	top: 19px;
+	left: -125px;
+}
+.after_h2box span:before{
+	content: '';
+	background: #666;
+	height: 2px;
+	width: 80px;
+	position: absolute;
+	top: 19px;
+	right: -125px;
+}
+.english_p{
+	color: #666666;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.culture{
+	text-align: center;
+	border-bottom: 2px solid #dcdcdc;
+}
+.culture_pa1{
+	padding-bottom: 55px;
+}
+.culture_box {
+	display: inline-block;
+	width: 140px;
+	margin: 0 85px;
+}
+.culture_box p{
+	color:#666666;
+	font-size: 14px;
+}
+.culture_top img{
+	margin-right: 20px;
+}
+.culture_top{
+	color: #333333;
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+.culture_bot{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.culture_bot img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: all 0.5s;
+}
+.culture_pa2{
+	padding: 0 20px 20px 20px;
+}
+.culture_txt{
+	width: 100%;
+	height: 200%;
+	text-align: center;
+	line-height: 200px;
+	color: #fff;
+	font-size: 24px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.5s;
+}
+.culture_bot:hover img{
+	transform: scale(1.1);
+}
+.culture_bot:hover .culture_txt{
+	background: rgba(0,0,0,0.6);
+}
+.contact_right{
+	width: 525px;
+	height: 315px;
+}
+.pop .top{
+	margin: 0;
+}

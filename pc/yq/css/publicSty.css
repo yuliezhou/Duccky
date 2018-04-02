@@ -147,3 +147,32 @@ p{
 .none{
     display: none!important;
 }
+.BMapLabel{
+    display: none!important;
+}
+
+.BMap_Marker {
+    background: none!important;
+}
+
+.BMap_Marker img{
+    display: none!important;
+    width: 0!important;
+    height: 0!important;
+    border: none!important;
+
+}
+
+.BMap_noprint{
+    background: none!important;
+    width: 0!important;
+    height: 0!important;
+}
+.BMap_noprint::before
+{
+    font-family: 'FontAwesome';
+    font-size: 40px;
+    content: "\f041";
+    color: red;
+    background: none;
+}
