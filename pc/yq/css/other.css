@@ -891,7 +891,7 @@
 	color: #666666;
 	font-size: 16px;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 .culture{
 	text-align: center;
@@ -953,10 +953,33 @@
 .culture_bot:hover .culture_txt{
 	background: rgba(0,0,0,0.6);
 }
+.contact{
+	text-align: center;
+	padding-bottom: 150px;
+}
+.contact_left{
+	display: inline-block;
+	padding-right: 220px;
+	padding-left: 170px;
+	float: left;
+}
 .contact_right{
 	width: 525px;
 	height: 315px;
+	display: inline-block;
+	float: left;
 }
 .pop .top{
 	margin: 0;
+}
+.contact_icon{
+	width: 200px;
+	margin-bottom: 45px;
+}
+
+.icon_des{
+	color: #333;
+	font-size: 14px;
+	padding-left: 10px;
+	text-align: left;
 }
