@@ -391,4 +391,13 @@
  	$('.ml_span').on('click',function(){
  		$(this).toggleClass('ac_span');
  	})
+ 	var choose_rpolength = $('.pro_details_left').children('.choose_pro').length;
+ 	console.log(choose_rpolength)
+ 	for(var i= 0;i<choose_rpolength;i++){
+ 		var p_length = $('.choose_pro').eq(i).find('p').length;
+ 		if(p_length <= 0){
+			$('.choose_pro').eq(i).find('i').hide();
+			$('.choose_pro').eq(i).find('.choose_pro_sm').hide();
+ 		}
+ 	}
 </script>
