@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Capricorn</title>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="container">
+			<div class="logo">
+				<a href="##">Capricorn</a>
+				<span>摩羯咨询金融猎头</span>
+			</div>
+			<div class="nav_right">
+				<a href="##" class="ac">关于我们</a>
+				<a href="##">金融offer案例</a>
+				<a href="##">企业寻求合作</a>
+				<a href="##">候选人需求</a>
+				<a href="##">其他服务</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+		<div class="swiper-container" id="banner">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+	        		<img src="images/2.jpg" alt="">
+		        </div>
+		        <div class="swiper-slide">
+	        		<img src="images/16.jpg" alt="">
+		        </div>
+		    </div>
+	    <div class="swiper-pagination"></div>
+		</div>	
+	<div class="about">
+		<div class="container">
+			<h2>关于我们</h2>
+			<span>THE "ELITE IF NOT THE "BEST"</span>
+			<div class="about_des">
+				<img src="images/logo.jpg" alt="">
+				<p>摩羯咨询所专注于金融行业中高端人力资源解决方案，为金融行业客户物色并招聘那些能够帮助企业提高他们的竞争力价值并适合企业长远发展的优秀人选。自2004年起针对中国市场为外企与大型合资企业从事人力资源的咨询服务，并于2013年在上海独立注册.  长期专注于金融行业不仅使我们长期了解金融行业发展趋势，深入研究金融人才的分布，更有针对性的积累在金融行业方面的专业知识和技能，从而大幅度提升针对客户的服务能力。</p>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="case">
+		<div class="container">
+			<h2>金融offer案例</h2>
+			<div class="case_des">
+				<p>2014.06 国内某知名互联网金融公司  平台COO <span>年薪80W</span></p>
+				<p>2014.10 国内前五十互联网金融公司  风控总监 <span>年薪76W</span></p>
+				<p>2015.01 国内某知名互联网金融公司 CTO  <span>年薪100W</span></p>
+				<p>2015.04 垂直领域排名第一金融公司 互金事业部副总裁   <span>年薪200W</span></p>
+				<p>2015.10 国内知名资产管理公司 事业部总经理  <span>年薪80W</span></p>
+				<p>2016.01 国内知名三方财富公司 风控总监  <span>年薪73W</span></p>
+				<p>2016.07 国内知名综合金融集团 B2B事业部总经理 <span>年薪100W</span></p>
+				<p>2016.12 上海某财富管理公司 创新事业部负责人 <span>年薪66W</span></p>
+				<p>2017.04 国内前五十互联网金融公司 CTO <span>年薪82W</span></p>
+				<p>2017.10 国内知名金融控股集团 人力资源副总裁 <span>年薪120W</span></p>
+				<p>2018.01 国内知名综合金融集团  CMO  <span>年薪80W</span></p>
+			</div>
+		</div>
+	</div>	
+	<div class="cooper" id="cooper">
+		<div class="container">
+			<h2>企业需求</h2>
+			<div class="cooper_img">
+				<p>企业合作请扫以下二维码</p>
+				<img src="images/cooper.png" alt="">
+			</div>
+		</div>
+	</div>	
+	<div class="cooper pl" id="pl">
+		<div class="container">
+			<h2>候选人需求</h2>
+			<div class="cooper_img">
+				<p>候选人offer需求请扫以下二维码</p>
+				<img src="images/pl.png" alt="">
+			</div>
+		</div>
+	</div>	
+	<div class="other">
+		<div class="container">
+			<h2>其他服务</h2>
+			<div class="other_des">
+				<span>企业人力资源架构设计：5000RMB/case</span>
+				<span class="right_span">企业人事风险规划服务：3000/case</span>
+				<div class="clear"></div>
+			</div>
+			<div class="other_des">
+				<span>个人职业规划：1000RMB/人</span>
+				<span class="right_span">定制服务：定向猎访，定向解聘，定向人事变革</span>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="fotter">
+		<p>地址：上海市静安区江宁路和一大厦1216 / 邮箱：capricorn-china@126.com / 总机：023-xxxx </p>
+		<span>Coyright ® 2018 上海荷璞企业管理咨询有限公司 版权所有©</span>
+	</div>		
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+	//banner
+	var swiper1 = new Swiper('#banner', {
+	    pagination: '.swiper-pagination',
+	    slidesPerView: 1,
+	    speed:1500,
+	    paginationClickable: true,
+	    autoplay : 2000,
+	    loop:true,
+	    autoplayDisableOnInteraction:false
+	});
+	var aboutH = $(".about").offset().top-500;
+	var caseH = $(".case").offset().top-500;
+    var plH = $("#pl").offset().top-500;
+	var cooperH = $("#cooper").offset().top-500;
+	var otherH = $(".other").offset().top-500;
+    $(window).scroll(function(e) {
+        p = $(this).scrollTop();
+        if (p >=aboutH &&p<caseH) {  
+        	$('.nav_right').children('a').eq(0).addClass('ac').siblings('a').removeClass('ac');
+        } else if(p >=caseH &&p<cooperH ){ 
+            $('.nav_right').children('a').eq(1).addClass('ac').siblings('a').removeClass('ac');
+        } else if(p >=cooperH &&p<plH){ 
+            $('.nav_right').children('a').eq(2).addClass('ac').siblings('a').removeClass('ac');
+        } else if(p >=plH&&p<otherH ){ 
+            $('.nav_right').children('a').eq(3).addClass('ac').siblings('a').removeClass('ac');
+        } else if(p >=otherH ){ 
+            $('.nav_right').children('a').eq(4).addClass('ac').siblings('a').removeClass('ac');
+        }
+    });	
+    $('.nav_right a').on('click', function() {
+    	var idx = $(this).index();
+		  switch(idx){
+		    case 0:
+         	$('body,html').animate({'scrollTop':aboutH+500},1000)
+		      break;
+		    case 1:
+         	$('body,html').animate({'scrollTop':caseH+500},1000)
+		      break;
+		    case 2:
+         	$('body,html').animate({'scrollTop':plH+500},1000)
+		      break;
+		    case 3:
+         	$('body,html').animate({'scrollTop':cooperH+500},1000)
+		      break;
+		    case 4:
+         	$('body,html').animate({'scrollTop':otherH+500},1000)
+		      break;
+	    	}
+    	// if(idx == 0){
+    	// }else if(idx == 1){
+
+    	// }
+    	
+    });
+</script>
+</html>

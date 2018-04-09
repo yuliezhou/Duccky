@@ -1,0 +1,210 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    z-index: 900;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+.nav .logo{
+    float: left;
+    position: relative;
+}
+.logo span{
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    bottom: --23px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    transition: all 0.5s;
+}
+.nav .logo a{
+    color: #fff;
+    font-size: 40px;
+    transition: all 0.5s;
+}
+.nav .logo:hover a{
+    color: #297e7d;
+}
+.nav .logo:hover span{
+    color: #297e7d;
+}
+.nav_right{
+    float: right;
+    line-height: 52px;
+}
+.nav_right a{
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 30px;
+    transition: all 1s;
+    border-bottom: 1px solid transparent;
+}
+.nav_right a:hover{
+    border-bottom: 1px solid #fff;
+}
+.nav_right .ac{
+    border-bottom: 1px solid #fff;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.about{
+    background: url(../images/main_texture.png);
+    padding-bottom: 60px;
+    width: 1920px;
+}
+.about h2{
+    text-align: center;
+    font-size: 60px;
+    line-height: 40px;
+    padding-top: 99px;
+    padding-bottom: 32px;
+    color: #287e7d;
+    text-align: center;
+}
+.about span{
+   color: #287e7d;
+   display: inline-block;
+   width: 100%;
+   font-size: 20px;
+    text-align: center;
+   padding-bottom: 40px;
+}
+.about_des{
+    padding: 20px 0;
+}
+.about_des img{
+    margin-right: 40px;
+    float: left;
+    border: 1px solid #000;
+}
+.about_des p{
+    display: inline-block;
+    width: 70%;
+    line-height: 35px;
+    color: #363535;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.case{
+    background: #297e7d;
+    padding-bottom: 60px;
+    width: 1920px;
+}
+.case_des{
+    padding: 50px 0;
+    width: 680px;
+    margin:0 auto; 
+}
+.case h2{
+     text-align: center;
+    font-size: 60px;
+    padding-top: 99px;
+    padding-bottom: 32px;
+    color: #343a5e;
+    text-align: center;   
+}
+.case p{
+    color: #ccc;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin:20px 0;
+}
+.case p span{
+    color: #fff;
+}
+.cooper{
+    background: url(../images/bg-1.jpg);
+    padding-bottom: 60px;
+    width: 1920px;
+    text-align: center;   
+}
+.cooper h2{
+     text-align: center;
+    font-size: 60px;
+    padding-top: 99px;
+    padding-bottom: 32px;
+    color: #fff;
+    text-align: center;     
+}
+.cooper_img{
+    padding-top: 50px;
+}
+.cooper_img p{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.pl{
+    width: 1920px;
+    background: url(../images/main_texture.png);
+}
+.pl h2,.pl p{
+    color: #000;
+}
+.other{
+     background: #297e7d;
+    width: 1920px;
+    padding-bottom: 60px;   
+}
+.other h2{
+     text-align: center;
+    font-size: 60px;
+    padding-top: 99px;
+    padding-bottom: 32px;
+    color: #343a5e;
+    text-align: center;   
+}
+.other_des{
+    padding:50px 0; 
+}
+.other_des span{
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+#banner{
+    width: 1920px;
+    height: 800px;
+}
+.swiper-pagination-bullet-active{
+    background: #297e7d!important;
+}
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    margin: 0 15px!important;
+    opacity: 1;
+    background: #fff;
+}
+.fotter{
+    background: #535353;
+    padding: 20px 0;
+    position: relative;
+    width: 1920px;
+    text-align: center;
+}
+.fotter p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+}
+.fotter span{
+    color: #fff;
+    font-size: 14px;
+}
