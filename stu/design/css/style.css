@@ -266,3 +266,27 @@
 .none{
     display: none;
 }
+.teach_box{
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin: 20px 0;
+}
+.teach_box img{
+    width: 235px;
+    height: 132px;
+}
+.teach_box h3{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+}
+.word{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
