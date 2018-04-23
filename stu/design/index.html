@@ -9,25 +9,23 @@
 </head>
 <body>
 	<div class="nav">
-		<a href="index.html" class="active">首页</a>
+		<a href="index.html">首页</a>
 		<a href="##">专业概况</a>
 		<a href="##">课程介绍</a>
 		<a href="download.html">教学队伍</a>
-		<a href="##">基本教学资源</a>
+		<a href="##" class="active">基本教学资源</a>
 		<a href="##">拓展教学资源</a>
 		<a href="##">师生答疑</a>
 	</div>
 	<div class="banner">
 		<img src="images/logo.png" alt="" class="logo">
-		<h1>广东海洋大学</h1>
-		<h2>热带滨海景观规划设计</h2>
-		<p>精品资源共享课</p>
+		<img src="images/banner-bg.png" alt="" class="baner1">
 	</div>
 	<div class="content">
 		<div class="content_inner">
 			<div class="content_left">
 				<div class="all_pro ac_green" id="all_pro">
-					<span>基本资源</span>
+					<span>基本教学资源</span>
 					<i class="fa fa-angle-up"></i>
 				</div>
 				<div class="pro_choose">
@@ -45,11 +43,11 @@
 					</a>
 				</div>
 				<div class="all_pro ac_green" id="all_pro1">
-					<span>拓展资源</span>
+					<span>拓展教学资源</span>
 					<i class="fa fa-angle-up"></i>
 				</div>
 				<div class="pro_choose">
-					<a href="teaching.html">
+					<a href="course.html">
 						<span>课程资源</span>
 						<i class="fa fa-caret-right"></i>
 					</a>
@@ -69,8 +67,8 @@
 					<div class="content_txt">
 						<h3>课程模块1 热带滨海景观的概述</h3>
 						<a href="##">模块概要</a>
-						<a href="##">教学录像</a>
-						<a href="##">教学文件</a>
+						<a href="none.html">教学录像</a>
+						<a href="teaching.html">教学文件</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -79,8 +77,8 @@
 					<div class="content_txt">
 						<h3>课程模块2 热带滨海自然景观类型</h3>
 						<a href="##">模块概要</a>
-						<a href="##">教学录像</a>
-						<a href="##">教学文件</a>
+						<a href="none.html">教学录像</a>
+						<a href="teaching.html">教学文件</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -89,8 +87,8 @@
 					<div class="content_txt">
 						<h3>课程模块3 热带滨海人文景观类型</h3>
 						<a href="##">模块概要</a>
-						<a href="##">教学录像</a>
-						<a href="##">教学文件</a>
+						<a href="none.html">教学录像</a>
+						<a href="teaching.html">教学文件</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -99,8 +97,8 @@
 					<div class="content_txt">
 						<h3>课程模块4 热带滨海景观构成法则</h3>
 						<a href="##">模块概要</a>
-						<a href="##">教学录像</a>
-						<a href="##">教学文件</a>
+						<a href="none.html">教学录像</a>
+						<a href="teaching.html">教学文件</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -109,8 +107,8 @@
 					<div class="content_txt">
 						<h3>课程模块5 景观规划方法与程序</h3>
 						<a href="##">模块概要</a>
-						<a href="##">教学录像</a>
-						<a href="##">教学文件</a>
+						<a href="none.html">教学录像</a>
+						<a href="teaching.html">教学文件</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -119,8 +117,8 @@
 					<div class="content_txt">
 						<h3>课程模块6 景观规划案例及方案表现</h3>
 						<a href="##">模块概要</a>
-						<a href="##">教学录像</a>
-						<a href="##">教学文件</a>
+						<a href="none.html">教学录像</a>
+						<a href="teaching.html">教学文件</a>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -130,6 +128,7 @@
 	</div>
 	<div class="footer">
 		<div class="container">
+			<h2>相关论文参考文献</h2>
 			<div class="fot_box">
 				<a href="##">试论湛江市园林植物景观热带特色的营造_吴刘萍</a>
 				<a href="##">10个热带滨海城市防台风防护林树种的早期生长分析_刘俊</a>
@@ -190,7 +189,7 @@
      $(function() {  
         $('.pdf').media({width:900, height:800});
     });  
-    $('.content_box').click(function(){
+    $('.content_box a').eq(0).click(function(){
       $(".pdf_box").removeClass('none');
     });	
      $('.pdf_box').click(function(){
