@@ -91,6 +91,8 @@
 	        	</a>
 	        </div>
 	    </div>
+		<!-- Add Pagination -->
+	    <div class="swiper-pagination"></div>    
 	</div>
 	<nav class="navbar navbar-inverse navbar-fixed-top navbar-inverse-transparent" id="header">
 	  <div class="container-fluid">
@@ -542,6 +544,7 @@
     	}
 	//banner1
 	var swiper1 = new Swiper('#banner_sw1', {
+		pagination: '.swiper-pagination',
 	    slidesPerView: 1,
 	    speed:1500,
 	    paginationClickable: true,

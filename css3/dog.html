@@ -11,7 +11,7 @@
 			margin-top: 100px;
 			position: relative;
 		}
-		.s_box{
+		.item{
 			width: 64px;
 			height: 64px;
 			position: absolute;
@@ -23,26 +23,25 @@
 </head>
 <body>
 	<div class="box">
-		
 	</div>
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
 	for(var i=0;i<100;i++){
-		$('.box').append('<div class="s_box"></div>');
+		$('.box').append('<div class="item"></div>');
 		//x偏移
 		var x = i%10;
 		//y偏移
     	var y=parseInt(i/10);
-    	$('.s_box').eq(i).css({
+    	$('.item').eq(i).css({
     		"background-position":x*(-64)+"px "+y*(-64)+"px",
     		"left":x*64+"px",
     		"top":y*64+"px"
     	});
 	}
 	function imgShow(){
-		$('.s_box').each(function(index, el) {
+		$('.item').each(function(index, el) {
 			var num_x = index%10;
 			var num_y = parseInt(index/10);
 			$(this).css({
@@ -56,7 +55,7 @@
 	}
 	function imgHide(){
 
-		$('.s_box').each(function(index, el) {
+		$('.item').each(function(index, el) {
 			var num_x = Math.random()*2000 - 1000;
 			var num_y = Math.random()*2000 - 1000;
 			$(this).css({

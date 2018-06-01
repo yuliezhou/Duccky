@@ -6,6 +6,9 @@
 	width: 100%;
 	position: relative;
 }
+#banner_sw1 .swiper-pagination-bullet-active{
+	background: #c9af1b;
+}
 #banner_sw1 img{
 	width: 100%;
 }

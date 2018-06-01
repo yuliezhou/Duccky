@@ -1,0 +1,134 @@
+body{
+	background:#FADB54; 
+}
+.title{
+	border-bottom: 1px solid #666666;
+	color: #333333;
+	text-align: center;
+	position: relative;
+	font-size: 0.34rem;
+	height: 1rem;
+}
+.title .gold{
+	background: #fff;
+	border-radius: 0.4rem;
+	position: absolute;
+	height: 0.6rem;
+	top: 0.2rem;
+	right: 0.3rem;
+	font-size: 0.24rem;
+}
+.gold_icon1{
+	width: 0.5rem;
+	height: 0.5rem;
+	margin:0 0.1rem;
+}
+.gold_icon2{
+	width: 0.34rem;
+	height: 0.34rem;
+	margin:0 0.05rem;
+}
+.user_info{
+	padding: 0.36rem 0;
+}
+.user_icon{
+	float: left;
+	width: 1.5rem;
+	border-radius: 50%;
+	height: 1.5rem;
+	margin-left: 0.2rem;
+}
+.user_des{
+	float: left;
+	width: 5.8rem;
+}
+.des_box{
+	font-size: 0;
+	width: 50%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.des_box h4{ 
+	font-size: 0.38rem;
+	font-weight: bold;
+	color: #FF5B5B;
+	margin-bottom: 0.05rem;
+}
+.des_box span{
+	color: #FF5B5B;
+	font-size: 0.24rem;
+}
+.description{
+	padding: 0 0.36rem;
+}
+.description_inner{
+	background: #fff;
+	padding: 0.2rem 0.5rem;
+	position: relative;
+}
+.description p{
+	font-size: 0.24rem;
+	color: #333;
+}
+.des_abl{
+	position: absolute;
+	top: 0.12rem;
+	left: 0.12rem;
+	width: 0.28rem;
+}
+.des_abr{
+	position: absolute;
+	bottom: 0.12rem;
+	right: 0.12rem;
+	width: 0.28rem;
+}
+.description h2{
+	font-size: 0.44rem;
+	color: #F971F4;
+	padding-top: 0.5rem;
+	padding-bottom: 0.24rem;
+}
+.follower_pay{
+	border-top: 1px solid #A885F7;
+	border-bottom: 1px solid #A885F7;
+}
+.pay_box{
+	height: 1.2rem;
+}
+.pay_icon{
+	margin: 0 0.32rem;
+	width: 0.36rem; 
+}
+.pay_boxleft{
+	width: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pay_boxright{
+	width: 6.5rem;
+	height: 100%;
+	border-bottom: 1px solid #A885F7;
+}
+.pay_boxright span{
+	color: #010101;
+	font-size: 0.36rem;
+}
+.pay_number{
+	background: #A885F7;
+	border-radius: 0.05rem;
+	width: 1.5rem;
+	height: 0.6rem;
+	margin-right: 0.3rem;
+}
+.pay_number img{
+	width: 0.4rem;
+	margin-right: 0.1rem;
+}
+.pay_number span{
+	color: #fff;
+	font-size: 0.28rem;
+}
