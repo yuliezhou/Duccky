@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding: 0; 
+}
+a{
+	text-decoration: none;
+}
+.inner{
+	width: 500px;
+	margin:0 auto; 
+	text-align: center;
+	margin-top: 50px;
+	border: 1px solid #3b80c4;
+	padding: 40px;
+}
+.ipt_box{
+	text-align: left;
+	margin:20px 0;
+	width: 100%;
+	font-size: 16px;
+	color: #3b80c4;
+}
+
+.ipt_box input{
+	width: 300px;
+	line-height: 30px;
+}
+.btn{
+	text-align: left;
+}
+.button_box{
+	text-align: center;
+}
+.button_box button{
+	background: #3b80c4;
+	line-height: 35px;
+	color: #fff;
+	width: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;	
+}

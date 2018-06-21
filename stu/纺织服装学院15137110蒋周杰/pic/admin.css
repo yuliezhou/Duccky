@@ -1,0 +1,86 @@
+body{
+	background:#fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration:none;
+}
+.top{
+	width: 100%;
+    height: 94px;
+    margin: 0 auto;
+    position: relative;
+    background: #3b80c4;
+}
+.clear{
+	clear: both;
+}
+.topin{
+	    width: 1125px;
+    border: 1px;
+    height: 94px;
+    margin: 0 auto;
+}
+.imgl1{
+	float: left;
+	margin-top: 18px;
+}
+.imgl2{
+	float: right;
+	margin-top: 27px;
+}
+.ifr{
+	width: 100%;
+}
+.ifr_inner {
+	width: 1180px;
+	margin:0 auto; 
+}
+.ifrz{
+	float: left;
+	width: 400px;
+	border: 1px solid #bfccd4;
+	height: 600px;
+}
+.ifrz a{
+	color: #2a6bab;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 100px 0;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.ifry{
+	width: 770px;
+	border: 1px solid #bfccd4;
+	height: 600px;
+	float: left;
+}
+.fot{
+	width: 100%;
+    height: 104px;
+    font-size: 12px;
+    color: #6c6c6c;
+    line-height: 25px;
+    background: #e2e5e7;
+    margin-top: 20px;
+}
+.fotin{
+    margin: 0 auto;
+	padding: 20px 0;
+	width: 1180px;
+}
+.fotz{
+	float: left;
+}
+.foty{
+	float: right;
+}
+.fotz1{
+	line-height: 30px;
+	font-size: 12px;
+}

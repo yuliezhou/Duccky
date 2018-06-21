@@ -1,0 +1,57 @@
+body{
+	background:#fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration:none;
+}
+.top{
+	width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.clear{
+	clear: both;
+}
+.topin{
+	width: 500px;
+    margin: 0 auto;
+    background: #3b80c4;
+}
+.imgl1{
+	width: 100%;
+}
+.imgl2{
+	float: right;
+	margin-top: 27px;
+}
+.input_box{
+	padding: 20px 0;
+	background: #eee;
+	text-align: center;
+}
+.input{
+	margin: 0 auto;
+	text-align: center;
+	margin: 15px 0;
+}
+.input input {
+	width: 290px;
+	line-height: 30px;
+}
+.input span{
+	color: #3b80c4;
+	font-size: 14px;
+	padding-left: 20px;
+}
+.login{
+	background: #3b80c4;
+	line-height: 35px;
+	color: #fff;
+	width: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
