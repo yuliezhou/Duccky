@@ -178,3 +178,99 @@ a{
 	line-height: 30px;
 	font-size: 12px;
 }
+.des{
+	width: 100%;
+	margin: 20px 0;
+}
+.desin{
+	width: 1180px;
+	margin:0 auto; 
+}
+.des1{
+	float: left;
+	width: 262px;
+	margin-right: 20px;
+}
+.des1-tit{
+	padding: 0 10px;
+	line-height: 43px;
+	height: 43px;
+	font-size: 16px;
+	color: #fff;
+	background: #2a6bab;
+}
+.des1-tit a{
+	color: #fff;
+	font-size: 14px;
+	float: right;
+}
+.des1-box{
+	border: 1px solid #bfccd4;
+	padding: 10px;
+}
+.des1-box img{
+	width: 100%;
+}
+.des2{
+	border: 1px solid #bfccd4;
+	margin: 0 15px;
+	width: 510px;
+	padding: 0 20px; 
+	font-size: 16px;
+	color: #2a6bab;
+	float: left;
+}
+.des2-tit{
+	width: 100%;
+	line-height: 30px;
+	border-bottom: 1px solid #eee;
+}
+.des2-tit a{
+	color: #333;
+	float: right;
+	line-height: 30px;
+}
+.des2newsbox{
+	padding: 8px 0;
+}
+.des2newsbox span{
+	background: #2a6bab;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+	width: 80px;margin-right: 10px;
+	display: inline-block;
+}
+.des2newsbox a{
+	color: #000;
+	font-size: 14px;
+}
+.des3{
+	float: right;
+	width: 272px;
+	margin-right: 20px;
+}
+.des3-tit{
+	padding: 0 10px;
+	line-height: 43px;
+	height: 43px;
+	font-size: 16px;
+	color: #fff;
+	background: #2a6bab;
+}
+.des3-tit a{
+	color: #fff;
+	font-size: 14px;
+	float: right;
+}
+.des3-box{
+	border: 1px solid #bfccd4;
+	padding: 10px;
+}
+.des3-box a{
+	font-size: 12px;
+	padding: 9px;
+	display: inline-block;
+	color: #000;
+}
