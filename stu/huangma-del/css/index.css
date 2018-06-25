@@ -54,6 +54,7 @@ body{
 .newsimg{
 	height: 150px;
 	padding: 10px 0;
+	display: none;
 }
 .news h3{
 	background:#1e516e;
@@ -147,4 +148,13 @@ body{
 .qiuxingimg embed{
 	height: 198px;
 	width: 100%;
+}
+.topqiehuan{
+    background: #1e516e;
+    line-height: 40px;	
+}
+.qiehuan{
+	display: inline-block;
+	width: 100px;
+	color: #fff;
 }

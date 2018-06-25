@@ -1,0 +1,194 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+input, button {
+    background: none;
+    outline: none;
+    border: 0px;
+}
+body{
+	background: #eee;
+}
+.bodyer{
+	width: 980px;
+	margin:0 auto;
+}
+.top1l{
+	float: left;
+}
+.top1r{
+	float: right;
+	line-height: 35px;
+}
+.top1{
+	height: 35px;
+}
+.top1r a{
+	color: #666666;
+	font-size: 14px;
+	padding: 0 5px;
+}
+.top2{
+	height: 75px;
+}
+.ipt{
+	width: 320px;
+	height: 36px;
+	line-height: 36px;
+	background: url(../images/BG_search_170717.png) 0 0 no-repeat;
+	float: left;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.logo{
+	margin-left: 40px;
+	float: left;
+	margin-top: 5px;
+}
+.ipt input{
+	width: 320px;
+	height: 36px;
+}
+.search{
+	background: url(../images/btn_search.png) 0 0 no-repeat;
+	width: 87px;
+	height: 37px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+.logo2{
+	float: right;
+}
+.nav{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background: #045321;
+}
+.nava {
+	position: relative;
+	display: inline-block;
+}
+.nav a{
+	padding: 0 15px;
+	line-height: 40px;
+	color: #fff;
+	display: inline-block;
+}
+.nava:hover,.nav a:hover{
+	background: #fff;
+	color: #000;
+}
+.nava:hover .poab{
+	display: block;
+}
+.poab{
+	position: absolute;
+	top:40px;
+	left: 0;
+	width: 200px;
+	background: #fff;
+	border: 1px solid #000;
+	background: #fff;
+	background-position: bottom;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	display: none;
+}
+.poab a{
+	display: block;
+	color: #ccc;
+	line-height: 25px;
+	font-size: 14px;
+}
+.nav input{
+	width: 130px;
+	height: 20px;
+	margin-top: 10px;
+	background: #fff;
+	display: inline-block;
+	padding-left: 5px;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.nav button{
+	width: 45px;
+	height: 30px;
+	margin-top: 5px;
+	background:#fff;
+	font-size: 13px;
+	text-align: center; 
+	margin-left: 10px;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.lunbo{
+	width: 80%;
+	margin:0 auto; 
+}
+.tupian{
+	width: 100%;
+	display: none;
+}
+.imgbox1{
+	margin: 10px 0; 
+	position: relative;
+}
+.imgbox1 video{
+	position: absolute;
+	right: 65px;
+	top: 30px;
+}
+.imgbox1 img{
+	width: 470px;
+	margin:0 8px; 
+}
+.imgbox4{
+	margin-top: 30px;
+}
+.imgbox4 h3{
+	margin-bottom: 20px;
+}
+.imgboxc{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #000;
+}
+.imgboxcc{
+	display: inline-block;
+	width: 158px;
+	margin: 0 15px;
+
+}
+.imgboxcc img{
+	width: 100%;
+	height: 158px;
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+.imgboxcc p{
+	font-size: 13px;
+	color: #494949;
+	margin: 5px 0;
+	line-height: 20px;
+}
+.imgboxcc span{
+	font-size: 15px;
+	font-weight: bold;
+}
+.imgbox5 img{
+	width: 100%;
+}
+.footer{
+	padding: 20px 0;
+	text-align: center;
+}
