@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #f3f0f0;
+}
+
+.bodyer {
+    width: 995px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.nav {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+}
+
+.nav a {
+    display: inline-block;
+    width: 70px;
+    height: 27px;
+    line-height: 27px;
+    color: #000;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.desbox {
+    padding-top: 15px;
+}
+
+.desbox_left {
+    padding-left: 20px;
+    width: 270px;
+    float: left;
+}
+
+.des_a {
+    font-size: 12px;
+    color: #fff;
+    width: 260px;
+    line-height: 34px;
+    height: 34px;
+    background: url(../images/list_bg_03.gif);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.des_a img {
+    height: 100%;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+}
+
+.desbox_right {
+    float: left;
+    width: 680px;
+    padding-top: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.txt_le {
+    color: rgb(0, 42, 123);
+    font-size: 14px;
+    border-bottom: 2px solid rgb(0, 42, 123);
+    width: 105px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.txt_le img {
+    float: left;
+    height: 30px;
+}
+
+.txt_ri {
+    float: right;
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.txt_ri span {
+    color: #000;
+}
+
+.des_ricont {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.des_ricont a {
+    color: #000;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+}
+
+.des_ricont a:hover {
+    color: red;
+}
+
+.bot span {
+    font-size: 12px;
+    color: #000;
+}
+
+.gray {
+    font-size: 12px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 3px;
+    padding: 2px 4px;
+    background: #fff;
+    color: #ccc;
+    border: solid 1px #AFD5F5;
+    line-height: 14px;
+    width: 34px;
+    display: inline-block;
+}
+.gray1{
+	color: #000;
+}
+.gray2{
+	color: #000;
+}
+.fot{
+	margin-top: 10px;
+	padding: 20px;
+	height: 30px;
+	background: url(../images/foot.gif);
+}
+.fot p{
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+}

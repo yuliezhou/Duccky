@@ -158,3 +158,23 @@ body{
 	width: 100px;
 	color: #fff;
 }
+.rongyao{
+	position: relative;
+	display: inline-block;
+	width: 20%;
+}
+.rongyao a{
+	width: 100%;
+}
+.rongyaox{
+	position: absolute;
+	top:34px;
+	left: 0;
+	display: none;
+	width: 100%;
+	background: #000;
+	z-index: 999;
+}
+.rongyao:hover .rongyaox{
+	display: block;
+}
