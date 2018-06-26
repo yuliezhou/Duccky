@@ -23,6 +23,11 @@ body{
 .banner img{
 	width: 100%;
 }
+
+.logoss{
+	height: 240px;
+	display: none;
+}
 .daohang{
 	background: #1A4963;
 	line-height: 34px;

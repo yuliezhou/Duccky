@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="bodyer">
+		<div class="nav">
+			<a href="index.html">首页</a>
+			<a href="jx.html">我的家乡</a>
+			<a href="xx.html">我的母校</a>
+			<a href="kc.html">所学课程</a>
+			<a href="gh.html">未来规划</a>
+			<a href="lx.html">留言板</a>
+		</div>
+		<div class="banner">
+			<img src="images/c995d143ad4bd113e927cb1750afa40f4bfb0528.jpg" alt="" class="logoss" style="display:block;">
+			<img src="images/f603918fa0ec08fa989943fd5bee3d6d54fbdacb.jpg" alt="" class="logoss">
+		</div>
+		<div class="input1">
+			<input type="text"><button>搜索</button>
+		</div>
+		<div class="imgbox">
+			<h3>郭雅静的个人信息</h3>
+			<div class="imgboxl">
+			</div>
+			<div class="imgboxr">
+				<p>姓名:郭雅静</p>
+				<p>籍贯:江苏南通</p>
+				<p>民 族:汉族</p>
+				<p>出生日期:1997年2月19日</p>
+				<p>所学专业:电子商务</p>
+				<p>求职意向:文案策划</p>
+				<p>毕业院校:南京邮电大学</p>
+			</div>
+		</div>
+		<div class="jj">
+			<h3>个人简介</h3>
+			<p>郭雅静，南京邮电大学2015级管理学院电子商务学生，在校任职团支书，曾获得英语四级六级证书，计算机二级证书，社会实践优秀奖等，专业排名前50%。曾带领班级获得平安班级，先进班集体。</p>
+			<h3>工作经历</h3>
+			<h4>2015.09-05—2019 班级团支书</h4>
+			<p class="ps">
+			1.理安排同学之间交流，沟通，在学习中学会生活，在生活中成长，彼此之间相互帮助。<br/>
+			2.及时完成团委及辅导员安排的工作。</p>
+			<h4>2017.09-09  陪学老师 贝贝帮教育机构</h4>
+			<p class="ps">
+			1.兼职老师，有责任心，在兼职工作中，利用微信公众号推广自己的工作，接触过一定的新媒体。<br/>
+			2.工作中认真严谨守时，具有一定管理能力，很好的与同学沟通学习。</p>
+		</div>
+		<div class="fot">欢迎来到我的个人网站~
+		</div>
+	</div>
+	<audio src="9507.mp3" autoplay="autoplay" loop="loop"></audio>
+</body>
+</html>
+<script type="text/javascript">
+	var m=0;
+	var logoss=document.getElementsByClassName("logoss");
+	var  time=setInterval(function(){
+	    m++;
+	    if(m>=2){
+	        m=0;
+	    }
+	    for(var i=0;i<logoss.length;i++){
+	        logoss[i].style.display="none";
+	    }
+	    logoss[m].style.display="block";
+	},1500);	
+</script>

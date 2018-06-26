@@ -1,0 +1,18 @@
+*{margin:0;padding:0;}
+body{background:#000;}
+.top1{background:#000;height:80px;}
+.top1box{width:1028px;margin:0 auto;padding-top:11px;}
+.imgbox1{width:156px;height:58px;background:url(images/logo.jpg);float:left;}
+.imgbox1:hover{background:url(images/logo2.png);}
+.btnbox{float:right;margin-top:11px;}
+a{text-decoration:none;}
+.top2{height:55px;line-height:55px;text-align:center;background:#13161b;}
+.top2 a{color:#fff;font-weight:bold;padding:0 80px;}
+.top2 a:hover{color:#cea04a;}
+.fot{line-height:50px;color:#fff;text-align:center;background:#13161b;font-size:14px;}
+.xx{width:1028px;color:#fff;margin:0 auto;}
+.xx h3{font-size:30px;font-weight:bold;margin:30px;text-align:center;}
+.xx select{width:200px;height:30px;margin:30px 0;}
+.lplimg{text-align:center;padding-top:80px;padding-bottom:80px;}
+.lplimg img{width:150px;margin:30px;}
+.zdp{text-align:center;line-height:80px;margin-bottom:50px;}
