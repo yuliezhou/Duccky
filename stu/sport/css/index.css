@@ -226,14 +226,27 @@ a{
     width: 780px;
     height: auto;
 }
-.con-rig img{width: 780px;  height: 450px}
+.con-rig .bannerimg{width: 780px;  height: 450px}
 .banner{position: relative;width:780px;height: 450px;}
 .banner .b_main{position: relative;width: 780px;height: 450px;}
 .banner .b_main .b_m_pic{position: relative;width: 780px;height: 450px;}
 .b_main .b_m_pic li{position: absolute;width: 780px;height: 450px;top: 0;left: 0;}
-.banner img{
+.banner .bannerimg{
     display: none;
 }
+#leftbtn{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+#rightbtn{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+.changebtn{width: 20px;cursor: pointer;}
 .b_list ul{position:absolute;right: 40px;bottom: 30px;}
 .b_list ul li{width: 10px;height: 10px;float: left;background: #333;margin-left: 20px;border-radius: 50px;
     border:2px solid white;}

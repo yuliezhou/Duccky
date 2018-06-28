@@ -75,6 +75,8 @@
                     <img src="image/1507059636516.png" class="bannerimg" />
                     <img src="image/1507059612165.png" class="bannerimg" />
                     <img src="image/jpg.jpg" class="bannerimg" />
+                    <img src="image/left.png" alt="" class="changebtn" id="leftbtn">
+                    <img src="image/right.png" alt="" class="changebtn" id="rightbtn">
                 </div>
                 <div class="xinpin">
                    <div class="shangjia"><p>新品上架</p></div>
@@ -160,8 +162,6 @@
     </div>
     <p>2018男鞋新款正品气垫球鞋运动鞋男高帮水泥地耐磨比赛战靴</p>
 </div>
-<script src="js/jquery-1.11.1.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>
 <script type="text/javascript">
@@ -178,7 +178,7 @@ setInterval("showTime()",1000);
 var n= 0;
 var images = document.getElementsByClassName('bannerimg');
 images[0].style.display = 'block';
-setInterval(function() {
+var timer = setInterval(function() {
     images[n].style.display = 'none';
     n = ++n == 3 ? 0 : n;
     images[n].style.display = 'block';
@@ -196,5 +196,29 @@ close.onclick= function(){
 var close1 = document.getElementById('close1');
 close1.onclick= function(){
     input_box.style.display = 'none';
+}
+var leftbtn = document.getElementById('leftbtn');
+var rightbtn = document.getElementById('rightbtn');
+leftbtn.onclick= function(){
+    for(var j=0;j<images.length;j++){
+        images[j].style.display = 'none';
+    }
+    clearInterval(timer)
+    n--;
+    if(n<0){
+        n=2
+    }
+    images[n].style.display = 'block';
+}
+rightbtn.onclick= function(){
+    for(var j=0;j<images.length;j++){
+        images[j].style.display = 'none';
+    }
+    clearInterval(timer)
+    n++;
+    if(n>2){
+        n=0
+    }
+    images[n].style.display = 'block';
 }
 </script>
