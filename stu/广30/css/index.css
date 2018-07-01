@@ -1,0 +1,414 @@
+body{
+	background: #fff;
+	font-family: 'STSong';
+	font-size: 0;
+}
+a{
+	text-decoration: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.bodyer{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.top{
+	background: #191616;
+	height: 90px;
+}
+.logo{
+	float: left;
+}
+.topr{
+	float: right;
+	height: 
+}
+.topr a{
+	color: #fff;
+	font-size: 24px;
+	margin: 0 30px;
+	padding: 0 5px;
+	display: inline-block;
+	margin-top: 45px;
+}
+.idx1{
+	background:#92f7f4;
+	padding: 130px 0; 
+	text-align: center;
+}
+.idximg{
+	height: 385px;
+	width: 530px;
+	position: relative;
+	display: inline-block;
+}
+.idximg img{
+	width: 100%;
+	height: 100%;
+}
+.idximg a{
+	color: #000;
+	font-size: 24px;
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+}
+.idx2{
+	position: relative;
+	background: #2c3535;
+	padding: 25px 0 50px;
+}
+.idx2l{
+	padding-top: 270px;
+	float: left;
+	margin-left: 40px;
+	width: 760px;
+}
+.idx2l_item{
+	float:left;
+	margin-right: 20px;
+}
+.idx2l_item img{
+	width: 190px;
+	margin-top: 40px;
+}
+.idx2l_item h4{
+	color: #00fcfc;
+	margin-top: 85px;
+	margin-bottom: 45px;
+	font-size: 24px;
+}
+.idx2l_item p{
+	font-size: 12px;
+	color: #00fcfc;
+}
+.idx2ar{
+	float: left;
+}
+.idx2l_item2 img{
+	width: 220px;
+	margin-top: 0!important;
+}
+.idx2l_item3 img{
+	margin-top: 88px!important;
+}
+.idxlogo{
+	position: absolute;
+	left: 40px;
+	top: 20px;
+}
+.idx2r{
+	width: 235px;
+	background:#92f7f4;
+	text-align: center; 
+	padding-top: 60px;
+	float: left;
+	padding-bottom: 60px;
+}
+.idx2r img{
+	width: 200px;
+	margin-top: 20px;
+	margin-bottom: 140px;
+}
+.idx2r p{
+	font-size: 12px;
+	text-align: left;
+	color: #000;
+	padding-left: 10px;
+}
+.idx2r .botp{
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 230px;
+}
+.idxrightlogo{
+	position: absolute;
+	top: 25px;
+	right: 60px;
+}
+.idx3inner{
+	margin-top: 190px;
+	margin-bottom: 50px;
+}
+.idx3inner img{
+	height: 330px;
+}
+.idx3inner .in1{
+	width: 500px;
+	margin-left: 55px;
+}
+.in2{
+	width: 235px;
+	margin:  0 35px;
+}
+.in3{width: 290px;}
+.idx3{
+	background: #92f7f4;
+}
+.idx3 p{
+	font-size: 18px;
+	padding-bottom: 130px;
+	padding-left: 100px;
+	font-weight: bold;
+}
+.fot{
+	background: #393d3d;
+	text-align: center;
+}
+.fot .fot_tit{
+	width: 100%;
+}
+.erweima{
+	padding-top: 50px;
+	text-align: center;
+}
+.iconbox{
+	display: inline-block;
+	width: 145px;
+	margin: 0 45px;
+}
+.iconbox img{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.iconbox p{
+	font-size: 24px;
+	color: #fff;
+}
+.fot a{
+	font-size:18px;
+	color: #fff;
+	margin-top: 10px;
+	text-align: center;
+	display: inline-block; 
+	padding-bottom: 130px;
+}
+.top .ac{
+	background: #79e0dd;
+}
+.na1{
+	padding: 75px 0 85px;
+	background: #edcf72;
+	margin-bottom: 100px;
+}
+.na1 img{
+	width: 410px;
+	margin: 0 90px 0 60px; 
+}
+.na1 .naimg2{
+	margin-left: 50px;
+	width: 470px;
+}
+.na2_top{
+	margin-bottom: 40px;
+}
+.na2_top img{
+	width: 445px;
+	float: left;
+	margin-left: 60px;
+}
+.na2toptxt{
+	border:6px solid #9df4ef;
+	width: 540px;
+	margin-left: 40px;
+	padding: 0 15px;
+	float: left;
+}
+.na2toptxt p{
+	font-size: 36px;
+	color: #000;
+	margin: 70px 0;
+}
+.na2toptxt h1{
+	font-size: 48px;
+	color: #000;
+	margin-bottom: 70px;
+	font-weight: bold;
+}
+.na2imgbox{
+	width: 1080px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.na2imgbox img{
+	width: 310px;
+	height: 340px;
+}
+.textareah{
+	font-size: 36px;
+	color: #0e6764;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	margin-left: 60px;
+}
+.textarea1{
+	width: 1080px;
+	height: 125px;
+	border:1px solid #000;
+	margin-left: 60px;
+	margin-bottom: 200px;
+}
+.arh{
+	padding-top: 50px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 37px;
+}
+.arimg{
+	width: 980px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+	margin: 0 auto;
+}
+.arimgitem{
+	width: 420px;
+
+}
+.arimgitem img{
+	width: 420px;
+	height: 400px;
+}
+.arimgitem p{
+	padding-top: 35px;
+	margin-bottom: 45px;
+	font-size: 36px;
+}
+.he1{
+	text-align: center;
+	margin-bottom: 135px;
+}
+.he1 img{
+	width: 400px;
+	height: 440px;
+	margin: 0 60px;
+}
+.he2{
+	padding: 30px 0;
+	background: #9ff4ef;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.he2 img{
+	width: 430px;
+	height: 500px;
+	margin-right: 50px;
+	display: inline-block;
+}
+.he2 p{
+	width: 650px;
+	font-size: 21px;
+	display: inline-block;
+}
+.more{
+	text-align: center;
+	margin-bottom: 120px;
+}
+.more a{
+	display: inline-block;
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 18px;
+	border:3px solid #000;
+	color: #000;
+}
+.reitti{
+	width: 100%;
+}
+.reitti img{
+	width: 100%;
+}
+.renwenbox{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 1120px;
+	margin: 0 auto;
+}
+.ren_item{
+	width: 320px;
+	border:2px solid #666666;
+	margin-bottom: 125px;
+}
+.ren_item img{
+	width: 320px;
+	height: 310px;
+}
+.ren_item p{
+	height: 90px;
+	display: inline-block;
+	padding: 0 45px;
+	width: 230px;
+	color: #000;
+	font-size: 24px;
+	padding-top: 30px;
+}
+.bodyerlgin{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.lotit{
+	margin-top: 80px;
+	width: 465px;
+	padding-bottom: 15px;
+	border-bottom:1px solid #000;
+	font-size: 18px;
+	font-weight: bold;	
+	text-align: center;
+}
+.login1{
+	width: 500px;
+	text-align: center;
+	padding: 15px 0 20px;
+}
+.login1 a{
+	color:#000;
+	font-size: 18px;
+	margin: 0 25px;
+}
+.loinput{
+	width: 500px;
+	height: 70px;
+	border:1px solid #000;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 35px;
+	background: transparent;
+	color: #000;
+}
+.wj{
+	width: 500px;
+	text-align: right;
+	font-size: 18px;
+	padding-top: 5px;
+}
+.login_btn{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border:1px solid #000;
+	line-height: 80px;
+	text-align: center;
+	color: #000; 
+	font-size: 16px;
+}
