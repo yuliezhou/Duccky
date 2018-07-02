@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 0;
+}
+.clear {
+    clear: both;
+}
+.top{
+    height: 50px;
+    padding:20px 0; 
+}
+.top .logo{
+    float: left;margin-left: 20px;
+    height: 100%;
+}
+#timer{
+    font-size: 18px;
+    line-height: 50px;
+    float: right;
+    display: inline-block;
+    height: 50px;
+    padding-right: 30px;
+}
+.bodyer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner .banimg{
+    width: 100%;
+    display: none;
+    height: 340px;
+}
+#leftbtn{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#rightbtn{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.nav{
+    height: 50px;
+    line-height: 50px;
+    background: #0082c3;
+    text-align: center;
+}
+.nav a{
+    display: inline-block;
+    padding: 0 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+.goods{
+    padding:20px 0; 
+}
+.goods img{
+    width: 48%;
+    margin: 0 1%;
+    float: left;
+}
+.goods2{
+    padding:10px 0; 
+}
+.goods2 img{
+    width: 23%;
+    margin:0 1%; 
+    float: left;
+}
+.good3{
+    width: 100%;
+}
+.good3 img{
+    width: 100%;
+    margin: 20px 0;
+}
+.fot{
+    padding:30px 0;
+    background: #f4f3f3; 
+    text-align: center;
+}
+.fot_item{
+    padding:0 150px;
+    display: inline-block;
+}
+.fot_item h3{
+    color: #0584c4;
+    font-size: 16px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+.fot_item a{
+    color: #000;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
