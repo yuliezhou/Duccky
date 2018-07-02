@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test AES</title>
+	<script type="text/javascript" src="crypto-js.min.js"></script>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+    //直接上代码
+   
+    var key = CryptoJS.enc.Utf8.parse('NineTon20181110-');
+    var iv  = CryptoJS.enc.Utf8.parse('-NineTon20181110');
+    var password=CryptoJS.enc.Utf8.parse('{"time": "1529997648","cityid": "WM7C46MEE1DC","cityname": "渝北"}');
+
+
+    var encrypted = CryptoJS.AES.encrypt(password, key, { iv: iv,mode:CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7});  //CryptoJS.pad.ZeroPadding
+	   var encryptedStr=encrypted.ciphertext.toString();
+	   console.log("16:"+encryptedStr);   
+	$.ajax({
+	 	url: 'http://api.weather.nineton.cn/Index/WeatherForecast',
+	 	type: 'POST',
+	 	dataType: 'json',
+	 	data: {
+	 		code: encryptedStr
+	 	},
+	 }).success(function(res) {
+	 	console.log("success");
+	 	console.log(res);
+	 }).fail(function(res) {
+	 	console.log("error");
+	 	console.log(res);
+	 })
+	  
+</script>
+
+</head>
+<body>
+<button onclick="jiami()">加密helloWord</button>
+<textarea id="encrypted"></textarea>
+<textarea id="encrypted1"></textarea>
+</body>
+</html>
