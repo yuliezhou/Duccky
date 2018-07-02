@@ -1,0 +1,344 @@
+body{
+	background: #fff;
+	font-family: 'STSong','微软雅黑';
+	font-size: 0;
+}
+a{
+	text-decoration: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.bodyer{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.clear{
+	clear: both;
+}
+.top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 110px;
+}
+.topr{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.topr a{
+	font-size: 25px;
+	display: inline-block;
+	padding: 0 30px;
+	color: #000;
+}
+.biga{
+	font-size: 30px;
+}
+.search_img{
+	width: 45px;
+	margin-right: 30px;
+}
+.des1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px;
+	width: 950px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.des1 img{
+	width: 240px;
+	height: 175px;
+}
+.des1 .mid_img{
+	width: 310px;
+	height: 200px;
+}
+.title{
+	width: 100%;
+}
+.title img{
+	width: 100%;
+}
+.des2{
+	width: 950px;
+	margin: 0 auto;	
+}
+.des2 img{
+	width: 425px;
+	height: 320px;
+	margin: 0 25px 20px 25px;
+	float: left;
+}
+.des3{
+	width: 1030px;
+	margin: 0 auto;	
+	padding: 40px 0;
+	position: relative;
+}
+.des3 img{
+	width: 580px;
+	float: left;
+}
+.des3_txt{
+	border: 6px solid #7ecef4;
+	border-radius: 6px;
+	padding: 10px 5px;
+	float: left;
+	width: 400px;
+	margin-left: 25px;
+	margin-top: 145px;
+}
+.des3_txt p{
+	color: #000000;
+	font-size: 16px;
+	line-height: 35px;
+	white-space: 2em;
+}
+.guanzhu{
+	text-align: center;
+	padding-bottom: 25px;
+}
+.guanzhu img{
+	width: 100px;
+	margin: 0 35px;
+}
+.fot{
+	background: #343434;
+	padding: 25px 0 35px;
+	text-align: center;
+}
+.fot_itm{
+	margin-right: 40px;
+	float: left;	
+}
+.fot_item1{
+	margin-left: 120px;
+}
+.fot_itm img{
+	float: left;
+	margin-right: 20px;
+	width: 35px;
+}
+.fot_a{
+	float: left;
+}
+.fot_a p{
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.login{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.tit_h2 h2{
+	font-size: 50px;
+	padding: 5px 10px;
+	color: #2a87bd;
+	border:6px solid #a0a0a0;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 60px 0 30px 50px;
+}
+.art1{
+	width: 855px;
+	margin: 0 auto;
+}
+.artimg{
+	width: 100%;
+}
+.art1_txt p{
+	color: #2a87bd;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.art1_txt p span{
+	color: #2a87bd;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	width: 85px;
+	padding-right: 20px;	
+}
+.tit_bot h2{
+	margin: 30px 0 30px 250px;
+}
+.art2_left{
+	margin: 0 50px 0 80px;
+	text-align: center;
+	float: left;
+}
+.art2_left img{
+	width: 250px;
+}
+.art2_left p{
+	color: #070707;
+	padding-top: 10px;
+	font-size: 16px;
+	font-family:'Arial';
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.artdes_p{
+	width: 740px;
+	padding: 30px 5px;
+	border-radius: 5px;
+	border:6px solid #bfbfbf;
+	float: left;
+	margin-top: 60px;
+}
+.artdes_p p{
+	color: #070707;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.acbox{
+	padding-top: 70px;
+	width: 1120px;
+	margin: 0 auto;
+
+}
+.acbox_item{
+	margin-bottom: 60px;
+}
+.acbox img{
+	width: 630px;
+	height: 360px;
+	float: left;
+}
+.ac_itemtxt{
+	padding: 10px 5px;
+	border-radius: 5px;
+	border:6px solid #7ecef4;
+	color: #000;
+	font-size: 16px;
+	line-height: 30px;
+	float: left;
+	width: 400px;
+	font-weight: bold;
+	margin-left: 60px;
+	margin-top: 110px;
+}
+.acbox_item1 .ac_itemtxt{
+	margin-left: 0;
+	margin-right: 60px;
+	padding-top: 40px;
+	margin-top: 135px;
+}
+.bannershop{
+	width: 100%;
+	margin-top: 110px;
+}
+.bannershop img{
+	width: 100%;
+}
+.shoptit{
+	width: 100%;
+}
+.shoptit img{
+	width: 100%;
+}
+.cloth{
+	padding-top: 80px;
+}
+.cloth_img{
+	float: left;
+}
+.cloth_item{
+	margin-bottom: 40px;
+}
+.cloth_img img{
+	width: 100%;
+	width: 300px;
+	height: 315px;
+	border-radius: 5px;
+	border:6px solid #0068b7;	
+}
+.cloimg1{
+	margin-left: 85px;
+	margin-right: 185px;
+}
+.cloimg2{
+	margin-left: 240px;
+	margin-right: 185px;
+}
+.cloth_img p{
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 10px;
+	text-align: center;
+	font-family:'微软雅黑';
+}
+.bannershop1{
+	width: 100%;
+}
+.bannershop1 img{
+	width: 100%
+}
+.dtop_itemp{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #1b1a1b;
+	font-size: 37px;
+	float: left;
+	width: 550px;
+	height: 280px;
+	font-family:'Arial';
+	font-weight: bold;
+
+}
+.dtop_img{
+	width: 650px;
+	height: 280px;
+	float: left;
+}
+.dtop_img img{
+	width: 100%;
+	height: 100%;
+}
+.dtop_itemp1{
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: normal;
+	font-family:'微软雅黑';
+	padding: 30px 30px 0;
+	width: 490px;
+	line-height: 35px;
+}
+.botshop{
+	text-align: center;
+	padding-top: 120px;
+	padding: 120px 60px 0;
+}
+.botshop img{
+	width: 250px;
+	margin: 0 55px 125px; 
+}
+.dtop{
+	margin-top: 110px;
+}

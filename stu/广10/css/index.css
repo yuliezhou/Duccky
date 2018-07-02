@@ -1,0 +1,311 @@
+body{
+	background: #fff;
+	font-family: '微软雅黑';
+	font-size: 0;
+}
+a{
+	text-decoration: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.topa .ac{
+	color: #e5b029;
+}
+.bodyer{
+	width: 1650px;
+	margin: 0 auto;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.top{
+	height: 105px;
+	line-height: 105px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #f0ffc0;
+	font-family: 'STSong';
+}
+.top img{
+	width: 285px;
+	height: 105px;
+}
+.topa{
+	padding-right: 140px;
+}
+.topa a{
+	color: #897542;
+	font-size: 30px;
+	padding:  0 15px;
+	margin-top: 40px;
+	display: inline-block;
+}
+.idx1{
+	margin: 10px 0;
+	padding-bottom: 60px;
+}
+.inner{
+	width: 1400px;
+	margin: 0 auto;
+}
+.idx1 img{
+	width: 900px;
+	margin-right: 60px;
+	float: left;
+}
+.idx1imgbox{
+	width: 425px;
+	float: left;
+}
+.idx1imgbox img{
+	width: 425px;
+	display: block;
+	float: none;
+}
+.idx1imgbox h4{
+	color: #897542;
+	font-size: 30px;
+	margin-top: 25px;
+	text-align: center;
+	display: block;
+}
+.idx2{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.idx2imgbox{
+	float: left;
+	width: 430px;
+}
+.idx2p{
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.idx2p p{
+	color: #897542;
+	font-size: 30px;
+	padding: 5px 0;
+}
+.idx3left{
+	float: left;
+	width: 430px;
+	margin-right: 40px;
+}
+.idx3left img{
+	width: 100%;
+}
+.idx3left h3{
+	color: #ff6666;
+	font-size: 33px;
+	text-align: center;
+	padding-top: 65px;
+	font-weight: normal;
+}
+.idx3right{
+	width: 920px;
+	height: 600px;
+	float: left;
+}
+.idx3right img{
+	width: 100%;
+	height: 100%;
+
+}
+.fot{
+	background: #ccb387;
+	padding-bottom: 50px;
+	font-family: 'STSong';
+}
+.fot1{
+	text-align: center;
+	padding-top: 50px;
+}
+.fot1 a{
+	color: #fff;
+	font-size: 15px;
+	padding: 0 150px;
+	text-align: center;
+}
+.fot p{
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 20px;
+}
+.art1{
+	background: url(../images/back_02.gif) 0 0 no-repeat;
+}
+.artimg1{
+	width: 1385px;
+	margin-left: 170px;
+	margin-top: 25px;
+}
+.art1 h2{
+	padding: 70px 0 40px;
+	font-size: 30px;
+	text-align: center;
+}
+.art1 p{
+	font-size: 26px;
+	color: #000;
+	line-height: 60px;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	width: 1250px;
+	display: block;
+	letter-spacing: 10px;
+}
+.artbotimg{
+	width: 800px;
+	height: 580px;
+	float: left;
+	margin-left: 70px;
+}
+.art_bottxt{
+	float: right;
+	width: 770px;
+	position: relative;
+	margin-top: 320px;
+}
+.titart{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.art_bottxt p{
+	color: #000;
+	font-size: 15px;
+	margin-bottom: 30px;
+	padding-left: 50px;
+	line-height: 35px;
+	font-weight: bold;
+}
+.art_bottxt p span{
+	width: 70px;
+	font-size: 15px;
+}
+.abart{
+	position: absolute;
+	top: 90px;
+	right: 60px;
+}
+.artbot{
+	padding-bottom: 150px;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.acinner{
+	width: 1345px;
+	margin: 0 auto;
+	text-align: center;
+}
+.acinner h2{
+	font-size: 74px;
+	color: #070606;
+	padding: 40px 0;
+	text-align: center;
+	font-weight: normal;
+}
+.acinner p{
+	color: #84784e;
+	font-size: 40px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.acinnerimg{
+	width: 100%;
+}
+.fleximg{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-bottom: 140px;
+}
+.fleximg img{
+	width: 310px;
+}
+.more{
+	display: inline-block;
+	width: 280px;
+	line-height: 60px;
+	height: 60px;
+	background: #f5f5f5;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 90px;
+	font-weight:bold;
+}
+.combox{
+	width: 100%;
+	height: 950px;
+	background: url(../images/co_02.gif) 0 0 no-repeat;
+	background-size: cover;
+}
+.searchi{
+	padding-top: 670px;
+	width: 100%;
+	text-align: center;
+	font-size: 33px;
+	font-family: 'STSong';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.searchi input{
+	width: 470px;
+	height: 40px;
+	border-radius: 5px;
+	margin-left: 20px;
+    background: none;
+    outline: none;
+    border: 1px solid #000;
+
+}
+.shopbanner{
+	width: 100%;
+}
+.shopbanner img{
+	width: 100%;
+}
+.shopbot{
+	background:#f8ffe2;
+	padding-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+.shopbotinner{
+	background:#fff;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 670px;
+}
+.shopbotinner img{
+	margin-bottom: 10px;
+	width: 200px;
+}
+.shopbotinner .botimg{
+	width: 100%;
+}
+.foodbanner{
+	width: 100%;
+}
+.foodbanner img{
+	width: 100%;
+}
