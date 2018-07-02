@@ -172,3 +172,42 @@ body{
     right: 0;
     font-size: 14px;
 }
+.det{
+    padding: 50px;
+}
+.detl{
+    float: left;
+    width: 500px;
+}
+.detl img{
+    width: 100%;
+}
+.detr{
+    float: left;
+    width: 550px;
+    margin-left: 50px;
+}
+.detr h3{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.detr p{
+    font-size: 14px;
+    color: #000;
+    line-height: 35px;
+}
+.det_item{
+    width: 100%;
+    font-size: 20px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.det_item span{
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    padding-left: 50px;
+}
