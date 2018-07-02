@@ -33,6 +33,7 @@ body{
 .bodyer{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 .banner{
     width: 100%;
@@ -49,6 +50,7 @@ body{
     top: 50%;
     margin-top: -10px;
     cursor: pointer;
+    width: 20px;
 }
 #rightbtn{
     position: absolute;
@@ -56,6 +58,7 @@ body{
     top: 50%;
     margin-top: -10px;
     cursor: pointer;
+    width: 20px;
 }
 .nav{
     height: 50px;
@@ -70,8 +73,32 @@ body{
     color: #fff;
     font-size: 16px;
 }
+.rea{
+    position: relative;
+     display: inline-block;
+    padding: 0 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;   
+}
 .goods{
     padding:20px 0; 
+}
+.rea:hover .aba{
+    display: block;
+}
+.aba{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #0082c3;
+    display: none;
+}
+.aba a{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
 }
 .goods img{
     width: 48%;
@@ -113,4 +140,35 @@ body{
     font-size: 14px;
     display: block;
     text-align: left;
+}
+.ad{
+    position: fixed;
+    width: 250px;
+    bottom: 100px;
+    right: 0;
+}
+.ad img{
+    width: 250px;
+}
+.ad p{
+    color: #000;
+    font-size: 14px;
+    background: #eee;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+}
+.imgb{
+    position: relative;
+}
+.ad span{
+    color: #fff;
+    background: #000;
+    text-align: center;
+    width: 50px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
 }

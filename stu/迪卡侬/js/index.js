@@ -14,41 +14,37 @@
         n = ++n == 3 ? 0 : n;
         images[n].style.display = 'block';
     }, 2000);
-    // var login = document.getElementById('login');
-    // var input_box = document.getElementById('input_box');
-    // login.onclick= function(){
-    //     input_box.style.display = 'block';
-    // }
-    // var close = document.getElementById('close');
-    // var ad = document.getElementById('ad');
-    // close.onclick= function(){
-    //     ad.style.display = 'none';
-    // }
-    // var close1 = document.getElementById('close1');
-    // close1.onclick= function(){
-    //     input_box.style.display = 'none';
-    // }
     var leftbtn = document.getElementById('leftbtn');
     var rightbtn = document.getElementById('rightbtn');
-    leftbtn.onclick= function(){
-        for(var j=0;j<images.length;j++){
+    leftbtn.onclick = function() {
+        for (var j = 0; j < images.length; j++) {
             images[j].style.display = 'none';
         }
         clearInterval(timer)
         n--;
-        if(n<0){
-            n=2
+        if (n < 0) {
+            n = 2
         }
         images[n].style.display = 'block';
     }
-    rightbtn.onclick= function(){
-        for(var j=0;j<images.length;j++){
+    rightbtn.onclick = function() {
+        for (var j = 0; j < images.length; j++) {
             images[j].style.display = 'none';
         }
         clearInterval(timer)
         n++;
-        if(n>2){
-            n=0
+        if (n > 2) {
+            n = 0
         }
         images[n].style.display = 'block';
+    }
+    var input_box = document.getElementById('input_box');
+    var close = document.getElementById('close');
+    var ad = document.getElementById('ad');
+    close.onclick = function() {
+        ad.style.display = 'none';
+    }
+    var close1 = document.getElementById('close1');
+    close1.onclick = function() {
+        input_box.style.display = 'none';
     }
