@@ -41,10 +41,13 @@
     var input_box = document.getElementById('input_box');
     var close = document.getElementById('close');
     var ad = document.getElementById('ad');
+    var ad1 = document.getElementById('ad1');
     close.onclick = function() {
         ad.style.display = 'none';
+        ad1.style.display = 'none';
     }
     var close1 = document.getElementById('close1');
     close1.onclick = function() {
-        input_box.style.display = 'none';
+        ad.style.display = 'none';
+        ad1.style.display = 'none';
     }
