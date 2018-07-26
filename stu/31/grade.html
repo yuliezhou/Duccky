@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)http://118.190.124.212:8620/tip/resultquery.do?method=fwdResultQueryPage&ksid=62018071910000000078 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>成绩查询..甘肃省三支一扶考试笔试成绩查询</title>
+
+<script type="text/javascript" src="./成绩查询..甘肃省三支一扶考试笔试成绩查询_files/jquery.min.js.下载"></script>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Microsoft Yahei', STHeiti, sans-serif;
+	color: #000;
+	font-size: 14px;
+}
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,p {
+	padding: 0;
+	margin: 0
+}
+
+ul,li {
+	list-style: None
+}
+
+ol li div input {
+	height: 28px; *
+	height: 27px;
+	line-height: 27px;
+	width: 230px;
+	border-radius: 5px;
+	border: solid 1px #a9a9a9;
+	padding: 0 5px
+}
+
+.tssmxx {
+	float: left;
+	width: 220px;
+	margin-left: 40px;
+	text-align: left;
+	margin-top: 20px
+}
+
+.tssmxx .tssmxxtitle {
+	font-size: 18px;
+	padding: 8px 0 20px 40px;
+	border-bottom: #ddd solid 1px;
+	margin-bottom: 30px;
+	position: relative
+}
+
+.tssmxx .tssmxxtitle i {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	height: 10px;
+	width: 10px;
+	background-color: #fe8500
+}
+
+.tssmxx ul li {
+	padding-left: 20px;
+	line-height: 200%;
+	margin-bottom: 20px
+}
+
+.btndiv {
+	clear: both;
+	text-align: center;
+}
+
+.btndiv input,.btndiv button {
+	background-image: none;
+	background-color: #3083c7;
+	color: #fff;
+	font-weight: bold;
+	width: 100px;
+	height: 35px;
+	line-height: 29px;
+	padding: 0;
+	border-radius: 2px;
+	border: 0;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.tips {
+	position: absolute;
+	color: red;
+	top: 3px;
+	width: 200px;
+	font-style: normal
+}
+
+#img_verifys {
+	height: 30px;
+	width: 95px;
+	margin: 0 5px
+}
+
+#formcon ol li {
+	clear: both;
+	float: left;
+	width: 100%;
+	position: relative
+}
+
+#formcon ol li.tip_n {
+	margin: 3px 0 5px;
+	color: #a7a7a7;
+}
+
+#formcon ol li span {
+	float: left;
+	width: 125px;
+	text-align: right;
+	line-height: 30px
+}
+
+#formcon ol li div {
+	float: left;
+	margin-left: 10px;
+	height: 30px;
+	overflow: hidden
+}
+
+#formcon ol li div a {
+	float: right;
+	margin-left: 5px
+}
+
+#formcon ol {
+	margin: 0 auto;
+	width: 450px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<div style="width: 1200px; height: 100px; margin: 0 auto; border-bottom: 3px #3083c7 solid; clear: both;">
+			<div style="float: left; margin-left: 20px;">
+				<img src="./成绩查询..甘肃省三支一扶考试笔试成绩查询_files/query.jpg" style="width: 90px; height: 90px; margin-top: 7px;">
+			</div>
+			<div style="float: left; font-size: 30px; font-weight: bold; margin-left: 20px; color: #005FA9; padding-top: 39px;">
+				成绩查询</div>
+		</div>
+		<div style="width: 1200px; margin: 0 auto; padding: 37px 0 75px 0;">
+			<div style="width: 1200px; margin: 0 auto;">
+				<div style="width: 815px; float: left; position: relative; padding-right: 50px; border-right: 1px solid rgb(221, 221, 221); margin: 0px 0px 60px; display: none;" id="queryCon">
+					<div style="color: #3083c7; font-size: 22px; text-align: center; margin: 40px 0">
+						甘肃省三支一扶考试笔试成绩查询</div>
+					
+						
+							
+								
+									<p class="h2" style="font-size: 14px; margin-bottom: 35px; text-align: center; margin-top: -20px">
+										成绩查询时间：2018年07月20日 09:00:00
+										到
+										2018年08月01日 00:00:00
+										。
+									</p>
+								
+							
+						
+					
+					<div id="formcon">
+						<ol>
+							
+							<li><span>证件号码：</span>
+								<div>
+									<input type="text" id="yxzjhm" onblur="checkNull(this);" onchange="checkNull(this);" autocomplete="off">
+								</div> <em class="tips" id="yxzjhm_tips">*</em></li>
+							<li><br></li>
+							
+							<li><span>姓名：</span>
+								<div>
+									<input type="text" id="xm" onblur="checkNull(this);" onchange="checkNull(this);" autocomplete="off">
+								</div> <em class="tips" id="xm_tips">*</em></li>
+							<li><br></li>
+							
+							<li style="margin-bottom: 5px"><span>验证码：</span>
+								<div>
+									<input type="text" style="width: 93px; float: left" id="tpyzm" autocomplete="off" maxlength="4" onkeydown="f_keydown();">
+									<a href="javascript:f_changeToken();">看不清？</a> <a href="javascript:f_changeToken();" style="float: left &#39;"><img id="img_tpyzm" src="./成绩查询..甘肃省三支一扶考试笔试成绩查询_files/stdlogin.do" alt="点击获取"> </a>
+								</div> <em class="tips" id="tpyzm_tips">*</em></li>
+							<li><input type="hidden" id="ksid" value="62018071910000000078"> <br>
+							</li>
+							<div class="clear"></div>
+						</ol>
+						<div class="btndiv">
+							
+								
+									<input type="button" value="重  填" onclick="btnClearClick();"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="查  询" onclick="btnQueryClick();">
+								
+								
+							
+						</div>
+					</div>
+				</div>
+				<div style="width: 865px; float: left; position: relative; border-right: 1px solid rgb(221, 221, 221);" id="printDiv">
+					<div id="printContent" style="width: 860px; margin: 0 auto; text-align: center;"><iframe id="frmPrinter" scrolling="auto" frameborder="0" src="if.html" style="width:95%;height:100%;min-height:640px;border:1px solid #ddd;"></iframe></div>
+					<div class="btndiv">
+						<input type="button" value="重新查询" onclick="btnReturnClick();">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="打印成绩单" onclick="btnPrintClick();">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="tssmxx">
+					<div class="tssmxxtitle">
+						<i></i>操作说明
+					</div>
+					<ul>
+						<li style="color: red;"></li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	</div>
+	<div style="color:#303D5D;position: fixed;bottom: 7px;text-align: center;width: 100%;background: #f4f4f4;">
+		<p>  甘肃省·甘肃省考试一体化平台</p>
+		<p>Copyright ©2018 诺码信科技有限公司(nomax.com) All Rights Reserved</p>
+		
+		<span><img src="./成绩查询..甘肃省三支一扶考试笔试成绩查询_files/std_dh.png" style="margin-top: -4px;">&nbsp;技术支持电话：0531-88097900</span>
+		
+	</div>
+
+<script type="text/javascript">
+	$(function() {
+		$("#formcon input[type='text']:first").focus();
+	});
+
+	// 更换验证码
+	function f_changeToken() {
+		// 重载验证码
+		var obj = document.getElementById('img_tpyzm');
+		$("#img_tpyzm").attr("src","stdlogin.do?method=getLoginValidateImg&r=" + Math.random());
+	}
+
+	//检查空
+	function checkNull(obj) {
+		var value = $(obj).val();
+		var id = $(obj).attr("id");
+		if (null == value || "" == value) {
+			$("#" + id + "_tips").text("该项不允许为空，请认真填写。");
+			return false;
+		} else {
+			$("#" + id + "_tips").text("*");
+			return true;
+		}
+	}
+	
+	function f_keydown() {
+		if (event.keyCode==13){
+		    btnQueryClick();
+		}
+	}
+
+	//清空
+	function btnClearClick() {
+		$("#formcon input[type='text']").val("");
+		f_changeToken();
+		$("#formcon input[type='text']:first").focus();
+	}
+	
+	//返回
+	function btnReturn() {
+		location.href = "resultquery.do?method=fwdResultQueryListPage";
+	}
+
+	//查询
+	function btnQueryClick() {
+		var isNotNull = false;
+		$("#formcon input[type='text']").each(function() {
+			if (!checkNull(this)) {
+				isNotNull = true;
+			}
+		});
+		if (isNotNull) {
+			$("#formcon input[type='text']:first").focus();
+			return;
+		}
+		var queryColm = {};
+		$("#formcon input[type='text']").each(function() {
+			queryColm[$(this).attr("id")] = $(this).val();
+		});
+		queryColm["ksid"] = $("#ksid").val();
+		showLoading();
+		$.ajax({
+			type: "post",
+			async: true,
+			url: "resultquery.do?method=queryResultInfo",
+			data: queryColm,
+			dataType: "text",
+			success: function(responseText) {
+				hideLoading();
+				f_changeToken();
+				if (checkException(responseText)) {
+					showException(responseText);
+					return false;
+				}
+				$("#printDiv").data("printdata", responseText);//设置打印内容
+				var frmHeight = $(window).height() - 270;
+				if(frmHeight < 400){
+					frmHeight = 400;
+				}
+				var framestr = "<iframe id='frmPrinter' scrolling=\"auto\" frameborder=\"0\" "
+				+ "src=\"certprint.do?method=fwdPrinterPageFrame&printerid=printDiv&frameid=" + Math.random() + "\" "
+				+ "style=\"width:95%;height:100%;min-height:"+frmHeight+"px;border:1px solid #ddd;\"></iframe>";
+				$("#printContent").html(framestr);//展示打印页面
+				$("#queryCon").hide();
+				$("#printDiv").show();//切换展示
+			},
+			complete: function(xhr, status) {
+				hideLoading();
+				f_changeToken();
+				if ("success" != status) {
+					alert("请求出错：[" + status + "]" + xhr.status + ":" + xhr.statusText);
+				}
+			}
+		});
+	}
+
+	// 整个页面的等待mask-展示
+	function showLoading() {
+		if ($("#sys_loading_mask_div").length <= 0) {
+			var divstr = "<div id=\"sys_loading_mask_div\" style=\"background: #ccc;position: absolute;left: 0;top: 0;width: 100%;height: 100%;filter: alpha(opacity = 40);opacity: 0.40;display: block;overflow: hidden;z-index: 999999999999;background-image: url('frame/imgs/loading.gif');background-repeat: no-repeat;background-position: center center;\"><input id='sys_loading_mask_div_focus_input' style=\"position: absolute;left:-200px;top:-200px;\" type=\"text\"/></div>";
+			$("body").append(divstr);
+		} else {
+			$("#sys_loading_mask_div").show();
+		}
+		$("#sys_loading_mask_div_focus_input").focus();
+	}
+
+	// 整个页面的等待mask-取消
+	function hideLoading() {
+		if ($("#sys_loading_mask_div").length > 0) {
+			$("#sys_loading_mask_div").hide();
+		}
+	}
+
+	// 检查请求结果是发生了异常
+	function checkException(responseText) {
+		if ("string" == typeof responseText) { // 解决火狐浏览器下的相关问题。-yjc.2015年8月28日
+			if (responseText.indexOf("<!--\r\n//errmsgsign_20150603_grace.easyFrame\r\n-->") >= 0) {
+				return true; // 存在异常
+			} else {
+				return false; // 无异常
+			}
+		} else {
+			return false;
+		}
+	}
+
+	// 处理异常信息
+	function showException(reponseText) {
+		if ($("#sys_errmsg_con_div").length <= 0) {
+			$("body").append("<div id=\"sys_errmsg_con_div\"></div>");
+		}
+		$("#sys_errmsg_con_div").html(reponseText);
+	}
+
+	//返回
+	function btnReturnClick(){
+		window.location.href='login.html';
+	}
+
+	//打印操作
+	function btnPrintClick(){
+		var frameid = "frmPrinter";
+		if ($.browser.msie) {// ie浏览器
+			window.frames[frameid].focus();
+			window.frames[frameid].print();
+		} else if (!!window.ActiveXObject || "ActiveXObject" in window) { // IE11的特殊判断
+			window.frames[frameid].focus();
+			window.frames[frameid].print();
+		} else {
+			var frame = $("#" + frameid).get(0);
+			frame.focus();
+			frame.contentWindow.print();
+		}
+	}
+</script>
