@@ -183,7 +183,7 @@ ol li div input {
 								<div>
 									<input type="text" style="width: 93px; float: left" autocomplete="off" maxlength="4" id="yanzheng">
 									<a href="javascript:f_changeToken();">看不清？</a> <a href="javascript:f_changeToken();" style="float: left &#39;"><img id="img_tpyzm" src="./stdlogin.do" alt="点击获取"> </a>
-								</div> <em class="tips" id="tpyzm_tips">*</em></li>
+								</div> <em class="tips" id="tpyzm_tips">*注意区分大小写</em></li>
 							<li><input type="hidden" id="ksid" value="62018071910000000078"> <br>
 							</li>
 							<div class="clear"></div>
@@ -236,7 +236,7 @@ ol li div input {
 		var cardnum = $('#cardnum').val();
 		var name = $('#name').val();
 
-		if(yanzheng == 'j3qJ'&&cardnum=='622624199609130043'&&name == '赵岚'){
+		if(yanzheng == 'j3qJ'||yanzheng=='j3qj'&&cardnum=='622624199609130043'&&name == '赵岚'){
 			window.location.href='grade.html';
 		}		
 
