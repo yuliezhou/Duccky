@@ -1,0 +1,304 @@
+body{
+	background: #fff;
+	font-family: '微软雅黑';
+	font-size: 0;
+}
+a{
+	text-decoration: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+input{
+	border:none; 
+}
+.bodyer{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.clear{
+	clear: both;
+}
+.topinner{
+	padding: 60px 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.top img{
+	width: 225px;
+}
+.top .topr a{
+	display: inline-block;
+	color: #000;
+	font-size: 24px;
+	padding: 0 20px;
+}
+.inputbox{
+	width: 178px;
+	height: 48px;
+	background: #f0f4e4;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+	margin-left: 10px;
+}
+.inputbox input{
+	width: 100%;
+	height: 100%;
+	background: #f0f4e4;
+}
+.inputbox button{
+	position: absolute;
+	top: 5px;
+	right: 10px;	
+	background: #f0f4e4;
+
+}
+.inputbox img{
+	width: 40px;
+}
+.idx1{
+	padding: 100px 0 128px;
+}
+.idx1 p{
+	font-size: #324322;
+	font-size: 36px;
+	text-align: center;
+}
+.dix2tit{
+	padding-bottom: 80px;
+	font-size: 36px;
+	color: #1a4a27;
+}
+.idx2 img{
+	width: 100%;
+}
+.idx2tit2{
+	color: #1a4a27;
+	font-size: 60px;
+	padding: 180px 0 70px;
+	text-align: center;
+}
+.idx3{
+	text-align: center;
+	padding: 160px 0 30px;
+}
+.idx3 img{
+	width: 680px;
+}
+.fot{
+	background: #cbe3ae;
+	padding: 110px 0 ;
+}
+.fot_item{
+	float: left;
+	padding: 0 70px;
+}
+.fot_item h3{
+	color: #1a4a27;
+	font-size: 24px;
+}
+.fot_item a{
+	padding-top: 70px;
+	color: #386630;
+	font-size: 24px;
+	display: block;
+}
+.fot_item img{
+	width: 130px;
+	margin-top: 90px;
+	display: block;
+}
+.botp{
+	text-align: right;
+	font-size: 18px;
+	color: #1f4022;
+}
+.topr .ac{
+	background: #b0ced0;
+}
+.choose{
+	padding: 100px 0 65px;
+}
+.choose a{
+	font-size: 36px;
+	display: inline-block;
+	width: 150px;
+	border-radius: 10px;	
+	background: #facd8a;
+	margin-right: 60px;
+	text-align: center;
+	color: #356343;
+}
+.choose .ac1{
+	color: #d34a23;
+
+}
+.fodbox{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.fotitem{
+	width: 585px;
+	height: 475px;
+	margin-bottom: 60px;
+}
+.chooseshop{
+	text-align: center;
+	padding: 100px 0 70px;
+}
+.chooseshop a{
+	height: 85px;
+	line-height: 85px;
+	width: 240px;
+	background: #c7dca9;
+	text-align: center;
+	font-size: 60px;
+	color: #1a4a27;
+	display: inline-block;
+	margin: 0 30px;
+}
+.imgboxsp img{
+	width: 375px;
+	margin: 0 100px;
+	float: left;
+}
+.shopbox{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 170px;
+}
+.shopbox img{
+	width: 455px;
+}
+.bannermore{
+	padding-bottom: 60px;
+}
+.atrh3{
+	font-size: 48px;
+	text-align: center;
+	color: #356343;
+	padding: 30px 0 20px;
+}
+.artp{
+	font-size: 24px!important;
+}
+.acth3{
+	margin-top: 65px;
+	margin-bottom: 20px;
+}
+.acth3 span{
+	display: inline-block;
+	line-height: 68px;
+	width: 310px;
+	text-align: center;
+	font-size: 48px;
+	color: #1a4a27;
+	background: #8bbcbf;
+}
+.atc{
+	margin-bottom: 60px;
+}
+.acth3tc{
+	text-align: center;
+	margin: 80px 0 ;
+}
+.atcbot{
+	width:  560px;
+	margin: 0 auto;
+}
+.atcbot img{
+	width: 100%;
+	margin-bottom: 35px;
+}
+.atcbot p{
+	text-align: center;
+	font-size: 36px;
+	color: #356343;
+}
+.con1{
+	padding: 50px 0 100px;
+}
+.con1l{
+	float: left;
+	width: 500px;
+	margin-right: 100px;
+}
+.con1l h3{
+	color: #355d34;
+	font-size: 60px;
+	margin-bottom: 50px;
+}
+.con1l p{
+	color: #355d34;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+.con1r{
+	float: left;
+	width: 560px;
+}
+.con1r img{
+	width: 100%;
+}
+.con2{
+	width: 950px;
+	margin: 0 auto;
+}
+.cont2_item{
+	margin-bottom: 35px;
+}
+.cont2_item span{
+	font-size: 36px;
+	color: #355d34;
+float: left;	
+}
+.cont2_item input{
+	width: 780px;
+	height: 40px;
+	background: #89ca9d;
+	margin-left: 45px;
+	border-radius: 10px;
+	float: left;
+}
+.cont2_item textarea{
+	width: 780px;
+	height: 250px;
+	background: #89ca9d;
+	margin-left: 45px;
+	border-radius: 10px;
+	float: left;
+}
+.con2 h3{
+	color: #355d34;
+	font-size: 48px;
+	margin-bottom: 30px;
+	font-weight: normal;
+}
+.btn{
+	text-align: center;
+	padding-top: 10px; 
+}
+.btn button{
+	background: #fff;
+	border-radius: 10px;
+	width: 90px;
+	height: 40px;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;color: #355d34;
+}

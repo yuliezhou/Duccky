@@ -1,0 +1,31 @@
+.msboxp h3{
+	padding: 50px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+.msboxc{
+	width: 100%;
+	margin-bottom: 30px;
+	height: 300px;
+}
+.msboxc img{
+	width: 450px;
+	float: left;
+	height: 300px;
+}
+.msboxc .msp{
+	width: 500px;
+	padding-left: 50px;
+	float: left;
+}
+.msp h4{
+	font-size: 24px;
+	padding: 15px 0;
+	color: #ff8a00;
+	text-align: left;
+}
+.msp p{
+	line-height: 25px;
+	font-size: 14px;
+}
