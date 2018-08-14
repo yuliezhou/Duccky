@@ -1,0 +1,16 @@
+//转换观看人数
+function formatSum(sum) {
+    var sum  = parseInt(sum);
+    var sumTxt;
+    if(sum>10000){
+        sumTxt = parseFloat(sum/10000).toFixed(2)+'万';
+    }else{
+        sumTxt = sum;
+    }
+    return sumTxt;
+}
+
+
+module.exports = {
+    formatSum:formatSum
+}
