@@ -1,0 +1,21 @@
+@colorA:'red';
+div{
+    color:@colorA
+}
+.container{
+    display: flex;
+    .nav_left{
+        width: 15%;
+        min-width: 100px;
+        height: calc(100vh); 
+        background: red;
+    }
+    .main{
+        height: calc(100vh);
+        flex: 1;
+    }
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}
