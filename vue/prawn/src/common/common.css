@@ -1,0 +1,24 @@
+.flex{
+    display: flex
+}
+
+.flex_jus_center{
+    display: flex;
+    justify-content: center;
+}
+.flex_ali_center{
+    display: flex;
+    align-items: center;
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_jus_ali{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tc_center{
+    text-align: center
+}
