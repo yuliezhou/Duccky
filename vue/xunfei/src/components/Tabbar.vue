@@ -2,6 +2,7 @@
 	<div class="tabberWarp" >
 		<div class="warp">
 			<Item :txt='item.txt' :page='item.page' @change='getVal' v-for='item in tabbarDes':sel='selected'>
+
 				<img :src="item.normalImg" slot='normalImg'>
 				<img :src="item.activeImg" slot='activeImg'>
 			</Item>

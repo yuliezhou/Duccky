@@ -7,7 +7,8 @@
 	export default {
 		props:{
 			col:{
-				default:'#fff'
+				type:String,
+				default:'#000'
 			}
 		}
 	}

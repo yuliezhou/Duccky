@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <Tabber></Tabber>
+    <Tabbar></Tabbar>
     <div class="empty"></div>
   </div>
 </template>
 
 <script>
-import Tabber from'./components/tabber'
+import Tabbar from'./components/tabbar'
 export default {
   name: 'app',
   created:function(){
     this.$router.push('/')
   },
   components:{
-    Tabber
+    Tabbar
   }
 }
 </script>
