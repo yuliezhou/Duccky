@@ -1,0 +1,164 @@
+.course_choose{
+	height: 100rpx;
+	width: 698rpx;
+	margin-bottom: 20rpx;
+	background: #fff;
+	padding: 0 26rpx;
+}
+.course_choose_item{
+	text-align: center;
+	height: 56rpx;
+	width: 216rpx;
+	line-height: 56rpx;
+	color: #4C4252;
+	font-size: 28rpx;
+	background: #F5F5F5;
+	border-radius: 4rpx;
+}
+.course_ac{
+	background: linear-gradient(120deg,rgba(255,220,132,1) 0%,rgba(255,183,76,1) 100%);
+	color: #fff;
+}
+
+.course_item{
+	background: #fff;
+	margin-bottom: 20rpx;
+}
+.course_item_top{
+	height: 60rpx;
+	border-bottom: 1rpx solid #E5E5E5;
+}
+.course_top_date{
+	color: #919191;
+	font-size: 26rpx;
+	padding-left: 24rpx;
+}
+.course_top_week{
+	color: #FFBA52;
+	font-size: 26rpx;
+	padding-right: 24rpx;
+}
+.course_item_bot{
+	padding: 18rpx 0;
+}
+.course_timer{
+	height: 112rpx;
+	line-height: 112rpx;
+	width: 194rpx;
+	text-align: center;
+	border-right: 1rpx solid #E5E5E5;
+	font-weight: bold;
+	font-size: 56rpx;
+}
+.course_des{
+	width: 270rpx;
+	padding-left: 26rpx;
+}
+.course_title{
+	width: 100%;
+	color: #282828;
+	font-size: 28rpx;
+}
+.course_p{
+	width: 100%;
+	color: #919191;
+	font-size: 22rpx;
+	margin-top: 8rpx;
+}
+.course_span{
+	width: 100%;
+	color: #919191;
+	font-size: 22rpx;
+}
+.course_bot_right{
+	padding-right:26rpx;
+}
+.view_btn{
+	background: linear-gradient(120deg,rgba(255,220,132,1) 0%,rgba(255,183,76,1) 100%);
+	border-radius: 36rpx;
+	text-align: center;
+	height: 56rpx;
+	line-height: 56rpx;
+	width: 160rpx;
+	color: #fff;
+	font-size: 24rpx;
+}
+.no_view{
+	background: #C2C6D0;
+}
+.modal{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.6);
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+.modal_inner{
+	width: 608rpx;
+	height: 822rpx;
+	position: relative;
+}
+.modal_back{
+	width: 608rpx;
+	height: 822rpx;
+}
+.modal_inner image{
+	width: 100%;
+	height: 100%;
+}
+.modal_des_ab{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+} 
+.modal_des_top{
+	width: 100%;
+	height: 244rpx;
+}
+.modal_course_name{
+	color: #fff;
+	font-size: 36rpx;
+}
+.modal_course_timer{
+	font-size: 56rpx;
+	font-weight: 500;
+	color: #fff;
+	padding: 4rpx 0 ;
+}
+.modal_course_area{
+	color: #fff;
+	font-size: 26rpx;
+}
+.modal_des_bot{
+	height: 578rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.modal_des_bot text{
+	font-size: 24rpx;
+	color: #919191;
+	margin: 46rpx 0 20rpx;
+}
+.modal_des_bot image{
+	width: 292rpx;
+	height: 292rpx;
+	margin-bottom: 50rpx;
+}
+.spot{
+	color: #919191;
+	font-size: 28rpx;
+}
+.spot text{
+	color: #4A4A4A;
+	font-size: 32rpx;
+}
+.close{
+	margin-top: 40rpx;
+	width: 80rpx;
+	height: 80rpx;
+}

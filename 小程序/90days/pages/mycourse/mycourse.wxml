@@ -1,26 +1,100 @@
 <view class="course_choose flex_between">
-  <view class="course_choose_item {{courseIdx == 1?'course_ac':''}}">xx</view> 
-  <view class="course_choose_item {{courseIdx == 2?'course_ac':''}}">xx</view> 
-  <view class="course_choose_item {{courseIdx == 3?'course_ac':''}}">xx</view> 
+  <view class="course_choose_item {{courseIdx == 1?'course_ac':''}}" bindtap='chooseCourse' data-id='1'>待上课程 2</view> 
+  <view class="course_choose_item {{courseIdx == 2?'course_ac':''}}" bindtap='chooseCourse' data-id='2'>等位2</view> 
+  <view class="course_choose_item {{courseIdx == 3?'course_ac':''}}" bindtap='chooseCourse' data-id='3'>收藏2</view> 
 </view> 
-<view class="course_box">
-  <view class="course_item">
-    <view class="course_item_top flex_between">
-      <view class="course_top_date"></view>
-      <view class="course_top_week"></view>
-    </view> 
-    <view class="course_item_bot">
-      <view class="course_bot_left flex_center">
-        <view class="course_timer">12</view>
-        <view class="course_des">
-          <view class="course_title elli">xx</view>
-          <view class="course_p elli">xx</view>
-          <view class="course_span elli">xx</view>          
+<!-- 待上课程 -->
+<view class="course_box" wx:if='{{courseIdx == 1}}'>
+  <block wx:for='{{courseList1}}' wx:key='index'>
+    <view class="course_item">
+      <view class="course_item_top flex_between">
+        <view class="course_top_date">{{item.date}}</view>
+        <view class="course_top_week">{{item.week}}</view>
+      </view> 
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center">
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid" bindtap='viewQR'>
+          <view class="view_btn {{item.viewBool?'':'no_view'}}">查看二维码</view>
         </view>
       </view>
-      <view class="course_bot_right">
-        <view class="view_btn">xx</view>
+    </view>
+  </block>
+</view>
+<!-- 等位 -->
+<view class="course_box" wx:if='{{courseIdx == 2}}'>
+  <block wx:for='{{courseList2}}' wx:key='index'>
+    <view class="course_item">
+      <view class="course_item_top flex_between">
+        <view class="course_top_date">{{item.date}}</view>
+        <view class="course_top_week">{{item.week}}</view>
+      </view> 
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center">
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid">
+          <view class="view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
+        </view>
       </view>
     </view>
+  </block>
+</view>
+<!-- 收藏 -->
+<view class="course_box" wx:if='{{courseIdx == 3}}'>
+  <block wx:for='{{courseList3}}' wx:key='index'>
+    <view class="course_item">
+      <view class="course_item_top flex_between">
+        <view class="course_top_date">{{item.date}}</view>
+        <view class="course_top_week">{{item.week}}</view>
+      </view> 
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center">
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid">
+          <view class="view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="modal flex_mid" wx:if='{{modalShow}}'>
+  <view class="modal_outer flex_mid">
+    <view class="modal_inner">
+      <image class="" src="" class='modal_back'></image>
+      <view class="modal_des_ab">
+        <view class="modal_des_top flex_mid">
+          <view class="modal_course_name">高效燃脂</view>
+          <view class="modal_course_timer">12:15开课</view>
+          <view class="modal_course_area">成都90店 【到店出示课程码】</view>
+        </view>
+        <view class="modal_des_bot">
+          <text>扫码进入</text>
+          <image class="" src=""></image>
+          <view class="spot">
+          识别码
+            <text>2017 0800 9890 0098</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <image class="close" src="" bindtap='closeModal'></image>
   </view>
 </view>

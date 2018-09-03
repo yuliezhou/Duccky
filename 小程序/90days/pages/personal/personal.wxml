@@ -1,0 +1,26 @@
+<view class="user flex_between">
+  <view class="user_des">
+    <image class="" src="" ></image>
+    <view class="user_details">
+      <view class="user_name"></view>
+      <view class="user_id"></view>
+    </view>
+  </view>
+  <image class="back" src=""></image>
+</view>
+<view class="balance">
+  <view class="balance_item flex_mid">
+    <view class="balance_number"></view>
+    <view class="balance_txt"></view>
+  </view>
+  <view class="balance_item flex_mid">
+    <view class="balance_number"></view>
+    <view class="balance_txt"></view>
+  </view>
+</view>
+<view class="function">
+  <view class="function_item flex_mid">
+      <image class="" src=""></image>
+      <text></text>
+  </view>
+</view>

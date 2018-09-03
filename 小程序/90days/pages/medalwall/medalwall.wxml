@@ -1,0 +1,10 @@
+<view class="medal_user flex_mid">
+  <image class="" src=""></image>
+  <view class="user_medal"></view>
+</view>
+<view class="medal_wall">
+  <view class="medal_item">
+    <image class="" src=""></image>
+    <text></text>
+  </view>
+</view>

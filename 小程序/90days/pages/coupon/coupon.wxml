@@ -1,0 +1,21 @@
+<view class="coupon">
+  <view class="coupon_item">
+    <image class="" src="" mode="aspectFill"></image>
+    <view class="coupon_item_inner">
+      <view class="coupon_item_top flex_between">
+        <view class="coupon_des">
+          <view class="coupon_h"></view>
+          <view class="coupon_p"></view>
+        </view>
+        <view class="coupon_price">
+          <text>$</text>
+          15
+        </view>
+      </view>
+      <view class="coupon_item_bot flex_between">
+        <view class="coupon_timer"></view>
+        <view class="coupon_txt">立即使用</view>
+      </view>
+    </view>
+  </view>
+</view>
