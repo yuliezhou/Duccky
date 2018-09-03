@@ -85,3 +85,74 @@ button::after {
     background: #ccc;
     width: 100%;
 }
+
+.course_item{
+    background: #fff;
+    margin-bottom: 20rpx;
+    position: relative;
+}
+.course_item_top{
+    height: 60rpx;
+    border-bottom: 1rpx solid #E5E5E5;
+}
+.course_top_date{
+    color: #919191;
+    font-size: 26rpx;
+    padding-left: 24rpx;
+}
+.course_top_week{
+    color: #FFBA52;
+    font-size: 26rpx;
+    padding-right: 24rpx;
+}
+.course_item_bot{
+    padding: 18rpx 0;
+}
+.course_timer{
+    height: 112rpx;
+    line-height: 112rpx;
+    width: 194rpx;
+    text-align: center;
+    border-right: 1rpx solid #E5E5E5;
+    font-weight: bold;
+    font-size: 56rpx;
+}
+.course_des{
+    width: 270rpx;
+    padding-left: 26rpx;
+}
+.course_title{
+    width: 100%;
+    color: #282828;
+    font-size: 28rpx;
+}
+.course_p{
+    width: 100%;
+    color: #919191;
+    font-size: 22rpx;
+    margin-top: 8rpx;
+}
+.course_span{
+    width: 100%;
+    color: #919191;
+    font-size: 22rpx;
+}
+.course_bot_right{
+    padding-right:26rpx;
+}
+.view_btn{
+    background: linear-gradient(120deg,rgba(255,220,132,1) 0%,rgba(255,183,76,1) 100%);
+    border-radius: 36rpx;
+    text-align: center;
+    height: 56rpx;
+    line-height: 56rpx;
+    width: 160rpx;
+    color: #fff;
+    font-size: 24rpx;
+}
+.no_view{
+    background: #C2C6D0;
+}
+.course_box{
+    margin-bottom: 20rpx;
+}

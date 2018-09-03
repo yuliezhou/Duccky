@@ -1,47 +1,96 @@
-<swiper autoplay="true" interval="3000">
+<swiper autoplay="true" interval="3000" class='idxswiper'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="swiper_img"></image>
+      <image src="{{item}}" class="swiper_img" mode='aspectFill'></image>
     </swiper-item>
   </block>
 </swiper>
 <view class="area">
 	<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker">
-      xxx
+    <view class="area_picker">
+      <text>成都90店</text>
+      <image src="../../images/down.png" class="down_icon"></image>
     </view>
   </picker>
-  <view class="date">
-  	<view class="date_item">
-  		<view class="date_item_inner flex_mid">
-	  		<view class="date_number">11</view>
-	  		<view class="date_week">周一</view>
-  		</view>
-  		<view class="date_item_inner flex_mid">
-  			<text>今</text>
-  		</view>
-  	</view>
+  <view class="date flex_center">
+    <block wx:for='{{dateList}}' wx:key='index'>
+    	<view class="date_item">
+    		<view class="date_item_inner flex_mid" wx:if='{{item.date != today}}'>
+  	  		<view class="date_number">{{item.date}}</view>
+  	  		<view class="date_week">{{item.week}}</view>
+    		</view>
+    		<view class="date_item_inner flex_mid today" wx:if='{{item.date == today}}'>
+    			<text>今</text>
+    		</view>
+    	</view>
+    </block>
   </view>	
   <view class="type flex_between">
-  	<view class="type_item {{typeindex == 1?'active_type':''}}" data-id='1'>xx</view>
-  	<view class="type_item {{typeindex == 2?'active_type':''}}" data-id='2'>xx</view>
-  	<view class="type_item {{typeindex == 3?'active_type':''}}" data-id='3'>xx</view>
+  	<view class="type_item {{courseIdx == 1?'active_type':''}}" data-id='1' bindtap='chooseCourse'>全部课程</view>
+  	<view class="type_item type_item_center {{courseIdx == 2?'active_type':''}}" data-id='2' bindtap='chooseCourse'>全部时段</view>
+  	<view class="type_item {{courseIdx == 3?'active_type':''}}" data-id='3' bindtap='chooseCourse'>固定课程</view>
   </view>
-  <view class="margin_place"></view>
-  <view class="course">
-  	<view class="course_item flex_between">
-  		<view class="course_item_left">
-  			<view class="course_timer">12:44</view>
-  			<view class="course_des">
-  				<view class="course_title elli">xx</view>
-  				<view class="course_p elli">xx</view>
-  				<view class="course_span elli">xx</view>
-  			</view>
-  		</view>
-  		<view class="course_item_right">
-  			<view class="reserve_btn">xx</view>
-  		</view>
-      	<image src="{{item}}" class="course_tag"></image>
-  	</view>
-  </view>	
 </view>
+<view class="course_box" wx:if='{{courseIdx == 1}}'>
+  <block wx:for='{{courseList1}}' wx:key='index'>
+    <view class="course_item idx_course_item">
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center">
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid" bindtap='reserve'>
+          <view class="view_btn idx_view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
+        </view>
+      </view>
+      <image src="../../images/tag.png" class="course_tag" wx:if='{{item.tagShow}}'></image>
+    </view>
+  </block>
+</view>
+
+<view class="course_box" wx:if='{{courseIdx == 2}}'>
+  <block wx:for='{{courseList2}}' wx:key='index'>
+    <view class="course_item idx_course_item">
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center">
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid" bindtap='reserve'>
+          <view class="view_btn idx_view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
+        </view>
+      </view>
+      <image src="../../images/tag.png" class="course_tag" wx:if='{{item.tagShow}}'></image>
+    </view>
+  </block>
+</view>
+
+<view class="course_box" wx:if='{{courseIdx == 3}}'>
+  <block wx:for='{{courseList3}}' wx:key='index'>
+    <view class="course_item idx_course_item">
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center">
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid" bindtap='reserve'>
+          <view class="view_btn idx_view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
+        </view>
+      </view>
+      <image src="../../images/tag.png" class="course_tag" wx:if='{{item.tagShow}}'></image>
+    </view>
+  </block>
+</view>
+
