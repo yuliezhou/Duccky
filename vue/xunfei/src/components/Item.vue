@@ -43,6 +43,10 @@
 <style type="text/css">
 	.itemWarp{
 		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
 	.itemWarp span{
 		font-size: 12px;

@@ -1,71 +1,47 @@
-<wxs src='../../utils/filter.wxs' module='filters'/> 
-<view class="bodyer" wx:if='{{allList}}'>
-	<!-- 热度飙升 -->
-	<block wx:for="{{allList}}" wx:key='index'>
-		<view class="gamebox_outer">
-			<view class="gamebox" hidden='{{item.title == "最新发布"}}'>
-				<view class="game_title">
-					<image src='{{item.icon}}'></image>
-					<text>{{item.title}}</text>
-				</view>
-				<view class="game_content">
-					<block wx:for="{{item.gamelist}}" wx:key='index'wx:for-item='item2' wx:for-index="idx2">
-						<view class="game_content_item flex_mid">
-							<image src="{{item2.icon}}" mode='aspectFill'></image>
-							<view class="game_item_h elli">{{item2.title}}</view>
-							<view class="game_item_p elli">{{filters.formatSum(item2.sum)}}人在玩</view>
-						</view>
-					</block>
-					<view class="clear"></view>
-				</view>
-			</view>
-			<view class="gamebox" wx:if='{{item.title == "最新发布"}}'>
-				<view class="game_title">
-					<image src='{{item.icon}}'></image>
-					<text>{{item.title}}</text>
-				</view>
-				<scroll-view class="game_scroll" scroll-x>
-					<block wx:for="{{item.gamelist}}" wx:key='index'wx:for-item='item2' wx:for-index="idx2">
-						<view class="scroll_item">
-							<image src="{{item.icon}}" mode='aspectFill'></image>
-							<view class="scroll_item_h elli">{{item2.title}}</view>
-							<view class="scroll_item_span elli">{{item2.desc}}</view>
-							<view class="scroll_item_p elli">{{filters.formatSum(item2.sum)}}人在玩</view>
-						</view>
-					</block>
-				</scroll-view>
-			</view>
-		</view>
-	</block>
-	<!-- 商务合作 -->
-	<view class="cooperation">
-		商务合作微信:7889900009
-	</view>	
-	<view class="bot_box flex_center">
-		<view class="bot_btn collect_btn flex_center" bindtap='showModal'>
-			<image src="../../images/bot1.png"></image>
-			<text class="">添加收藏</text>
-		</view>
-		<view class="bot_btn share_btn flex_center">
-			<image src="../../images/bot2.png"></image>
-			<text class="">分享好友</text>
-            <button open-type='share'></button>
-		</view>
-	</view>
-	<view class="fixed_icon_coll">
-		<image src="../../images/collection.png" class='fixed_img'></image>
-	</view>
-	<view class="fixed_icon_share">
-		<view class="fixed_inner">
-			<image src="../../images/share.png" class='fixed_img'></image>
-            <button open-type='share'></button>
-		</view>
-	</view>
-</view>
-<view class="modal" wx:if="{{modalBool}}">
-  <view class="modal_tip">
-	  <view class="modal_h">收藏盒子，更方便玩哦～</view>
-	  <view class="modal_txt">•<text>点击</text>"右上角三个点点"</view>
-	  <view class="modal_txt">•<text>点击</text>"添加到我的小程序"</view>
+<swiper autoplay="true" interval="3000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="swiper_img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="area">
+	<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      xxx
+    </view>
+  </picker>
+  <view class="date">
+  	<view class="date_item">
+  		<view class="date_item_inner flex_mid">
+	  		<view class="date_number">11</view>
+	  		<view class="date_week">周一</view>
+  		</view>
+  		<view class="date_item_inner flex_mid">
+  			<text>今</text>
+  		</view>
+  	</view>
+  </view>	
+  <view class="type flex_between">
+  	<view class="type_item {{typeindex == 1?'active_type':''}}" data-id='1'>xx</view>
+  	<view class="type_item {{typeindex == 2?'active_type':''}}" data-id='2'>xx</view>
+  	<view class="type_item {{typeindex == 3?'active_type':''}}" data-id='3'>xx</view>
+  </view>
+  <view class="margin_place"></view>
+  <view class="course">
+  	<view class="course_item flex_between">
+  		<view class="course_item_left">
+  			<view class="course_timer">12:44</view>
+  			<view class="course_des">
+  				<view class="course_title elli">xx</view>
+  				<view class="course_p elli">xx</view>
+  				<view class="course_span elli">xx</view>
+  			</view>
+  		</view>
+  		<view class="course_item_right">
+  			<view class="reserve_btn">xx</view>
+  		</view>
+      	<image src="{{item}}" class="course_tag"></image>
+  	</view>
   </view>	
 </view>
