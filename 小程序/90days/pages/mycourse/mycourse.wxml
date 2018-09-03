@@ -1,0 +1,26 @@
+<view class="course_choose flex_between">
+  <view class="course_choose_item {{courseIdx == 1?'course_ac':''}}">xx</view> 
+  <view class="course_choose_item {{courseIdx == 2?'course_ac':''}}">xx</view> 
+  <view class="course_choose_item {{courseIdx == 3?'course_ac':''}}">xx</view> 
+</view> 
+<view class="course_box">
+  <view class="course_item">
+    <view class="course_item_top flex_between">
+      <view class="course_top_date"></view>
+      <view class="course_top_week"></view>
+    </view> 
+    <view class="course_item_bot">
+      <view class="course_bot_left flex_center">
+        <view class="course_timer">12</view>
+        <view class="course_des">
+          <view class="course_title elli">xx</view>
+          <view class="course_p elli">xx</view>
+          <view class="course_span elli">xx</view>          
+        </view>
+      </view>
+      <view class="course_bot_right">
+        <view class="view_btn">xx</view>
+      </view>
+    </view>
+  </view>
+</view>
