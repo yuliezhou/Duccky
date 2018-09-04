@@ -1,0 +1,68 @@
+<!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+<view class="picker">
+  <view class="area_choose flex_between">
+  	<view class="area_left">
+  		<image class="" src="" ></image>
+  		<text></text>
+  	</view>
+  	<view class="area_right"></view>
+  </view>
+</view>
+</picker> -->
+<view class="info">
+  <view class="info_item border_ac flex_between">
+    <text class="item_left">姓名</text>
+    <view class="userinfo_box">
+      <input placeholder='请输入姓名' maxlength='6'>吴彦祖</input>
+      <image class="right_icon" src="../../images/right_icon.png"></image>
+    </view>
+  </view>
+  <view class="info_item border_ac flex_between">
+    <text class="item_left">手机号</text>
+    <view class="userinfo_box">
+      <input placeholder='请输入手机号' maxlength='11' type="number">18323202350</input>
+      <image class="right_icon" src="../../images/right_icon.png"></image>
+    </view>
+  </view>
+</view>
+<view class="info">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['男','女']}}">
+    <view class="info_item border_ac flex_between">
+      <text class="item_left">性别</text>
+      <view class="userinfo_box">
+        <view class="info_txt">女</view>
+        <image class="right_icon" src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange"  mode="date" start="1900-01-01" end="{{enddate}}" value="{{index}}">
+    <view class="info_item border_ac flex_between">
+      <text class="item_left">生日</text>
+      <view class="userinfo_box">
+        <view class="info_txt">{{enddate}}</view>
+        <image class="right_icon" src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+   </picker>
+</view>
+<view class="info">
+  <view class="info_item flex_between">
+    <text class="item_left">身高</text>
+    <view class="userinfo_box">
+      <input maxlength='7' type="digit" class="none_padding" value='183'></input>
+      <text class="unit">cm</text>
+      <image class="right_icon" src="../../images/right_icon.png"></image>
+    </view>
+  </view>
+</view>
+<view class="info">
+  <view class="info_item border_ac flex_between">
+    <text class="item_left">体重</text>
+    <view class="userinfo_box">
+      <input maxlength='7' type="digit" class="none_padding" value='62'></input>
+      <text class="unit">kg</text>
+      <image class="right_icon" src="../../images/right_icon.png"></image>
+    </view>
+  </view>
+</view>
+<view class="save_btn">保存并返回</view>
