@@ -1,7 +1,18 @@
 <view class="choose_type">
     <scroll-view class="choose_type_inner" scroll-x>
-      <block wx:for='{{chooseData}}' wx:key>
-        <view class="type_item {{index === chooseIdx?'ac':''}}" bindtap='chooseDate'>{{item}}</view>
+      <block wx:for='{{typeList}}' wx:key>
+        <view class="type_item {{index === chooseIdx?'ac':''}}" bindtap='chooseType' data-id='{{index}}'>{{item.name}}</view>
       </block>
     </scroll-view>	
+</view>
+<view class="system_course_list flex_mid">
+	<block wx:for='{{courseList}}'>
+		<view class="system_course_item">
+			<image class="" src="{{item.imgurl}}" mode="aspectFill"></image>
+			<view class="system_course_des">
+				<view class="system_course_title elli">{{item.title}}</view>
+				<view class="system_course_p elli">{{item.des}}</view>
+			</view>
+		</view>
+	</block>
 </view>
