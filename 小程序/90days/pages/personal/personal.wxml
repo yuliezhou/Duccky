@@ -1,15 +1,17 @@
 <view class="user flex_between">
-  <view class="user_des">
-    <image class="" src="" ></image>
-    <view class="user_details">
-      <view class="user_name"></view>
-      <view class="user_id"></view>
+  <view class="user_des flex_center">
+    <view class="user_img">
+      <image class="" src="../../images/user.jpg"></image>
+    </view>
+    <view class="user_details flex_mid">
+      <view class="user_name elli">D</view>
+      <view class="user_id elli">ID：18875034206</view>
     </view>
   </view>
-  <image class="back" src=""></image>
+  <image class="right_icon" src="../../images/right_icon.png"></image>
 </view>
 <view class="balance">
-  <view class="balance_item flex_mid">
+  <view class="balance_item border_ac flex_mid">
     <view class="balance_number"></view>
     <view class="balance_txt"></view>
   </view>

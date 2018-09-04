@@ -1,0 +1,50 @@
+.user{
+	height: 200rpx;
+	background: #594E60;
+}
+.user_img{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	margin: 0 40rpx 0 60rpx;
+	border:4rpx solid #fff;
+}
+.user_img image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;	
+}
+.user_details{
+	width: 320rpx;
+}
+.user_name{
+	width: 100%;
+	color: #fff;
+	font-size: 32rpx;
+	margin-bottom: 6rpx;
+}
+.user_id{
+	width: 100%;
+	color: #fff;
+	font-size: 28rpx;
+}
+.right_icon{
+	width: 20rpx;
+	height: 32rpx;
+	margin-right: 30rpx;
+}
+.balance{
+	background: #696070;
+	height: 68rpx;
+	padding: 26rpx 0;
+}
+.balance_item{
+	width: 50%;
+	box-sizing: border-box;
+}
+.border_ac{
+	border-right:1rpx solid rgba(255,255,255,0.2) 
+}
+.balance_number{
+	
+}

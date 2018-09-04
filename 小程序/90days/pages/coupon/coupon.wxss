@@ -2,4 +2,57 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 26rpx 0;
+}
+.coupon_item{
+	position: relative;
+	margin-bottom: 24rpx;
+}
+.coupon_back{
+	width: 700rpx;
+	height: 216rpx;	
+}
+.coupon_item_inner{
+	position: absolute;
+	width: 640rpx;
+	padding: 0 30rpx;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.coupon_item_top{
+	height: 140rpx;
+	width: 100%;
+}
+.coupon_h{
+	color: #4C4252;
+	font-size: 40rpx;
+}
+.coupon_p{
+	color: #4C4252;
+	font-size: 24rpx;
+}
+.coupon_price{
+	color: #F5A623;
+	font-size: 76rpx;
+	font-weight: 500;
+	/*padding-left: 10rpx;*/
+	position: relative;
+}
+.coupon_price text{
+	font-size: 20px;
+	position: absolute;
+	bottom: 10rpx;
+	left: 0;
+}
+.coupon_item_bot{
+	height: 76rpx;
+}
+.coupon_timer{
+	color: #979797;
+	font-size: 24rpx;
+}
+.coupon_txt{
+	color: #4C4252;
+	font-size: 26rpx;
 }

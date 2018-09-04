@@ -9,6 +9,10 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 //公共css
 import '../static/global.css'
+// 引入echarts
+import echarts from 'echarts'
+
+Vue.prototype.$echarts = echarts 
 Vue.use(VueAxios, axios)
 Vue.use(iView);
 

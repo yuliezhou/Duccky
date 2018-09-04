@@ -78,7 +78,7 @@
 <view class="modal flex_mid" wx:if='{{modalShow}}'>
   <view class="modal_outer flex_mid">
     <view class="modal_inner">
-      <image class="" src="" class='modal_back'></image>
+      <image class="modal_backimg" src="../../images/modalback.png" class='modal_back'></image>
       <view class="modal_des_ab">
         <view class="modal_des_top flex_mid">
           <view class="modal_course_name">高效燃脂</view>
@@ -87,7 +87,7 @@
         </view>
         <view class="modal_des_bot">
           <text>扫码进入</text>
-          <image class="" src=""></image>
+          <image class="" src="../../images/qr.png"></image>
           <view class="spot">
           识别码
             <text>2017 0800 9890 0098</text>
@@ -95,6 +95,6 @@
         </view>
       </view>
     </view>
-    <image class="close" src="" bindtap='closeModal'></image>
+    <image class="close" src="../../images/close.png" bindtap='closeModal'></image>
   </view>
 </view>

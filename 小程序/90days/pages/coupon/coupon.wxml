@@ -1,21 +1,23 @@
 <view class="coupon">
-  <view class="coupon_item">
-    <image class="" src="" mode="aspectFill"></image>
-    <view class="coupon_item_inner">
-      <view class="coupon_item_top flex_between">
-        <view class="coupon_des">
-          <view class="coupon_h"></view>
-          <view class="coupon_p"></view>
+  <block wx:for='{{couponList}}'>
+    <view class="coupon_item">
+      <image class="coupon_back" src="../../images/coupon_back.png" mode="aspectFill"></image>
+      <view class="coupon_item_inner">
+        <view class="coupon_item_top flex_between">
+          <view class="coupon_des">
+            <view class="coupon_h">{{item.name}}</view>
+            <view class="coupon_p">{{item.rule}}</view>
+          </view>
+          <view class="coupon_price">
+            <text>¥</text>
+            {{item.money}}
+          </view>
         </view>
-        <view class="coupon_price">
-          <text>$</text>
-          15
+        <view class="coupon_item_bot flex_between">
+          <view class="coupon_timer">有效期至{{item.time}}</view>
+          <view class="coupon_txt">立即使用</view>
         </view>
-      </view>
-      <view class="coupon_item_bot flex_between">
-        <view class="coupon_timer"></view>
-        <view class="coupon_txt">立即使用</view>
       </view>
     </view>
-  </view>
+  </block>
 </view>

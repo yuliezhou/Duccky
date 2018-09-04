@@ -1,11 +1,42 @@
 <template>
 	<div>
-		<Button type="primary">Primary</Button>
+		<Button v-for='(item,index) in userDes' type="primary" @click='toChart(item.id,item.name)'>{{item.name}}</Button>
+		<router-view></router-view>
 	</div>
 </template>
 <script type="text/javascript">
 	export default{
+		  mounted(){
+		  },
+		data(){
+			return{
+				userDes:
+				[
+					{
+						id:1,
+						name:'duccky1'
+					},		
+					{
+						id:2,
+						name:'duccky2'
+					},		
+				]
+			}
+		},		
 		components:{
+		},
+		methods:{
+		    toChart(id,name){
+				this.$router.push(
+					{
+						name:'Table',
+						params:{
+							id:id,
+							name:name
+						}
+					}
+				);
+		    }
 		}
 	}
 </script>

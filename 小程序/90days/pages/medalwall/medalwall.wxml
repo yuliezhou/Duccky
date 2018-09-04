@@ -1,10 +1,18 @@
 <view class="medal_user flex_mid">
-  <image class="" src=""></image>
-  <view class="user_medal"></view>
+  <image class="medal_backimg" src="../../images/medal_back.png" mode='aspectFill'></image>
+  <view class="user_medal">
+  	<view class="user_img">
+  		<image src="../../images/user.jpg" mode="scaleToFill"></image>
+  	</view>
+  	<view class="user_name">10级 最强王者</view>
+  </view>
 </view>
 <view class="medal_wall">
-  <view class="medal_item">
-    <image class="" src=""></image>
-    <text></text>
-  </view>
+	<block wx:for='{{medalList}}'>
+		<view class="medal_item flex_mid">
+		    <image class="" src="{{item.imgUrl}}"></image>
+		    <text>{{item.name}}</text>
+		</view>
+  	</block>
+  	<view class="clear"></view>
 </view>
