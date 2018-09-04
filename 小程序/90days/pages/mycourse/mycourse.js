@@ -83,5 +83,12 @@ Page({
     	this.setData({
     		modalShow:false
     	})    	
-    }
+    },
+    reserve:function () {
+      wx.showToast({
+          title: '预约成功',
+          icon: "none",
+          duration: 1500
+      });     	
+    }    
 })

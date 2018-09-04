@@ -1,12 +1,44 @@
 {
   "pages": [
-    "pages/mycourse/mycourse",
     "pages/index/index",
+    "pages/mycourse/mycourse",
+    "pages/system/system",
     "pages/coupon/coupon",
     "pages/personal/personal",
     "pages/store/store",
     "pages/medalwall/medalwall"
   ],
+  "tabBar": {
+      "color": "#8C8C8C",
+      "selectedColor": "#4C4252",
+      "backgroundColor": "#fff",
+      "borderStyle": "black",
+      "list": [{
+              "pagePath": "pages/index/index",
+              "text": "课程预约",
+              "iconPath": "images/home.png",
+              "selectedIconPath": "images/achome.png"
+          },
+          {
+              "pagePath": "pages/mycourse/mycourse",
+              "text": "课程体系",
+              "iconPath": "images/system.png",
+              "selectedIconPath": "images/acsystem.png"
+          },
+          {
+              "pagePath": "pages/system/system",
+              "text": "我的课程",
+              "iconPath": "images/course.png",
+              "selectedIconPath": "images/accourse.png"
+          },
+          {
+              "pagePath": "pages/personal/personal",
+              "text": "我的伽满",
+              "iconPath": "images/mine.png",
+              "selectedIconPath": "images/acmine.png"
+          }
+      ]
+  },  
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",

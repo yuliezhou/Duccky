@@ -44,7 +44,7 @@
             <view class="course_span elli">{{item.coursePrice}}</view>          
           </view>
         </view>
-        <view class="course_bot_right flex_mid">
+        <view class="course_bot_right flex_mid" bindtap='reserve'>
           <view class="view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
         </view>
       </view>
@@ -68,7 +68,7 @@
             <view class="course_span elli">{{item.coursePrice}}</view>          
           </view>
         </view>
-        <view class="course_bot_right flex_mid">
+        <view class="course_bot_right flex_mid" bindtap='reserve'>
           <view class="view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
         </view>
       </view>
