@@ -1,0 +1,19 @@
+.area_left{
+	padding-left: 26rpx;
+	display: flex;
+	align-items: center;
+}
+.area_left text{
+	color: #4C4252;
+	font-size: 32rpx;
+}
+.area_icon{
+	width: 28rpx;
+	height: 34rpx;
+	margin-right: 14rpx;
+}
+.area_right{
+	padding-right: 24rpx;
+	color: #919191;
+	font-size: 28rpx;
+}

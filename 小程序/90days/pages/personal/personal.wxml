@@ -10,19 +10,29 @@
   </view>
   <image class="right_icon" src="../../images/right_icon.png"></image>
 </view>
-<view class="balance">
+<view class="balance flex_center">
   <view class="balance_item border_ac flex_mid">
-    <view class="balance_number"></view>
-    <view class="balance_txt"></view>
+    <view class="balance_number">2389</view>
+    <view class="balance_txt">余额(元)</view>
   </view>
   <view class="balance_item flex_mid">
-    <view class="balance_number"></view>
-    <view class="balance_txt"></view>
+    <view class="balance_number">14</view>
+    <view class="balance_txt">课时数(节)</view>
   </view>
 </view>
+<swiper autoplay="true" interval="3000" class='adswiper'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="swiper_img" mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
 <view class="function">
-  <view class="function_item flex_mid">
-      <image class="" src=""></image>
-      <text></text>
-  </view>
+  <block wx:for='{{functionList}}'>
+    <view class="function_item flex_mid" bindtap='toOtherPage' data-id='{{index}}'>
+        <image class="" src="../../images/per{{index}}.png"></image>
+        <text>{{item}}</text>
+    </view>
+  </block>
+  <view class="clear"></view>
 </view>

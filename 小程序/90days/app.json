@@ -1,12 +1,17 @@
 {
   "pages": [
-    "pages/coupon/coupon",
+    "pages/store/store",
     "pages/personal/personal",
+    "pages/coupon/coupon",
     "pages/medalwall/medalwall",
+    "pages/wallet/wallet",
+    "pages/choosecourse/choosecourse",
+    "pages/training/training",
+    "pages/sportstest/sportstest",
+    "pages/ranking/ranking",
     "pages/index/index",
     "pages/mycourse/mycourse",
-    "pages/system/system",
-    "pages/store/store"
+    "pages/system/system"
   ],
   "tabBar": {
       "color": "#8C8C8C",
@@ -20,13 +25,13 @@
               "selectedIconPath": "images/achome.png"
           },
           {
-              "pagePath": "pages/mycourse/mycourse",
+              "pagePath": "pages/system/system",
               "text": "课程体系",
               "iconPath": "images/system.png",
               "selectedIconPath": "images/acsystem.png"
           },
           {
-              "pagePath": "pages/system/system",
+              "pagePath": "pages/mycourse/mycourse",
               "text": "我的课程",
               "iconPath": "images/course.png",
               "selectedIconPath": "images/accourse.png"

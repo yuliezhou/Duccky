@@ -46,5 +46,38 @@
 	border-right:1rpx solid rgba(255,255,255,0.2) 
 }
 .balance_number{
-	
+	font-size: 40rpx;
+	color: #fff;
+}
+.balance_txt{
+	font-size: 22rpx;
+	color: #fff;
+	opacity: 0.7;
+}
+.adswiper{
+	height: 200rpx;
+	width: 100%;
+}
+.adswiper .swiper_img{
+	height: 200rpx;
+	width: 100%;
+}
+.function{
+	padding: 26rpx 19rpx 6rpx;
+}
+.function_item{
+	margin: 0 12rpx 20rpx;
+	background: #fff;
+	width: 332rpx;
+	height: 180rpx;
+	border-radius: 4rpx;
+	float: left;
+}
+.function_item image{
+	height: 84rpx;
+	width: 84rpx;
+}
+.function_item text{
+	color: #4C4252;
+	font-size: 26rpx;
 }

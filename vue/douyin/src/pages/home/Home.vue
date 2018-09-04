@@ -36,6 +36,7 @@
 						}
 					}
 				);
+				// this.$router.push('./Table')
 		    }
 		}
 	}

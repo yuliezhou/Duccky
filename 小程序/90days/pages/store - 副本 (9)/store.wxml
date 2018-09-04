@@ -1,13 +1,13 @@
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-  <view class="picker">
-    <view class="area_choose flex_between">
-    	<view class="area_left">
-    		<image class="area_icon" src="../../images/area.png" ></image>
-    		<text>cq</text>
-    	</view>
-    	<view class="area_right"></view>
-    </view>
+<view class="picker">
+  <view class="area_choose flex_between">
+  	<view class="area_left">
+  		<image class="" src="" ></image>
+  		<text></text>
+  	</view>
+  	<view class="area_right"></view>
   </view>
+</view>
 </picker>
 <swiper autoplay="true" interval="3000">
   <block wx:for="{{imgUrls}}">
