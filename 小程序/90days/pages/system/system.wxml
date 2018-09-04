@@ -1,0 +1,7 @@
+<view class="choose_type">
+    <scroll-view class="choose_type_inner" scroll-x>
+      <block wx:for='{{chooseData}}' wx:key>
+        <view class="type_item {{index === chooseIdx?'ac':''}}" bindtap='chooseDate'>{{item}}</view>
+      </block>
+    </scroll-view>	
+</view>

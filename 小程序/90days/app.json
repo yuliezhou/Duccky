@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/store/store",
     "pages/personal/personal",
     "pages/coupon/coupon",
@@ -9,7 +10,6 @@
     "pages/training/training",
     "pages/sportstest/sportstest",
     "pages/ranking/ranking",
-    "pages/index/index",
     "pages/mycourse/mycourse",
     "pages/system/system"
   ],

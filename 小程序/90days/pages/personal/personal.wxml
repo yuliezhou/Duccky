@@ -20,7 +20,7 @@
     <view class="balance_txt">课时数(节)</view>
   </view>
 </view>
-<swiper autoplay="true" interval="3000" class='adswiper'>
+<swiper autoplay="true" interval="3000" class='adswiper' circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
       <image src="{{item}}" class="swiper_img" mode='aspectFill'></image>

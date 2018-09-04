@@ -1,27 +1,27 @@
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-  <view class="picker">
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{areaList}}">
     <view class="area_choose flex_between">
     	<view class="area_left">
     		<image class="area_icon" src="../../images/area.png" ></image>
-    		<text>cq</text>
+    		<text>重庆</text>
     	</view>
-    	<view class="area_right"></view>
+    	<view class="area_right">切换城市</view>
     </view>
-  </view>
 </picker>
-<swiper autoplay="true" interval="3000">
+<swiper autoplay="true" interval="3000" class="adswiper" circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="swiper_img"></image>
+      <image src="{{item}}" class="swiper_img" mode='aspectFill'></image>
     </swiper-item>
   </block>
 </swiper>
-<view class="area">
-	<view class="area_item">
-		<image class="" src=""></image>
-		<view class="area_des">
-			<view class="area_name"></view>
-			<view class="area_details"></view>
-		</view>
-	</view>	
+<view class="area flex_mid">
+  <block wx:for='{{storeList}}'>
+  	<view class="area_item">
+  		<image class="" src="{{item.imgurl}}" mode='aspectFill'></image>
+  		<view class="area_des">
+  			<view class="area_name">{{item.name}}</view>
+  			<view class="area_details elli2">地址：{{item.address}}</view>
+  		</view>
+  	</view>	
+  </block>
 </view>

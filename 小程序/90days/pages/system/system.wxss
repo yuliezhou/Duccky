@@ -1,0 +1,26 @@
+.choose_type_inner{
+    position: absolute;
+    top: 100rpx;
+    left: 0;
+    white-space: nowrap;
+    padding-left: 30rpx;
+    width: 720rpx;
+}
+.choose_type_inner .type_item{
+    margin-right: 40rpx;
+    line-height: 56rpx;
+    height: 56rpx;
+    padding: 0 30rpx;
+    color: #828282;
+    font-size: 28rpx; 
+    background:#FFFAF1;
+    border: 1rpx solid transparent;
+    box-sizing: border-box;
+    border-radius: 28rpx;
+    display: inline-block;
+}
+.choose_type_inner .ac{
+    border: 1rpx solid #F5A623;
+    background:#fff;
+    color: #F5A623; 
+}

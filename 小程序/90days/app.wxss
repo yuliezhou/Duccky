@@ -71,7 +71,7 @@ button::after {
 
 /*2行省略号*/
 
-.elli_2 {
+.elli2 {
     text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     text-overflow: ellipsis;
