@@ -7,7 +7,7 @@
 </view>
 <view class="system_course_list flex_mid">
 	<block wx:for='{{courseList}}'>
-		<view class="system_course_item">
+		<view class="system_course_item" bindtap='toDetails'>
 			<image class="" src="{{item.imgurl}}" mode="aspectFill"></image>
 			<view class="system_course_des">
 				<view class="system_course_title elli">{{item.title}}</view>

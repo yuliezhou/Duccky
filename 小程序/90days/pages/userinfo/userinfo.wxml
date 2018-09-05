@@ -1,14 +1,4 @@
-<!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-<view class="picker">
-  <view class="area_choose flex_between">
-  	<view class="area_left">
-  		<image class="" src="" ></image>
-  		<text></text>
-  	</view>
-  	<view class="area_right"></view>
-  </view>
-</view>
-</picker> -->
+
 <view class="info">
   <view class="info_item border_ac flex_between">
     <text class="item_left">姓名</text>

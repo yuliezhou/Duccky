@@ -1,27 +1,61 @@
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-<view class="picker">
-  <view class="area_choose flex_between">
-  	<view class="area_left">
-  		<image class="" src="" ></image>
-  		<text></text>
-  	</view>
-  	<view class="area_right"></view>
+<view class="ranking_top_title flex_center">
+  <view class="ranking_top_item border_right {{bigIdx == 1 ?'active':''}}" bindtap='changeBigType' data-id='1'>达人榜</view>
+  <view class="ranking_top_item {{bigIdx == 2 ?'active':''}}" bindtap='changeBigType' data-id='2'>能量榜</view>
+</view>
+<view class="month_week">
+  <image class="month_backimg" src="../../images/medal_back.png"></image>
+  <view class="month_ab flex_between">
+    <image class="rank_icon" src="../../images/rank{{bigIdx}}.png"></image>
+    <view class="change_ranking">
+      <view class="change_item {{smallIdx == 1 ?'active':''}}" bindtap='changeSmallType' data-id='1'>月榜</view>
+      <view class="change_item {{smallIdx == 2 ?'active':''}}" bindtap='changeSmallType' data-id='2'>总榜</view>
+    </view>
   </view>
 </view>
-</picker>
-<swiper autoplay="true" interval="3000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="swiper_img"></image>
-    </swiper-item>
+<view class="show_title flex_between">
+  <view class="title_item">排行</view>
+  <view class="title_item center_item">昵称</view>
+  <view class="title_item">训练次数</view>
+</view>
+<view class="rankingList flex_mid">
+  <!-- 自己的排名 -->
+  <view class="ranking_bot_item mine_ranking">
+    <view class="ranking_number flex_center">1</view>
+    <view class="user_img">
+      <image src="../../images/user.jpg"></image>
+    </view>
+    <view class="user_info">
+      <image src="../../images/per5.png"></image>
+      <view class="user_name elli">Duccky</view>
+    </view>
+    <view class="medal">
+      <image class="medal_icon" src="../../images/medal1.png"></image>
+      <image class="medal_icon" src="../../images/medal2.png"></image>
+      <image class="medal_icon" src="../../images/medal3.png"></image>
+      <image class="medal_icon" src="../../images/medal4.png"></image>
+    </view>
+    <view class="training_times">28</view>
+  </view>
+  <!-- 自己的排名 end-->
+  <!-- 排名列表 -->
+  <block wx:for='{{rankingList}}' wx:key>
+    <view class="ranking_bot_item">
+      <view class="ranking_number flex_center ranking_txt{{item.ranking_num}}">{{item.ranking_num}}</view>
+      <view class="user_img">
+        <image src="{{item.userimg}}"></image>
+      </view>
+      <view class="user_info">
+        <image src="{{item.usericon}}"></image>
+        <view class="user_name elli">{{item.username}}</view>
+      </view>
+      <view class="medal">
+        <block wx:for='{{item.medal}}' wx:for-item='item2'>
+          <image class="medal_icon" src="{{item2}}"></image>
+        </block>
+      </view>
+      <view class="training_times">{{item.training_times}}</view>
+      <view class="clear"></view>
+    </view>
   </block>
-</swiper>
-<view class="area">
-	<view class="area_item">
-		<image class="" src=""></image>
-		<view class="area_des">
-			<view class="area_name"></view>
-			<view class="area_details"></view>
-		</view>
-	</view>	
+  <!-- 排名列表 end-->
 </view>

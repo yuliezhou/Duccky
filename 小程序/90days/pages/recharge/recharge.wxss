@@ -1,0 +1,72 @@
+.bodyer{
+	margin-top: 20rpx;
+	background: #fff;
+}
+.info_item{
+	height: 100rpx;
+	padding: 0 24rpx;
+	width: 702rpx;
+	border-bottom: 2rpx solid #FEFEFE;
+	background: #fff;
+}
+.info_left{
+	color: #282828;
+	font-size: 30rpx;
+}
+.info_right{
+	color: #979797;
+	font-size: 30rpx;
+}
+.info_item1{
+	display: flex;
+	align-items: center;
+	border: none;
+}
+.choose_price{
+	padding: 0 12rpx;
+}
+.price_item{
+	margin: 0 8rpx 20rpx;
+	position: relative;
+	width: 224rpx;
+	height: 136rpx;
+	box-sizing: border-box;
+	border:2rpx solid #F5A623;
+	border-radius: 6rpx;
+	float: left;
+}
+.price_item .tag{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 46rpx;
+	height: 46rpx;
+}
+.pay{
+	color: #F5A623;
+	font-size: 36rpx;
+}
+.get{
+	color: #F5A623;
+	font-size: 22rpx;
+}
+.recharge_btn{
+	background: linear-gradient(120deg,rgba(255,220,132,1) 0%,rgba(255,183,76,1) 100%);
+	color: #fff;
+	font-size: 36rpx;
+	border-radius: 8rpx;
+	height: 84rpx;
+	line-height: 84rpx;
+	text-align: center;
+	width: 694rpx;
+	margin-top: 370rpx;
+	margin-bottom: 50rpx;
+}
+.notice{
+	padding-bottom: 106rpx;
+	width: 694rpx;
+}
+.notice_text{
+	color: #979797;
+	font-size: 24rpx;
+}

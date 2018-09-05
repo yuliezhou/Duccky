@@ -1,4 +1,4 @@
-<view class="user flex_between">
+<view class="user flex_between" bindtap='toUserinfo'>
   <view class="user_des flex_center">
     <view class="user_img">
       <image class="" src="../../images/user.jpg"></image>
@@ -11,7 +11,7 @@
   <image class="right_icon" src="../../images/right_icon.png"></image>
 </view>
 <view class="balance flex_center">
-  <view class="balance_item border_ac flex_mid">
+  <view class="balance_item border_ac flex_mid" bindtap='toWallet'>
     <view class="balance_number">2389</view>
     <view class="balance_txt">余额(元)</view>
   </view>

@@ -6,12 +6,10 @@
   </block>
 </swiper>
 <view class="area">
-	<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="area_picker">
-      <text>成都90店</text>
-      <image src="../../images/down.png" class="down_icon"></image>
-    </view>
-  </picker>
+  <view class="area_picker" bindtap='toStore'>
+    <text>成都90店</text>
+    <image src="../../images/down.png" class="down_icon"></image>
+  </view>
   <view class="date flex_center">
     <block wx:for='{{dateList}}' wx:key='index'>
     	<view class="date_item">

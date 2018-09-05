@@ -1,18 +1,21 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/course-details/course-details",
+    "pages/share-details/share-details",
+    "pages/choosecourse/choosecourse",
     "pages/userinfo/userinfo",
+    "pages/wallet/wallet",
+    "pages/recharge/recharge",
+    "pages/ranking/ranking",
     "pages/system/system",
     "pages/store/store",
     "pages/personal/personal",
     "pages/coupon/coupon",
     "pages/medalwall/medalwall",
-    "pages/wallet/wallet",
-    "pages/choosecourse/choosecourse",
     "pages/training/training",
     "pages/sportstest/sportstest",
-    "pages/mycourse/mycourse",
-    "pages/ranking/ranking"
+    "pages/mycourse/mycourse"               
   ],
   "tabBar": {
       "color": "#8C8C8C",

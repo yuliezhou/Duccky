@@ -1,0 +1,32 @@
+<view class="bodyer">
+  <view class="info_item flex_between">
+    <view class="info_left">充值帐户</view>
+    <view class="info_right">Duccky</view>
+  </view>
+  <view class="info_item flex_between">
+    <view class="info_left">剩余额度</view>
+    <view class="info_right">¥500元</view>
+  </view>
+  <view class="info_item info_item1">
+    <text class="info_left">充值额度</text>
+  </view>
+  <view class="choose_price">
+    <block wx:for='{{priceList}}'>
+      <view class="price_item flex_mid" data-id='{{index}}' bindtap='choosePrice'>
+        <view class="pay">¥{{item.pay_money}}元</view>
+        <view class="get">到账：{{item.get_money}}元</view>
+        <image class="tag" src="../../images/pricetag.png" wx:if='{{index == priceIdx}}'></image>
+      </view>
+    </block>
+    <view class="clear"></view>
+  </view>
+  <view class="bot_details flex_mid">
+    <view class="recharge_btn">确认充值</view>
+    <view class="notice">
+      <view class="notice_text">须知： </view>
+      <view class="notice_text">
+        为了避免造成不必要的损失,波克城市为玩家提供了充值前注意事项,在进行充值之前需详细阅读充值注意事项,确保充值无误.遇到问题可随时与客服联系!        
+      </view>
+    </view>
+  </view>
+</view>

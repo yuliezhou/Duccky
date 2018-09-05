@@ -3,7 +3,6 @@ var api = require('../../utils/api.js')
 Page({
     data: {
     	imgUrls:['../../images/swiper.png','../../images/swiper.png','../../images/swiper.png'],
-    	array:['成都','重庆','北京'],
     	today:'',
 		courseIdx:1,
 		courseList1:[
@@ -105,10 +104,15 @@ Page({
     	})
     },    
     reserve:function () {
-      wx.showToast({
-          title: '预约成功',
-          icon: "none",
-          duration: 1500
-      });     	
-    }
+		wx.showToast({
+		      title: '预约成功',
+		      icon: "none",
+		      duration: 1500
+		  });     	
+    },
+    toStore:function(){
+		wx.navigateTo({
+       		 url: '../store/store',
+   		 }) 
+   	}   	
 })

@@ -41,9 +41,20 @@ Page({
 			break;
 			case 5:
 		        wx.navigateTo({
-		            url: '../medalwall/medalwall',
+		            url: '../medalwall/	medalwall',
 		        })
 			break;
 		}
+    },
+    //点击余额 跳转到钱包(如不需要可删除)
+    toWallet:function(){
+        wx.navigateTo({
+            url: '../wallet/wallet',
+        })
+    },
+    toUserinfo:function(){
+        wx.navigateTo({
+            url: '../userinfo/userinfo',
+        })    	
     }
 })

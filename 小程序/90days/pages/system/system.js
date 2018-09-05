@@ -51,5 +51,10 @@ Page({
     	this.setData({
     		chooseIdx:id
     	})		
+    },
+    toDetails:function(){
+		wx.navigateTo({
+       		 url: '../course-details/course-details',
+   		 })     	
     }
 })

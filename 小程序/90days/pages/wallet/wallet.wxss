@@ -1,0 +1,118 @@
+.wallet_outer{
+	padding: 25rpx 25rpx 0;
+	background: #fff;
+	margin-bottom: 20rpx;
+}
+.wallet{
+	width: 700rpx;
+	position: relative;
+	padding-bottom: 10rpx;
+}
+.wallet image{
+	width: 700rpx;
+	height: 226rpx;
+}
+.wallet_inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.wallet_left{
+	float: left;
+	margin-left: 25rpx;
+	margin-top: 44rpx;
+}
+.wallet_title{
+	color: #fff;
+	font-size: 24rpx;
+}
+.wallet_money{
+	font-size: 60rpx;
+	color: #fff;
+	font-weight: 500;
+	width: 400rpx;
+}
+.wallet_money text{
+	font-size: 40rpx;
+	margin-right: -10rpx;
+}
+.wallet_right{
+	float: right;
+	margin-right: 25rpx;
+	width: 126rpx;
+	height: 56rpx;
+	border-radius: 36rpx;
+	color: #FFB84E;
+	font-size: 28rpx;
+	background: #fff;
+	line-height: 56rpx;
+	text-align: center;
+	margin-top: 44rpx;
+}
+.coupon{
+	padding: 30rpx 0; 
+}
+.coupon_icon{
+	width: 52rpx;
+	height: 52rpx;
+	margin-right: 30rpx;
+}
+.coupon_left text{
+	color: #282828;
+	font-size: 30rpx;
+}
+.right_icon{
+	width: 28rpx;
+	height: 28rpx;
+}
+.recording_title{
+	width: 100%;
+	border-bottom: 2rpx solid #FAFAFA;
+	background: #fff;
+}
+.title_item{
+	width: 50%;
+	box-sizing: border-box;
+	height: 74rpx;
+	line-height: 74rpx;
+	color: #838383;
+	font-size: 26rpx;
+	text-align: center;
+	position: relative;
+}
+.recording_title .active{
+	color: #4C4252;
+}
+.border_right{
+	border-right: 2rpx solid #FAFAFA;
+}
+.recording_title .active::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100rpx;
+	width: 200rpx;
+	height: 6rpx;
+	border-radius: 200rpx;
+	background: #4C4252;
+}
+.recording_item{
+	padding: 0 30rpx;
+	height: 100rpx;
+	border-bottom: 2rpx solid #FAFAFA;
+	background: #fff;
+}
+.recording_item .timer{
+	color: #979797;
+	font-size: 24rpx;
+}
+.recording_item .price{
+	color: #4C4252;
+	font-size: 30rpx;
+}
+.recording{
+	margin-bottom: 20rpx;
+}

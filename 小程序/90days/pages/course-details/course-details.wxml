@@ -1,0 +1,65 @@
+<view class="course_img_outer">
+  <image class="course_img" src="../../images/ba.png" mode="aspectFill"></image>
+  <image class="share_btn" src="../../images/share.png" bindtap='toShare'></image>
+</view>
+<view class="timer_date">
+  <view class="timer_date_item">
+    <image src="../../images/per0.png"></image>
+    <text>价格：99元/次</text>
+  </view>
+  <view class="timer_date_item">
+    <image src="../../images/per2.png"></image>
+    <text>时间：08月14日 20:30-10:00</text>
+  </view>
+  <view class="timer_date_item">
+    <image src="../../images/per0.png"></image>
+    <text>地址：重庆市渝北区龙山街道冉家坝</text>
+  </view>
+</view>
+<view class="text_item">
+  <view class="title">课程介绍</view>
+  <view class="des_text">零基础/学习过基础课培训方式: 每月定期/小班授课特 色:为学生开展专场招聘会优势:合作俱乐部超过6800家,全日制上课,让你成为专业的健身教练.就业不用愁</view>
+</view>
+<view class="text_item">
+  <view class="title">教练</view>
+  <view class="des_text">王盼盼 · 赵一</view>
+</view>
+<view class="text_item">
+  <view class="title">适应人群</view>
+  <view class="des_text">减脂需求/增加心肺耐力/动作调整</view>
+</view>
+<view class="text_item">
+  <view class="title step_title">健身步骤</view>
+  <view class="flex_mid step_outer">
+    <view class="step flex_center">
+      <text>STEP 1</text>
+      预约付费成功
+    </view>
+    <image class="down_icon" src="../../images/down_icon.png" ></image>
+    <view class="step flex_center">
+      <text>STEP 2</text>
+      获得入场密码
+    </view>
+   <image class="down_icon" src="../../images/down_icon.png" ></image>
+    <view class="step flex_center">
+      <text>STEP 3</text>
+      门禁输入密码
+    </view>
+    <image class="down_icon" src="../../images/down_icon.png" ></image>
+    <view class="step flex_center">
+      <text>STEP 4</text>
+      验证成功入场上课
+    </view>
+  </view>
+</view>
+<view class="text_item">
+  <view class="title">注意事项</view>
+  <view class="des_text">· 开课前不能取消</view>
+  <view class="des_text">· 请装备好专业运动服/运动鞋 </view>
+  <view class="des_text">· 运动前补充适量水份</view>
+  <view class="des_text">· 在运动30min前可以减少食用少量食物</view>
+  <view class="des_text">· 进食半小时后不要运动</view>
+  <view class="des_text">· 本店提供更衣室/储物柜/卫生间</view>
+</view>
+<view class="reserve_btn">立即预约</view>
+<view class="empty"></view>  

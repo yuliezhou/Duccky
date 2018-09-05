@@ -1,27 +1,62 @@
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-<view class="picker">
-  <view class="area_choose flex_between">
-  	<view class="area_left">
-  		<image class="" src="" ></image>
-  		<text></text>
-  	</view>
-  	<view class="area_right"></view>
+<view class="bodyer flex_mid">
+  <view class="ipt_item flex_between">
+    <view class="ipt_left">
+      <view class="ipt_des">年龄</view>
+      <input class="ipt_box" type="number" value='11' maxlength='3'></input>
+    </view>
   </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['男','女']}}">  
+    <view class="ipt_item flex_between">
+      <view class="ipt_left">
+        <view class="ipt_des">性别</view>
+        <view class="ipt_box">男</view>
+      </view>
+      <view class="right_icon">
+        <image src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+  </picker>
+  <view class="ipt_item flex_between">
+    <view class="ipt_left">
+      <view class="ipt_des">身高 (cm) </view>
+      <input class="ipt_box" type="digit" value='183' maxlength='6'></input>
+    </view>
+  </view>
+  <view class="ipt_item flex_between">
+    <view class="ipt_left">
+      <view class="ipt_des">体重 (kg) </view>
+      <input class="ipt_box" type="digit" value='50' maxlength='6'></input>
+    </view>
+  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['几乎不运动','经常运动']}}">  
+    <view class="ipt_item flex_between">
+      <view class="ipt_left">
+        <view class="ipt_des">运动习惯</view>
+        <view class="ipt_box">几乎不运动</view>
+      </view>
+      <view class="right_icon">
+        <image src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['0','10','20','30','40']}}">  
+    <view class="ipt_item flex_between">
+      <view class="ipt_left">
+        <view class="ipt_des">体脂率</view>
+        <view class="ipt_box">20%</view>
+      </view>
+      <view class="right_icon">
+        <image src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+  </picker>
+  <view class="save_btn">保存</view>
+  <view class="prompt">备注：请完善真实的个人信息，以便准确的训练记录</view>
 </view>
-</picker>
-<swiper autoplay="true" interval="3000">
+<swiper autoplay="true" interval="3000" class='idxswiper' circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="swiper_img"></image>
+      <image src="{{item}}" class="swiper_img" mode='aspectFill'></image>
     </swiper-item>
   </block>
 </swiper>
-<view class="area">
-	<view class="area_item">
-		<image class="" src=""></image>
-		<view class="area_des">
-			<view class="area_name"></view>
-			<view class="area_details"></view>
-		</view>
-	</view>	
-</view>

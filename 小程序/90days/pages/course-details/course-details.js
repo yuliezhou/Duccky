@@ -6,5 +6,10 @@ Page({
     },
     onLoad: function(res) {
 
+    },
+    toShare:function(){
+ 		wx.navigateTo({
+       		 url: '../share-details/share-details',
+   		 })    	
     }
 })

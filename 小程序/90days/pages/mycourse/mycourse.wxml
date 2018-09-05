@@ -54,11 +54,7 @@
 <!-- 收藏 -->
 <view class="course_box" wx:if='{{courseIdx == 3}}'>
   <block wx:for='{{courseList3}}' wx:key='index'>
-    <view class="course_item">
-      <view class="course_item_top flex_between">
-        <view class="course_top_date">{{item.date}}</view>
-        <view class="course_top_week">{{item.week}}</view>
-      </view> 
+    <view class="course_item collect_item">
       <view class="course_item_bot flex_between">
         <view class="course_bot_left flex_center">
           <view class="course_timer">{{item.timer}}</view>
@@ -72,6 +68,7 @@
           <view class="view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
         </view>
       </view>
+      <image src="../../images/tag.png" class="course_tag" wx:if='{{item.tagShow}}'></image>
     </view>
   </block>
 </view>

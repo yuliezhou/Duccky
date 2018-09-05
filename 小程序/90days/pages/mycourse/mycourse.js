@@ -12,7 +12,8 @@ Page({
 				courseTitle:'高效燃脂11',
 				course_p:'塑形·舞蹈·体态纠正1',
 				coursePrice:'18:00-19:00 ¥69',
-				viewBool:true
+				viewBool:true,
+				tagShow:true
 			},
 			{
 				date:'8月17日',
@@ -21,7 +22,8 @@ Page({
 				courseTitle:'高效燃脂12',
 				course_p:'塑形·舞蹈·体态纠正2',
 				coursePrice:'18:00-19:00 ¥69',
-				viewBool:false
+				viewBool:false,
+				tagShow:true
 			},
 		],
 		courseList2:[
@@ -32,7 +34,8 @@ Page({
 				courseTitle:'高效燃脂21',
 				course_p:'塑形·舞蹈·体态纠正1',
 				coursePrice:'18:00-19:00 ¥69',
-				viewBool:true
+				viewBool:true,
+				tagShow:true
 			},
 			{
 				date:'8月17日',
@@ -41,7 +44,8 @@ Page({
 				courseTitle:'高效燃脂22',
 				course_p:'塑形·舞蹈·体态纠正2',
 				coursePrice:'18:00-19:00 ¥69',
-				viewBool:false
+				viewBool:false,
+				tagShow:true
 			},
 		],
 		courseList3:[
@@ -52,7 +56,8 @@ Page({
 				courseTitle:'高效燃脂31',
 				course_p:'塑形·舞蹈·体态纠正1',
 				coursePrice:'18:00-19:00 ¥69',
-				viewBool:true
+				viewBool:true,
+				tagShow:true
 			},
 			{
 				date:'8月17日',
@@ -61,7 +66,8 @@ Page({
 				courseTitle:'高效燃脂32',
 				course_p:'塑形·舞蹈·体态纠正2',
 				coursePrice:'18:00-19:00 ¥69',
-				viewBool:false
+				viewBool:false,
+				tagShow:true
 			},
 		],
     },

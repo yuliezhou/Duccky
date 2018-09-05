@@ -23,10 +23,11 @@
 .course_item{
 	background: #fff;
 	margin-bottom: 20rpx;
+	position: relative;
 }
 .course_item_top{
 	height: 60rpx;
-	border-bottom: 1rpx solid #E5E5E5;
+	border-bottom: 2rpx solid #E5E5E5;
 }
 .course_top_date{
 	color: #919191;
@@ -46,7 +47,7 @@
 	line-height: 112rpx;
 	width: 194rpx;
 	text-align: center;
-	border-right: 1rpx solid #E5E5E5;
+	border-right: 2rpx solid #E5E5E5;
 	font-weight: bold;
 	font-size: 56rpx;
 }
@@ -161,4 +162,15 @@
 	margin-top: 40rpx;
 	width: 80rpx;
 	height: 80rpx;
+}
+.course_tag{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 62rpx;
+	height: 62rpx;
+}
+.collect_item{
+	margin: 0;
+	border-bottom: 2rpx solid #E5E5E5;
 }

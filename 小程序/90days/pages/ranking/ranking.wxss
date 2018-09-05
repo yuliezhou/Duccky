@@ -1,0 +1,161 @@
+.ranking_top_title{
+	width: 100%;
+	background: #fff;
+}
+.border_right{
+	border-right:2rpx solid #FAFAFA;
+}
+.ranking_top_item{
+	box-sizing: border-box;
+	width: 50%;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	color: #4C4252;
+	font-size: 30rpx;
+	border-bottom: 6rpx solid transparent;
+}
+.ranking_top_title .active{
+	border-bottom: 6rpx solid #FFB74C;
+	color: #FFB74C;
+}
+.month_week{
+	position: relative;
+}
+.month_backimg{
+	height: 200rpx;
+	width: 100%;
+}
+.month_ab{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.rank_icon{
+	margin-left: 120rpx;
+	width: 106rpx;
+	height: 106rpx;
+}
+.change_ranking{
+	margin-right: 34rpx;
+	display: flex;
+}
+.change_item{
+	margin-left: 22rpx;
+	width: 92rpx;
+	height: 48rpx;
+	color: #4C4252;
+	line-height: 48rpx;
+	text-align: center;
+	font-size: 26rpx;
+	border-radius: 24rpx;
+	background: #fff;
+}
+.change_ranking .active{
+	color: #fff;
+	background: linear-gradient(130deg,rgba(255,220,132,1) 0%,rgba(255,183,76,1) 100%);
+}
+.show_title{
+	padding: 0 26rpx;
+	width: 698rpx;
+	display: flex;
+	color: #A095A7;
+	font-size: 24rpx;
+	align-items: center;
+	height: 70rpx;
+	background: #fff;
+}
+.center_item{
+	margin-left: -110rpx; 
+}
+.rankingList{
+	padding-top: 20rpx;
+}
+.ranking_bot_item{
+	width: 700rpx;
+	border-radius: 12rpx;
+	margin-bottom: 20rpx;
+	height: 168rpx;
+	background: #fff;
+}
+.ranking_number{
+	color: #4C4252;
+	font-size: 28rpx;
+	width: 68rpx;
+	text-align: center;
+	float: left;
+	height: 168rpx;
+}
+.user_img{
+	width: 112rpx;
+	border-radius: 50%;
+	float: left;
+	display: flex;
+	align-items: center;
+	height: 168rpx;
+}
+.user_img image{
+	width: 112rpx;
+	height: 112rpx;
+	border-radius: 50%;
+	border:2rpx solid #fff;
+	box-sizing: border-box;
+}
+.user_info{
+	display: flex;
+	float: left;
+	display: flex;
+	align-items: center;
+	height: 168rpx;
+	align-items: center;
+}
+.user_info image{
+	width: 36rpx;
+	height: 36rpx;
+	margin: 0 14rpx;
+}
+.user_info .user_name{
+	width: 90rpx;
+	display: inline-block;
+	color: #4C4252;
+	font-size: 28rpx;
+}
+.medal{
+	margin-left: 15rpx;
+	height: 168rpx;
+	display: flex;
+	float: left;
+	align-items: center;
+}
+.medal_icon{
+	width: 54rpx;
+	height: 54rpx;
+	margin-right: 6rpx;
+}
+.training_times{
+	color: #4C4252;
+	font-size: 52rpx;
+	font-weight: 500;
+	float: right;
+	height: 168rpx;
+	margin-right: 20rpx;
+	display: flex;
+	align-items: center;
+}
+.mine_ranking{
+	background: linear-gradient(130deg,rgba(255,213,106,1) 0%,rgba(255,170,47,1) 100%);
+}
+.mine_ranking .ranking_number, .mine_ranking .user_name, .mine_ranking .training_times{
+	color: #fff;
+}
+.ranking_txt1{
+	color: #C79B02;
+}
+.ranking_txt2{
+	color: #90959E;
+}
+.ranking_txt3{
+	color: #A0604D;
+}
