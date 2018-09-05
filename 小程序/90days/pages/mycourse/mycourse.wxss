@@ -26,7 +26,7 @@
 }
 .course_item_top{
 	height: 60rpx;
-	border-bottom: 1rpx solid #E5E5E5;
+	border-bottom: 2rpx solid #E5E5E5;
 }
 .course_top_date{
 	color: #919191;
@@ -46,7 +46,7 @@
 	line-height: 112rpx;
 	width: 194rpx;
 	text-align: center;
-	border-right: 1rpx solid #E5E5E5;
+	border-right: 2rpx solid #E5E5E5;
 	font-weight: bold;
 	font-size: 56rpx;
 }

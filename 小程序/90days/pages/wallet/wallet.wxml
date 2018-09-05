@@ -1,27 +1,46 @@
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-<view class="picker">
-  <view class="area_choose flex_between">
-  	<view class="area_left">
-  		<image class="" src="" ></image>
-  		<text></text>
-  	</view>
-  	<view class="area_right"></view>
+<view class="wallet_outer">
+  <view class="wallet">
+    <image class="" src="../../images/wallet.png"></image>
+    <view class="wallet_inner">
+      <view class="wallet_left">
+        <view class="wallet_title">当前余额(元)</view>
+        <view class="wallet_money elli">
+          <text>¥</text>
+          38.98
+        </view>
+      </view>
+      <view class="wallet_right" bindtap='toRecharge'>充值</view>
+      <view class="clear"></view>
+    </view>
+  </view>
+  <view class="coupon flex_between">
+      <view class="coupon_left flex_center">
+        <image class="coupon_icon" src="../../images/coupon_icon.png"></image>
+        <text>优惠券</text>
+      </view>
+      <image class="right_icon" src="../../images/right_icon.png"></image>      
   </view>
 </view>
-</picker>
-<swiper autoplay="true" interval="3000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="swiper_img"></image>
-    </swiper-item>
-  </block>
-</swiper>
-<view class="area">
-	<view class="area_item">
-		<image class="" src=""></image>
-		<view class="area_des">
-			<view class="area_name"></view>
-			<view class="area_details"></view>
-		</view>
-	</view>	
+<view class="recording">
+  <view class="recording_title flex_center">
+    <view class="title_item border_right {{recordingIdx == 1?'active':''}}" data-id='1' bindtap='chooseRecording'>充值记录</view>
+    <view class="title_item {{recordingIdx == 2?'active':''}}" data-id='2'  bindtap='chooseRecording'>消费记录</view>
+  </view>
+  <view class="recording_box" wx:if='{{recordingIdx == 1}}'>
+    <block wx:for='{{rechargeList}}'>
+      <view class="recording_item flex_between">
+        <view class="timer">{{item.time}}</view>
+        <view class="price">+{{item.price}}元</view>
+      </view>
+    </block>
+  </view>
+  <view class="recording_box" wx:if='{{recordingIdx == 2}}'>
+    <block wx:for='{{costList}}'>
+      <view class="recording_item flex_between">
+        <view class="timer">{{item.time}}</view>
+        <view class="price">-{{item.price}}元</view>
+      </view>
+    </block>
+  </view>
 </view>
+

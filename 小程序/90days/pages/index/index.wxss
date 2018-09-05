@@ -23,7 +23,7 @@
 }
 .date{
 	height: 106rpx;
-	border-top: 1rpx solid #FAFAFA;
+	border-top: 2rpx solid #FAFAFA;
 }
 .today{
 	border-radius: 50%;
@@ -53,7 +53,7 @@
 	font-size: 18rpx;
 }
 .type{
-	border-top: 1rpx solid #FAFAFA;
+	border-top: 2rpx solid #FAFAFA;
 }
 .type_item{
 	text-align: center;
@@ -70,8 +70,8 @@
 	color: #4C4252;
 }
 .type_item_center{
-	border-left:1rpx solid #FAFAFA; 
-	border-right:1rpx solid #FAFAFA; 
+	border-left:2rpx solid #FAFAFA; 
+	border-right:2rpx solid #FAFAFA; 
 }
 .idx_course_item{
 	margin-bottom: 0;

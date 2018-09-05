@@ -43,7 +43,7 @@
 	box-sizing: border-box;
 }
 .border_ac{
-	border-right:1rpx solid rgba(255,255,255,0.2) 
+	border-right:2rpx solid rgba(255,255,255,0.2) 
 }
 .balance_number{
 	font-size: 40rpx;

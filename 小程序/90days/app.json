@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/wallet/wallet",
+    "pages/recharge/recharge",
     "pages/ranking/ranking",
     "pages/system/system",
     "pages/store/store",
     "pages/personal/personal",
     "pages/coupon/coupon",
     "pages/medalwall/medalwall",
-    "pages/wallet/wallet",
     "pages/choosecourse/choosecourse",
     "pages/training/training",
     "pages/sportstest/sportstest",
