@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/ranking/ranking",
     "pages/system/system",
     "pages/store/store",
     "pages/personal/personal",
@@ -10,8 +11,7 @@
     "pages/choosecourse/choosecourse",
     "pages/training/training",
     "pages/sportstest/sportstest",
-    "pages/mycourse/mycourse",
-    "pages/ranking/ranking"
+    "pages/mycourse/mycourse"               
   ],
   "tabBar": {
       "color": "#8C8C8C",
