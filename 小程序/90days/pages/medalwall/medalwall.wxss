@@ -39,6 +39,7 @@
 }
 .medal_wall{
 	padding: 30rpx 7rpx 0;
+	background: #fff;
 }
 .medal_item{
 	padding: 0 22rpx 30rpx;

@@ -100,5 +100,11 @@ Page({
           icon: "none",
           duration: 1500
       });     	
-    }    
+    },
+    //跳转详情
+    toDetails:function(){
+		wx.navigateTo({
+       		 url: '../course-details/course-details',
+   		 })     	
+    }          
 })

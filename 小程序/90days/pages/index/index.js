@@ -117,5 +117,11 @@ Page({
 		wx.navigateTo({
        		 url: '../store/store',
    		 }) 
-   	}   	
+   	},
+    //跳转详情
+    toDetails:function(){
+		wx.navigateTo({
+       		 url: '../course-details/course-details',
+   		 })     	
+    }   	  	
 })

@@ -12,7 +12,7 @@
         <view class="course_top_week">{{item.week}}</view>
       </view> 
       <view class="course_item_bot flex_between">
-        <view class="course_bot_left flex_center">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
           <view class="course_timer">{{item.timer}}</view>
           <view class="course_des">
             <view class="course_title elli">{{item.courseTitle}}</view>
@@ -38,7 +38,7 @@
         <view class="course_top_week">{{item.week}}</view>
       </view> 
       <view class="course_item_bot flex_between">
-        <view class="course_bot_left flex_center">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
           <view class="course_timer">{{item.timer}}</view>
           <view class="course_des">
             <view class="course_title elli">{{item.courseTitle}}</view>
@@ -60,7 +60,7 @@
   <block wx:for='{{courseList3}}' wx:key='index'>
     <view class="course_item collect_item">
       <view class="course_item_bot flex_between">
-        <view class="course_bot_left flex_center">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
           <view class="course_timer">{{item.timer}}</view>
           <view class="course_des">
             <view class="course_title elli">{{item.courseTitle}}</view>

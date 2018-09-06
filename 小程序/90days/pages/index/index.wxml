@@ -45,7 +45,7 @@
   <block wx:for='{{courseList1}}' wx:key='index'>
     <view class="course_item idx_course_item">
       <view class="course_item_bot flex_between">
-        <view class="course_bot_left flex_center">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
           <view class="course_timer">{{item.timer}}</view>
           <view class="course_des">
             <view class="course_title elli">{{item.courseTitle}}</view>
@@ -68,7 +68,7 @@
   <block wx:for='{{courseList2}}' wx:key='index'>
     <view class="course_item idx_course_item">
       <view class="course_item_bot flex_between">
-        <view class="course_bot_left flex_center">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
           <view class="course_timer">{{item.timer}}</view>
           <view class="course_des">
             <view class="course_title elli">{{item.courseTitle}}</view>
@@ -91,7 +91,7 @@
   <block wx:for='{{courseList3}}' wx:key='index'>
     <view class="course_item idx_course_item">
       <view class="course_item_bot flex_between">
-        <view class="course_bot_left flex_center">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
           <view class="course_timer">{{item.timer}}</view>
           <view class="course_des">
             <view class="course_title elli">{{item.courseTitle}}</view>
