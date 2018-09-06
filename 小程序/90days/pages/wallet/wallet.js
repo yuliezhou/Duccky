@@ -41,6 +41,12 @@ Page({
             url: '../recharge/recharge',
         })
     },
+    //跳转到优惠券页面
+    toCoupon:function(){
+        wx.navigateTo({
+            url: '../coupon/coupon',
+        })    	
+    }
     //选择记录类型
 	chooseRecording:function(res){
     	var id = res.currentTarget.dataset.id;

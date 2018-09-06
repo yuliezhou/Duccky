@@ -17,7 +17,7 @@
   <!-- 余额 end-->
 
   <!-- 优惠券 -->
-  <view class="coupon flex_between">
+  <view class="coupon flex_between" bindtap='toCoupon'>
       <view class="coupon_left flex_center">
         <image class="coupon_icon" src="../../images/coupon_icon.png"></image>
         <text>优惠券</text>
