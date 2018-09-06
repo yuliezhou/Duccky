@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/share-details/share-details",
+    "pages/training/training",
+    "pages/index/index",
     "pages/course-details/course-details",
     "pages/choosecourse/choosecourse",
     "pages/userinfo/userinfo",
@@ -13,7 +14,6 @@
     "pages/personal/personal",
     "pages/coupon/coupon",
     "pages/medalwall/medalwall",
-    "pages/training/training",
     "pages/sportstest/sportstest",
     "pages/mycourse/mycourse"               
   ],

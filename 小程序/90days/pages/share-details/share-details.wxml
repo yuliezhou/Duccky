@@ -1,1 +1,24 @@
-hello world
+<view class="top_img">
+	<image class="inner_img" src="../../images/ba.png" mode="aspectFill"></image>
+</view>
+<view class="share_course">
+	<view class="share_course_des_inner flex_between">
+		<view class="share_course_left">
+			<view class="left_icon"></view>
+			<view class="share_course_des">
+				<view class="share_course_name elli">90DAYS健身90DAYS健身90DAYS健身</view>
+				<view class="share_course_txt elli">热舞操·燃脂爵士</view>
+			</view>
+		</view>
+		<view class="right_icon"></view>
+	</view>
+	<!-- 二维码 -->
+	<view class="code flex_mid">
+		<image class="" src="../../images/ba.png" mode="aspectFill"></image>
+		<text>长按识别小程序码查看</text>
+	</view>	
+</view>
+<view class="btn_outer flex_mid">
+	<button open-type='share' class="share_btn">一键发送，微信好友</button>
+	<view class="save_photo">保存图片，发朋友圈</view>
+</view>

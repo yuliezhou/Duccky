@@ -1,27 +1,42 @@
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-<view class="picker">
-  <view class="area_choose flex_between">
-  	<view class="area_left">
-  		<image class="" src="" ></image>
-  		<text></text>
-  	</view>
-  	<view class="area_right"></view>
+<view class="data_top flex_between">
+
+  <view class="data_left">
+    <view class="data_left_item">
+      <view class="data_left_title">训练次数</view>
+      <view class="data_left_number elli">2</view>
+    </view>
+    <view class="data_left_item">
+      <view class="data_left_title">训练时长</view>
+      <view class="data_left_number elli">67</view>
+    </view>
   </view>
+
+  <view class="data_right">
+    <image class="data_backimg" src="../../images/data-back.png"></image>
+    <view class="data_ab flex_mid">
+      <view class="data_title">总卡路里</view>
+      <view class="data_number elli">600</view>
+      <image class="data_icon" src="../../images/data-icon.png"></image>
+      <view class="data_english">CAL</view>
+    </view>
+  </view>
+
 </view>
-</picker>
-<swiper autoplay="true" interval="3000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="swiper_img"></image>
-    </swiper-item>
+<view class="data_list">
+
+  <view class="list_title flex_mid">
+    <view class="list_title_item">时间</view>
+    <view class="list_title_item">课程</view>
+    <view class="list_title_item">卡路里(Cal)</view>
+    <view class="list_title_item">平均心率</view>
+  </view>
+
+  <block wx:for='{{trainingList}}'>
+    <view class="list_content flex_mid">
+      <view class="list_content_item elli">{{item.time}}</view>
+      <view class="list_content_item elli">{{item.name}}</view>
+      <view class="list_content_item elli">{{item.cal}}</view>
+      <view class="list_content_item elli">{{item.heart}}</view>
+    </view>
   </block>
-</swiper>
-<view class="area">
-	<view class="area_item">
-		<image class="" src=""></image>
-		<view class="area_des">
-			<view class="area_name"></view>
-			<view class="area_details"></view>
-		</view>
-	</view>	
 </view>
