@@ -1,0 +1,75 @@
+<view class="comment flex_mid">
+  <view class="comment_inner">
+    <view class="star_box flex_mid">
+  <!-- 趣味指数 -->
+      <view class="comment_item">
+        <text class="comment_item_title">趣味指数</text>
+        <view class="comment_star flex_center">
+          <block wx:for='{{5}}'>
+            <view class="item" bindtap='chooseFun' data-id='{{index+1}}'>
+              <image class="star_icon" src="../../images/{{index <funIndex ? 'acstar':'star'}}.png"></image>
+            </view>
+          </block>
+        </view>      
+      </view>
+    <!-- 趣味指数 end-->
+
+    <!-- 训练强度 -->
+      <view class="comment_item">
+        <text class="comment_item_title">训练强度</text>
+        <view class="comment_star flex_center">
+          <block wx:for='{{5}}'>
+            <view class="item" bindtap='chooseTrain' data-id='{{index+1}}'>
+              <image class="star_icon" src="../../images/{{index <trainIndex ? 'acstar':'star'}}.png"></image>
+            </view>
+          </block>
+        </view>      
+      </view>
+    <!-- 训练强度 end-->
+    
+    <!-- 课程氛围 -->
+      <view class="comment_item">
+        <text class="comment_item_title">课程氛围</text>
+        <view class="comment_star flex_center">
+          <block wx:for='{{5}}'>
+            <view class="item" bindtap='chooseCourse' data-id='{{index+1}}'>
+              <image class="star_icon" src="../../images/{{index <courseIndex ? 'acstar':'star'}}.png"></image>
+            </view>
+          </block>
+        </view>      
+      </view>
+    <!-- 课程氛围 end-->
+    
+    <!-- 教练指数 -->
+      <view class="comment_item">
+        <text class="comment_item_title">教练指数</text>
+        <view class="comment_star flex_center">
+          <block wx:for='{{5}}'>
+            <view class="item" bindtap='chooseCoach' data-id='{{index+1}}'>
+              <image class="star_icon" src="../../images/{{index <coachIndex ? 'acstar':'star'}}.png"></image>
+            </view>
+          </block>
+        </view>      
+      </view>
+    <!-- 教练指数 end-->
+    </view>
+    <!-- 评论框 -->
+    <view class="textarea_box">
+      <textarea placeholder='亲，这次的体验如何，对教练服务等还 满意吗？'></textarea>
+      <text>至少输入8个字</text>
+    </view>
+    <!-- 评论框 end-->
+    <!-- 上传图片 -->
+    <view class="upload" bindtap='uploadPhoto'>
+      <view class="upload_inner flex_mid" wx:if='{{!photoUrl}}'>
+          <image class="upload_icon" src="../../images/camera.png"></image>
+          <text>上传图片</text>
+      </view>
+      <image class="upload_photo" src="{{photoUrl}}" mode="aspectFill"  wx:if='{{photoUrl}}'></image>
+    </view>
+    <!-- 上传图片 end-->
+    <!-- 上传按钮 -->
+    <view class="upload_btn">提交并分享领好礼</view>
+    <!-- 上传按钮 end-->
+  </view>
+</view>

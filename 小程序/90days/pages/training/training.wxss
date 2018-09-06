@@ -36,6 +36,7 @@
 }
 .data_right{
 	position: relative;
+	margin-right: 64rpx;
 }
 .data_backimg{
 	width: 348rpx;
@@ -60,7 +61,7 @@
 	margin-top: 10rpx;
 	margin-bottom: 4rpx;
 	font-weight: bold;
-	background-image: -webkit-gradient(linear, left center, right center, from(red), to(blue));
+	background-image: linear-gradient(#FFD56A,#FFAA2F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;	
 }

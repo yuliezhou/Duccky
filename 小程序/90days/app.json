@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/share-details/share-details",
-    "pages/training/training",
     "pages/index/index",
+    "pages/training/training",
+    "pages/comment/comment",
+    "pages/share-details/share-details",
     "pages/course-details/course-details",
     "pages/choosecourse/choosecourse",
     "pages/userinfo/userinfo",
