@@ -22,3 +22,19 @@
 	<button open-type='share' class="share_btn">一键发送，微信好友</button>
 	<view class="save_photo">保存图片，发朋友圈</view>
 </view>
+<!-- 抽奖弹窗 -->
+<view class="lottery_modal flex_mid" wx:if='{{modalShow}}'>
+	<view class="text_box">
+		<image class="" src="../../images/text_ab.png"></image>
+		<view class="text_ab">
+			<view class="text_des">恭喜你分享成功</view>
+			<view class="text_des">获得 1次抽大奖 的机会</view>
+		</view>
+	</view>
+	<image class="mid_img" src="../../images/mid_img.png"></image>
+	<view class="lottery_btn" bindtap='lottery'>
+		<image class="" src="../../images/lo_btn.png"></image>
+		<view class="lottery_ab">去抽奖！</view>
+	</view>
+</view>
+<!-- 抽奖弹窗 end-->

@@ -46,7 +46,7 @@ Page({
         wx.navigateTo({
             url: '../coupon/coupon',
         })    	
-    }
+    },
     //选择记录类型
 	chooseRecording:function(res){
     	var id = res.currentTarget.dataset.id;
