@@ -30,6 +30,6 @@ Page({
 		]
     },
     onLoad: function(res) {
-
+		
     }
 })

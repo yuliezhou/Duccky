@@ -1,3 +1,4 @@
+<!-- 个人信息 -->
 <view class="user flex_between" bindtap='toUserinfo'>
   <view class="user_des flex_center">
     <view class="user_img">
@@ -10,6 +11,9 @@
   </view>
   <image class="right_icon" src="../../images/right_icon.png"></image>
 </view>
+<!-- 个人信息 end-->
+
+<!-- 钱包 -->
 <view class="balance flex_center">
   <view class="balance_item border_ac flex_mid" bindtap='toWallet'>
     <view class="balance_number">2389</view>
@@ -20,6 +24,9 @@
     <view class="balance_txt">课时数(节)</view>
   </view>
 </view>
+<!-- 钱包 end-->
+
+<!-- 广告位 -->
 <swiper autoplay="true" interval="3000" class='adswiper' circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
@@ -27,6 +34,9 @@
     </swiper-item>
   </block>
 </swiper>
+<!-- 广告位 end-->
+
+<!-- 功能区 -->
 <view class="function">
   <block wx:for='{{functionList}}'>
     <view class="function_item flex_mid" bindtap='toOtherPage' data-id='{{index}}'>
@@ -36,3 +46,5 @@
   </block>
   <view class="clear"></view>
 </view>
+<!-- 功能区 -->
+

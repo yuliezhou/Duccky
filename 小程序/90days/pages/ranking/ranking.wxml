@@ -1,7 +1,11 @@
+<!-- 一级分类 -->
 <view class="ranking_top_title flex_center">
   <view class="ranking_top_item border_right {{bigIdx == 1 ?'active':''}}" bindtap='changeBigType' data-id='1'>达人榜</view>
   <view class="ranking_top_item {{bigIdx == 2 ?'active':''}}" bindtap='changeBigType' data-id='2'>能量榜</view>
 </view>
+<!-- 一级分类 end-->
+
+<!-- 二级分类 -->
 <view class="month_week">
   <image class="month_backimg" src="../../images/medal_back.png"></image>
   <view class="month_ab flex_between">
@@ -12,12 +16,15 @@
     </view>
   </view>
 </view>
+<!-- 二级分类 -->
+
 <view class="show_title flex_between">
   <view class="title_item">排行</view>
   <view class="title_item center_item">昵称</view>
   <view class="title_item">训练次数</view>
 </view>
 <view class="rankingList flex_mid">
+
   <!-- 自己的排名 -->
   <view class="ranking_bot_item mine_ranking">
     <view class="ranking_number flex_center">1</view>
@@ -37,6 +44,7 @@
     <view class="training_times">28</view>
   </view>
   <!-- 自己的排名 end-->
+
   <!-- 排名列表 -->
   <block wx:for='{{rankingList}}' wx:key>
     <view class="ranking_bot_item">
@@ -58,4 +66,5 @@
     </view>
   </block>
   <!-- 排名列表 end-->
+  
 </view>

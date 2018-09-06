@@ -1,7 +1,9 @@
+
 <view class="course_img_outer">
   <image class="course_img" src="../../images/ba.png" mode="aspectFill"></image>
   <image class="share_btn" src="../../images/share.png" bindtap='toShare'></image>
 </view>
+<!-- 时间地址价格 -->
 <view class="timer_date">
   <view class="timer_date_item">
     <image src="../../images/per0.png"></image>
@@ -16,6 +18,9 @@
     <text>地址：重庆市渝北区龙山街道冉家坝</text>
   </view>
 </view>
+<!-- 时间地址价格 end-->
+
+<!-- 课程介绍 -->
 <view class="text_item">
   <view class="title">课程介绍</view>
   <view class="des_text">零基础/学习过基础课培训方式: 每月定期/小班授课特 色:为学生开展专场招聘会优势:合作俱乐部超过6800家,全日制上课,让你成为专业的健身教练.就业不用愁</view>
@@ -52,6 +57,9 @@
     </view>
   </view>
 </view>
+<!-- 课程介绍 end-->
+
+<!-- 注意事项 -->
 <view class="text_item">
   <view class="title">注意事项</view>
   <view class="des_text">· 开课前不能取消</view>
@@ -61,5 +69,9 @@
   <view class="des_text">· 进食半小时后不要运动</view>
   <view class="des_text">· 本店提供更衣室/储物柜/卫生间</view>
 </view>
+<!-- 注意事项 end-->
+
 <view class="reserve_btn">立即预约</view>
+<!-- 占位 -->
 <view class="empty"></view>  
+<!-- 占位 end-->

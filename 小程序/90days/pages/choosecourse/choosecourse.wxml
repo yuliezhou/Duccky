@@ -53,6 +53,7 @@
   <view class="save_btn">保存</view>
   <view class="prompt">备注：请完善真实的个人信息，以便准确的训练记录</view>
 </view>
+
 <swiper autoplay="true" interval="3000" class='idxswiper' circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>

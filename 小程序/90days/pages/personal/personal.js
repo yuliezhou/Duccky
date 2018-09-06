@@ -8,10 +8,12 @@ Page({
     onLoad: function(res) {
 
     },
+    //底部功能区点击跳转不同的页面
     toOtherPage:function(res){
 		var id = res.currentTarget.dataset.id;
 		this.toPage(id);
     },
+    //底部功能区点击跳转不同的页面
     toPage:function(id){
 		switch (id) {
 			case 0:
@@ -41,7 +43,7 @@ Page({
 			break;
 			case 5:
 		        wx.navigateTo({
-		            url: '../medalwall/	medalwall',
+		            url: '../medalwall/medalwall',
 		        })
 			break;
 		}
@@ -52,6 +54,7 @@ Page({
             url: '../wallet/wallet',
         })
     },
+    //跳转到个人信息页
     toUserinfo:function(){
         wx.navigateTo({
             url: '../userinfo/userinfo',

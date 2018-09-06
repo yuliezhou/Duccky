@@ -23,5 +23,11 @@ Page({
 	},
 	toTwo:function(n){
 		return n < 10 ? '0' + n : '' + n;
-	} 
+	},
+	//返回上一页
+	backUp:function(){
+		wx.switchTab({
+		  url: '../personal/personal'
+		})		
+	}
 })

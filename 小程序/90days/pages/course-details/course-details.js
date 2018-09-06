@@ -7,6 +7,7 @@ Page({
     onLoad: function(res) {
 
     },
+    //跳转分享页面
     toShare:function(){
  		wx.navigateTo({
        		 url: '../share-details/share-details',

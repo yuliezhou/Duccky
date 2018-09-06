@@ -1,4 +1,5 @@
 <view class="bodyer">
+  <!-- 个人信息 -->
   <view class="info_item flex_between">
     <view class="info_left">充值帐户</view>
     <view class="info_right">Duccky</view>
@@ -7,9 +8,13 @@
     <view class="info_left">剩余额度</view>
     <view class="info_right">¥500元</view>
   </view>
+  <!-- 个人信息 end-->
+
   <view class="info_item info_item1">
     <text class="info_left">充值额度</text>
   </view>
+
+  <!-- 充值额度列表 -->
   <view class="choose_price">
     <block wx:for='{{priceList}}'>
       <view class="price_item flex_mid" data-id='{{index}}' bindtap='choosePrice'>
@@ -20,6 +25,8 @@
     </block>
     <view class="clear"></view>
   </view>
+  <!-- 充值额度列表 end-->
+
   <view class="bot_details flex_mid">
     <view class="recharge_btn">确认充值</view>
     <view class="notice">

@@ -46,12 +46,14 @@ Page({
     onLoad: function(res) {
 
     },
+    //选择类型
     chooseType:function(res){
     	var id = res.currentTarget.dataset.id;
     	this.setData({
     		chooseIdx:id
     	})		
     },
+    //跳转详情
     toDetails:function(){
 		wx.navigateTo({
        		 url: '../course-details/course-details',

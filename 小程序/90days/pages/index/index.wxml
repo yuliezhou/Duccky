@@ -1,3 +1,4 @@
+<!-- banner -->
 <swiper autoplay="true" interval="3000" class='idxswiper' circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
@@ -5,11 +6,18 @@
     </swiper-item>
   </block>
 </swiper>
+<!-- banner end-->
+
 <view class="area">
+
+  <!-- 门店选择 -->
   <view class="area_picker" bindtap='toStore'>
     <text>成都90店</text>
     <image src="../../images/down.png" class="down_icon"></image>
   </view>
+  <!-- 门店选择 end-->
+
+  <!-- 日期选择 -->
   <view class="date flex_center">
     <block wx:for='{{dateList}}' wx:key='index'>
     	<view class="date_item">
@@ -23,12 +31,16 @@
     	</view>
     </block>
   </view>	
+  <!-- 日期选择 end-->
+
   <view class="type flex_between">
   	<view class="type_item {{courseIdx == 1?'active_type':''}}" data-id='1' bindtap='chooseCourse'>全部课程</view>
   	<view class="type_item type_item_center {{courseIdx == 2?'active_type':''}}" data-id='2' bindtap='chooseCourse'>全部时段</view>
   	<view class="type_item {{courseIdx == 3?'active_type':''}}" data-id='3' bindtap='chooseCourse'>固定课程</view>
   </view>
 </view>
+
+<!-- 全部课程 -->
 <view class="course_box" wx:if='{{courseIdx == 1}}'>
   <block wx:for='{{courseList1}}' wx:key='index'>
     <view class="course_item idx_course_item">
@@ -49,7 +61,9 @@
     </view>
   </block>
 </view>
+<!-- 全部课程 end-->
 
+<!-- 全部时段 -->
 <view class="course_box" wx:if='{{courseIdx == 2}}'>
   <block wx:for='{{courseList2}}' wx:key='index'>
     <view class="course_item idx_course_item">
@@ -70,7 +84,9 @@
     </view>
   </block>
 </view>
+<!-- 全部时段 end-->
 
+<!-- 固定课程 -->
 <view class="course_box" wx:if='{{courseIdx == 3}}'>
   <block wx:for='{{courseList3}}' wx:key='index'>
     <view class="course_item idx_course_item">
@@ -91,4 +107,5 @@
     </view>
   </block>
 </view>
+<!-- 固定课程 end-->
 

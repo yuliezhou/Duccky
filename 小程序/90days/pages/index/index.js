@@ -97,12 +97,14 @@ Page({
 			today:today
 		})
     },
+    //筛选课程
     chooseCourse:function (res) {
     	var id = res.currentTarget.dataset.id;
     	this.setData({
     		courseIdx:id
     	})
     },    
+    //预约
     reserve:function () {
 		wx.showToast({
 		      title: '预约成功',
@@ -110,6 +112,7 @@ Page({
 		      duration: 1500
 		  });     	
     },
+    //跳转门店
     toStore:function(){
 		wx.navigateTo({
        		 url: '../store/store',

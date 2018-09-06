@@ -25,6 +25,7 @@ Page({
     onLoad: function(res) {
 
     },
+    //选择充值金额
     choosePrice:function (res) {
     	var id = res.currentTarget.dataset.id;
     	this.setData({

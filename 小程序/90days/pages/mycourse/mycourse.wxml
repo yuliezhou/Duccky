@@ -27,6 +27,8 @@
     </view>
   </block>
 </view>
+<!-- 待上课程 end-->
+
 <!-- 等位 -->
 <view class="course_box" wx:if='{{courseIdx == 2}}'>
   <block wx:for='{{courseList2}}' wx:key='index'>
@@ -51,6 +53,8 @@
     </view>
   </block>
 </view>
+<!-- 等位 end-->
+
 <!-- 收藏 -->
 <view class="course_box" wx:if='{{courseIdx == 3}}'>
   <block wx:for='{{courseList3}}' wx:key='index'>
@@ -72,6 +76,9 @@
     </view>
   </block>
 </view>
+<!-- 收藏 end-->
+
+<!-- 弹窗 -->
 <view class="modal flex_mid" wx:if='{{modalShow}}'>
   <view class="modal_outer flex_mid">
     <view class="modal_inner">
@@ -95,3 +102,4 @@
     <image class="close" src="../../images/close.png" bindtap='closeModal'></image>
   </view>
 </view>
+<!-- 弹窗 end-->

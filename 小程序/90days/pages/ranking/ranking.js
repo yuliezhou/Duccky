@@ -42,12 +42,14 @@ Page({
     onLoad: function(res) {
 
     },
+    //一级切换
     changeBigType:function(res){
     	var id = res.currentTarget.dataset.id;
     	this.setData({
     		bigIdx:id
     	})
     },
+    //二级切换
     changeSmallType:function(res){
     	var id = res.currentTarget.dataset.id;
     	this.setData({

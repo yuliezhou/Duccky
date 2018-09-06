@@ -1,5 +1,6 @@
 
 <view class="info">
+  <!-- 姓名 -->
   <view class="info_item border_ac flex_between">
     <text class="item_left">姓名</text>
     <view class="userinfo_box">
@@ -7,6 +8,7 @@
       <image class="right_icon" src="../../images/right_icon.png"></image>
     </view>
   </view>
+  <!-- 手机号 -->
   <view class="info_item border_ac flex_between">
     <text class="item_left">手机号</text>
     <view class="userinfo_box">
@@ -14,8 +16,10 @@
       <image class="right_icon" src="../../images/right_icon.png"></image>
     </view>
   </view>
+
 </view>
 <view class="info">
+  <!-- 性别 -->
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{['男','女']}}">
     <view class="info_item border_ac flex_between">
       <text class="item_left">性别</text>
@@ -25,6 +29,7 @@
       </view>
     </view>
   </picker>
+  <!-- 生日 -->
   <picker bindchange="bindPickerChange"  mode="date" start="1900-01-01" end="{{enddate}}" value="{{index}}">
     <view class="info_item border_ac flex_between">
       <text class="item_left">生日</text>
@@ -34,8 +39,10 @@
       </view>
     </view>
    </picker>
+
 </view>
 <view class="info">
+  <!-- 身高 -->
   <view class="info_item flex_between">
     <text class="item_left">身高</text>
     <view class="userinfo_box">
@@ -44,8 +51,10 @@
       <image class="right_icon" src="../../images/right_icon.png"></image>
     </view>
   </view>
+
 </view>
 <view class="info">
+  <!-- 体重 -->
   <view class="info_item border_ac flex_between">
     <text class="item_left">体重</text>
     <view class="userinfo_box">
@@ -54,5 +63,6 @@
       <image class="right_icon" src="../../images/right_icon.png"></image>
     </view>
   </view>
+
 </view>
-<view class="save_btn">保存并返回</view>
+<view class="save_btn" bindtap='backUp'>保存并返回</view>

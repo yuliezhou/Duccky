@@ -35,11 +35,13 @@ Page({
     onLoad: function(res) {
 
     },
+    //跳转到充值页面
     toRecharge:function(){
         wx.navigateTo({
             url: '../recharge/recharge',
         })
     },
+    //选择记录类型
 	chooseRecording:function(res){
     	var id = res.currentTarget.dataset.id;
     	this.setData({

@@ -1,3 +1,4 @@
+
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{areaList}}">
     <view class="area_choose flex_between">
     	<view class="area_left">
@@ -7,6 +8,7 @@
     	<view class="area_right">切换城市</view>
     </view>
 </picker>
+
 <swiper autoplay="true" interval="3000" class="adswiper" circular='true'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
@@ -14,6 +16,8 @@
     </swiper-item>
   </block>
 </swiper>
+
+<!-- 门店列表 -->
 <view class="area flex_mid">
   <block wx:for='{{storeList}}'>
   	<view class="area_item">

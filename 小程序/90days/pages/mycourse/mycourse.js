@@ -74,22 +74,26 @@ Page({
     onLoad: function(res) {
 
     },
+    //切换分类
     chooseCourse:function (res) {
     	var id = res.currentTarget.dataset.id;
     	this.setData({
     		courseIdx:id
     	})
     },
+    // 显示二维码弹窗
     viewQR:function () {
     	this.setData({
     		modalShow:true
     	})
     },
+    // 关闭二维码弹窗
     closeModal:function(){
     	this.setData({
     		modalShow:false
     	})    	
     },
+    //预约
     reserve:function () {
       wx.showToast({
           title: '预约成功',

@@ -1,4 +1,5 @@
 <view class="wallet_outer">
+  <!-- 余额 -->
   <view class="wallet">
     <image class="" src="../../images/wallet.png"></image>
     <view class="wallet_inner">
@@ -13,6 +14,9 @@
       <view class="clear"></view>
     </view>
   </view>
+  <!-- 余额 end-->
+
+  <!-- 优惠券 -->
   <view class="coupon flex_between">
       <view class="coupon_left flex_center">
         <image class="coupon_icon" src="../../images/coupon_icon.png"></image>
@@ -20,12 +24,18 @@
       </view>
       <image class="right_icon" src="../../images/right_icon.png"></image>      
   </view>
+  <!-- 优惠券 end-->
+
 </view>
 <view class="recording">
+  <!-- 充值记录/消费记录 选择-->
   <view class="recording_title flex_center">
     <view class="title_item border_right {{recordingIdx == 1?'active':''}}" data-id='1' bindtap='chooseRecording'>充值记录</view>
     <view class="title_item {{recordingIdx == 2?'active':''}}" data-id='2'  bindtap='chooseRecording'>消费记录</view>
   </view>
+  <!-- 充值记录/消费记录 选择 end-->
+
+  <!-- 充值记录列表 -->
   <view class="recording_box" wx:if='{{recordingIdx == 1}}'>
     <block wx:for='{{rechargeList}}'>
       <view class="recording_item flex_between">
@@ -34,6 +44,9 @@
       </view>
     </block>
   </view>
+  <!-- 充值记录列表 end-->
+
+  <!-- 消费记录列表 -->
   <view class="recording_box" wx:if='{{recordingIdx == 2}}'>
     <block wx:for='{{costList}}'>
       <view class="recording_item flex_between">
@@ -42,5 +55,6 @@
       </view>
     </block>
   </view>
+  <!-- 消费记录列表 end-->
 </view>
 

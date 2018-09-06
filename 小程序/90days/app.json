@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/course-details/course-details",
     "pages/share-details/share-details",
+    "pages/course-details/course-details",
     "pages/choosecourse/choosecourse",
     "pages/userinfo/userinfo",
     "pages/wallet/wallet",

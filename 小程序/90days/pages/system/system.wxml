@@ -1,3 +1,4 @@
+<!-- 类型选择 支持横向滚动-->
 <view class="choose_type">
     <scroll-view class="choose_type_inner" scroll-x>
       <block wx:for='{{typeList}}' wx:key>
@@ -5,6 +6,9 @@
       </block>
     </scroll-view>	
 </view>
+<!-- 类型选择 end-->
+
+<!-- 课程列表 -->
 <view class="system_course_list flex_mid">
 	<block wx:for='{{courseList}}'>
 		<view class="system_course_item" bindtap='toDetails'>
@@ -16,3 +20,4 @@
 		</view>
 	</block>
 </view>
+<!-- 课程列表 end-->

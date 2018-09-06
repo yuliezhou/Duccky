@@ -1,3 +1,4 @@
+<!-- 个人信息 -->
 <view class="medal_user flex_mid">
   <image class="medal_backimg" src="../../images/medal_back.png" mode='aspectFill'></image>
   <view class="user_medal">
@@ -7,6 +8,9 @@
   	<view class="user_name">10级 最强王者</view>
   </view>
 </view>
+<!-- 个人信息 end-->
+
+<!-- 勋章列表 -->
 <view class="medal_wall">
 	<block wx:for='{{medalList}}'>
 		<view class="medal_item flex_mid">
@@ -16,3 +20,4 @@
   	</block>
   	<view class="clear"></view>
 </view>
+<!-- 勋章列表 end-->
