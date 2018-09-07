@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pay/pay",
     "pages/index/index",
     "pages/share-details/share-details",
     "pages/training/training",

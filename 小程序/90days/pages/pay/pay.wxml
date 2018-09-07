@@ -1,0 +1,111 @@
+<view class="pay_info">
+  <view class="info_item flex_between">
+    <view class="top_title">课程名称</view>
+    <view class="top_content elli">高效燃脂</view>
+  </view>
+  <view class="info_item flex_between">
+    <view class="top_title">课程时间</view>
+    <view class="top_content elli">08月14日 20:30-10:00</view>
+  </view>
+  <view class="info_item flex_between">
+    <view class="top_title">上课地址</view>
+    <view class="top_content elli">重庆市渝北区龙山街道冉家坝冉家坝重庆市渝北区龙山街道冉家坝冉家坝</view>
+  </view>
+</view>
+<!-- single为传过来的参数 可以自定义 非单次课显示-->
+<view class="pay" wx:if='{{coursetype != "single"}}'>
+  <!-- 课包数量 -->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['12','24']}}">
+    <view class="pay_item border_ac flex_between">
+      <text class="item_left">课包数量</text>
+      <view class="userpay_box">
+        <view class="pay_txt">12节</view>
+        <image class="right_icon" src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+  </picker>
+  <!-- 开始日期 -->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['06-18','06-20','08-20']}}">
+    <view class="pay_item border_ac flex_between">
+      <text class="item_left">开始日期</text>
+      <view class="userpay_box">
+        <view class="pay_txt">06-18</view>
+        <image class="right_icon" src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+   </picker>
+</view>
+<!-- 非单次课显示 end-->
+
+<!-- 单次课显示 -->
+<view class="pay" wx:if='{{coursetype == "single"}}'>
+    <view class="pay_item flex_between">
+      <text class="item_left">人数</text>
+      <view class="change_num flex_center">
+        <view class="num_item">-</view>
+        <view class="num_item num_mid">99</view>
+        <view class="num_item">+</view>
+      </view>
+    </view>  
+</view>
+<!-- 单次课显示 end-->
+
+<view class="pay">
+  <!-- 价格 -->
+    <view class="pay_item border_ac flex_between">
+      <text class="item_left">价格</text>
+      <view class="userpay_box">
+        <view class="pay_txt ac_txt">¥ 99</view>
+        <!-- src='' 为占位符 勿删-->
+        <image class="right_icon" src=""></image>
+      </view>
+    </view>
+  <!-- 优惠券 -->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['-20','-30','-50']}}">
+    <view class="pay_item border_ac flex_between">
+      <text class="item_left">优惠券</text>
+      <view class="userpay_box">
+        <view class="pay_txt ac_txt">¥ -50</view>
+        <image class="right_icon" src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+   </picker>
+</view>
+<view class="pay">
+  <!-- 支付方式 -->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['伽满卡','微信支付']}}">  
+    <view class="pay_item border_ac flex_between">
+      <text class="item_left">支付方式</text>
+      <view class="userpay_box">
+        <view class="pay_txt ac_txt">伽满卡</view>
+        <image class="right_icon" src="../../images/right_icon.png"></image>
+      </view>
+    </view>
+  </picker>
+</view>
+<view class="pay margin_none">
+  <!-- 实付 -->
+    <view class="pay_item border_ac flex_between">
+      <text class="item_left">实付</text>
+      <view class="userpay_box">
+        <view class="pay_txt ac1_txt">¥ 99</view>
+        <!-- src='' 为占位符 勿删-->
+        <image class="right_icon" src=""></image>
+      </view>
+    </view>
+</view>
+<view class="empty"></view>  
+<!-- 底部支付按钮 -->
+<view class="pay_bottom">
+  <view class="pay_bottom_left flex_between">
+    <view class="already">已优惠 ¥ 60</view>
+    <view class="wait flex_center">
+      待支付
+      <view class="wait_price">
+        ¥
+        <text>6611.00</text>
+      </view>
+    </view>
+  </view>
+  <view class="pay_bottom_right">确认购买</view>
+</view>
