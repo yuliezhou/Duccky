@@ -1,1 +1,6 @@
-hello world
+<view class="bodyer">
+	<view class="title">
+		<view class="left_span"></view>
+		
+	</view>
+</view>
