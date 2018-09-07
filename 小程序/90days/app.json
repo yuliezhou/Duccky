@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/pay/pay",
     "pages/index/index",
+    "pages/medalwall/medalwall",
+    "pages/pay/pay",
     "pages/share-details/share-details",
     "pages/training/training",
     "pages/comment/comment",
@@ -15,7 +16,6 @@
     "pages/store/store",
     "pages/personal/personal",
     "pages/coupon/coupon",
-    "pages/medalwall/medalwall",
     "pages/sportstest/sportstest",
     "pages/mycourse/mycourse"               
   ],

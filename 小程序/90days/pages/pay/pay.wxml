@@ -42,9 +42,9 @@
     <view class="pay_item flex_between">
       <text class="item_left">人数</text>
       <view class="change_num flex_center">
-        <view class="num_item">-</view>
-        <view class="num_item num_mid">99</view>
-        <view class="num_item">+</view>
+        <view class="num_item" bindtap='cutNum'>-</view>
+        <view class="num_item num_mid">{{peopleNum}}</view>
+        <view class="num_item" bindtap='addNum'>+</view>
       </view>
     </view>  
 </view>

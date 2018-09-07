@@ -18,29 +18,34 @@
 	margin-left: 20rpx;
 }
 .area_picker image{
-	width: 22rpx;
-	height: 14rpx;
+	width: 26rpx;
+	height: 26rpx;
 }
 .date{
 	height: 106rpx;
 	border-top: 2rpx solid #FAFAFA;
 }
-.today{
-	border-radius: 50%;
-	border:4rpx solid #FFB84E;
-	box-sizing: border-box;
-	width: 80rpx;
-	height: 80rpx;	
-	font-weight: 500;
-}
-.today text{
-	color: #FFB84E;
-	font-size: 40rpx;
-}
 .date_item_inner{
 	width: 80rpx;
 	height: 80rpx;
+	border-radius: 50%;
+	width: 80rpx;
+	height: 80rpx;		
 }
+.today{
+	border:4rpx solid #FFB84E;
+	box-sizing: border-box;
+}
+.date_active{
+	box-sizing: border-box;
+	border:4rpx solid #FFB84E;
+}
+.toda_txt{
+	color: #FFB84E;
+	font-size: 40rpx;
+	font-weight: 500;
+}
+
 .date_item{
 	margin: 0 10rpx;
 }
@@ -51,6 +56,14 @@
 .date_week{
 	color: #969696;
 	font-size: 18rpx;
+}
+.date_active .date_number{
+	color: #FFB84E;
+
+}
+.date_active .date_week{
+	color: #FFB84E;
+
 }
 .type{
 	border-top: 2rpx solid #FAFAFA;

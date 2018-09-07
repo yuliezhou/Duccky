@@ -2,6 +2,7 @@ const app = getApp()
 var api = require('../../utils/api.js')
 Page({
     data: {
+    	medalModal:false,//勋章详情
 		medalList:[
 			{
 				imgUrl:'../../images/medal1.png',
@@ -31,5 +32,15 @@ Page({
     },
     onLoad: function(res) {
 		
-    }
+    },
+	openMedal:function(){
+		this.setData({
+			medalModal:true
+		})
+	},
+	closeMedal:function(){
+		this.setData({
+			medalModal:false
+		})
+	}
 })

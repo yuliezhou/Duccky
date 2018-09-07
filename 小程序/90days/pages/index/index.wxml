@@ -20,14 +20,14 @@
   <!-- 日期选择 -->
   <view class="date flex_center">
     <block wx:for='{{dateList}}' wx:key='index'>
-    	<view class="date_item">
-    		<view class="date_item_inner flex_mid" wx:if='{{item.date != today}}'>
-  	  		<view class="date_number">{{item.date}}</view>
-  	  		<view class="date_week">{{item.week}}</view>
+    	<view class="date_item" data-id='{{index}}' bindtap='dateChoose'>
+    		<view class="date_item_inner flex_mid {{dateIdx == index?'date_active':''}}" wx:if='{{item.date == today && dateIdx == index}}'>
+    			<text class="toda_txt">今</text>
     		</view>
-    		<view class="date_item_inner flex_mid today" wx:if='{{item.date == today}}'>
-    			<text>今</text>
-    		</view>
+        <view class="date_item_inner flex_mid {{dateIdx == index?'date_active':''}}" wx:else>
+          <view class="date_number">{{item.date}}</view>
+          <view class="date_week">{{item.week}}</view>
+        </view>
     	</view>
     </block>
   </view>	
@@ -53,7 +53,7 @@
             <view class="course_span elli">{{item.coursePrice}}</view>          
           </view>
         </view>
-        <view class="course_bot_right flex_mid" bindtap='reserve'>
+        <view class="course_bot_right flex_mid" data-coursetype='{{item.coursetype}}'bindtap='reserve'>
           <view class="view_btn idx_view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
         </view>
       </view>
@@ -76,7 +76,7 @@
             <view class="course_span elli">{{item.coursePrice}}</view>          
           </view>
         </view>
-        <view class="course_bot_right flex_mid" bindtap='reserve'>
+        <view class="course_bot_right flex_mid" data-coursetype='{{item.coursetype}}'bindtap='reserve'>
           <view class="view_btn idx_view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
         </view>
       </view>
@@ -99,7 +99,7 @@
             <view class="course_span elli">{{item.coursePrice}}</view>          
           </view>
         </view>
-        <view class="course_bot_right flex_mid" bindtap='reserve'>
+        <view class="course_bot_right flex_mid" data-coursetype='{{item.coursetype}}'bindtap='reserve'>
           <view class="view_btn idx_view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'预约':'已预约'}}</view>
         </view>
       </view>
@@ -109,3 +109,32 @@
 </view>
 <!-- 固定课程 end-->
 
+<!-- 勋章弹窗 -->
+<view class="medal_modal flex_mid" wx:if='{{medalModal}}'>
+  <view class="medal_modal_inner">
+    <view class="medal_top">
+      <image class="medal_top_back" src="../../images/medal_back.png"></image>
+      <view class="medal_top_ab">
+        <image class="medal_top_icon" src="../../images/medal_icon.png"></image>
+      </view>
+    </view>
+    <view class="medal_mid flex_mid">
+      <view class="flex_center big_icon_box">
+        <image class="medal_big_icon" src="../../images/medal4.png"></image>
+      </view>
+      <view class="flex_center medal_title1">
+        <text>恭喜您获得</text>
+      </view>
+      <view class="medal_title2">脂肪克星人</view>
+      <view class="medal_title3">荣誉勋章</view>
+      <view class="medal_share_btn flex_center">
+        <image class="" src="../../images/medal_share_icon.png"></image>
+        <text>一键分享</text>
+        <button open-type="share" class="medal_share_btnab"></button>
+      </view>
+      <view class="to_medal_wall" bindtap='toMedalWall'>去我的勋章查看</view>
+    </view>
+  </view>
+  <image class="close_medal" src='../../images/close.png' bindtap='closeMedal'></image>
+</view>
+<!-- 勋章弹窗 end-->
