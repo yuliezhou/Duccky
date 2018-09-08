@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/pay/pay",
     "pages/index/index",
+    "pages/sportstest/sportstest",
+    "pages/pay/pay",
+    "pages/medalwall/medalwall",
     "pages/share-details/share-details",
     "pages/training/training",
     "pages/comment/comment",
@@ -15,8 +17,6 @@
     "pages/store/store",
     "pages/personal/personal",
     "pages/coupon/coupon",
-    "pages/medalwall/medalwall",
-    "pages/sportstest/sportstest",
     "pages/mycourse/mycourse"               
   ],
   "tabBar": {

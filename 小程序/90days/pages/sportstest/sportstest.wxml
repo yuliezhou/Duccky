@@ -1,1 +1,149 @@
-hello world
+<view class="bodyer">
+	<view class="title">
+		<view class="left_span"></view>
+		<text>体重/体脂率</text>
+	</view>
+	<view class="weight_des">
+		<view class="weight_des_item">
+			体重
+			<image class="" src="" wx:if='{{tagicon == "up"}}'></image>
+			<image class="" src="" wx:if='{{tagicon == "down"}}'></image>
+			0.6kg
+		</view>
+		<view class="weight_des_item">
+			脂肪 
+			<image class="" src="" wx:if='{{tagicon == "up"}}'></image>
+			<image class="" src="" wx:if='{{tagicon == "down"}}'></image>
+			0.1%
+		</view>
+	</view>
+	<!-- 身体质量指数BMI -->
+	<view class="title">
+		<view class="left_span"></view>
+		<text>身体质量指数BMI</text>
+	</view>	
+	<view class="status_item flex_mid">
+		<view class="status_number">20</view>
+		<view class="bar flex_mid">
+			<view class="bar_item flex_center">
+				<view class="bar_item_span backcolor1"></view>
+				<view class="bar_item_span backcolor2"></view>
+				<view class="bar_item_span backcolor3"></view>
+				<view class="now_bar">
+					<view class="now_bar_inner">
+						<image class="bar_back" src="../../images/bar.png"></image>
+						<view class="now_bar_txt flex_center">
+							<text>20</text>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="bar_txt flex_center">
+				<view class="bar_item_txt">过轻</view>
+				<view class="bar_item_txt">标准</view>
+				<view class="bar_item_txt">肥胖</view>
+			</view>
+		</view>
+		<view class="rule flex_center">
+			<view class="rule_item">
+				<view class="rule_icon1"></view>
+				过轻 {{'<'}} 19 
+			</view>
+			<view class="rule_item rule_item_mid">
+				<view class="rule_icon2"></view>
+				标准 18.9-24
+			</view>
+			<view class="rule_item">
+				<view class="rule_icon3"></view>
+				{{'>'}}30肥胖 
+			</view>
+		</view>		
+	</view>
+	<!-- 身体质量指数BMI end-->
+	<!-- 腰臀比 -->
+	<view class="title">
+		<view class="left_span"></view>
+		<text>腰臀比</text>
+	</view>	
+	<view class="status_item flex_mid">
+		<view class="status_number">0.8</view>
+		<view class="bar flex_mid">
+			<view class="bar_item flex_center">
+				<view class="bar_item_span backcolor1"></view>
+				<view class="bar_item_span backcolor2"></view>
+				<view class="bar_item_span backcolor3"></view>
+				<view class="now_bar">
+					<view class="now_bar_inner">
+						<image class="bar_back" src="../../images/bar.png"></image>
+						<view class="now_bar_txt flex_center">
+							<text>0.8</text>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="bar_txt flex_center">
+				<view class="bar_item_txt">完美</view>
+				<view class="bar_item_txt">标准</view>
+				<view class="bar_item_txt">肥胖</view>
+			</view>
+		</view>
+		<view class="rule flex_center">
+			<view class="rule_item">
+				<view class="rule_icon1"></view>
+				完美 {{'<'}} 0.8 
+			</view>
+			<view class="rule_item rule_item_mid">
+				<view class="rule_icon2"></view>
+				标准 0.8-0.9
+			</view>
+			<view class="rule_item">
+				<view class="rule_icon3"></view>
+				{{'>'}}0.90中心性肥胖 
+			</view>
+		</view>		
+	</view>
+	<!-- 腰臀比 end-->
+	<!-- 身体质量指数BMI -->
+	<view class="title">
+		<view class="left_span"></view>
+		<text>基础代谢</text>
+	</view>	
+	<view class="status_item flex_mid">
+		<view class="status_number">1200Kcal</view>
+		<view class="bar flex_mid">
+			<view class="bar_item flex_center">
+				<view class="bar_item_span backcolor1"></view>
+				<view class="bar_item_span backcolor2"></view>
+				<view class="bar_item_span backcolor3"></view>
+				<view class="now_bar">
+					<view class="now_bar_inner">
+						<image class="bar_back" src="../../images/bar.png"></image>
+						<view class="now_bar_txt flex_center">
+							<text>1200</text>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="bar_txt flex_center">
+				<view class="bar_item_txt">偏低</view>
+				<view class="bar_item_txt">标准</view>
+				<view class="bar_item_txt">优</view>
+			</view>
+		</view>
+		<view class="rule flex_center">
+			<view class="rule_item">
+				<view class="rule_icon1"></view>
+				过轻 {{'<'}} 19 
+			</view>
+			<view class="rule_item rule_item_mid">
+				<view class="rule_icon2"></view>
+				标准 18.9-24
+			</view>
+			<view class="rule_item">
+				<view class="rule_icon3"></view>
+				{{'>'}}30肥胖 
+			</view>
+		</view>		
+	</view>
+	<!-- 身体质量指数BMI end-->
+</view>

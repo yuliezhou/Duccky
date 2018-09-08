@@ -4,10 +4,13 @@ Page({
     data: {
     	imgUrls:['../../images/swiper.png','../../images/swiper.png','../../images/swiper.png'],
     	today:'',
+    	dateIdx:0,
 		courseIdx:1,
+		medalModal:true,//勋章弹窗
 		courseList1:[
 			{
 				timer:'14:40',
+				coursetype:'',
 				courseTitle:'高效燃脂11',
 				course_p:'塑形·舞蹈·体态纠正1',
 				coursePrice:'18:00-19:00 ¥69',
@@ -16,6 +19,7 @@ Page({
 			},
 			{
 				timer:'14:50',
+				coursetype:'single',
 				courseTitle:'高效燃脂12',
 				course_p:'塑形·舞蹈·体态纠正2',
 				coursePrice:'18:00-19:00 ¥69',
@@ -26,6 +30,7 @@ Page({
 		courseList2:[
 			{
 				timer:'14:40',
+				coursetype:'single',
 				courseTitle:'高效燃脂21',
 				course_p:'塑形·舞蹈·体态纠正1',
 				coursePrice:'18:00-19:00 ¥69',
@@ -34,6 +39,7 @@ Page({
 			},
 			{
 				timer:'14:50',
+				coursetype:'',
 				courseTitle:'高效燃脂22',
 				course_p:'塑形·舞蹈·体态纠正2',
 				coursePrice:'18:00-19:00 ¥69',
@@ -44,6 +50,7 @@ Page({
 		courseList3:[
 			{
 				timer:'14:40',
+				coursetype:'single',
 				courseTitle:'高效燃脂31',
 				course_p:'塑形·舞蹈·体态纠正1',
 				coursePrice:'18:00-19:00 ¥69',
@@ -52,6 +59,7 @@ Page({
 			},
 			{
 				timer:'14:50',
+				coursetype:'single',
 				courseTitle:'高效燃脂32',
 				course_p:'塑形·舞蹈·体态纠正2',
 				coursePrice:'18:00-19:00 ¥69',
@@ -91,9 +99,17 @@ Page({
 		]  	
     },
     onLoad: function(res) {
+    	var dateList = this.data.dateList;
 		var date = new Date();
 		var today = date.getDay();
+		var dateIdx;
+		for(var i=0;i<dateList.length;i++){
+			if(today == dateList[i].date){
+				dateIdx = i
+			}
+		}
 		this.setData({
+			dateIdx:dateIdx,
 			today:today
 		})
     },
@@ -105,12 +121,11 @@ Page({
     	})
     },    
     //预约
-    reserve:function () {
-		wx.showToast({
-		      title: '预约成功',
-		      icon: "none",
-		      duration: 1500
-		  });     	
+    reserve:function (res) {
+    	var coursetype = res.currentTarget.dataset.coursetype;
+		wx.navigateTo({
+       		 url: `../pay/pay?coursetype=${coursetype}`,
+   		 }) 		     	
     },
     //跳转门店
     toStore:function(){
@@ -123,5 +138,24 @@ Page({
 		wx.navigateTo({
        		 url: '../course-details/course-details',
    		 })     	
-    }   	  	
+    },
+    //跳转勋章墙
+    toMedalWall:function(){
+		wx.navigateTo({
+       		 url: '../medalwall/medalwall',
+   		 })    	
+    },
+    //日期选择
+    dateChoose:function(res){
+    	var id = res.currentTarget.dataset.id;
+    	this.setData({
+    		dateIdx:id
+    	})
+    },
+    //关闭勋章弹窗
+    closeMedal:function(){
+    	this.setData({
+    		medalModal:false
+    	})
+    }  	  	
 })

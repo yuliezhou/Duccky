@@ -1,55 +1,132 @@
-.area_choose{
-	height: 94rpx;
-	background: #fff;
-}
-.area_left{
-	padding-left: 26rpx;
-	display: flex;
-	align-items: center;
-}
-.area_left text{
-	color: #4C4252;
-	font-size: 32rpx;
-}
-.area_icon{
-	width: 28rpx;
-	height: 34rpx;
-	margin-right: 14rpx;
-}
-.area_right{
-	padding-right: 24rpx;
-	color: #919191;
-	font-size: 28rpx;
-}
-.swiper_img,.adswiper{
+.pay_info{
+	background: #594E60;
 	width: 100%;
-	height: 200rpx;
-}
-.area{
-	padding-top: 20rpx; 
-}
-.area_item{
-	width: 660rpx;
-	border-radius: 12rpx;
-	background: #fff;
-	padding: 20rpx;
+	padding: 40rpx 0 16rpx;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	margin-bottom: 20rpx;
 }
-.area_item image{
-	width: 164rpx;
-	height: 164rpx;
-	margin-right: 22rpx;
+.info_item{
+	height: 40rpx;
+	width: 690rpx;
+	margin-bottom: 24rpx;
 }
-.area_name{
-	color: #282828;
-	font-size: 36rpx;
-	width: 440rpx;
+.top_title{
+	color: #fff;
+	font-size: 24rpx;
 }
-.area_details{
-	width: 440rpx;
-	color: #919191;
+.top_content{
+	color: #fff;
 	font-size: 28rpx;
+	width: 450rpx;
+	text-align: right;
+}
+.pay{
 	margin-top: 20rpx;
+}
+.pay_item{
+	height: 100rpx;
+	background: #fff;
+}
+.item_left{
+	color: #282828;
+	font-size: 30rpx;
+	padding-left: 30rpx;
+}
+.border_ac{
+	border-bottom: 1rpx solid #eee;
+}
+.userpay_box{
+	height: 46rpx;
+	padding-right: 30rpx;
+	display: flex;
+	align-items: center;
+}
+
+.userpay_box .pay_txt{
+	color: #979797;
+	font-size: 30rpx;
+	text-align: right;
+	padding-right: 20rpx;	
+}
+.right_icon{
+	width: 28rpx;
+	height:28rpx;
+} 
+.userpay_box .ac_txt{
+	color: #4C4252;
+}
+.userpay_box .ac1_txt{
+	color:#F5A623;
+}
+.margin_none{
+	margin: 0;
+}
+.pay_bottom{
+	display: flex;
+	border-top: 2rpx solid #B0B1B3;
+	width: 100%;
+	height: 100rpx;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+}
+.pay_bottom_left{
+	height: 100rpx;
+	width: 510rpx;
+}
+.already{
+	color: #282828;
+	font-size: 28rpx;
+	margin-left: 24rpx;
+}
+.wait{
+	margin-right: 24rpx;
+	color: #4C4252;
+	font-size: 28rpx;
+}
+.wait_price{
+	color: #F5A623;
+	font-size: 28rpx;
+}
+.wait_price text{
+	font-size: 44rpx;
+}
+.pay_bottom_right{
+	height: 100rpx;
+	text-align: center;
+	line-height: 100rpx;
+	color: #fff;
+	font-size: 36rpx;
+	width: 240rpx;
+	background: linear-gradient(120deg,rgba(255,220,132,1) 0%,rgba(255,183,76,1) 100%);
+}
+.empty{
+	height: 100rpx;
+	width: 100%;
+}
+.change_num{
+	margin-right: 30rpx;
+}
+.num_item{
+	background: #F5F5F5;
+	width: 53rpx;
+	height: 53rpx;
+	border-radius: 4rpx;
+	color: #97969B;
+	font-size: 43rpx;
+	text-align: center;
+	line-height: 53rpx;
+	margin-right: 2rpx;
+	font-weight: bold;
+}
+.num_mid{
+	width: 75rpx;
+	color: #4A4A4A;
+	font-size: 33rpx;
+	font-weight: normal;
 }

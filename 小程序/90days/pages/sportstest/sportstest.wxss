@@ -1,0 +1,146 @@
+.bodyer{
+	padding: 0 25rpx;
+	padding-bottom: 25rpx;
+}
+.title{
+	width: 100%;
+	height: 44rpx;
+	display: flex;
+	padding:34rpx 0 24rpx; 
+	align-items: center;
+}
+.left_span{
+	background: linear-gradient(130deg,rgba(255,213,106,1) 0%,rgba(255,170,47,1) 100%);
+	border-radius: 4rpx;
+	height: 36rpx;
+	width: 8rpx;
+	margin-right: 18rpx;
+}
+.title text{
+	color: #4C4252;
+	font-size: 32rpx;
+	font-weight: bold;
+}
+.weight_des{
+	background: #594E60;
+	height: 80rpx;
+	width: 660rpx;
+	display: flex;
+	align-items: center;
+	padding-left: 40rpx;
+	margin-bottom: 20rpx;
+}
+.weight_des_item{
+	margin-right: 50rpx;
+	color: #fff;
+	font-size: 24rpx;
+}
+.weight_des_item image{
+	width: 10rpx;
+	margin: 0 8rpx;
+}
+.status_item{
+	background: #fff;
+	border-radius: 4rpx;
+}
+.status_number{
+	font-size: 88rpx;
+	padding: 44rpx 0 110rpx;
+	background-image: linear-gradient(#FFAA2F,#FFD56A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	
+    font-weight: bold;	
+}
+.bar{
+	width: 100%;
+	position: relative;
+}
+.bar_item{
+	width: 632rpx;
+	height: 24rpx;
+	position: relative;
+}
+.bar_item_span{
+	width: 33.33%;
+	height: 100%;
+}
+.backcolor1{
+	background: #FFD146;
+	border-top-left-radius:200rpx;
+	border-bottom-left-radius:200rpx;
+}
+.backcolor2{
+	background:#72DDBB;
+}
+.backcolor3{
+	background: #FF5446;
+	border-top-right-radius:200rpx;
+	border-bottom-right-radius:200rpx;
+}
+.bar_txt{
+	width: 100%;
+	margin-top: 10rpx;
+	margin-bottom: 36rpx;
+}
+.bar_item_txt{
+	width: 33.333%;
+	color: #4C4252;
+	font-size: 20rpx;
+	text-align: center;
+}
+.rule{
+	padding-bottom: 40rpx;
+}
+.rule_item{
+	display: flex;
+	align-items: center;
+	color: #4C4252;
+	font-size: 24rpx;
+}
+.rule_icon1{
+	width: 8rpx;
+	height: 8rpx;
+	background: #F8E71C;
+	margin-right: 14rpx;
+	border-radius: 50%;
+}
+.rule_icon2{
+	width: 8rpx;
+	height: 8rpx;
+	background: #7ED321;
+	margin-right: 14rpx;
+	border-radius: 50%;
+}
+.rule_icon3{
+	width: 8rpx;
+	height: 8rpx;
+	background: #D0021B;
+	margin-right: 14rpx;
+	border-radius: 50%;
+}
+.rule_item_mid{
+	margin: 0 40rpx;
+}
+.now_bar{
+    position: absolute;
+    top:-75rpx;
+    left:calc(100% - 112rpx);
+}
+.bar_back{
+	width: 112rpx;
+	height: 66rpx;
+}
+.now_bar_inner{
+    position: relative;
+}
+.now_bar_txt{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 70%;
+}
+.now_bar_txt text{
+    color: #fff;
+    font-size: 29rpx;
+}

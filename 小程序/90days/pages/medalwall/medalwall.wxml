@@ -13,7 +13,7 @@
 <!-- 勋章列表 -->
 <view class="medal_wall">
 	<block wx:for='{{medalList}}'>
-		<view class="medal_item flex_mid">
+		<view class="medal_item flex_mid" bindtap='openMedal'>
 		    <image class="" src="{{item.imgUrl}}"></image>
 		    <text>{{item.name}}</text>
 		</view>
@@ -21,3 +21,33 @@
   	<view class="clear"></view>
 </view>
 <!-- 勋章列表 end-->
+
+<!-- 勋章弹窗 -->
+<view class="medal_modal flex_mid" wx:if='{{medalModal}}'>
+  <view class="medal_modal_inner">
+    <view class="medal_top">
+      <image class="medal_top_back" src="../../images/medal_back.png"></image>
+      <view class="medal_top_ab flex_center">
+        <image class="medal_top_icon" src="../../images/medal_icon.png"></image>
+      </view>
+    </view>
+    <view class="medal_mid flex_mid">
+      <view class="flex_center big_icon_box">
+        <image class="medal_big_icon" src="../../images/medal4.png"></image>
+      </view>
+      <view class="flex_center medal_title1">
+        <text>恭喜您获得</text>
+      </view>
+      <view class="medal_title2">脂肪克星人</view>
+      <view class="medal_title3">荣誉勋章</view>
+      <view class="medal_share_btn flex_center">
+        <image class="" src="../../images/medal_share_icon.png"></image>
+        <text>一键分享</text>
+        <button open-type="share" class="medal_share_btnab"></button>
+      </view>
+      <view class="to_medal_wall" bindtap='toMedalWall'>去我的勋章查看</view>
+    </view>
+  </view>
+  <image class="close_medal" src='../../images/close.png' bindtap='closeMedal'></image>
+</view>
+<!-- 勋章弹窗 end-->
