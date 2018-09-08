@@ -71,7 +71,7 @@
 </view>
 <!-- 注意事项 end-->
 
-<view class="reserve_btn">立即预约</view>
+<view class="reserve_btn" bindtap='toPay'>立即预约</view>
 <!-- 占位 -->
 <view class="empty"></view>  
 <!-- 占位 end-->

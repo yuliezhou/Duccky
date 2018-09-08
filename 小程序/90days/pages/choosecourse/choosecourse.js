@@ -6,5 +6,10 @@ Page({
     },
     onLoad: function(res) {
 
+    },
+    backPage:function(){
+    	wx.switchTab({
+		  url: '../personal/personal'
+		})
     }
 })

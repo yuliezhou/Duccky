@@ -12,5 +12,10 @@ Page({
  		wx.navigateTo({
        		 url: '../share-details/share-details',
    		 })    	
+    },
+    toPay:function(){
+  		wx.navigateTo({
+       		 url: '../pay/pay',
+   		 })    	
     }
 })

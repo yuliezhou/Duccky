@@ -124,7 +124,7 @@
 .now_bar{
     position: absolute;
     top:-75rpx;
-    left:calc(100% - 112rpx);
+    
 }
 .bar_back{
 	width: 112rpx;
@@ -143,4 +143,73 @@
 .now_bar_txt text{
     color: #fff;
     font-size: 29rpx;
+}
+.mark{
+	padding: 56rpx 38rpx 24rpx;
+}
+.mark_left_icon{
+	width: 20rpx;
+	height: 20rpx;
+	border-radius: 3rpx;
+	background: linear-gradient(130deg,rgba(255,213,106,1) 0%,rgba(255,170,47,1) 100%);
+	margin-right: 12rpx;
+}
+.mark_left_item{
+	margin-bottom: 12rpx;
+	display: flex;
+	align-items: center;
+	height: 28rpx;
+}
+.mark_left_icon2{
+	background:linear-gradient(130deg,rgba(80,227,194,1) 0%,rgba(0,178,138,1) 100%);
+}
+.mark_left_item text{
+	color: #4C4252;
+	font-size: 20rpx;
+}
+.mark_right_item{
+	margin-bottom: 12rpx;
+	height: 28rpx;
+}
+.mark_span1{
+	color: #4C4252;
+	font-size: 20rpx;
+	margin-right: 20rpx;	
+}
+.mark_span2{
+	color: #F5A623;
+	font-size: 28rpx;
+}
+.mark_span3{
+	color: #28B998;
+	font-size: 28rpx;
+}
+.line{
+	padding-top: 58rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.line_left,.line_right{
+	width: 80rpx;
+	text-align: center;
+}
+.line_left_item{
+	margin-bottom: 66rpx;
+	color: #FFAB2F;
+	font-size: 24rpx;
+	width: 100%;
+	text-align: center;
+}
+.line_right_item{
+	margin-bottom: 66rpx;
+	color: #28B998;
+	font-size: 24rpx;
+	width: 100%;
+	text-align: center;
+}
+.scroll_line_img{
+	width:540rpx;
+}
+.line_img{
+	height: 270rpx;
 }

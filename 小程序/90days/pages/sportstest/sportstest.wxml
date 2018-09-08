@@ -17,23 +17,62 @@
 			0.1%
 		</view>
 	</view>
+	<view class="status_item">
+		<view class="line">
+			<view class="line_left">
+				<block wx:for='{{lineUnit}}'>
+					<view class="line_left_item">{{item == 0?item: item+'kg'}}</view>
+				</block>
+			</view>
+			<scroll-view class="scroll_line_img" scroll-x="true"> 
+				<image class="line_img" src="../../images/line.png" mode="scaleToFill" style="width:{{canvasLineWidth}}rpx"></image>
+			</scroll-view>
+			<view class="line_right">
+				<block wx:for='{{lineData}}'>
+					<view class="line_right_item">{{item == 0?item: item+'%'}}</view>
+				</block>
+			</view>
+		</view>
+		<view class="mark flex_between">
+			<view class="mark_left">
+				<view class="mark_left_item">
+					<view class="mark_left_icon"></view>
+					<text>体重</text>
+				</view>
+				<view class="mark_left_item">
+					<view class="mark_left_icon mark_left_icon2"></view>
+					<text>体脂率</text>
+				</view>
+			</view>
+			<view class="mark_right">
+				<view class="mark_right_item flex_between">
+					<view class="mark_span1">体重</view>
+					<view class="mark_span2">25kg</view>
+				</view>
+				<view class="mark_right_item flex_between">
+					<view class="mark_span1">体脂率</view>
+					<view class="mark_span3">8%</view>
+				</view>
+			</view>
+		</view>
+	</view>
 	<!-- 身体质量指数BMI -->
 	<view class="title">
 		<view class="left_span"></view>
 		<text>身体质量指数BMI</text>
 	</view>	
 	<view class="status_item flex_mid">
-		<view class="status_number">20</view>
+		<view class="status_number">{{bmi}}</view>
 		<view class="bar flex_mid">
 			<view class="bar_item flex_center">
 				<view class="bar_item_span backcolor1"></view>
 				<view class="bar_item_span backcolor2"></view>
 				<view class="bar_item_span backcolor3"></view>
-				<view class="now_bar">
+				<view class="now_bar" style="left:calc({{bmipositon}}% - {{bmipositon>5.2?'56rpx':'36rpx'}});">
 					<view class="now_bar_inner">
 						<image class="bar_back" src="../../images/bar.png"></image>
 						<view class="now_bar_txt flex_center">
-							<text>20</text>
+							<text>{{bmi}}</text>
 						</view>
 					</view>
 				</view>
@@ -44,6 +83,9 @@
 				<view class="bar_item_txt">肥胖</view>
 			</view>
 		</view>
+
+		<!-- < >符号必须{{}} 否则会判定为标签的<> 导致报错 important!!-->
+
 		<view class="rule flex_center">
 			<view class="rule_item">
 				<view class="rule_icon1"></view>
@@ -51,11 +93,11 @@
 			</view>
 			<view class="rule_item rule_item_mid">
 				<view class="rule_icon2"></view>
-				标准 18.9-24
+				标准 19-24
 			</view>
 			<view class="rule_item">
 				<view class="rule_icon3"></view>
-				{{'>'}}30肥胖 
+				{{'>'}}24肥胖 
 			</view>
 		</view>		
 	</view>
@@ -66,17 +108,17 @@
 		<text>腰臀比</text>
 	</view>	
 	<view class="status_item flex_mid">
-		<view class="status_number">0.8</view>
+		<view class="status_number">{{whr}}</view>
 		<view class="bar flex_mid">
 			<view class="bar_item flex_center">
 				<view class="bar_item_span backcolor1"></view>
 				<view class="bar_item_span backcolor2"></view>
 				<view class="bar_item_span backcolor3"></view>
-				<view class="now_bar">
+				<view class="now_bar" style="left:calc({{whrpositon}}% - {{whrpositon>5.2?'56rpx':'36rpx'}});">
 					<view class="now_bar_inner">
 						<image class="bar_back" src="../../images/bar.png"></image>
 						<view class="now_bar_txt flex_center">
-							<text>0.8</text>
+							<text>{{whr}}</text>
 						</view>
 					</view>
 				</view>
