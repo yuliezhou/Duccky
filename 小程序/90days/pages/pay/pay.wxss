@@ -1,0 +1,55 @@
+.area_choose{
+	height: 94rpx;
+	background: #fff;
+}
+.area_left{
+	padding-left: 26rpx;
+	display: flex;
+	align-items: center;
+}
+.area_left text{
+	color: #4C4252;
+	font-size: 32rpx;
+}
+.area_icon{
+	width: 28rpx;
+	height: 34rpx;
+	margin-right: 14rpx;
+}
+.area_right{
+	padding-right: 24rpx;
+	color: #919191;
+	font-size: 28rpx;
+}
+.swiper_img,.adswiper{
+	width: 100%;
+	height: 200rpx;
+}
+.area{
+	padding-top: 20rpx; 
+}
+.area_item{
+	width: 660rpx;
+	border-radius: 12rpx;
+	background: #fff;
+	padding: 20rpx;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20rpx;
+}
+.area_item image{
+	width: 164rpx;
+	height: 164rpx;
+	margin-right: 22rpx;
+}
+.area_name{
+	color: #282828;
+	font-size: 36rpx;
+	width: 440rpx;
+}
+.area_details{
+	width: 440rpx;
+	color: #919191;
+	font-size: 28rpx;
+	margin-top: 20rpx;
+}

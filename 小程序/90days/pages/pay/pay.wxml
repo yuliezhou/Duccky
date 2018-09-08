@@ -1,0 +1,18 @@
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{areaList}}">
+    <view class="area_choose flex_between">
+    	<view class="area_left">
+    		<image class="area_icon" src="../../images/area.png" ></image>
+    		<text>重庆</text>
+    	</view>
+    	<view class="area_right">切换城市</view>
+    </view>
+</picker>
+
+<swiper autoplay="true" interval="3000" class="adswiper" circular='true'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="swiper_img" mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
