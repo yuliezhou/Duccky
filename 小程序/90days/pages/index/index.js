@@ -69,18 +69,6 @@ Page({
 		],  
 		dateList:[
 			{
-				date:31,
-				week:'周五'
-			},
-			{
-				date:1,
-				week:'周六'
-			},
-			{
-				date:2,
-				week:'周日'
-			},
-			{
 				date:3,
 				week:'周一'
 			},
@@ -96,12 +84,25 @@ Page({
 				date:6,
 				week:'周四'
 			},
+			{
+				date:7,
+				week:'周五'
+			},
+			{
+				date:8,
+				week:'周六'
+			},
+			{
+				date:9,
+				week:'周日'
+			},
 		]  	
     },
     onLoad: function(res) {
     	var dateList = this.data.dateList;
 		var date = new Date();
-		var today = date.getDay();
+		var today = date.getDate();
+		console.log(today)
 		var dateIdx;
 		for(var i=0;i<dateList.length;i++){
 			if(today == dateList[i].date){
