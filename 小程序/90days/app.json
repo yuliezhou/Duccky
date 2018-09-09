@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/mycourse/mycourse",
     "pages/sportstest/sportstest",
     "pages/pay/pay",
     "pages/medalwall/medalwall",
@@ -16,8 +17,7 @@
     "pages/system/system",
     "pages/store/store",
     "pages/personal/personal",
-    "pages/coupon/coupon",
-    "pages/mycourse/mycourse"               
+    "pages/coupon/coupon"
   ],
   "tabBar": {
       "color": "#8C8C8C",

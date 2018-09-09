@@ -106,5 +106,11 @@ Page({
 		wx.navigateTo({
        		 url: '../course-details/course-details',
    		 })     	
+    },
+    //跳转评论
+    comment:function(){
+		wx.navigateTo({
+       		 url: '../comment/comment',
+   		 })     	
     }          
 })

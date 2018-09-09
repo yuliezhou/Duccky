@@ -1,7 +1,8 @@
 <view class="course_choose flex_between">
-  <view class="course_choose_item {{courseIdx == 1?'course_ac':''}}" bindtap='chooseCourse' data-id='1'>待上课程 2</view> 
-  <view class="course_choose_item {{courseIdx == 2?'course_ac':''}}" bindtap='chooseCourse' data-id='2'>等位2</view> 
-  <view class="course_choose_item {{courseIdx == 3?'course_ac':''}}" bindtap='chooseCourse' data-id='3'>收藏2</view> 
+    <view class="course_choose_item {{courseIdx == 1?'course_ac':''}}" bindtap='chooseCourse' data-id='1'>待上 2</view> 
+    <view class="course_choose_item {{courseIdx == 2?'course_ac':''}}" bindtap='chooseCourse' data-id='2'>等位 2</view> 
+    <view class="course_choose_item {{courseIdx == 3?'course_ac':''}}" bindtap='chooseCourse' data-id='3'>收藏 2</view> 
+    <view class="course_choose_item {{courseIdx == 4?'course_ac':''}}" bindtap='chooseCourse' data-id='4'>历史 2</view> 
 </view> 
 <!-- 待上课程 -->
 <view class="course_box" wx:if='{{courseIdx == 1}}'>
@@ -77,6 +78,29 @@
   </block>
 </view>
 <!-- 收藏 end-->
+
+<!-- 历史课程 -->
+<view class="course_box" wx:if='{{courseIdx == 4}}'>
+  <block wx:for='{{courseList3}}' wx:key='index'>
+    <view class="course_item collect_item">
+      <view class="course_item_bot flex_between">
+        <view class="course_bot_left flex_center" bindtap='toDetails'>
+          <view class="course_timer">{{item.timer}}</view>
+          <view class="course_des">
+            <view class="course_title elli">{{item.courseTitle}}</view>
+            <view class="course_p elli">{{item.course_p}}</view>
+            <view class="course_span elli">{{item.coursePrice}}</view>          
+          </view>
+        </view>
+        <view class="course_bot_right flex_mid" bindtap='comment'>
+          <view class="view_btn {{item.viewBool?'':'no_view'}}">{{item.viewBool?'评论':'已评论'}}</view>
+        </view>
+      </view>
+      <!-- <image src="../../images/tag.png" class="course_tag" wx:if='{{item.tagShow}}'></image> -->
+    </view>
+  </block>
+</view>
+<!-- 历史课程 end-->
 
 <!-- 弹窗 -->
 <view class="modal flex_mid" wx:if='{{modalShow}}'>

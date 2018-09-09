@@ -5,14 +5,16 @@
 	background: #fff;
 	padding: 0 26rpx;
 }
+
 .course_choose_item{
 	text-align: center;
 	height: 56rpx;
-	width: 216rpx;
+	width: 160rpx;
 	line-height: 56rpx;
 	color: #4C4252;
 	font-size: 28rpx;
 	background: #F5F5F5;
+    display: inline-block;
 	border-radius: 4rpx;
 }
 .course_ac{
