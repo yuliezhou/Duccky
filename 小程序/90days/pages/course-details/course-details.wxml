@@ -2,6 +2,10 @@
 <view class="course_img_outer">
   <image class="course_img" src="../../images/ba.png" mode="aspectFill"></image>
   <image class="share_btn" src="../../images/share.png" bindtap='toShare'></image>
+  <view class="collect flex_mid" bindtap='collect'>
+    <image class="collect_icon" src="../../images/{{collectBool?'acstar':'star'}}.png"></image>
+    <text>{{collectBool?'已收藏':'收藏'}}</text>
+  </view>
 </view>
 <!-- 时间地址价格 -->
 <view class="timer_date">

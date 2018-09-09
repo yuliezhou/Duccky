@@ -45,6 +45,7 @@
 	bottom: 10rpx;
 	left: 0;
 }
+
 .coupon_item_bot{
 	height: 76rpx;
 }
@@ -55,4 +56,35 @@
 .coupon_txt{
 	color: #4C4252;
 	font-size: 26rpx;
+}
+.tag_coupon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 48rpx;
+	height: 48rpx;
+}
+.cantuse{
+	padding: 10rpx 0 24rpx;
+}
+.cantuse text{
+	color: #9B9B9B;
+	font-size: 22rpx;
+}
+.cantuse::before{
+	content: '';
+	height: 1px;
+	width: 240rpx;
+	margin-right: 18rpx;
+	background: #979797;
+}
+.cantuse::after{
+	content: '';
+	height: 1px;
+	width: 240rpx;
+	margin-left: 18rpx;
+	background: #979797;
+}
+.coupon_gray .coupon_h, .coupon_gray .coupon_p ,.coupon_gray .coupon_price ,.coupon_gray .coupon_price text , .coupon_gray .coupon_timer , .coupon_gray .coupon_txt{
+	color: #9B9B9B
 }

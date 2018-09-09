@@ -91,3 +91,20 @@
 	bottom: 18rpx;
 	right: 22rpx;
 }
+.collect{
+	width: 80rpx;
+	height: 80rpx;
+	position: absolute;
+	bottom: 18rpx;
+	left: 22rpx;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.4);	
+}
+.collect_icon{
+	width: 35rpx;
+	height: 35rpx;
+}
+.collect text{
+	color: #fff;
+	font-size: 20rpx;
+}

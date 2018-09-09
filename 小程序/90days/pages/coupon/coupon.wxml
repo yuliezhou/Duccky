@@ -18,6 +18,31 @@
           <view class="coupon_txt">立即使用</view>
         </view>
       </view>
+      <image class="tag_coupon" src="../../images/pricetag.png" wx:if='{{couponIdx==index && type=="pay"}}'></image>
+    </view>
+  </block>
+  <view class="cantuse flex_center" wx:if='{{type=="pay"}}'>
+    <text>不可使用优惠券</text>
+  </view>
+  <block wx:for='{{couponFalse}}' wx:if='{{type=="pay"}}'>
+    <view class="coupon_item coupon_gray" bindtap='backPayFalse'>
+      <image class="coupon_back" src="../../images/coupon_back.png" mode="aspectFill"></image>
+      <view class="coupon_item_inner">
+        <view class="coupon_item_top flex_between">
+          <view class="coupon_des">
+            <view class="coupon_h">{{item.name}}</view>
+            <view class="coupon_p">{{item.rule}}</view>
+          </view>
+          <view class="coupon_price">
+            <text>¥</text>
+            {{item.money}}
+          </view>
+        </view>
+        <view class="coupon_item_bot flex_between">
+          <view class="coupon_timer">有效期至{{item.time}}</view>
+          <view class="coupon_txt">立即使用</view>
+        </view>
+      </view>
     </view>
   </block>
 </view>

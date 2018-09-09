@@ -36,7 +36,7 @@ Page({
     //跳转优惠券
     toCoupon:function(){
         wx.navigateTo({
-             url: '../coupon/coupon',
+             url: '../coupon/coupon?type=pay',
          })        
     }
 })
