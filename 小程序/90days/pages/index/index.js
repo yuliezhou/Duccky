@@ -148,10 +148,13 @@ Page({
     },
     //日期选择
     dateChoose:function(res){
-    	var id = res.currentTarget.dataset.id;
-    	this.setData({
-    		dateIdx:id
-    	})
+    	var courseIdx = this.data.courseIdx;
+    	if(courseIdx!=3){
+	    	var id = res.currentTarget.dataset.id;
+	    	this.setData({
+	    		dateIdx:id
+	    	})
+    	}
     },
     //关闭勋章弹窗
     closeMedal:function(){

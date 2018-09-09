@@ -34,8 +34,12 @@
   <!-- 日期选择 end-->
 
   <view class="type flex_between">
-  	<view class="type_item {{courseIdx == 1?'active_type':''}}" data-id='1' bindtap='chooseCourse'>全部课程</view>
-  	<view class="type_item type_item_center {{courseIdx == 2?'active_type':''}}" data-id='2' bindtap='chooseCourse'>全部时段</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{['高效燃脂1','高效燃脂2']}}">
+    	<view class="type_item {{courseIdx == 1?'active_type':''}}" data-id='1' bindtap='chooseCourse'>全部课程</view>
+    </picker>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{['10:00-12:00','14:00-16:00']}}">
+    	<view class="type_item type_item_center {{courseIdx == 2?'active_type':''}}" data-id='2' bindtap='chooseCourse'>全部时段</view>
+    </picker>
   	<view class="type_item {{courseIdx == 3?'active_type':''}}" data-id='3' bindtap='chooseCourse'>固定课程</view>
   </view>
 </view>
