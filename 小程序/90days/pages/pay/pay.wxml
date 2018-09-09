@@ -61,15 +61,13 @@
       </view>
     </view>
   <!-- 优惠券 -->
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{['-20','-30','-50']}}">
-    <view class="pay_item border_ac flex_between">
+    <view class="pay_item border_ac flex_between" bindtap='toCoupon'>
       <text class="item_left">优惠券</text>
       <view class="userpay_box">
         <view class="pay_txt ac_txt">¥ -50</view>
         <image class="right_icon" src="../../images/right_icon.png"></image>
       </view>
     </view>
-   </picker>
 </view>
 <view class="pay">
   <!-- 支付方式 -->

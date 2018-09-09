@@ -20,7 +20,7 @@
 <!-- 门店列表 -->
 <view class="area flex_mid">
   <block wx:for='{{storeList}}'>
-  	<view class="area_item">
+  	<view class="area_item" bindtap='backIndex'>
   		<image class="" src="{{item.imgurl}}" mode='aspectFill'></image>
   		<view class="area_des">
   			<view class="area_name">{{item.name}}</view>

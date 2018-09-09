@@ -29,5 +29,12 @@ Page({
     },
     onLoad: function(res) {
 
+    },
+    //回到首页
+    backIndex:function(){
+    	console.log(1)
+        wx.switchTab({
+             url: '../index/index',
+         })  
     }
 })

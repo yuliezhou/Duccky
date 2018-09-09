@@ -1,6 +1,6 @@
 <view class="coupon">
   <block wx:for='{{couponList}}'>
-    <view class="coupon_item">
+    <view class="coupon_item" bindtap='backPay'>
       <image class="coupon_back" src="../../images/coupon_back.png" mode="aspectFill"></image>
       <view class="coupon_item_inner">
         <view class="coupon_item_top flex_between">

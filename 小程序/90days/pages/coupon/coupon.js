@@ -25,5 +25,10 @@ Page({
     },
     onLoad: function(res) {
 
+    },
+    backPay:function(){
+        wx.navigateTo({
+             url: '../pay/pay',
+         })      	
     }
 })

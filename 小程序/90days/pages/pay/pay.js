@@ -2,7 +2,7 @@ const app = getApp()
 var api = require('../../utils/api.js')
 Page({
     data: {
-
+        peopleNum:1
     },
     onLoad: function(res) {
 		// 通过路径传递参数 -->我约定为coursetype-->可以自己约定(用于判断页面显示为单次课程还是其他,默认可以不传)
@@ -32,5 +32,11 @@ Page({
 	    		peopleNum:peopleNum
 	    	})
     	}
+    },
+    //跳转优惠券
+    toCoupon:function(){
+        wx.navigateTo({
+             url: '../coupon/coupon',
+         })        
     }
 })
