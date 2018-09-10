@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Button v-for='(item,index) in userDes' type="primary" @click='toChart(item.id,item.name)'>{{item.name}}</Button>
+		<view v-for='(item,index) in userDes' @click='toChart(item.id,item.name)'>{{item.name}}</view>
 		<router-view></router-view>
 	</div>
 </template>
@@ -36,7 +36,6 @@
 						}
 					}
 				);
-				// this.$router.push('./Table')
 		    }
 		}
 	}

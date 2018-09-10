@@ -14,7 +14,7 @@
 	</view>
 	<!-- 二维码 -->
 	<view class="code flex_mid">
-		<image class="" src="../../images/ba.png" mode="aspectFill"></image>
+		<image class="" src="../../images/qr1.png" mode="aspectFill"></image>
 		<text>长按识别小程序码查看</text>
 	</view>	
 </view>

@@ -9,6 +9,8 @@ Page({
     	lineUnit:[0,20,60],
     	lineData:[0,10,20],
     	canvasLineWidth:'',//后台返回的折线图.需要根据数据量动态计算.
+        weightTagicon:'up',//体重
+        fatTagicon:'down'//脂肪
     },
     onLoad: function(res) {
     	// 如果后端数据为 [0,20,60] -->为你做了数组逆序处理 .如不需要直接删除

@@ -69,7 +69,7 @@ Page({
 		],  
 		dateList:[
 			{
-				date:3,
+				date:10,
 				week:'周一'
 			},
 			{
