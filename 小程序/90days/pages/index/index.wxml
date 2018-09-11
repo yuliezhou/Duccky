@@ -18,7 +18,7 @@
   <!-- 门店选择 end-->
 
   <!-- 日期选择 -->
-  <view class="date flex_center">
+  <view class="date flex_center" wx:if='{{courseIdx != 3}}'>
     <block wx:for='{{dateList}}' wx:key='index'>
     	<view class="date_item" data-id='{{index}}' bindtap='dateChoose'>
     		<view class="date_item_inner flex_mid {{dateIdx == index?'date_active':''}}" wx:if='{{item.date == today && dateIdx == index}}'>
