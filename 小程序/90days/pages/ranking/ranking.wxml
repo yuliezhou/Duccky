@@ -32,7 +32,7 @@
       <image src="../../images/user.jpg"></image>
     </view>
     <view class="user_info">
-      <image src="../../images/per5.png"></image>
+      <image src="../../images/gold_icon.png"></image>
       <view class="user_name elli">Duccky</view>
     </view>
     <view class="medal">

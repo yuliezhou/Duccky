@@ -40,7 +40,8 @@ page{
 	font-size: 24rpx;
 }
 .weight_des_item image{
-	width: 10rpx;
+	width: 20rpx;
+	height: 20rpx;
 	margin: 0 8rpx;
 }
 .status_item{

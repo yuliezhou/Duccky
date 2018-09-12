@@ -8,7 +8,7 @@ Page({
 			{
 				ranking_num:1,
 				userimg:'../../images/user.jpg',
-				usericon:'../../images/per5.png',
+				usericon:'../../images/gold_icon.png',
 				username:'Ducky',
 				medal:['../../images/medal1.png','../../images/medal2.png','../../images/medal3.png','../../images/medal4.png'],
 				training_times:128
@@ -16,7 +16,7 @@ Page({
 			{
 				ranking_num:2,
 				userimg:'../../images/user.jpg',
-				usericon:'../../images/per5.png',
+				usericon:'../../images/gold_icon.png',
 				username:'Duccky',
 				medal:['../../images/medal1.png','../../images/medal3.png','../../images/medal4.png'],
 				training_times:27
@@ -24,7 +24,7 @@ Page({
 			{
 				ranking_num:3,
 				userimg:'../../images/user.jpg',
-				usericon:'../../images/per5.png',
+				usericon:'../../images/gold_icon.png',
 				username:'Ducky',
 				medal:['../../images/medal2.png','../../images/medal3.png','../../images/medal4.png'],
 				training_times:26
@@ -32,7 +32,7 @@ Page({
 			{
 				ranking_num:4,
 				userimg:'../../images/user.jpg',
-				usericon:'../../images/per5.png',
+				usericon:'../../images/gold_icon.png',
 				username:'Ducky',
 				medal:['../../images/medal4.png'],
 				training_times:6

@@ -7,14 +7,14 @@
 	<view class="weight_des">
 		<view class="weight_des_item">
 			体重
-			<image class="" src="" wx:if='{{tagicon == "up"}}'></image>
-			<image class="" src="" wx:if='{{tagicon == "down"}}'></image>
+			<image class="" src="../../images/up_icon1.png" wx:if='{{weightTagicon == "up"}}'></image>
+			<image class="" src="../../images/down_icon1.png" wx:if='{{weightTagicon == "down"}}'></image>
 			0.6kg
 		</view>
 		<view class="weight_des_item">
 			脂肪 
-			<image class="" src="" wx:if='{{tagicon == "up"}}'></image>
-			<image class="" src="" wx:if='{{tagicon == "down"}}'></image>
+			<image class="" src="../../images/up_icon1.png" wx:if='{{fatTagicon == "up"}}'></image>
+			<image class="" src="../../images/down_icon1.png" wx:if='{{fatTagicon == "down"}}'></image>
 			0.1%
 		</view>
 	</view>

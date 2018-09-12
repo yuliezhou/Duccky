@@ -14,8 +14,9 @@ Page({
     	canvasLineWidth:'',//后台返回的折线图.需要根据数据量动态计算.
         canvasSaveimg:'',
         weightList:[50,60,90,80,60,70,50,30,20,10],
-        fatList:[1,8,2,3,4,5,5,3,4,8]
-
+        fatList:[1,8,2,3,4,5,5,3,4,8],
+        weightTagicon:'up',//体重
+        fatTagicon:'down'//脂肪
     },
     onLoad: function(res) {
         var weightList = this.data.weightList;
