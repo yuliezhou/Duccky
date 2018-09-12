@@ -1,37 +1,46 @@
 const app = getApp()
 var api = require('../../utils/api.js')
+var util = require('../../utils/util.js')
+const ctx = wx.createCanvasContext('canvasWeather');
 Page({
     data: {
     	bmi:13,//bmi指数
     	whr:0.4,//腰臀比指数
     	bmipositon:'',
     	whrpositon:'',
-    	lineUnit:[0,20,60],
-    	lineData:[0,10,20],
+    	lineUnit:[],
+    	lineData:[],
+        dateArr:['1/12','2/12','3/12','4/12','5/12','6/12','7/12','8/12','9/12','10/12'],
     	canvasLineWidth:'',//后台返回的折线图.需要根据数据量动态计算.
+        canvasSaveimg:'',
+        weightList:[50,60,90,80,60,70,50,30,20,10],
+        fatList:[1,8,2,3,4,5,5,3,4,8]
+
     },
     onLoad: function(res) {
-    	// 如果后端数据为 [0,20,60] -->为你做了数组逆序处理 .如不需要直接删除
-    	var lineUnit = this.data.lineUnit;
-    	var lineData = this.data.lineData;
-    	lineUnit.reverse();
-    	lineData.reverse();
-    	this.setData({
-    		lineUnit:lineUnit,
-    		lineData:lineData
-    	})
-    	// ---end
-    	
-    	// canvasimg 宽度计算
-    	var lineWidthUnit = 98; //一条数据的宽度大概在86rpx;
-    	var dataNum = 6;//假如有6条数据 
-    	// 50为最后一个圆点宽度,加上左右两边留白.根据你后面canvas返回图片来确定最终数据.也许需要微调一下
-    	var canvasLineWidth = lineWidthUnit * (dataNum - 1)  + 50;
-    	this.setData({
-    		canvasLineWidth:canvasLineWidth
-    	})
-    	// canvasimg 宽度计算 --end
-
+        var weightList = this.data.weightList;
+        var fatList = this.data.fatList;
+        let mobile = wx.getSystemInfoSync();
+        //比例
+        let ratio = mobile.windowWidth / 375;
+        //X轴的距离-长度(px)
+        var xUnitLen = 51 * ratio;
+        //x轴的长度
+        var xLen = xUnitLen*(weightList.length-1) +20;
+        var maxWeight = util.maxNum(weightList);
+        maxWeight = Math.ceil(maxWeight/10)*10;
+        var maxFat = util.maxNum(fatList);
+        var avFat = maxFat/2
+        var avWeight = maxWeight/2
+        var lineData = [0,avFat,maxFat]
+        var lineUnit = [0,avWeight,maxWeight]
+        lineUnit.reverse();
+        lineData.reverse();        
+        this.setData({
+            canvasLineWidth:xLen,
+            lineData:lineData,
+            lineUnit:lineUnit,
+        })        
     	// 指数气泡定位计算
     	var bmi = this.data.bmi;
     	var whr = this.data.whr;
@@ -41,6 +50,8 @@ Page({
     		bmipositon:bmipositon,
     		whrpositon:whrpositon
     	})
+        this.drawCanvasLine()
+
     },
     // bmi计算
     bmiPosition:function(bmi){
@@ -68,4 +79,98 @@ Page({
     	}
     	return  position;
     },
+    //绘制折线图
+    drawCanvasLine: function() {
+        var _this = this;
+        var weightList = this.data.weightList;
+        var fatList = this.data.fatList;
+        let mobile = wx.getSystemInfoSync();
+        //比例
+        let ratio = mobile.windowWidth / 375;
+        //Y轴的距离-长度(px)
+        var yUnitLen = 10 * ratio;
+        //X轴的距离-长度(px)
+        var xUnitLen = 51 * ratio;
+        //x轴的长度
+        var xLen = xUnitLen*(weightList.length-1) +20;
+        //y轴的长度
+        var yLen = 100; 
+        var maxWeight = util.maxNum(weightList);
+        var maxFat = util.maxNum(fatList);
+        var avFat = maxFat/2
+        var lineData = [0,avFat,maxFat]
+        this.setData({
+            lineData:lineData
+        })
+        //最小值
+        this.drawLine(weightList, xUnitLen, maxWeight, yLen, ratio, "#FFAA2F")
+        this.drawBlock(weightList, yLen,xUnitLen,ratio,maxWeight)
+        this.drawLine(fatList,xUnitLen, maxFat, yLen, ratio, '#8FC55F')
+        this.drawBlock(fatList, yLen,xUnitLen,ratio,maxFat)
+        ctx.setFillStyle('#666666');
+        // this.drawText(ratio, weightList, xUnitLen)
+        // draw回调
+        ctx.draw(false, function(e) {
+            wx.canvasToTempFilePath({
+                canvasId: 'canvasWeather',
+                success: (res) => {
+                    // console.log(res.tempFilePath)
+                    var shareTempFilePath = res.tempFilePath;
+                    _this.setData({
+                        canvasSaveimg: shareTempFilePath
+                    })
+                }
+            })
+        });
+        // console.log('绘制结束')
+    },
+    //画出折线 
+    drawLine: function(weightList, xUnitLen, maxWeight, yLen, ratio, color) {
+        // console.log('折线')
+        //根据折线的数据量来画
+        for (var i = 0; i < weightList.length - 1; i++) {
+            //起始坐标  
+            var numsY = yLen + 10 * ratio - (weightList[i]) * yLen / maxWeight; //Y轴每一格数量算作100(y轴一段距离为10)
+            var numsX = i * xUnitLen +10 * ratio; //X轴坐标
+            //终止坐标  
+            var numsNY = yLen + 10 * ratio - (weightList[i + 1])  * yLen / maxWeight; //下一条数据的终点
+            var numsNX = (i + 1) * xUnitLen +10 * ratio; //下一条数据的终点
+            ctx.beginPath();
+            ctx.moveTo(numsX, numsY);
+            ctx.lineTo(numsNX, numsNY);
+            ctx.setLineWidth(1)
+            ctx.setStrokeStyle(color);
+            ctx.stroke();
+            ctx.closePath();
+        }
+    },
+    //绘制折线点的菱形和数值，横坐标值，纵坐标值 
+    drawBlock: function(weightList, yLen,xUnitLen,ratio,maxWeight) {
+        // console.log('圆点')
+        for (var i = 0; i < weightList.length; i++) {
+            var numsY = yLen + 10 * ratio - (weightList[i]) * yLen / maxWeight; //Y轴每一格数量算作100(y轴一段距离为10)
+            var numsX = i * xUnitLen +10 * ratio; //X轴坐标  起始位置50+35 x距离50
+            // 画出折线上的小圆点 
+            ctx.moveTo(numsX - 4, numsY);
+            ctx.setFontSize(10)
+            ctx.setFillStyle('#ffffff');
+            ctx.beginPath();
+            ctx.arc(numsX, numsY, 4, 0, 4 * Math.PI);
+            ctx.setFillStyle('#ffffff');
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+        }
+    },
+    //画出温度文字
+    drawText: function(ratio, weightList, xUnitLen) {
+        // console.log('温度文字')
+        for (var i = 0; i < 15; i++) {
+            var numsY = 20; //Y轴每一格数量算作100(y轴一段距离为10)
+            var numsX = i * xUnitLen + xUnitLen / 2; //X轴坐标  起始位置50+35 x距离50
+            ctx.setFontSize(14 * ratio)
+            ctx.setTextAlign('center')
+            ctx.fillText(weightList[i], i * xUnitLen + xUnitLen / 2,134);
+        }
+    },    
 })
