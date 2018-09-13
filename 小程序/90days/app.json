@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/sportstest/sportstest",
     "pages/index/index",
+    "pages/sportstest/sportstest",
     "pages/coupon/coupon",
     "pages/course-details/course-details",
     "pages/mycourse/mycourse",

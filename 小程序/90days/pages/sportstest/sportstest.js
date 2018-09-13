@@ -14,7 +14,7 @@ Page({
     	canvasLineWidth:'',//后台返回的折线图.需要根据数据量动态计算.
         canvasSaveimg:'',
         weightList:[50,60,90,80,60,70,50,30],
-        fatList:[1,8,2,3,4,5,5,3,],
+        fatList:[1,2,2,3,4,5,5,3,],
         weightTagicon:'up',//体重
         fatTagicon:'down'//脂肪
     },
@@ -33,12 +33,15 @@ Page({
         var maxWeight = util.maxNum(weightList);
         maxWeight = Math.ceil(maxWeight/10)*10;
         var maxFat = util.maxNum(fatList);
+        maxFat = Math.ceil(maxFat);
         var avFat = maxFat/2
         var avWeight = maxWeight/2
         var lineData = [0,avFat,maxFat]
         var lineUnit = [0,avWeight,maxWeight]
         lineUnit.reverse();
-        lineData.reverse();        
+        lineData.reverse();  
+        console.log(lineUnit) 
+        console.log(lineData)      
         this.setData({
             canvasLineWidth:xLen,
             lineData:lineData,
@@ -102,11 +105,6 @@ Page({
         var yLen = 100; 
         var maxWeight = util.maxNum(weightList);
         var maxFat = util.maxNum(fatList);
-        var avFat = maxFat/2
-        var lineData = [0,avFat,maxFat]
-        this.setData({
-            lineData:lineData
-        })
         //最小值
         this.drawLine(weightList, xUnitLen, maxWeight, yLen, ratio, "#FFAA2F")
         this.drawBlock(weightList, yLen,xUnitLen,ratio,maxWeight, "#FFAA2F")
