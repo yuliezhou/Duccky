@@ -69,33 +69,33 @@ Page({
 		],  
 		dateList:[
 			{
-				date:10,
-				week:'周一'
-			},
-			{
-				date:4,
-				week:'周二'
-			},
-			{
-				date:5,
-				week:'周三'
-			},
-			{
-				date:6,
-				week:'周四'
-			},
-			{
-				date:7,
-				week:'周五'
-			},
-			{
 				date:8,
 				week:'周六'
 			},
-			{
-				date:9,
-				week:'周日'
-			},
+		      {
+		        date: 9,
+		        week: '周日'
+		      },
+		      {
+		        date: 10,
+		        week: '周一'
+		      },
+		      {
+		        date: 11,
+		        week: '周二'
+		      },
+		      {
+		        date: 12,
+		        week: '周三'
+		      },
+		      {
+		        date: 13,
+		        week: '周四'
+		      },
+		      {
+		        date: 14,
+		        week: '周五'
+		      },
 		]  	
     },
     onLoad: function(res) {

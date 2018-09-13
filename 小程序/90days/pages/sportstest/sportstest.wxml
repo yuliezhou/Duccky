@@ -1,3 +1,4 @@
+<canvas canvas-id="canvasWeather" class="canvasHigh" style="width:{{canvasLineWidth}}px;"></canvas> 
 <view class="bodyer">
 	<view class="title">
 		<view class="left_span"></view>
@@ -24,8 +25,17 @@
 					<view class="line_left_item">{{item == 0?item: item+'kg'}}</view>
 				</block>
 			</view>
-			<scroll-view class="scroll_line_img" scroll-x="true"> 
-				<image class="line_img" src="../../images/line.png" mode="scaleToFill" style="width:{{canvasLineWidth}}rpx"></image>
+			<scroll-view class="scroll_line_img" scroll-x="true">
+				<view class="sroll_box" style="width:{{canvasLineWidth}}px">
+					<view class="scroll_canvas_bor1" style="width:{{canvasLineWidth}}px"></view>
+					<view class="scroll_canvas_bor2" style="width:{{canvasLineWidth}}px"></view>
+					<view class="sroll_txt">
+						<block wx:for='{{dateArr}}'>
+							<view class="sroll_txt_item">{{item}}</view>
+						</block>
+					</view>
+				</view>
+				<image class="line_img" src="{{canvasSaveimg}}" style="width:{{canvasLineWidth}}px" wx:if='{{canvasSaveimg}}'></image>
 			</scroll-view>
 			<view class="line_right">
 				<block wx:for='{{lineData}}'>

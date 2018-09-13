@@ -1,3 +1,7 @@
+page{
+    width: 750rpx;
+    overflow-x:hidden; 
+}
 .bodyer{
 	padding: 0 25rpx;
 	padding-bottom: 25rpx;
@@ -195,14 +199,14 @@
 	text-align: center;
 }
 .line_left_item{
-	margin-bottom: 66rpx;
+	margin-bottom: 78rpx;
 	color: #FFAB2F;
 	font-size: 24rpx;
 	width: 100%;
 	text-align: center;
 }
 .line_right_item{
-	margin-bottom: 66rpx;
+	margin-bottom: 78rpx;
 	color: #28B998;
 	font-size: 24rpx;
 	width: 100%;
@@ -210,7 +214,44 @@
 }
 .scroll_line_img{
 	width:540rpx;
+	margin-top: 15rpx;
+	position: relative;
+	height: 270rpx;
 }
 .line_img{
-	height: 270rpx;
+    width: 900rpx;
+    height: 270rpx;
+}
+.sroll_box{
+	width:540rpx;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.scroll_canvas_bor1{
+	width: 100%;
+	height: 108rpx;
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+}
+.scroll_canvas_bor2{
+	width: 100%;
+	height: 108rpx;
+	border-bottom: 1px solid #E4E4E4;
+}
+.canvasHigh {
+	width: 900rpx;
+    height: 270rpx;
+    position: fixed;
+    left: -9999rpx;
+}
+.sroll_txt{
+	 white-space:nowrap;
+}
+.sroll_txt_item{
+	display: inline-block;
+	padding: 0 20rpx;
+	text-align: center;
+	color: #919191;
+	font-size: 24rpx;
 }

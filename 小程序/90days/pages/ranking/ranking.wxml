@@ -21,7 +21,7 @@
 <view class="show_title flex_between">
   <view class="title_item">排行</view>
   <view class="title_item center_item">昵称</view>
-  <view class="title_item">训练次数</view>
+  <view class="title_item">{{bigIdx == 1?'训练次数':'卡路里'}}</view>
 </view>
 <view class="rankingList flex_mid">
 
