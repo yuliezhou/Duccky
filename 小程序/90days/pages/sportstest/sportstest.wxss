@@ -219,14 +219,16 @@ page{
 	height: 270rpx;
 }
 .line_img{
-    width: 900rpx;
     height: 270rpx;
+    z-index: 999;
+	position: relative;
 }
 .sroll_box{
 	width:540rpx;
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 .scroll_canvas_bor1{
 	width: 100%;
@@ -239,8 +241,7 @@ page{
 	height: 108rpx;
 	border-bottom: 1px solid #E4E4E4;
 }
-.canvasHigh {
-	width: 900rpx;
+.canvaspar {
     height: 270rpx;
     position: fixed;
     left: -9999rpx;
@@ -250,7 +251,7 @@ page{
 }
 .sroll_txt_item{
 	display: inline-block;
-	padding: 0 20rpx;
+	width: 102rpx;
 	text-align: center;
 	color: #919191;
 	font-size: 24rpx;

@@ -1,4 +1,4 @@
-<canvas canvas-id="canvasWeather" class="canvasHigh" style="width:{{canvasLineWidth}}px;"></canvas> 
+<canvas canvas-id="canvasWeather" class="canvaspar" style="width:{{canvasLineWidth}}px;"></canvas> 
 <view class="bodyer">
 	<view class="title">
 		<view class="left_span"></view>

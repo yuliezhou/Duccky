@@ -10,15 +10,16 @@ Page({
     	whrpositon:'',
     	lineUnit:[],
     	lineData:[],
-        dateArr:['1/12','2/12','3/12','4/12','5/12','6/12','7/12','8/12','9/12','10/12'],
+        dateArr:['1/12','2/12','3/12','4/12','5/12','6/12','7/12','8/12'],
     	canvasLineWidth:'',//后台返回的折线图.需要根据数据量动态计算.
         canvasSaveimg:'',
-        weightList:[50,60,90,80,60,70,50,30,20,10],
-        fatList:[1,8,2,3,4,5,5,3,4,8],
+        weightList:[50,60,90,80,60,70,50,30],
+        fatList:[1,8,2,3,4,5,5,3,],
         weightTagicon:'up',//体重
         fatTagicon:'down'//脂肪
     },
     onLoad: function(res) {
+        var _this = this;
         var weightList = this.data.weightList;
         var fatList = this.data.fatList;
         let mobile = wx.getSystemInfoSync();
@@ -27,7 +28,8 @@ Page({
         //X轴的距离-长度(px)
         var xUnitLen = 51 * ratio;
         //x轴的长度
-        var xLen = xUnitLen*(weightList.length-1) +20;
+        var xLen = xUnitLen*(weightList.length-1) + xUnitLen* ratio;
+        console.log(xLen)
         var maxWeight = util.maxNum(weightList);
         maxWeight = Math.ceil(maxWeight/10)*10;
         var maxFat = util.maxNum(fatList);
@@ -51,7 +53,9 @@ Page({
     		bmipositon:bmipositon,
     		whrpositon:whrpositon
     	})
-        this.drawCanvasLine()
+        setTimeout(function(){
+            _this.drawCanvasLine()
+        },1000)
 
     },
     // bmi计算
@@ -105,9 +109,9 @@ Page({
         })
         //最小值
         this.drawLine(weightList, xUnitLen, maxWeight, yLen, ratio, "#FFAA2F")
-        this.drawBlock(weightList, yLen,xUnitLen,ratio,maxWeight)
-        this.drawLine(fatList,xUnitLen, maxFat, yLen, ratio, '#8FC55F')
-        this.drawBlock(fatList, yLen,xUnitLen,ratio,maxFat)
+        this.drawBlock(weightList, yLen,xUnitLen,ratio,maxWeight, "#FFAA2F")
+        this.drawLine(fatList,xUnitLen, maxFat, yLen, ratio, '#28B998')
+        this.drawBlock(fatList, yLen,xUnitLen,ratio,maxFat, '#28B998')
         ctx.setFillStyle('#666666');
         // this.drawText(ratio, weightList, xUnitLen)
         // draw回调
@@ -132,10 +136,10 @@ Page({
         for (var i = 0; i < weightList.length - 1; i++) {
             //起始坐标  
             var numsY = yLen + 10 * ratio - (weightList[i]) * yLen / maxWeight; //Y轴每一格数量算作100(y轴一段距离为10)
-            var numsX = i * xUnitLen +10 * ratio; //X轴坐标
+            var numsX = i * xUnitLen +xUnitLen/2 * ratio; //X轴坐标
             //终止坐标  
             var numsNY = yLen + 10 * ratio - (weightList[i + 1])  * yLen / maxWeight; //下一条数据的终点
-            var numsNX = (i + 1) * xUnitLen +10 * ratio; //下一条数据的终点
+            var numsNX = (i + 1) * xUnitLen +xUnitLen/2 * ratio; //下一条数据的终点
             ctx.beginPath();
             ctx.moveTo(numsX, numsY);
             ctx.lineTo(numsNX, numsNY);
@@ -146,18 +150,18 @@ Page({
         }
     },
     //绘制折线点的菱形和数值，横坐标值，纵坐标值 
-    drawBlock: function(weightList, yLen,xUnitLen,ratio,maxWeight) {
+    drawBlock: function(weightList, yLen,xUnitLen,ratio,maxWeight,color) {
         // console.log('圆点')
         for (var i = 0; i < weightList.length; i++) {
             var numsY = yLen + 10 * ratio - (weightList[i]) * yLen / maxWeight; //Y轴每一格数量算作100(y轴一段距离为10)
-            var numsX = i * xUnitLen +10 * ratio; //X轴坐标  起始位置50+35 x距离50
+            var numsX = i * xUnitLen +xUnitLen/2 * ratio; //X轴坐标  起始位置50+35 x距离50
             // 画出折线上的小圆点 
             ctx.moveTo(numsX - 4, numsY);
             ctx.setFontSize(10)
             ctx.setFillStyle('#ffffff');
             ctx.beginPath();
             ctx.arc(numsX, numsY, 4, 0, 4 * Math.PI);
-            ctx.setFillStyle('#ffffff');
+            ctx.setFillStyle(color);
             ctx.fill();
             ctx.stroke();
             ctx.closePath();
