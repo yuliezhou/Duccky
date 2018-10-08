@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 100%;
+			background: linear-gradient(to bottom, #79e9fd, #34aaee);
+			height: 100vh;
+		}
+		.box img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<!-- 	<div class="box">
+		<img src="car_washing.png" alt="">
+	</div> -->
+	<div class="Duccky"></div>
+	<Duccky></Duccky>
+</body>
+</html>
+<script type="text/javascript">
+	// setTimeout(()=>{
+	// 	console.log(3)
+	// },0)
+	// Promise.resolve().then(()=>{
+	// 	console.log(1)
+	// })	
+	// console.log(2)
+	function number(n){
+		var m = 0;
+		var timer = setInterval(function(){
+			m++
+			if(m>n){
+				clearInterval(timer)
+				return;
+			}	
+			console.log(m)
+		},1000)
+	}
+	number(10)
+// var deepClone = function (obj) {
+//     var _tmp,result;
+//     _tmp = JSON.stringify(obj);
+//     result = JSON.parse(_tmp);
+//     return result;
+// }
+// var obj1 = {
+// 	a:'a',
+// 	b:'b',
+// 	c:'c'
+// }
+// // var obj2 = deepClone(obj1);
+// var obj2 = obj1
+// obj1.a = "a1";
+// console.log(obj1); 
+// console.log(obj2);
+// function deepClone(obj) {
+// 	var tmp , res
+// 	tmp = JSON.stringify(obj)
+// 	res = JSON.parse(tmp)
+// 	return res
+// }
+// var obj1 = {
+// 	a:'a',
+// 	b:'b',
+// 	c:'c'
+// }
+// var obj2 = deepClone(obj1);
+	// function Fn(n){
+	// 	for (var i=1; i<=n; i++) {
+	// 		(function(j) {
+	// 			setTimeout( function() {
+	// 				console.log( j );
+	// 			}, j*1000 );
+	// 		})( i );
+	// 	}	
+	// }
+	// Fn(100)
+	// function Fn(n){
+	// 	for (var i=1 ;i<n;i++){
+	// 		(function(j){
+	// 			setTimeout(function(){
+	// 				console.log(j)
+	// 			},1000*j)
+	// 		})(i)
+	// 	}
+	// }
+	// Fn(100)
+	// function Fn(n){
+	// 	for (var i=0;i<n;i++){
+	// 		(function(j){
+	// 			setTimeout(function(){
+	// 				console.log(j)
+	// 			},j*1000)				
+	// 		})(i)
+
+	// 	}
+	// }
+</script>

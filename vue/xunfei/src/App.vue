@@ -11,7 +11,7 @@ import Tabbar from'./components/tabbar'
 export default {
   name: 'app',
   created:function(){
-    this.$router.push('/')
+    
   },
   components:{
     Tabbar
