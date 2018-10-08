@@ -34,7 +34,7 @@
 		<div class="item">
 			<h4>招商信用卡</h4>
 			卡号:
-			<p onclick="oCopy(this)">6225 7686 7354 5164</p>
+			<p onclick="oCopy('招商信用卡：',6225768673545164)">6225768673545164</p>
 			有效期:
 			<p>08/23</p>
 			v码:
@@ -43,46 +43,88 @@
 		<div class="item">
 			<h4>浦发信用卡</h4>
 			卡号:
-			<p onclick="oCopy(this)">6259 5887 4584 1535</p>
+			<p onclick="oCopy('浦发信用卡：',6259588745841535)">6259588745841535</p>
 			有效期:
 			<p>08/26</p>
 			v码:
 			<p>408</p>
 		</div>
 		<div class="item">
+			<h4>浦发信用卡KPL</h4>
+			卡号:
+			<p onclick="oCopy('浦发KPL信用卡：',6259588910510071)">6259588910510071</p>
+			有效期:
+			<p>09/26</p>
+			v码:
+			<p>593</p>
+		</div>
+		<div class="item">
 			<h4>建设信用卡</h4>
 			卡号:
-			<p onclick="oCopy(this)">6227 0805 4517 7202</p>
+			<p onclick="oCopy('建设信用卡：',6227080545177202)">6227080545177202</p>
 			有效期:
 			<p>03/26</p>
 			v码:
 			<p>686</p>
 		</div>
 		<div class="item">
-			<h4>建设</h4>
+			<h4>建设储蓄卡：</h4>
 			卡号:
-			<p onclick="oCopy(this)">6222 8037 6431 1156 339</p>
+			<p onclick="oCopy('建设储蓄卡：',6222803764311156339)">6222803764311156339</p>
 		</div>
 		<div class="item">
-			<h4>招商</h4>
+			<h4>浦发储蓄卡</h4>
 			卡号:
-			<p onclick="oCopy(this)">6214 8320592 0741</p>
+			<p onclick="oCopy('浦发储蓄卡：',6217920975711396)">6217920975711396</p>
 		</div>
 		<div class="item">
-			<h4>邮政</h4>
+			<h4>招商储蓄卡</h4>
 			卡号:
-			<p onclick="oCopy(this)">6217 9969 0006 0427 045</p>
+			<p onclick="oCopy('招商储蓄卡：',621483205920741)">621483205920741</p>
 		</div>
 		<div class="item">
-			<h4>农商行</h4>
+			<h4>交通储蓄卡：</h4>
 			卡号:
-			<p onclick="oCopy(this)">6214 6510 3275 9937</p>
+			<p onclick="oCopy('交通储蓄卡：',6222620510005127537)">6222620510005127537</p>
 		</div>
 		<div class="item">
-			<h4>光大</h4>
+			<h4>交通储蓄卡（栗子）</h4>
 			卡号:
-			<p onclick="oCopy(this)">6226 6209 0488 4228</p>
+			<p onclick="oCopy('交通储蓄卡（栗子）：',6222620510024124572)">6222620510024124572</p>
 		</div>
+		<div class="item">
+			<h4>邮政储蓄卡</h4>
+			卡号:
+			<p onclick="oCopy('邮政储蓄卡：',6217996900060427045)">6217996900060427045</p>
+		</div>
+		<div class="item">
+			<h4>光大储蓄卡</h4>
+			卡号:
+			<p onclick="oCopy('光大储蓄卡：',6226620904884228)">6226620904884228</p>
+		</div>
+		<div class="item">
+			<h4>中行储蓄卡</h4>
+			卡号:
+			<p onclick="oCopy('中行储蓄卡：',6217853200004736375)">6217853200004736375</p>
+		</div>
+		<div class="item">
+			<h4>农商行储蓄卡</h4>
+			卡号:
+			<p onclick="oCopy('农商行储蓄卡：',6214651032759937)">6214651032759937</p>
+		</div>
+		<input type="text" id="copyme" value="" style="opacity: 0;">
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="layer.js"></script>
+<script type="text/javascript">
+	function oCopy(msg,num){
+		layer.msg('已复制'+msg+num,{
+			time: 1000,
+		});
+		$('#copyme').val(num);
+		$('#copyme').select();
+		document.execCommand("copy",false,null);
+	}
+</script>
