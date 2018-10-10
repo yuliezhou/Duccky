@@ -8,8 +8,10 @@ const menuList ={
 		key:'/admin/ui',
 		children:[
 		{
-			
+			title:'按钮',
+			key:'/admin/ui/buttons',
 		}
 		]
 	}
 }
+export default menuList

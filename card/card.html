@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>卡号</title>
 	<style type="text/css">
 		*{
@@ -28,6 +29,19 @@
 			padding: 0 10px;
 			cursor: pointer;
 		}
+		#copyme{
+			line-height: 30px;
+			height: 30px;
+			width: 200px;
+			opacity: 0;
+			margin-bottom: 50px;
+    		outline: none;
+		}
+		@media (max-width:800px){
+		    #copyme {
+		        opacity: 1;
+		    }
+		}		
 	</style>
 </head>
 <body>
@@ -51,15 +65,6 @@
 			<p>408</p>
 		</div>
 		<div class="item">
-			<h4>浦发信用卡KPL</h4>
-			卡号:
-			<p onclick="oCopy('浦发KPL信用卡：','6259588910510071')">6259588910510071</p>
-			有效期:
-			<p>09/26</p>
-			v码:
-			<p>593</p>
-		</div>
-		<div class="item">
 			<h4>建设信用卡</h4>
 			卡号:
 			<p onclick="oCopy('建设信用卡：','6227080545177202')">6227080545177202</p>
@@ -67,6 +72,105 @@
 			<p>03/26</p>
 			v码:
 			<p>686</p>
+		</div>
+		<div class="item">
+			<h4>农业信用卡（通过）</h4>
+			卡号:
+			<p onclick="oCopy('农业信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>民生信用卡（通过）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>交通信用卡（通过）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>平安信用卡（通过）</h4>
+			卡号:
+			<p onclick="oCopy('平安信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>广发信用卡（通过）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>中信信用卡（审核中）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>兴业信用卡（审核中）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>华夏信用卡（审核中）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>工商信用卡（审核中）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>邮储信用卡（审核中）</h4>
+			卡号:
+			<p onclick="oCopy('民生信用卡：','6259588745841535')">6259588745841535</p>
+			有效期:
+			<p>08/26</p>
+			v码:
+			<p>408</p>
+		</div>
+		<div class="item">
+			<h4>浦发信用卡KPL</h4>
+			卡号:
+			<p onclick="oCopy('浦发KPL信用卡：','6259588910510071')">6259588910510071</p>
+			有效期:
+			<p>09/26</p>
+			v码:
+			<p>593</p>
 		</div>
 		<div class="item">
 			<h4>建设储蓄卡：</h4>
@@ -113,7 +217,7 @@
 			卡号:
 			<p onclick="oCopy('农商行储蓄卡：','6214651032759937')">6214651032759937</p>
 		</div>
-		<input type="text" id="copyme" value="" style="opacity: 0;" disabled="disabled">
+		<input type="text" id="copyme" value="" disabled="disabled">
 	</div>
 </body>
 </html>
