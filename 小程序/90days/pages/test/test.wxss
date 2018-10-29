@@ -1,0 +1,32 @@
+/* pages/template/template.wxss */
+.icon{
+  width:36rpx;
+  height:36rpx;
+}
+.tabBar{
+  width:100%;
+  position: fixed;
+  bottom:0;
+  padding:10rpx 10rpx 20rpx;
+  margin-left:-4rpx;
+  background:#FAFAFB;
+  font-size:20rpx;
+  color:#989DAD;
+  border-top: 2rpx solid #EFEFEF;
+  /* box-shadow: 6rpx 6rpx 6rpx 6rpx #aaa; */
+}
+
+ .tabBar-item{
+  float:left;
+  width:25%;
+  text-align: center;
+  overflow: hidden;
+}
+/*当前字体颜色*/
+.tabBartext{
+  color:#000000;
+}
+.navigator-hover {
+  background: #F7F7FA;
+  opacity: 1;
+}

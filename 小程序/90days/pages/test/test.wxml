@@ -1,0 +1,30 @@
+<!-- 模块1 -->
+<view class="ab" wx:if='{{tabBarIdx == "a"}}'>
+	模块1
+</view>
+<!-- 模块2 -->
+<view class="ab" wx:if='{{tabBarIdx == "b"}}'>
+	模块2
+</view>
+<!-- 模块3 -->
+<view class="ab" wx:if='{{tabBarIdx == "c"}}'>
+	模块3
+</view>
+<!-- 模块4 -->
+<view class="ab" wx:if='{{tabBarIdx == "d"}}'>
+	模块4
+</view>
+
+<!-- 底部tabbar -->
+<view class="tabBar">
+  <block wx:for="{{tabBar}}" wx:key="tabBar">
+    <view class="tabBar-item">
+      <view bindtap='clickUrl' data-id="{{item.current}}">
+        <view>
+	        <image class="icon" src='{{item.current== tabBarIdx? item.selectedIconPath:item.iconPath}}'></image>
+        </view>
+        <view class="{{item.current== tabBarIdx ? 'tabBartext' :''}}">{{item.text}}</view>
+      </view>  
+    </view>
+  </block>
+</view>
