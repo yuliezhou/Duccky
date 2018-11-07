@@ -12,7 +12,7 @@
 		<div class="logo">
 			<img src="images/logo.png" alt="">
 		</div>
-		<div class="content" @click='stopScroll'>
+		<div class="content">
 			<div class="content_inner number_inner" id="con">
 				
 			</div>
@@ -32,7 +32,8 @@
 <script type="text/javascript" src="js/api.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-        let timer;
+	let closeBool = true;
+    let timer;
     //定义随机函数
     function RandomNum(num1,num2){
         return Math.floor(Math.random()*(num2-num1+1)+num1);
@@ -66,8 +67,6 @@
         this.ball.style.top=this.tempY+"px";
         con.appendChild(this.ball);
     }
-    
- 
     //运动函数
     Ball.prototype.move=function(){
  
@@ -97,18 +96,48 @@
     window.onload=function(){
         timer = setInterval(start,30);//设置定时器
     }	
-	$('#con').on('click',function(){
-		// console.log(1)
-		$(this).addClass('blur')
-		$('.number_modal').css({'display':'flex'});
-		$('.number_box span').html('123')
-		$('.number_box em').html('付凤梧')
-		clearInterval(timer)
-	})
-	$('#modal').on('click',function(){
-		$('.number_modal').hide();
-		$('#con').removeClass('blur')
-		timer = setInterval(start,30);
-	})
+	// $('#con').on('click',function(){
+	// 	// console.log(1)
+
+	// })
+	// $('#modal').on('click',function(){
+	// 	$('.number_modal').hide();
+	// 	$('#con').removeClass('blur')
+	// 	timer = setInterval(start,30);
+	// })
+	Api.forPeople().then(res=>{
+		if(res.data.code == 1){
+			let mycode = res.data.data.luck_people.id;
+			let username = res.data.data.luck_people.username;
+			$('.number_box span').html(mycode)
+			$('.number_box em').html(username)				
+		}		
+	})	
+	$(window).keydown(function(event){
+	  if(event.keyCode == 32) {
+		if(closeBool == true){
+			$('#con').addClass('blur')
+			$('.number_modal').css({'display':'flex'});
+			clearInterval(timer)
+			closeBool = !closeBool;			
+		}else{
+			Api.forPeople().then(res=>{
+				if(res.data.code == 1){
+					let mycode = res.data.data.luck_people.id;
+					let username = res.data.data.luck_people.username;
+					$('.number_box span').html(mycode)
+					$('.number_box em').html(username)				
+				}else{
+					$('.number_box span').html('结束')
+					$('.number_box em').html('')
+				}			
+			})			
+			$('.number_modal').hide();
+			$('#con').removeClass('blur')
+			timer = setInterval(start,30);	
+			closeBool = !closeBool;			
+		}
+	  }
+	});
 </script>
 

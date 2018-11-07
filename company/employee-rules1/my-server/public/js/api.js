@@ -39,5 +39,18 @@ let Api = {
                 reject(err)
             })
         })
+    },
+    forPeople() {
+        return new Promise((resolve, reject) => {
+            axios({
+                url: `${apiurl}/index/Luck/forPeople`,
+                method: 'post'
+            }).then(res => {
+                resolve(res)
+            }).catch(err => {
+                reject(err)
+            })
+        })
     }
+
 }

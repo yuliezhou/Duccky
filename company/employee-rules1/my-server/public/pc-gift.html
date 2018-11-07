@@ -12,7 +12,7 @@
 		<div class="logo">
 			<img src="images/logo.png" alt="">
 		</div>
-		<div class="content" @click='stopScroll'>
+		<div class="content">
 			<div class="content_inner" :class='modalBool?"blur":""'>
 				<div class="dowebok1 dowebok" >
 					<div class="box" v-for='(item, index) in qusList1' v-text='item.title'></div>
@@ -27,7 +27,7 @@
 					<div class="box" v-for='(item, index) in qusList4' v-text='item.title'></div>
 				</div>				
 			</div>
-			<div class="modal flex_mid" v-if='modalBool' v-on:click.stop='closeModal'>
+			<div class="modal flex_mid" v-if='modalBool'>
 				<div class="qus_box" v-text='randomTxt' v-if='randomTxt'>
 					
 				</div>
@@ -55,11 +55,28 @@
 	        randomTxt:'',
 	        firstNum:1,
 	        modalBool:false,//模态层显示
-	        qusArr:[]
+	        qusArr:[],
+	        closeBool:false
 	    },
 	    mounted() {
 	    	this.forQuestion()
 	    },
+		created:function(){
+			var _this = this;
+			document.onkeydown=function(e){
+				var key=window.event.keyCode;
+				if(key==32){
+					if(_this.closeBool == false){
+						_this.stopScroll()
+						_this.closeBool = true;			
+					}else{
+						_this.closeModal()	
+						console.log(1)	
+						_this.closeBool = false;			
+					}
+				}
+			}
+		},
 	    updated(){
 	    	if(this.firstNum == 1){
 		        //无缝滚动
