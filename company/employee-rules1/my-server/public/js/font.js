@@ -15,7 +15,7 @@
         wDpr = isIOS ? wWidth > 818 ? 3 : wWidth > 480 ? 2 : 1 : 1;
     }
     if(isIOS) {
-        wWidth = screen.width<400?screen.width:400;
+        wWidth = screen.width;
         wHeight = screen.height;
     }
 // if(window.orientation==90||window.orientation==-90){

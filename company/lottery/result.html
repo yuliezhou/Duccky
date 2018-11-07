@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>团建抽奖</title>
+	<meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/font.js"></script>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="bodyer" id="bodyer">
+		<div class="result_inner">
+			<img src="images/pic1.png" alt="">
+			<div class="result_ab">
+				<div class="result_item">
+					<em>您的号码是</em>
+					<span v-text='mycode'>130</span>
+				</div>
+				<div class="result_item margin_none">
+					<em>您的伙伴是</em>
+					<span class="elli">
+						<em v-for='item in other_info' v-text='item.username'></em>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/vue.min.js"></script>
+<script src="js/axios.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript">
+	new Vue({
+	    el: '#bodyer',
+	    data: {
+	        mycode: '',
+	        other_info: ''
+	    },
+	    mounted() {
+	    	let mycode = localStorage.mycode;
+	    	let other_info = localStorage.other_info;
+	    	other_info =JSON.parse(other_info);
+	    	this.mycode = mycode;
+	    	this.other_info = other_info;
+	    },
+	    methods: {
+
+	    }
+	})	
+</script>
+
