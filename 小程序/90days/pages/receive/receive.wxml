@@ -1,0 +1,19 @@
+<view class="coupon_modal flex_center">
+  <view class="coupon_modal_inner">
+    <image class="modal_back" src="../../images/addimg/modal_back.png" ></image>
+    <view class="modal_des">
+        <view class="modal_top flex_mid">
+          <view class="modal_top_h">
+            <text>¥</text>15
+          </view>
+          <view class="modal_top_p">哇～新手券领取成功！</view>
+        </view>
+        <view class="modal_bot flex_mid">
+          <view class="modal_btn">
+            <image class="" src="../../images/addimg/modal_btn.png"></image>
+          </view>
+          <text>已存入‘我的伽满’，点击查看</text>
+        </view>
+    </view>
+  </view>
+</view>

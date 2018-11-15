@@ -1,48 +1,42 @@
+<view class="coupon_ipt flex_center">
+  <input placeholder="输入优惠券号"/>
+  <view class="exchange_btn">立即兑换</view>
+</view>
 <view class="coupon">
   <block wx:for='{{couponList}}'>
     <view class="coupon_item" bindtap='backPay'>
-      <image class="coupon_back" src="../../images/coupon_back.png" mode="aspectFill"></image>
-      <view class="coupon_item_inner">
-        <view class="coupon_item_top flex_between">
-          <view class="coupon_des">
-            <view class="coupon_h">{{item.name}}</view>
-            <view class="coupon_p">{{item.rule}}</view>
+        <view class="coupon_item_top">
+          <view class="coupon_logo">
+            <image class="smlogo" src="../../images/addimg/sm_logo.png" ></image>
+            <image class="biglogo" src="../../images/addimg/logo2.png" mode="scaleToFill"></image>
           </view>
-          <view class="coupon_price">
-            <text>¥</text>
-            {{item.money}}
-          </view>
-        </view>
+          <view class="coupon_des flex_between">
+            <view class="coupon_name elli">{{item.name}}</view>
+            <view class="coupon_money">
+              <text class="money_span1">¥</text>
+              15
+              <text class="money_span2">元</text>
+            </view>
+          </view> 
+        </view>  
         <view class="coupon_item_bot flex_between">
-          <view class="coupon_timer">有效期至{{item.time}}</view>
-          <view class="coupon_txt">立即使用</view>
-        </view>
-      </view>
-      <image class="tag_coupon" src="../../images/pricetag.png" wx:if='{{couponIdx==index && type=="pay"}}'></image>
-    </view>
-  </block>
-  <view class="cantuse flex_center" wx:if='{{type=="pay"}}'>
-    <text>不可使用优惠券</text>
-  </view>
-  <block wx:for='{{couponFalse}}' wx:if='{{type=="pay"}}'>
-    <view class="coupon_item coupon_gray" bindtap='backPayFalse'>
-      <image class="coupon_back" src="../../images/coupon_back.png" mode="aspectFill"></image>
-      <view class="coupon_item_inner">
-        <view class="coupon_item_top flex_between">
-          <view class="coupon_des">
-            <view class="coupon_h">{{item.name}}</view>
-            <view class="coupon_p">{{item.rule}}</view>
+          <view class="bot_left">
+            <view class="bot_left_item">
+              <image class="" src="../../images/addimg/icon1.png" 
+              mode="scaleToFill"></image>
+              <text class="elli">{{item.time}}（剩余{{item.endtime}}天）</text>
+            </view>
+            <view class="bot_left_item">
+              <image class="" src="../../images/addimg/icon.png" 
+              mode="scaleToFill"></image>
+              <text class="elli">全场通用，可购买12月1日-2日的课程</text>
+            </view>
           </view>
-          <view class="coupon_price">
-            <text>¥</text>
-            {{item.money}}
-          </view>
+          <view class="bot_right">
+            <image class="use_btn" src="../../images/addimg/use.png"></image>
+            <view class="use_txt">立即试用</view>
+          </view> 
         </view>
-        <view class="coupon_item_bot flex_between">
-          <view class="coupon_timer">有效期至{{item.time}}</view>
-          <view class="coupon_txt">立即使用</view>
-        </view>
-      </view>
     </view>
   </block>
 </view>

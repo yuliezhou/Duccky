@@ -1,0 +1,37 @@
+<view class="bodyer">
+  <image class="logo" src="../../images/addimg/logo.png" mode="scaleToFill"></image>
+  <view class="active_top">
+    <image class="active_img" src="../../images/addimg/acimg.png" mode="scaleToFill"></image>
+    <view class="active_top_des">
+        <view class="active_h">分享有礼</view>
+        <view class="active_p">@你身边的“宅男宅女” </view>
+        <view class="active_p">邀TA趣味运动，干掉无聊！</view>
+    </view>
+  </view> 
+  <view class="active_bot">
+    <view class="btn_all flex_center">
+      <view class="btn_item">
+        <image src="../../images/addimg/btn_all.png"></image>
+        <view class="btn_item_innder">一键转发</view>
+        <button open-type="share"></button>
+      </view>
+      <view class="btn_item">
+        <image src="../../images/addimg/btn_all.png"></image>
+        <view class="btn_item_innder">生成海报</view>
+      </view>
+    </view>
+    <view class="active_des">
+      <view class="active_des_title flex_center">
+        <view class="des_span"></view>
+        <text>活动明细</text>
+        <view class="des_span"></view>
+      </view>
+      <view class="active_content">
+        <text>1.好友点击链接/扫码进入小程序，领取新手券并成功购买课程； （新手红包内有69元现金券 ，满70元可用</text>
+        <text>2.好友上课签到后，系统会返1张69 元的现金券 到账户，在购课时直接抵扣；可在【我的伽满】-【优惠券】查看；</text>
+        <text>3.新手券仅限于新客户，即从未在90天健身小程序购课的用户。每个ID限领1次。</text>
+        <text>4.活动期间，分享不限次数，好友用的越多，奖励越多。</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/test/test",
+    "pages/coupon/coupon",
+    "pages/receive/receive",
+    "pages/activity/activity",
     "pages/index/index",
     "pages/sportstest/sportstest",
-    "pages/coupon/coupon",
     "pages/course-details/course-details",
     "pages/mycourse/mycourse",
     "pages/pay/pay",
