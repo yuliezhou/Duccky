@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/publicSty.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/liMarquee.css">
+	<link rel="shortcut icon" href="images/favic.png" type="image/x-icon">
 </head>
 <body>
 	<div class="pc_bodyer" id="bodyer">
@@ -56,7 +57,8 @@
 	        firstNum:1,
 	        modalBool:false,//模态层显示
 	        qusArr:[],
-	        closeBool:false
+	        closeBool:false,
+	        luck:''
 	    },
 	    mounted() {
 	    	this.forQuestion()
@@ -82,22 +84,22 @@
 		        //无缝滚动
 		        $('.dowebok1').liMarquee({
 		            direction: 'right',
-		            scrollamount:300,
+		            scrollamount:120,
 		            hoverstop: false
 		        });
 		        $('.dowebok2').liMarquee({
 		            direction: 'right',
-		            scrollamount: 350,
+		            scrollamount: 150,
 		            hoverstop: false
 		        });
 		        $('.dowebok3').liMarquee({
 		            direction: 'right',
-		            scrollamount: 250,
+		            scrollamount: 100,
 		            hoverstop: false
 		        });
 		        $('.dowebok4').liMarquee({
 		            direction: 'right',
-		            scrollamount: 280,
+		            scrollamount: 180,
 		            hoverstop: false
 		        });	
 		        this.firstNum = 0
@@ -108,26 +110,29 @@
 	    	forQuestion(){
 	    		Api.forBirthdayGift().then(res=>{
 	    			if(res.data.code == 1){
-	    				let qusArr = res.data.data;
+	    				let qusArr = res.data.data.all;
+	    				let luck = res.data.data.luck;
+	    				this.luck = luck;
 	    				this.qusArr = qusArr;
 				    	let qusArrLen = qusArr.length;
+	    				console.log(qusArrLen)
 				    	let qusList1 = [];
 				    	let qusList2 = [];
 				    	let qusList3 = [];
 				    	let qusList4 = [];
-				    	for(var i=0;i<12;i++ ){
+				    	for(var i=0;i<8;i++ ){
 							let num = this.randomFrom(0,qusArrLen);
 							qusList1.push(qusArr[num])
 				    	}
-				    	for(var i=0;i<12;i++ ){
+				    	for(var i=0;i<8;i++ ){
 							let num = this.randomFrom(0,qusArrLen);
 							qusList2.push(qusArr[num])
 				    	}
-				    	for(var i=0;i<12;i++ ){
+				    	for(var i=0;i<8;i++ ){
 							let num = this.randomFrom(0,qusArrLen);
 							qusList3.push(qusArr[num])
 				    	}
-				    	for(var i=0;i<12;i++ ){
+				    	for(var i=0;i<8;i++ ){
 							let num = this.randomFrom(0,qusArrLen);
 							qusList4.push(qusArr[num])
 				    	}
@@ -151,6 +156,12 @@
 				$('.dowebok4').liMarquee('pause');
 			},
 			closeModal(){
+	    		Api.forBirthdayGift().then(res=>{
+	    			if(res.data.code == 1){
+	    				let luck = res.data.data.luck;
+	    				this.luck = luck;
+					}
+	    		})				
 				this.modalBool = false;
 				this.randomTxt = '';
 		        $('.dowebok1').liMarquee('play');

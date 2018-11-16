@@ -1,4 +1,5 @@
-let apiurl = 'http://192.168.12.109:8141'
+// let apiurl = 'http://192.168.12.109:8141'
+let apiurl = 'http://api.2018tj.cqxcx.net'
 let Api = {
     signUp(username,cardcode) {
         return new Promise((resolve, reject) => {
@@ -20,6 +21,18 @@ let Api = {
         return new Promise((resolve, reject) => {
             axios({
                 url: `${apiurl}/index/Luck/forQuestion`,
+                method: 'post'
+            }).then(res => {
+                resolve(res)
+            }).catch(err => {
+                reject(err)
+            })
+        })
+    },
+    forBirthdayPeople() {
+        return new Promise((resolve, reject) => {
+            axios({
+                url: `${apiurl}/index/Luck/forBirthdayPeople`,
                 method: 'post'
             }).then(res => {
                 resolve(res)

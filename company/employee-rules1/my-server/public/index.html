@@ -12,9 +12,17 @@
 </head>
 <body>
 	<div class="bodyer" id="bodyer">
-		<input type="text" id="name" v-model='username' class="input" placeholder="姓名" maxlength="8">
-		<input type="tel" id="card" v-model='cardcode' class="input" placeholder="请输入身份证后6位" maxlength="6">
-		<div class="next_btn" @click='signUp' :class='addAc?"ac_btn":""'>下一步</div>
+		<div class="bodyer_inneridx" v-if='!isLogin'>
+			<input type="text" id="name" v-model='username' class="input" placeholder="姓名" maxlength="8">
+			<input type="text" id="card" v-model='cardcode' class="input" placeholder="请输入身份证后6位" maxlength="6">
+			<div class="next_btn" @click='signUp' :class='addAc?"ac_btn":""'>下一步</div>
+		</div>
+		<div class="bodyer_inneridx" v-else>
+			<div class="pipei flex_mid">
+				<span>随机配对中</span>
+				<em class="em">. . .</em>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
@@ -23,11 +31,12 @@
 <script type="text/javascript" src="js/layer.js"></script>
 <script type="text/javascript" src="js/api.js"></script>
 <script type="text/javascript">
-	new Vue({
+	var app = new Vue({
 	    el: '#bodyer',
 	    data: {
 	        username: '',
-	        cardcode: ''
+	        cardcode: '',
+	        isLogin:false//是否登录
 	    },
 	    computed: {
 	        addAc: function() {
@@ -40,7 +49,6 @@
 	        }
 	    },
 	    mounted() {
-	    	
 	    },
 	    methods: {
 	        signUp() {
@@ -62,19 +70,16 @@
 	            	Api.signUp(username,cardcode).then(res=>{          		
 	            		if(res.data.code == 1){
 	            			localStorage.clickNum = '';
-			                layer.open({
-			                    content: '报名成功',
-			                    skin: 'msg',
-			                    time: 1
-			                });	          
+							this.isLogin = true;	          
 			                let mycode = res.data.data.mycode;
 			                let other_info = res.data.data.other_info;
 			                other_info = other_info? JSON.stringify(other_info):other_info;
 			                localStorage.mycode = mycode;
 			                localStorage.other_info = other_info;
 			                setTimeout(()=>{
+			                	this.isLogin = false
 	            				window.location = 'result.html'
-			                },1000)
+			                },2000)
 	            		}else if(res.data.code == 0){
 			                let clickNum = localStorage.clickNum?parseInt(localStorage.clickNum):0;
 				                clickNum++;
@@ -100,6 +105,5 @@
 	        },
 	    }
 	})	
-
 </script>
 

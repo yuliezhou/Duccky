@@ -4,14 +4,22 @@
 	background: url(../images/bg.png) 0 0 no-repeat;
 	background-size:cover;
 	overflow:hidden;  
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+}
+.bodyer_inneridx{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+	width: 100%;
+	height: 100%;
 }
 .bodyer .input{
 	width: 5.4rem;
@@ -105,6 +113,7 @@
 	text-align: right;
 	font-size: 0;
 }
+
 .logo img{
 	margin-right: 100px;
 }
@@ -118,8 +127,11 @@
 	position: relative;
 	width: 100%;
 }
+.content_inner img{
+	width: 42%;
+}
 .number_inner{
-	height: 600px;
+	height: 450px;
 }
 .blur{
 	filter: blur(10px);
@@ -133,6 +145,7 @@
 	left: 0;
 	z-index: 999;
 }
+
 .dowebok{
 	margin-bottom: 30px;
 }
@@ -165,6 +178,7 @@
     justify-content: center;
     color: #E72044;
     font-weight: bold;
+	transition: all 1s;
 	 -webkit-touch-callout: none; /* iOS Safari */
 
 	-webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -196,10 +210,63 @@
     font-size: 75px;
     font-weight: bold;
 }
-
+.number_small{
+    width: 200px;
+    height: 200px;	
+    margin:20px;
+    font-size: 40px;
+}
+.content_auto{
+	height: auto;
+}
 @font-face {
     font-family: 'test';
     src: url('../test.woff');
     font-weight: normal;
     font-style: normal;
+}
+.pipei{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 0.1rem solid #E72044;
+	background: #fff;
+
+}
+.pipei span ,.pipei em{
+	color:#E72044;
+	font-size: 0.44rem;
+	font-weight: bold;
+}
+.pipei em{
+	margin: 0 4px;
+}
+:root .pipei em { /* 这里使用Hack是因为IE6~IE8浏览器下， vertical-align解析不规范，值为bottom或其他会改变按钮的实际高度*/
+    display: inline-block;
+    width: 0.6rem;
+    overflow: hidden;
+    white-space:nowrap;
+}
+@-webkit-keyframes dot {
+    0% { width: 0; margin-right: 1.5em; }
+    33% { width: .5em; margin-right: 1em; }
+    66% { width: 1em; margin-right: .5em; }
+    100% { width: 1.5em; margin-right: 0;}
+}
+.pipei em {
+    -webkit-animation: dot 3s infinite step-start;
+}
+
+@keyframes dot {
+    0% { width: 0; margin-right: 1.5em; }
+    33% { width: .5em; margin-right: 1em; }
+    66% { width: 1em; margin-right: .5em; }
+    100% { width: 1.5em; margin-right: 0;}
+}
+.pipei em {
+    animation: dot 1s infinite step-start;
+}
+.auto_bodyer{
+	height: auto;
+	overflow-y: auto;
 }

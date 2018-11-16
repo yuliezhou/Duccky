@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/publicSty.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/liMarquee.css">
+	<link rel="shortcut icon" href="images/favic.png" type="image/x-icon">
 </head>
 <body>
 	<div class="pc_bodyer" id="bodyer">
@@ -17,13 +18,13 @@
 				<div class="dowebok1 dowebok" >
 					<div class="box" v-for='(item, index) in qusList1' v-text='item.title'></div>
 				</div>
-				<div class="dowebok2 dowebok" >
+				<div class="dowebok2 dowebok">
 					<div class="box" v-for='(item, index) in qusList2' v-text='item.title'></div>
 				</div>
-				<div class="dowebok3 dowebok" >
+				<div class="dowebok3 dowebok">
 					<div class="box" v-for='(item, index) in qusList3' v-text='item.title'></div>
 				</div>
-				<div class="dowebok4 dowebok" >
+				<div class="dowebok4 dowebok">
 					<div class="box" v-for='(item, index) in qusList4' v-text='item.title'></div>
 				</div>				
 			</div>
@@ -82,22 +83,22 @@
 		        //无缝滚动
 		        $('.dowebok1').liMarquee({
 		            direction: 'right',
-		            scrollamount:300,
+		            scrollamount:150,
 		            hoverstop: false
 		        });
 		        $('.dowebok2').liMarquee({
 		            direction: 'right',
-		            scrollamount: 350,
+		            scrollamount: 120,
 		            hoverstop: false
 		        });
 		        $('.dowebok3').liMarquee({
 		            direction: 'right',
-		            scrollamount: 250,
+		            scrollamount: 180,
 		            hoverstop: false
 		        });
 		        $('.dowebok4').liMarquee({
 		            direction: 'right',
-		            scrollamount: 280,
+		            scrollamount: 100,
 		            hoverstop: false
 		        });	
 		        this.firstNum = 0

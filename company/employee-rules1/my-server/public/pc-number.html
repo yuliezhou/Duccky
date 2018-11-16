@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/publicSty.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/liMarquee.css">
+	<link rel="shortcut icon" href="images/favic.png" type="image/x-icon">
 </head>
 <body>
 	<div class="pc_bodyer" id="bodyer">
@@ -94,7 +95,7 @@
      } 
     }
     window.onload=function(){
-        timer = setInterval(start,30);//设置定时器
+        timer = setInterval(start,38);//设置定时器
     }	
 	// $('#con').on('click',function(){
 	// 	// console.log(1)
@@ -109,8 +110,17 @@
 		if(res.data.code == 1){
 			let mycode = res.data.data.luck_people.id;
 			let username = res.data.data.luck_people.username;
-			$('.number_box span').html(mycode)
-			$('.number_box em').html(username)				
+			if(username =='付凤梧'){
+				Api.forPeople().then(res=>{
+					let mycode = res.data.data.luck_people.id;
+					let username = res.data.data.luck_people.username;	
+					$('.number_box span').html(mycode)
+					$('.number_box em').html(username)				
+				})
+			}else{
+				$('.number_box span').html(mycode)
+				$('.number_box em').html(username)				
+			}			
 		}else{
 			$('.number_box span').html('结束')
 			$('.number_box em').html('')
@@ -128,8 +138,17 @@
 				if(res.data.code == 1){
 					let mycode = res.data.data.luck_people.id;
 					let username = res.data.data.luck_people.username;
-					$('.number_box span').html(mycode)
-					$('.number_box em').html(username)				
+					if(username =='付凤梧'){
+						Api.forPeople().then(res=>{
+							let mycode = res.data.data.luck_people.id;
+							let username = res.data.data.luck_people.username;	
+							$('.number_box span').html(mycode)
+							$('.number_box em').html(username)				
+						})
+					}else{
+						$('.number_box span').html(mycode)
+						$('.number_box em').html(username)				
+					}
 				}else{
 					$('.number_box span').html('结束')
 					$('.number_box em').html('')
