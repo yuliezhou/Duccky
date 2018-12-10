@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>茶蛋</title>
+	<link rel="stylesheet" href="css/publicSty.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+</head>
+<body>
+	<div class="bodyer">
+		<h2 class="title">茶蛋抢单工具</h2>
+		<div class="form-group">
+		    <label for="exampleInputEmail1">输入JSESSIONID</label>
+		    <input type="text" class="form-control" id="jsonid" placeholder="请输入JSESSIONID">
+	    </div>	
+		<label for="exampleInputEmail1">选择面值</label>
+		<select class="form-control" id="faceValue">
+		  <option>10</option>
+		  <option>20</option>
+		  <option>30</option>
+		  <option>50</option>
+		  <option>100</option>
+		  <option>200</option>
+		  <option>300</option>
+		  <option>500</option>
+		</select>	    	
+		<label for="exampleInputEmail1">选择运营商</label>
+		<select class="form-control" id="operator">
+		  <option>移动</option>
+		  <option>联通</option>
+		  <option>电信</option>
+		</select>	    
+		<label for="exampleInputEmail1">单次获取订单数量</label>
+		<select class="form-control" id="amount">
+		  <option>1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		</select>	    
+		<label for="exampleInputEmail1">接口请求速度</label>
+		<select class="form-control" id="timenum">
+		  <option>1s</option>
+		  <option>0.5s</option>
+		  <option>2s</option>
+		</select>	    
+		<div class="phone">
+			<p>
+				订单手机号：<span id="phone_number"></span>
+			</p>
+			<em>*刷新茶蛋页面，检查该手机号是否与茶蛋订单一致！！（从茶蛋页面复制手机号，避免误冲）</em>	
+		</div>
+		<div class="button flex_center">
+			<button type="button" class="btn btn-success" id="carried">开始</button>
+			<button type="button" class="btn btn-danger" id="stop">停止</button>
+		</div>
+		<h2 class="title">使用说明</h2>
+	</div>
+	<div class="use_img">
+		<h2>打开茶蛋官网 -> 登陆后进入接单页面 -> 按F12键进入调试模式  -> 点击NETWORK -> 选择XHR -> 点击左侧 pooldd623299 -> 找到Form Data -> 复制JSESSIONID -> 将ID输入到第一个输入框内</h2>
+		<img src="chadan.png" alt="">
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	var timer ;
+	$("#carried").click(function(){
+		$('#phone_number').html('获取中...')
+		let jsonid = $(" #jsonid ").val();
+		let faceValue = $("#faceValue  option:selected").text();
+		let operator = $("#operator  option:selected").text();
+		let amount = $("#amount  option:selected").text();
+		let timenum = $("#timenum  option:selected").text();
+		console.log(timenum)
+		switch (operator) {
+			case '移动':
+				operator = 'MOBILE'
+				break;
+			case '联通':
+				operator = 'UNICOM'
+				break;
+			case '电信':
+				operator = 'TELECOM'
+				break;
+		}
+
+		switch (timenum) {
+			case '1s':
+				timenum = 1000
+				break;
+			case '0.5s':
+				timenum = 500
+				break;
+			case '2s':
+				timenum = 2000
+				break;
+		}
+		if(!jsonid){
+			alert('请输入JSESSIONID，详情请查看使用说明！')
+		}else{
+			let datas = {
+	            JSESSIONID:jsonid,
+	            faceValue:faceValue,
+	            operator:operator,
+	            amount:amount,
+	            channel:1			
+			}
+			console.log(datas)
+			timer = setInterval(res=>{
+				carried(datas)
+			},timenum)
+		}
+	})
+	// MOBILE
+	// UNICOM
+	$("#stop").click(function(){
+		clearInterval(timer)
+	})
+	let carried = function(datas){
+		$.ajax({
+		        url:'http://old.chadan.wang/order/getOrderdd623299',
+		        type: 'POST',
+		        dataType: 'json',
+		        data:datas,
+		        success: function(data) {
+		        	let errorCode = data.errorCode;
+		        	if(errorCode == 200){
+		        		let phone_number = data.data[0].rechargeAccount;
+		        		if(phone_number){
+		        			alert('抢单成功！')
+		        		}
+		        		$("#phone_number").html(phone_number)
+		        		clearInterval(timer)
+						return;
+		        	}
+					
+		        }
+		    })
+	}
+	
+</script>

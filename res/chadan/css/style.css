@@ -1,0 +1,60 @@
+.bodyer{
+	width: 500px;
+	margin: 0 auto;
+}
+
+.input{
+    display: inline-block;
+    width: 500px;
+    height: 32px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;			
+}
+.button{
+	margin-top: 40px;
+}
+.button button{
+	margin:0 50px; 
+}
+p{
+	font-size: 16px;
+	margin-left: 50px;
+}
+.phone{
+	margin-top: 40px;
+}
+.phone em{
+	color: red;
+	font-size: 14px;
+}
+label{
+	margin: 10px 0!important;
+}
+.title{
+	margin-bottom: 50px!important;
+	margin-top: 50px!important;
+	text-align: center!important;
+}
+.use_img{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 200px;
+}
+.use_img img{
+	width: 100%;
+}
+.use_img h2{
+	font-size: 18px;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
