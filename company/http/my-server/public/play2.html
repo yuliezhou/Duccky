@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="keywords" content="重庆市九吨科技有限公司，九吨科技，九吨">
+    <meta name="description" content="重庆市九吨科技有限公司成立于2013年5月，是一家专注移动互联网产品研发及APP运营的科技型创新企业，秉承“活力、发展、信念、变革”的创业理念飞速发展。目前拥有自主知识产权20余项，企业员工100多人。旗下主要分为两块业务：移动app、移动广告平台。这两块相辅相成，数千万用户体量的app为移动广告平台提供了流量分发支撑，移动广告平台为app流量变现提供了保证，强大的分发能力能够让产品迅速的推广出去。截至至今，流量矩阵模式基本形成，公司产品服务数千万用户，成为西南地区为数不多的用户数跨越千万用户大关的移动互联网公司。">
+    <link rel="shortcut icon" href="img/favic.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.7.4/skins/default/aliplayer-min.css" />
+      <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.7.4/aliplayer-min.js"></script>    
+    <title>视频播放</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background: #000;
+        }
+        .video_outer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .video {
+            width: 60rem;
+
+        }
+        .prism-big-play-btn{
+            left: 50%!important;
+            margin-left: -32px;
+            top:50%!important;
+            margin-top: -32px!important;
+        }
+        @media screen and (max-width: 770px) {
+            #player-con {
+                height: 13rem!important;
+            }
+            .prism-big-play-btn{
+                left: 50%!important;
+                margin-left: -32px;
+            }            
+        }
+        .prism-volume ,.prism-setting-btn,.prism-cc-btn{
+            display: none!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video_outer">
+        <div id="player-con"></div>
+    </div>
+</body>
+<script>
+  var player = new Aliplayer({
+    id: "player-con",
+    source: "https://sound-static.cqxcx.net/nineton/nineton_run.mp4",
+    width: "100%",
+    height: "500px",
+    /* 设置封面时需要将 autoplay 和 preload 设置为 false */
+    autoplay: true,
+    preload:true,
+    language: "zh-cn",
+  }, function (player) {
+    player.play();
+  });
+    function endedHandle(){
+      var newUrl = "";
+      player.loadByUrl(newUrl);
+    }
+    player.on("ended", endedHandle);  
+</script>
+
+</html>

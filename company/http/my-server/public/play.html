@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="keywords" content="重庆市九吨科技有限公司，九吨科技，九吨">
+    <meta name="description" content="重庆市九吨科技有限公司成立于2013年5月，是一家专注移动互联网产品研发及APP运营的科技型创新企业，秉承“活力、发展、信念、变革”的创业理念飞速发展。目前拥有自主知识产权20余项，企业员工100多人。旗下主要分为两块业务：移动app、移动广告平台。这两块相辅相成，数千万用户体量的app为移动广告平台提供了流量分发支撑，移动广告平台为app流量变现提供了保证，强大的分发能力能够让产品迅速的推广出去。截至至今，流量矩阵模式基本形成，公司产品服务数千万用户，成为西南地区为数不多的用户数跨越千万用户大关的移动互联网公司。">
+    <link rel="shortcut icon" href="img/favic.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/common.css">
+    <title>视频播放</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background: #000;
+        }
+
+        .video {
+            width: 40rem;
+            height: 16rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -20rem;
+            margin-top: -8rem;
+        }
+
+        @media screen and (max-width: 770px) {
+            .video {
+                width: 20rem;
+                height: 8rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -10rem;
+                margin-top: -4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video style="object-fit: fill" class="video" id="video" loop="loop" controls="controls" autoplay preload="auto" poster="img/pic_1.png">
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.webm" type="video/webm">
+    </video>
+</body>
+<script>
+    // let tstr = window.location.href;
+    // tstr = tstr.split('=');
+    // let src = tstr[1];
+    // document.getElementById("video").src = src;
+    document.getElementById("video").play();
+</script>
+
+</html>

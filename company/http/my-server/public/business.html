@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="keywords" content="重庆市九吨科技有限公司，九吨科技，九吨">
+    <meta name="description" content="重庆市九吨科技有限公司成立于2013年5月，是一家专注移动互联网产品研发及APP运营的科技型创新企业，秉承“活力、发展、信念、变革”的创业理念飞速发展。目前拥有自主知识产权20余项，企业员工100多人。旗下主要分为两块业务：移动app、移动广告平台。这两块相辅相成，数千万用户体量的app为移动广告平台提供了流量分发支撑，移动广告平台为app流量变现提供了保证，强大的分发能力能够让产品迅速的推广出去。截至至今，流量矩阵模式基本形成，公司产品服务数千万用户，成为西南地区为数不多的用户数跨越千万用户大关的移动互联网公司。">
+    <link rel="shortcut icon" href="img/favic.png" type="image/x-icon" />
+    <link rel="stylesheet" href="static/animate.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/business.css">
+    <title>九吨官网-业务</title>
+</head>
+
+<body>
+    <div id="business_page">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="center-wrapper clearfloat fs0">
+                <div class="logo">
+                    <img src="img/pic_222.png" alt="九吨Logo">
+                </div>
+                <!-- <div class="language-select fr fs0">
+                    <span :class="active1 == 1?'active1':''" @click="changeLang(1)">简 / </span>
+                    <span :class="active1 == 2?'active1':''" @click="changeLang(2)">繁 / </span>
+                    <span :class="active1 == 3?'active1':''" @click="changeLang(3)">EN</span>
+                </div> -->
+                <div class="menu fs0 clearfloat">
+                    <a href="index.html">首页</a>
+                    <a href="introduction.html">简介</a>
+                    <a href="culture.html">文化</a>
+                    <a href="javascript:void(0)" class="active">业务</a>
+                    <a href="recruit.html">招贤纳士</a>
+                </div>
+                <div class="mobile-menu" @click="showMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="moblie-menu-box" :class="isHeight?'height-auto':''">
+            <div>
+                <a href="index.html">首页</a>
+                <a href="introduction.html">简介</a>
+                <a href="culture.html">文化</a>
+                <a href="javascript:void(0)" class="active">业务<img src="img/pic_30.png" alt="笔触"></a>
+                <a href="recruit.html">招贤纳士</a>
+            </div>
+            <!-- <div class="lang">
+                <span>简 /</span>
+                <span>繁 /</span>
+                <span>EN</span>
+            </div> -->
+        </div>
+        <div class="header-space"></div>
+        <!-- 头部 end-->
+
+        <div class="banner">
+            <div class="img"><img src="img/pic_13.png" alt="背景图"></div>
+            <div class="introduction" v-text="businessInfo.c_describe"></div>
+        </div>
+        <div class="moblie-banner">
+            <div class="introduction" v-text="businessInfo.c_describe"></div>
+        </div>
+
+        <div class="main">
+            <div class="item">
+                <div class="title-banner clearfloat">
+                    <div class="line"></div>
+                    <div class="title">移动广告平台</div>
+                </div>
+
+                <!-- 循环content -->
+                <div class="content clearfloat" v-for="item in adList">
+                    <div class="download_btn" v-if="item.qrcode">立即下载</div>
+                    <div class="erweima_wrapper" v-if="item.qrcode">
+                        <div class="erweima_inner">
+                            <img :src="item.qrcode">
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div class="business-photo fs0"><img :src="item.images" :alt="item.titlef"></div>
+                    <div class="business-text">
+                        <h4 v-text="item.title"></h4>
+                        <p v-text="item.describe"></p>
+                    </div>
+                </div>
+
+                <div class="bottom-line">
+                    <div></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title-banner clearfloat">
+                    <div class="line"></div>
+                    <div class="title">移动APP</div>
+                </div>
+
+                <!-- 循环content -->
+                <div class="content clearfloat" v-for="item in appList">
+                    <div class="download_btn" v-if="item.qrcode">立即下载</div>
+                    <div class="erweima_wrapper" v-if="item.qrcode">
+                        <div class="erweima_inner">
+                            <img :src="item.qrcode">
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div class="business-photo fs0"><img :src="item.images" :alt="item.titlef"></div>
+                    <div class="business-text">
+                        <h4 v-text="item.title"></h4>
+                        <p v-text="item.describe"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 期待合作 -->
+            <div class="cooperation-box clearfloat">
+                <div class="img"><img src="img/pic_21.png" alt="联系我"></div>
+                <div class="contact-box">
+                    <h4>期待与您合作</h4>
+                    <div class="detail-box clearfloat">
+                        <div class="detail-info">
+                            <h5 class="min-title">移动广告平台商务合作</h5>
+                            <p>姓名: 丁亚晗</p>
+                            <p>电话: 15010642009</p>
+                            <p>微信: 15010642009</p>
+                            <p>邮箱: dingyahan@nineton.cn</p>
+                        </div>
+                        <div class="weixin fs0"><img src="img/pic_22.png" alt="微信"></div>
+                    </div>
+                    <div class="detail-box clearfloat">
+                        <div class="detail-info">
+                            <h5 class="min-title">移动APP广告合作</h5>
+                            <p>姓名: 李岩</p>
+                            <p>电话: 15823957157</p>
+                            <p>微信: 15823957157</p>
+                            <p>邮箱: liyan@nineton.cn</p>
+                        </div>
+                        <div class="weixin fs0"><img src="img/pic_23.png" alt="微信"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="moblie-main">
+            <!-- 移动广告平台 -->
+            <div class="item">
+                <div class="title">
+                    <div class="line"></div>
+                    <div class="title-text">移动广告平台</div>
+                </div>
+                <div class="app-list" v-for="item in adList">
+                    <div class="app-box-title">
+                        <div class="app-box">
+                            <img :src="item.images" alt="app图标">
+                            <span v-text="item.title"></span>
+                        </div>
+                        <a :href="item.titlef" v-if="item.titlef">立即下载</a>
+                    </div>
+                    <p v-text="item.describe"></p>
+                </div>
+            </div>
+
+            <!-- 移动APP -->
+            <div class="item">
+                <div class="title">
+                    <div class="line"></div>
+                    <div class="title-text">移动APP</div>
+                </div>
+                <div class="app-list" v-for="item in appList">
+                    <div class="app-box-title">
+                        <div class="app-box">
+                            <img :src="item.images" alt="app图标">
+                            <span v-text="item.title"></span>
+                        </div>
+                        <a :href="item.titlef" v-if="item.titlef">立即下载</a>
+                    </div>
+                    <p v-text="item.describe"></p>
+                </div>
+            </div>
+
+            <div class="moblie-cooperation-box">
+                <img src="img/pic_21.png" alt="示意图">
+                <h4>期待与您的合作</h4>
+                <p>地址: {{headerAndFooter.addr}}</p>
+                <p>前台电话: {{headerAndFooter.tel}}</p>
+                <p>邮编: 400030</p>
+                <p>服务邮箱: {{headerAndFooter.mail}}</p>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-box">
+                <div class="contact-way-wrapper fl fs0">
+                    <img src="img/pic_8.png" alt="logo">
+                    <div>
+                        <p v-cloak>地址：{{headerAndFooter.addr}}</p>
+                        <p v-cloak><a href="tel:0147-88469258">电话：{{headerAndFooter.tel}}</a></p>
+                        <p v-cloak>邮箱：{{headerAndFooter.mail}}</p>
+                    </div>
+                </div>
+                <div class="footer-other fr fs0">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="introduction.html">简介</a></li>
+                        <li><a href="culture.html">文化</a></li>
+                        <li v-if="!business_page"><a href="javascript:void(0)" v-cloak>业务</a></li>
+                        <li><a href="javascript:void(0)">关于</a></li>
+                        <li><a href="recruit.html">招贤纳士</a></li>
+                    </ul>
+                    <div>
+                        <p>© NineTon Tech Design. all rights reserved</p>
+                        <p><a href="http://www.miitbeian.gov.cn">Powered by NineTon Tech...{{headerAndFooter.icp}}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </iframe>
+
+    <script src="js/custom.js"></script>
+    <script src="static/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="static/axios.js"></script>
+
+
+    <script>
+        let jq = $;
+        var vm = new Vue({
+            el: "#business_page",
+            data: {
+                business_page: true,
+                isHeight: false,
+                active1: 1,
+                headerAndFooter: {
+                    addr: "",
+                    tel: "",
+                    mail: ""
+                },
+                businessInfo: {},
+                appList: [],
+                adList: []
+            },
+
+            methods: {
+                showMenu: function () {
+                    if (!this.isHeight) {
+                        this.isHeight = true;
+                    } else {
+                        this.isHeight = false;
+                    }
+                },
+                changeLang: function (e) {
+                    this.active1 = e;
+                    localStorage.setItem('active1', JSON.stringify(e));
+                },
+                //请求底部信息
+                getFooterInfo: function () {
+                    var _this = this;
+                    axios.post(api + 'getCompanyFooter')
+                        .then(function (res) {
+                            var data = res.data.data;
+                            _this.headerAndFooter.addr = data.addr;
+                            _this.headerAndFooter.mail = data.mail;
+                            _this.headerAndFooter.tel = data.tel;
+                            _this.headerAndFooter.icp = data.qq;
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                },
+
+                //请求业务信息
+                getBusinessInfo: function () {
+                    var _this = this;
+                    axios.post(api + 'getBuinessBack')
+                        .then(function (res) {
+                            var data = res.data.data;
+                            _this.businessInfo = data;
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+
+                    axios.post(api + 'getAdList')
+                        .then(function (res) {
+                            var data = res.data.data;
+                            _this.adList = data;
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+
+                    axios.post(api + 'getAppList')
+                        .then(function (res) {
+                            var data = res.data.data;
+                            _this.appList = data;
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+
+
+                },
+            },
+
+            created: function () {
+                var active1 = JSON.parse(localStorage.getItem('active1'));
+                if (active1) {
+                    this.active1 = active1;
+                }
+            },
+
+            mounted: function () {
+                var _this = this;
+                _this.getFooterInfo();
+                _this.getBusinessInfo();
+            },
+
+            updated: function () {
+                jq(".download_btn").mouseover(function () {
+                    let idx = $(".download_btn").index(this);
+                    jq(".erweima_wrapper").eq(idx).css("transform", "scale(1)");
+                })
+                jq(".download_btn").mouseout(function () {
+                    let idx = $(".download_btn").index(this);
+                    jq(".erweima_wrapper").eq(idx).css("transform", "scale(0)");
+                })
+            }
+
+
+        });
+
+        $(window).ready(function () {
+
+        });
+    </script>
+
+</body>
+
+</html>
