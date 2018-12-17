@@ -117,5 +117,9 @@ label{
 	}
 	.login_btn input{
 		width: 250px;
+		height: 40px;
+	}
+	.button button{
+		margin: 0 15px;
 	}
 }
