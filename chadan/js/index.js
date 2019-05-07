@@ -67,7 +67,7 @@
     })
     let carried = function(datas, success_status) {
         $.ajax({
-            url: 'http://old.chadan.wang/order/getOrderdd623299',
+            url: 'http://api.chadan.wang/order/getOrderdd623299',
             type: 'POST',
             dataType: 'json',
             data: datas,
